@@ -1,0 +1,251 @@
+{
+  "_comment": "SINGLE SOURCE OF TRUTH. Every tailored CV, cover letter and match score is generated from this file. Edit here, never in the generated documents.",
+  "identity": {
+    "full_name": "Saif ur Rehman",
+    "headline": "Full Stack Developer - React / React Native / Flutter / Node.js",
+    "email": "saifaslam155@gmail.com",
+    "phone": "+43 660 6519 008",
+    "location": "Innsbruck, Austria",
+    "github": "github.com/saifaslam246",
+    "linkedin": "linkedin.com/in/saif-rehman-432383183",
+    "portfolio": "saifaslam246.github.io/portfolio",
+    "portfolio_public": false,
+    "_portfolio_note": "portfolio_public=false per your instruction not to link it. Flip to true to include it on the CV (recommended for dev roles)."
+  },
+  "work_context": {
+    "based_in": "Austria",
+    "timezone": "CET/CEST (UTC+1/+2)",
+    "timezone_flexible": true,
+    "_timezone_note": "You said you can work any timezone - this widens US/UK contract matches significantly.",
+    "work_authorization": "Austria - employed by an Austrian company since 2025; residence permit status to be confirmed",
+    "_auth_note": "CONFIRM: student permit vs Rot-Weiss-Rot card vs other. This decides whether EU-only or worldwide-remote filters apply.",
+    "open_to": ["contract", "freelance", "part-time", "project-based", "full-time-remote"],
+    "min_rate_eur_hour": null,
+    "_rate_note": "TELL ME YOUR FLOOR. Used to auto-reject lowball postings. Suggested band for 4 yrs full-stack in Austria: EUR 45-70/hr contract, EUR 55-75k/yr permanent.",
+    "years_experience": 4
+  },
+  "summary_variants": {
+    "fullstack": "Full Stack Developer with 4+ years building and shipping production web and mobile applications across logistics, marketplace, real-estate and healthcare domains. Strong across the whole stack - React, Next.js and Angular on the front end, Node.js (NestJS/Express) and Python on the back end, with PostgreSQL, MongoDB and Redis behind them, deployed on AWS with Docker and CI/CD. Currently building client platforms for a European software company from Austria.",
+    "frontend": "Frontend-focused Full Stack Developer with 4+ years building responsive, high-performance interfaces in React, Next.js and Angular with TypeScript and Tailwind CSS. Experienced in design-system work, real-time UI, state management and accessibility, backed by the Node.js and API skills to own a feature end to end.",
+    "mobile": "Mobile Developer with 4+ years delivering cross-platform apps in React Native and Flutter, shipped to the App Store and Play Store with real-time chat, push notifications, offline handling and media upload. Backed by full-stack Node.js and API experience, so mobile features are owned end to end rather than handed off.",
+    "backend": "Backend Developer with 4+ years designing and operating REST APIs and services in Node.js (NestJS, Express) and Python (FastAPI), with PostgreSQL, MongoDB, MariaDB and Redis, containerised with Docker and deployed on AWS. Experienced in third-party integrations, payments, real-time messaging and large-scale data ingestion.",
+    "data_scraping": "Full Stack Developer with 4+ years of experience including large-scale data extraction and structuring - building Python scraping pipelines that ingest and normalise millions of listings from third-party sources into searchable, filterable product data. Comfortable owning the full path from crawler to API to UI."
+  },
+  "skills": {
+    "Languages": ["TypeScript", "JavaScript (ES6+)", "Python", "Dart", "SQL", "HTML5", "CSS3"],
+    "Frontend": ["React", "Next.js", "React Native", "Flutter", "Angular", "Ionic", "Redux", "Tailwind CSS", "PrimeNG", "Framer Motion"],
+    "Backend": ["Node.js", "NestJS", "Express.js", "FastAPI", "REST APIs", "WebSockets / Socket.IO", "Firebase Functions", "Microservices"],
+    "Databases": ["PostgreSQL", "MongoDB", "MySQL", "MariaDB", "Redis", "Firebase Firestore"],
+    "ORMs": ["TypeORM", "Prisma", "Sequelize", "Mongoose"],
+    "Cloud & DevOps": ["AWS (EC2, S3, Lambda, SNS)", "Docker", "CI/CD", "GitHub Actions", "Vercel", "Nginx"],
+    "Integrations": ["Stripe", "Shopify", "Amazon FBA/FBM", "WooCommerce", "Twilio", "Firebase Cloud Messaging", "OAuth 2.0", "Payment Gateways"],
+    "Data": ["Python web scraping", "Scrapy / BeautifulSoup / Playwright", "ETL pipelines", "Data normalisation"],
+    "Practices": ["Agile / Scrum", "Code review", "Unit & integration testing", "Git flow", "Technical documentation", "Client communication"],
+    "Tools": ["Git", "GitHub", "Bitbucket", "Jira", "Figma", "ESLint", "SonarQube", "Postman", "Android Studio", "Xcode"]
+  },
+  "experience": [
+    {
+      "id": "tmn",
+      "title": "Full Stack Developer",
+      "company": "TMN Development KG",
+      "location": "Austria",
+      "start": "2025-03",
+      "end": null,
+      "current": true,
+      "_date_note": "CONFIRM: your old CV says Mar 2025, you said Apr 2025. Currently using Mar 2025 to stay consistent with the CV already in circulation.",
+      "stack": ["React", "Next.js", "React Native", "Node.js", "NestJS", "TypeScript", "PostgreSQL", "MongoDB", "Docker", "AWS"],
+      "bullets": [
+        "Build and ship production web and mobile applications for European clients, owning features end to end from requirements through deployment.",
+        "Develop and deploy backend services and REST APIs in Node.js and NestJS, containerised with Docker and released through CI/CD pipelines.",
+        "Integrate third-party platforms and payment providers, and design the data models and API contracts that front-end and mobile clients consume.",
+        "Work in an Agile team with code review, technical documentation and direct client communication on requirements and delivery."
+      ],
+      "_gap": "NEEDS YOUR INPUT: name the projects you built here (you mentioned 'Ludwig' and others), what each one does, your specific role, and any measurable outcome. This is your most recent and most credible role - right now it is the thinnest section on the CV."
+    },
+    {
+      "id": "pikessoft",
+      "title": "Full Stack Developer",
+      "company": "Pikessoft",
+      "location": "Lahore, Pakistan",
+      "start": "2022-09",
+      "end": "2025-02",
+      "current": false,
+      "stack": ["React", "Angular", "Next.js", "React Native", "Node.js", "NestJS", "MongoDB", "MariaDB", "Redis", "Firebase", "AWS", "Docker"],
+      "bullets": [
+        "Led development on multiple client platforms - logistics, marketplace, real-estate and field-service products - from architecture through release.",
+        "Built real-time features including chat, group messaging, push notifications and live order tracking across web and mobile clients.",
+        "Designed and integrated REST APIs against MongoDB, MariaDB and Redis, and tuned queries and caching to keep dashboards responsive at scale.",
+        "Integrated e-commerce and payment platforms including Shopify, Amazon, WooCommerce and Stripe to automate order and fulfilment flows.",
+        "Mentored junior developers, ran code reviews, and handled direct client requirement-gathering and delivery planning."
+      ]
+    },
+    {
+      "id": "innovage",
+      "title": "Web Developer Intern",
+      "company": "Innovage.io",
+      "location": "Pakistan",
+      "start": "2022-04",
+      "end": "2022-08",
+      "current": false,
+      "stack": ["React", "JavaScript", "Node.js", "REST APIs"],
+      "bullets": [
+        "Built responsive user interfaces and integrated payment and geolocation APIs into client web applications.",
+        "Supported backend development and manual testing across the release cycle."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "atomix",
+      "name": "Atomix Logistics - 3PL Fulfilment Platform",
+      "url": "atomixlogistics.com",
+      "domain": ["logistics", "saas", "e-commerce"],
+      "tech": ["React", "Angular", "NestJS", "Node.js", "MariaDB", "Redis", "Stripe", "AWS", "Shopify", "Amazon", "WooCommerce"],
+      "one_liner": "Third-party logistics platform for order fulfilment, real-time tracking and multi-channel e-commerce integration.",
+      "bullets": [
+        "Built order-fulfilment and inventory features on a 3PL platform handling real-time order tracking, custom packaging and nationwide two-day delivery.",
+        "Integrated Shopify, Amazon FBA/FBM and WooCommerce so merchant orders flow into fulfilment automatically instead of being keyed in by hand.",
+        "Implemented shipping automation and carrier-selection logic to cut per-order shipping cost and manual handling."
+      ]
+    },
+    {
+      "id": "equipx",
+      "name": "EquipX - Heavy Equipment Marketplace",
+      "url": "equipx.com",
+      "domain": ["marketplace", "e-commerce"],
+      "tech": ["Angular", "Next.js", "Node.js", "MongoDB", "Socket.IO", "Stripe", "AWS", "Docker"],
+      "one_liner": "Marketplace for listing, buying, selling and financing heavy machinery, with real-time chat and rental management.",
+      "bullets": [
+        "Built the searchable listing and filtering system over a large machinery catalogue, plus financing and logistics modules.",
+        "Implemented real-time one-to-one and group chat so buyers and sellers negotiate inside the platform.",
+        "Delivered customer and admin dashboards covering rental tracking, payment processing and digital agreement management."
+      ]
+    },
+    {
+      "id": "sandseekers",
+      "name": "SandSeekers - Dubai Real Estate Platform",
+      "url": null,
+      "domain": ["real-estate", "crm", "data"],
+      "tech": ["Next.js", "Node.js", "MongoDB", "Data Integrations"],
+      "one_liner": "Real-estate platform and custom CRM aggregating live Dubai property data from Bayut, Dubizzle and Property Finder.",
+      "bullets": [
+        "Led end-to-end delivery of a residential and commercial property platform, owning architecture, the development team and client communication.",
+        "Built a custom CRM for listings, leads and property-demo bookings.",
+        "Integrated live property feeds from Bayut, Dubizzle and Property Finder and normalised them into a single searchable catalogue."
+      ]
+    },
+    {
+      "id": "rentalytics",
+      "name": "Rentalytics.ai - Property Data Platform",
+      "url": null,
+      "domain": ["data", "real-estate", "scraping"],
+      "tech": ["React", "Node.js", "Python", "MongoDB", "Firebase", "Scraping"],
+      "one_liner": "Data platform extracting and structuring millions of property listings from major real-estate sources into a searchable dataset.",
+      "bullets": [
+        "Built extraction and structuring pipelines that ingest millions of property listings from third-party real-estate sources.",
+        "Normalised inconsistent source data into a unified schema queryable by location, price and property features.",
+        "Delivered the search and filtering front end over the resulting dataset."
+      ]
+    },
+    {
+      "id": "99dpf",
+      "name": "99DPF - Service Booking Platform (Web + Mobile)",
+      "url": null,
+      "domain": ["marketplace", "mobile", "field-service"],
+      "tech": ["React", "React Native", "Node.js", "MongoDB", "Socket.IO", "Push Notifications"],
+      "one_liner": "Web and mobile platform for booking diesel particulate filter cleaning, with partner dispatch and real-time order tracking.",
+      "bullets": [
+        "Shipped a React Native mobile app alongside the React web client from one shared Node.js API.",
+        "Built real-time chat, push notifications, image upload and live order-status updates for both customers and service partners.",
+        "Implemented the booking, dispatch and guarantee-tracking flows connecting customers to partner workshops."
+      ]
+    },
+    {
+      "id": "his",
+      "name": "HIS - Healthcare Workforce Management System",
+      "url": null,
+      "domain": ["healthcare", "saas", "enterprise"],
+      "tech": ["React", "React Native", "TypeScript", "Node.js", "AWS", "Docker"],
+      "one_liner": "Cloud platform for hospital staff attendance, leave, shift scheduling and overtime tracking.",
+      "bullets": [
+        "Built scheduling logic for complex hospital rostering including rotating and night shifts.",
+        "Implemented attendance, leave-request and overtime tracking with automated reporting, replacing manual record-keeping.",
+        "Delivered matching web and mobile clients on a shared TypeScript codebase."
+      ]
+    },
+    {
+      "id": "corporatemerch",
+      "name": "CorporateMerch.com - AI Merchandise Platform",
+      "url": "corporatemerch.com",
+      "domain": ["e-commerce", "ai"],
+      "tech": ["Next.js", "Tailwind CSS", "AI Integration", "CRM Integration", "E-commerce"],
+      "one_liner": "Corporate gifting platform that generates custom branded merchandise designs with AI and syncs with client CRMs.",
+      "bullets": [
+        "Built AI-assisted design generation into the product configurator so companies produce branded merchandise in seconds.",
+        "Integrated CRM systems to automate corporate gifting and giveaway campaigns.",
+        "Delivered the storefront, configurator and ordering flow in Next.js."
+      ]
+    },
+    {
+      "id": "ggamer",
+      "name": "GGamer - eSports News & Streaming Platform",
+      "url": null,
+      "domain": ["media", "streaming"],
+      "tech": ["React", "Next.js", "Tailwind CSS", "Framer Motion"],
+      "one_liner": "Responsive platform for live gaming competitions, eSports news and embedded game streaming.",
+      "bullets": [
+        "Owned complete front-end delivery in React and Next.js with Tailwind CSS and Framer Motion.",
+        "Built real-time match updates, player statistics and embedded stream views tuned for fast page loads."
+      ]
+    },
+    {
+      "id": "definepedia",
+      "name": "Definepedia - Education Platform",
+      "url": null,
+      "domain": ["education", "e-commerce"],
+      "tech": ["React", "AWS", "Payment Gateway"],
+      "one_liner": "Education platform providing study resources and paid tutor support.",
+      "bullets": [
+        "Built the study-resource catalogue and tutor-booking flow with payment gateway integration."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "MSc Computer Science",
+      "institution": "University of Innsbruck",
+      "location": "Austria",
+      "start": "2024",
+      "end": null,
+      "status": "Ongoing"
+    },
+    {
+      "degree": "BSc Computer Science",
+      "institution": "COMSATS University",
+      "location": "Pakistan",
+      "start": "2018",
+      "end": "2022",
+      "status": "Completed"
+    }
+  ],
+  "certifications": [
+    "MERN Stack Developer Certificate",
+    "Front-End Development Certificate",
+    "Project Management for Web Developers"
+  ],
+  "languages": [
+    {"language": "English", "level": "C1 - Professional working proficiency"},
+    {"language": "Urdu", "level": "Native"},
+    {"language": "German", "level": null, "_note": "TELL ME YOUR LEVEL (A1/A2/B1/B2). Austrian and German employers filter on this - even A2 is worth listing."}
+  ],
+  "matching": {
+    "must_have_any": ["react", "react native", "next.js", "node", "nodejs", "node.js", "typescript", "javascript", "flutter", "full stack", "fullstack", "frontend", "front-end", "backend", "back-end", "angular", "nestjs", "python"],
+    "strong_signals": ["react", "react native", "next.js", "nestjs", "node.js", "typescript", "mongodb", "postgresql", "flutter", "tailwind", "docker", "aws", "stripe", "socket.io", "websocket", "graphql", "prisma", "express", "redis", "scraping", "playwright"],
+    "domain_bonus": ["logistics", "marketplace", "real estate", "proptech", "healthcare", "e-commerce", "saas", "fintech"],
+    "hard_reject": ["unpaid", "equity only", "no pay", "commission only", "php developer", "wordpress only", ".net developer", "java developer", "salesforce", "sap abap", "drupal", "magento developer", "ruby on rails"],
+    "seniority_reject": ["principal engineer", "staff engineer", "engineering manager", "vp of engineering", "cto", "head of engineering", "10+ years", "12+ years", "15+ years"],
+    "_reject_note": "hard_reject only fires when the term is the PRIMARY stack of the role, not when it is one line in a long nice-to-have list. See pipeline/score.py.",
+    "location_ok": ["remote", "worldwide", "anywhere", "europe", "emea", "eu", "austria", "germany", "vienna", "innsbruck", "cet", "uk", "united states", "us", "canada"],
+    "min_score_to_shortlist": 55
+  }
+}
