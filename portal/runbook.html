@@ -1,0 +1,326 @@
+<title>Contract Desk Runbook</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+  :root{
+    --ground:#f4f7f6; --surface:#ffffff; --surface-2:#eef3f1; --line:#dde5e2;
+    --ink:#101e1b; --ink-2:#3c4c48; --muted:#6b7c78;
+    --accent:#0f6e63; --accent-soft:#dceeea; --accent-ink:#0b544b;
+    --good:#1d7a4d; --good-soft:#dcefe3;
+    --warn:#a8630c; --warn-soft:#f6e9d6;
+    --crit:#a82a20; --crit-soft:#f6dedb;
+    --shadow:0 1px 2px rgba(16,30,27,.06), 0 10px 30px -20px rgba(16,30,27,.35);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --ground:#0d1412; --surface:#131e1b; --surface-2:#182521; --line:#25332f;
+      --ink:#e7efec; --ink-2:#bcccc7; --muted:#899a95;
+      --accent:#4ec5b1; --accent-soft:#16302c; --accent-ink:#7fdcca;
+      --good:#5ec98c; --good-soft:#152b21;
+      --warn:#e0a558; --warn-soft:#2e2417;
+      --crit:#e8867a; --crit-soft:#31201e;
+      --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 30px -20px rgba(0,0,0,.9);
+    }
+  }
+  :root[data-theme="dark"]{
+    --ground:#0d1412; --surface:#131e1b; --surface-2:#182521; --line:#25332f;
+    --ink:#e7efec; --ink-2:#bcccc7; --muted:#899a95;
+    --accent:#4ec5b1; --accent-soft:#16302c; --accent-ink:#7fdcca;
+    --good:#5ec98c; --good-soft:#152b21;
+    --warn:#e0a558; --warn-soft:#2e2417;
+    --crit:#e8867a; --crit-soft:#31201e;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 30px -20px rgba(0,0,0,.9);
+  }
+
+  *{box-sizing:border-box}
+  body{
+    background:var(--ground); color:var(--ink); margin:0;
+    font-family:"IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    font-size:15px; line-height:1.6;
+  }
+  .wrap{max-width:820px; margin:0 auto; padding-inline:18px; padding-block:0 64px}
+  h1,h2,h3{font-family:Archivo,-apple-system,"Segoe UI",sans-serif; margin:0; text-wrap:balance}
+  p{margin:0}
+  .mono{font-family:"IBM Plex Mono",ui-monospace,monospace; font-variant-numeric:tabular-nums}
+  .eyebrow{
+    font-family:Archivo,sans-serif; font-size:10.5px; font-weight:600;
+    letter-spacing:.1em; text-transform:uppercase; color:var(--muted);
+  }
+  a{color:var(--accent-ink)}
+
+  header.hero{padding-block:44px 26px; border-bottom:2px solid var(--ink); display:flex; flex-direction:column; gap:10px}
+  header.hero h1{font-size:34px; font-weight:700; letter-spacing:-.02em}
+  header.hero .lede{font-size:17px; color:var(--ink-2); max-width:60ch}
+
+  section{padding-block:34px; border-bottom:1px solid var(--line); display:flex; flex-direction:column; gap:16px}
+  section > h2{font-size:21px; font-weight:700; letter-spacing:-.01em}
+  section > p{color:var(--ink-2); max-width:66ch}
+
+  figure{margin:0; display:flex; flex-direction:column; gap:10px}
+  figure svg{max-width:100%; height:auto; display:block}
+  figcaption{font-size:13px; color:var(--muted); max-width:62ch}
+
+  .cards{display:grid; grid-template-columns:repeat(auto-fit,minmax(212px,1fr)); gap:12px}
+  .card{
+    background:var(--surface); border:1px solid var(--line); border-radius:10px;
+    padding:16px 17px; display:flex; flex-direction:column; gap:7px;
+  }
+  .card .t{font-family:"IBM Plex Mono",monospace; font-size:13px; font-weight:600; color:var(--accent-ink)}
+  .card h3{font-size:15px; font-weight:600}
+  .card p{font-size:13.5px; color:var(--ink-2)}
+  .card .who{font-size:11.5px; color:var(--muted); margin-top:auto; padding-top:6px}
+
+  .split{display:grid; grid-template-columns:1fr 1fr; gap:12px}
+  .path{border:1px solid var(--line); border-radius:10px; padding:16px 17px; background:var(--surface); display:flex; flex-direction:column; gap:7px}
+  .path.auto{border-left:3px solid var(--good)}
+  .path.manual{border-left:3px solid var(--warn)}
+  .path h3{font-size:15px; font-weight:600}
+  .path .count{font-family:"IBM Plex Mono",monospace; font-size:25px; font-weight:600; line-height:1}
+  .path.auto .count{color:var(--good)}
+  .path.manual .count{color:var(--warn)}
+  .path p{font-size:13.5px; color:var(--ink-2)}
+
+  ol.steps{margin:0; padding:0; list-style:none; counter-reset:s; display:flex; flex-direction:column; gap:12px}
+  ol.steps li{display:grid; grid-template-columns:26px 1fr; gap:13px; align-items:start}
+  ol.steps li::before{
+    counter-increment:s; content:counter(s);
+    font-family:"IBM Plex Mono",monospace; font-size:12px; font-weight:600;
+    background:var(--accent-soft); color:var(--accent-ink);
+    width:26px; height:26px; border-radius:7px; display:grid; place-items:center;
+  }
+  ol.steps b{display:block; font-weight:600}
+  ol.steps span{font-size:13.5px; color:var(--ink-2)}
+
+  table{width:100%; border-collapse:collapse; font-size:13.5px}
+  .scroll{overflow-x:auto}
+  th,td{text-align:left; padding:9px 12px; border-bottom:1px solid var(--line); vertical-align:top}
+  th{font-family:Archivo,sans-serif; font-size:11px; letter-spacing:.07em; text-transform:uppercase; color:var(--muted); font-weight:600}
+  td.on{color:var(--good); font-weight:600; white-space:nowrap}
+  td.off{color:var(--warn); font-weight:600; white-space:nowrap}
+
+  .todo{background:var(--surface); border:1px solid var(--line); border-left:3px solid var(--crit); border-radius:0 10px 10px 0; padding:16px 18px; display:flex; flex-direction:column; gap:8px}
+  .todo h3{font-size:15px; font-weight:700}
+  .todo p{font-size:13.5px; color:var(--ink-2)}
+  code{font-family:"IBM Plex Mono",monospace; font-size:12.5px; background:var(--surface-2); border:1px solid var(--line); border-radius:4px; padding:1px 5px}
+  .kv{display:grid; grid-template-columns:auto 1fr; gap:4px 12px; font-size:12.5px}
+  .kv dt{font-family:"IBM Plex Mono",monospace; color:var(--muted)}
+  .kv dd{margin:0; font-family:"IBM Plex Mono",monospace}
+
+  .faq{display:flex; flex-direction:column; gap:14px}
+  .faq div{display:flex; flex-direction:column; gap:3px}
+  .faq b{font-size:14.5px}
+  .faq p{font-size:13.5px; color:var(--ink-2)}
+
+  @media (max-width:620px){
+    .split{grid-template-columns:1fr}
+    header.hero h1{font-size:27px}
+  }
+  @media (prefers-reduced-motion: reduce){*{transition:none !important; animation:none !important}}
+</style>
+
+<div class="wrap">
+  <header class="hero">
+    <span class="eyebrow">Contract Desk</span>
+    <h1>How the pipeline runs</h1>
+    <p class="lede">Three things run every weekday without you. One of them stops and waits
+       for a decision only you can make. This is where that decision sits.</p>
+  </header>
+
+  <section>
+    <h2>A weekday, start to finish</h2>
+    <figure>
+      <svg viewBox="0 0 760 570" role="img" aria-label="A weekday timeline: at 05:30 GitHub harvests and scores jobs from eight boards; at 06:30 Claude tailors a CV and writes an email for each shortlisted role and puts it in the Outbox; at any time Saif approves or skips each draft; at 08:10 GitHub sends only the approved ones from his Gmail to the company.">
+        <defs>
+          <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="currentColor"/>
+          </marker>
+        </defs>
+
+        <!-- 05:30 -->
+        <text x="72" y="66" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="14" font-weight="600" fill="currentColor">05:30</text>
+        <rect x="96" y="30" width="420" height="66" rx="9" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.55"/>
+        <text x="116" y="56" font-family="Archivo, sans-serif" font-size="14.5" font-weight="600" fill="currentColor">Harvest</text>
+        <text x="116" y="78" font-family="IBM Plex Sans, sans-serif" font-size="12.5" fill="currentColor" opacity="0.75">8 job boards scanned, every posting scored</text>
+        <text x="536" y="60" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="currentColor" opacity="0.6">runs on GitHub</text>
+        <text x="536" y="78" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="currentColor" opacity="0.6">no device needed</text>
+
+        <line x1="306" y1="96" x2="306" y2="142" stroke="currentColor" stroke-width="1.5" marker-end="url(#ar)"/>
+        <text x="320" y="124" font-family="IBM Plex Sans, sans-serif" font-size="12" fill="currentColor" opacity="0.7">~2,500 in, ~8 worth your time</text>
+
+        <!-- 06:30 -->
+        <text x="72" y="186" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="14" font-weight="600" fill="currentColor">06:30</text>
+        <rect x="96" y="150" width="420" height="66" rx="9" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.55"/>
+        <text x="116" y="176" font-family="Archivo, sans-serif" font-size="14.5" font-weight="600" fill="currentColor">Tailor and write</text>
+        <text x="116" y="198" font-family="IBM Plex Sans, sans-serif" font-size="12.5" fill="currentColor" opacity="0.75">A CV rewritten per role, and the email to go with it</text>
+        <text x="536" y="180" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="currentColor" opacity="0.6">runs on Claude</text>
+        <text x="536" y="198" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="currentColor" opacity="0.6">starts by itself</text>
+
+        <line x1="306" y1="216" x2="306" y2="262" stroke="currentColor" stroke-width="1.5" marker-end="url(#ar)"/>
+        <text x="320" y="244" font-family="IBM Plex Sans, sans-serif" font-size="12" fill="currentColor" opacity="0.7">lands in your Outbox</text>
+
+        <!-- you -->
+        <text x="72" y="300" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="13" font-weight="700" fill="currentColor">5 min</text>
+        <text x="72" y="318" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="11" fill="currentColor" opacity="0.6">any time</text>
+        <rect x="96" y="270" width="420" height="66" rx="9" fill="#dceeea" stroke="#0f6e63" stroke-width="2.5"/>
+        <text x="116" y="296" font-family="Archivo, sans-serif" font-size="14.5" font-weight="700" fill="#0b544b">You: approve or skip</text>
+        <text x="116" y="318" font-family="IBM Plex Sans, sans-serif" font-size="12.5" fill="#0b544b">Read each draft, tap once. Nothing moves until you do.</text>
+        <text x="536" y="300" font-family="IBM Plex Mono, monospace" font-size="11.5" font-weight="700" fill="currentColor">the only part</text>
+        <text x="536" y="318" font-family="IBM Plex Mono, monospace" font-size="11.5" font-weight="700" fill="currentColor">that needs you</text>
+
+        <line x1="306" y1="336" x2="306" y2="382" stroke="currentColor" stroke-width="1.5" marker-end="url(#ar)"/>
+        <text x="320" y="364" font-family="IBM Plex Sans, sans-serif" font-size="12" fill="currentColor" opacity="0.7">approved only, never a draft</text>
+
+        <!-- 08:10 -->
+        <text x="72" y="426" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="14" font-weight="600" fill="currentColor">08:10</text>
+        <rect x="96" y="390" width="420" height="66" rx="9" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.55"/>
+        <text x="116" y="416" font-family="Archivo, sans-serif" font-size="14.5" font-weight="600" fill="currentColor">Send</text>
+        <text x="116" y="438" font-family="IBM Plex Sans, sans-serif" font-size="12.5" fill="currentColor" opacity="0.75">From your Gmail. Max 10 a day, 2 per company.</text>
+        <text x="536" y="420" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="currentColor" opacity="0.6">runs on GitHub</text>
+        <text x="536" y="438" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="currentColor" opacity="0.6">needs your app password</text>
+
+        <line x1="306" y1="456" x2="306" y2="502" stroke="currentColor" stroke-width="1.5" marker-end="url(#ar)"/>
+
+        <rect x="96" y="510" width="420" height="44" rx="9" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.35" stroke-dasharray="4 4"/>
+        <text x="116" y="538" font-family="Archivo, sans-serif" font-size="14" font-weight="600" fill="currentColor">A real person reads it</text>
+      </svg>
+      <figcaption>Everything above and below the green box runs on a schedule, on somebody
+        else's machine. Your laptop can be shut. The only thing waiting on you is the
+        approval in the middle.</figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <h2>What runs without you</h2>
+    <div class="cards">
+      <div class="card">
+        <span class="t">05:30 UTC · daily</span>
+        <h3>The harvest</h3>
+        <p>Calls 8 job sources, scores every posting against your stack, throws away
+           the 95% that is noise, and saves the rest.</p>
+        <span class="who">GitHub Actions</span>
+      </div>
+      <div class="card">
+        <span class="t">06:30 UTC · weekdays</span>
+        <h3>The tailoring</h3>
+        <p>Picks up to 6 roles, rewrites your CV against each posting, drafts the email
+           quoting what they actually asked for.</p>
+        <span class="who">A Claude session that starts itself</span>
+      </div>
+      <div class="card">
+        <span class="t">08:10 UTC · weekdays</span>
+        <h3>The send</h3>
+        <p>Sends only what you approved. Never a draft, never the same one twice.</p>
+        <span class="who">GitHub Actions</span>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Not every job can be emailed</h2>
+    <p>This is the part worth understanding, because it decides how much is actually
+       hands-off. Of the 60 roles in your portal right now:</p>
+    <div class="split">
+      <div class="path auto">
+        <span class="count">20</span>
+        <h3>Have a contact address</h3>
+        <p>Fully automatic. Claude writes it, you approve, GitHub sends it. You never
+           touch the job itself.</p>
+      </div>
+      <div class="path manual">
+        <span class="count">40</span>
+        <h3>Have no address at all</h3>
+        <p>There is no inbox in existence to send to — their form is the only way in.
+           The tailored CV is still built and waiting on the job; you upload it.
+           About two minutes.</p>
+      </div>
+    </div>
+    <p>From tomorrow the harvest also follows each board link back to the employer, which
+       recovers the real application form — usually Greenhouse, Lever or Personio — and a
+       recruiting address where the company publishes one. That moves jobs from the right
+       column to the left.</p>
+  </section>
+
+  <section>
+    <h2>Your five minutes</h2>
+    <ol class="steps">
+      <li><div><b>Open the portal</b><span>Best matches first. New roles at the top.</span></div></li>
+      <li><div><b>Open anything interesting</b><span>Full posting, why it scored, and your CV for that role — Download PDF or Word, right there.</span></div></li>
+      <li><div><b>Set a status</b><span>Applied, Dismissed or Replied. This is what stops a job coming back tomorrow.</span></div></li>
+      <li><div><b>Check the Outbox</b><span>Read each draft. Approve &amp; queue, or Skip. Approved mail leaves next morning.</span></div></li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>What is on right now</h2>
+    <div class="scroll">
+      <table>
+        <thead><tr><th>Piece</th><th>State</th><th>Note</th></tr></thead>
+        <tbody>
+          <tr><td>Daily harvest, 7 sources</td><td class="on">running</td><td>Ran today: 2,511 scanned</td></tr>
+          <tr><td>Scoring and filtering</td><td class="on">running</td><td>Rejects wrong stacks, flags visa problems</td></tr>
+          <tr><td>The portal</td><td class="on">running</td><td>60 roles, syncs across your devices</td></tr>
+          <tr><td>CV generator, 5 variants</td><td class="on">running</td><td>On every job, download in one tap</td></tr>
+          <tr><td>Apply-link and email finder</td><td class="on">first run tomorrow</td><td>Recovers the employer behind each board link</td></tr>
+          <tr><td>Weekday tailoring and drafting</td><td class="on">starts Monday 06:30</td><td>Runs by itself from then on</td></tr>
+          <tr><td>Email sending</td><td class="off">waiting on you</td><td>Needs the Gmail App Password</td></tr>
+          <tr><td>Austrian &amp; German coverage</td><td class="off">waiting on you</td><td>Needs a free Adzuna key</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>The one thing blocking everything</h2>
+    <div class="todo">
+      <h3>The Gmail App Password</h3>
+      <p>Google will not let any program send from your account without one. Until it
+         exists, drafts pile up in your Outbox and the sender exits quietly — nothing is
+         lost, but nothing goes out either.</p>
+      <p>Make one at <code>myaccount.google.com/apppasswords</code>, then add five secrets at
+         <code>github.com/saifaslam246/jobs</code> → Settings → Secrets and variables → Actions:</p>
+      <dl class="kv">
+        <dt>SMTP_HOST</dt><dd>smtp.gmail.com</dd>
+        <dt>SMTP_PORT</dt><dd>587</dd>
+        <dt>SMTP_USER</dt><dd>saifaslam155@gmail.com</dd>
+        <dt>SMTP_PASS</dt><dd>the 16 characters</dd>
+        <dt>FROM_NAME</dt><dd>Saif ur Rehman</dd>
+      </dl>
+      <p>Put it into GitHub, never into a chat. GitHub encrypts it; a chat transcript does not.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Questions you have already asked</h2>
+    <div class="faq">
+      <div>
+        <b>Does it work when I close Claude?</b>
+        <p>Yes. The harvest and the sending run on GitHub's machines. The 06:30 job is a
+           brand new Claude session that starts on a schedule, does the work, and shuts
+           down. Nothing needs this conversation, or your laptop.</p>
+      </div>
+      <div>
+        <b>Can it send without me approving at all?</b>
+        <p>Yes — one word in <code>outreach/config.json</code>, <code>approve_first</code> to
+           <code>auto</code>. In auto mode a draft only leaves if it scores 60+, has a real
+           contact address, has no eligibility flag, and has a CV attached. Anything failing
+           one of those waits for you instead of being dropped.</p>
+      </div>
+      <div>
+        <b>Where do the jobs live?</b>
+        <p>Two places. The full archive of every scored role sits in the repository, which
+           is what the automation reads. The top 100 plus your status on each sit in the
+           portal's own database, which is what you look at.</p>
+      </div>
+      <div>
+        <b>Why is LinkedIn not in there?</b>
+        <p>It has no public job API. The only way to pull it is to drive your logged-in
+           session with your own cookie, which breaks their terms and gets accounts
+           restricted. Your LinkedIn is worth more than the extra listings.</p>
+      </div>
+      <div>
+        <b>My portal is empty.</b>
+        <p>Look at the strip under the tabs. Amber with an “Allow access” button means the
+           page has not been given permission to read its own database yet — tap it.</p>
+      </div>
+    </div>
+  </section>
+</div>
