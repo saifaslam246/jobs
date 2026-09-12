@@ -82,8 +82,8 @@
 
   /* ---------- controls ---------- */
   .controls{
-    display:grid; grid-template-columns:minmax(200px,1fr) auto auto auto;
-    gap:8px; align-items:center; padding:14px 0;
+    display:grid; grid-template-columns:minmax(200px,1fr) auto;
+    gap:8px; align-items:center; padding:14px 0 10px;
   }
   input[type="search"], select, textarea{
     font:inherit; color:var(--ink); background:var(--surface);
@@ -98,6 +98,22 @@
   .toggle input{accent-color:var(--accent); margin:0}
 
   /* ---------- job rows ---------- */
+  .filterbar{display:flex; flex-direction:column; gap:8px; margin-bottom:12px}
+  .fgroup{display:flex; flex-wrap:wrap; align-items:center; gap:5px}
+  .flabel{
+    font-family:Archivo,sans-serif; font-size:10.5px; font-weight:600;
+    letter-spacing:.09em; text-transform:uppercase; color:var(--muted);
+    min-width:42px;
+  }
+  .fchip, .schip{
+    background:var(--surface); border:1px solid var(--line); border-radius:999px;
+    padding:5px 12px; font-size:12.5px; color:var(--ink-2); white-space:nowrap;
+  }
+  .fchip:hover, .schip:hover{border-color:var(--accent); color:var(--accent-ink)}
+  .fchip[aria-pressed="true"], .schip[aria-pressed="true"]{
+    background:var(--accent); border-color:var(--accent); color:#fff; font-weight:600;
+  }
+
   .legend{
     margin:0 0 12px; padding:10px 13px; font-size:12.5px; line-height:1.5;
     color:var(--ink-2); background:var(--surface-2);
@@ -316,25 +332,30 @@
   <section id="view-pipeline" role="tabpanel" aria-labelledby="tab-pipeline">
     <div class="controls">
       <input type="search" id="q" placeholder="Search title, company, stack, description…" aria-label="Search jobs">
-      <select id="fstatus" aria-label="Filter by status">
-        <option value="">All statuses</option>
-        <option value="open">Open (not closed out)</option>
-        <option value="new">Not reviewed</option>
-        <option value="shortlisted">Shortlisted</option>
-        <option value="cv_ready">CV ready (set for you)</option>
-        <option value="applied">Applied</option>
-        <option value="replied">Replied</option>
-        <option value="interview">Interview</option>
-        <option value="rejected">Rejected</option>
-        <option value="dismissed">Dismissed</option>
-      </select>
-      <select id="fsort" aria-label="Sort order">
-        <option value="score">Best match first</option>
-        <option value="fresh">Newest first</option>
-        <option value="company">Company A–Z</option>
-      </select>
       <label class="toggle"><input type="checkbox" id="fcontract"> Contract only</label>
     </div>
+
+    <div class="filterbar">
+      <div class="fgroup" role="group" aria-label="Filter by status">
+        <span class="flabel">Show</span>
+        <button class="fchip" data-status="open" aria-pressed="true">Still open</button>
+        <button class="fchip" data-status="" aria-pressed="false">Everything</button>
+        <button class="fchip" data-status="new" aria-pressed="false">Not reviewed</button>
+        <button class="fchip" data-status="shortlisted" aria-pressed="false">Shortlisted</button>
+        <button class="fchip" data-status="cv_ready" aria-pressed="false">CV ready</button>
+        <button class="fchip" data-status="applied" aria-pressed="false">Applied</button>
+        <button class="fchip" data-status="replied" aria-pressed="false">Replied</button>
+        <button class="fchip" data-status="interview" aria-pressed="false">Interview</button>
+        <button class="fchip" data-status="dismissed" aria-pressed="false">Dismissed</button>
+      </div>
+      <div class="fgroup" role="group" aria-label="Sort order">
+        <span class="flabel">Sort</span>
+        <button class="schip" data-sort="score" aria-pressed="true">Best match</button>
+        <button class="schip" data-sort="fresh" aria-pressed="false">Newest</button>
+        <button class="schip" data-sort="company" aria-pressed="false">Company</button>
+      </div>
+    </div>
+
     <p class="legend">
       The number is how closely a posting matches your stack, out of 100 —
       <b>55 and above is worth applying to</b>. It says nothing about how many other
@@ -421,6 +442,7 @@
   ];
 
   var jobs = [], state = {}, outbox = [], openId = null, db = null;
+  var filterStatus = "open", sortBy = "score";
   var SEED = window.__SEED__ || null;   // set by the static snapshot build
   var LOCAL_KEY = "contract-desk-pipeline";
 
@@ -580,9 +602,9 @@
   /* ---------------- render: rows ---------------- */
   function visible(){
     var q = $("#q").value.trim().toLowerCase();
-    var fs = $("#fstatus").value;
+    var fs = filterStatus;
     var contractOnly = $("#fcontract").checked;
-    var sort = $("#fsort").value;
+    var sort = sortBy;
 
     var out = jobs.filter(function(j){
       var s = statusOf(j.id);
@@ -617,7 +639,7 @@
     }
     if(!list.length){
       rowsEl.innerHTML = '<div class="panel empty"><h2>Nothing matches these filters</h2>' +
-        "<p>Widen the search or clear the status filter.</p></div>";
+        "<p>Widen the search, or tap <b>Everything</b> above.</p></div>";
       return;
     }
     rowsEl.innerHTML = list.map(function(j){
@@ -886,8 +908,30 @@
       });
     }
   });
-  ["#q","#fstatus","#fsort","#fcontract"].forEach(function(sel){
+  ["#q","#fcontract"].forEach(function(sel){
     $(sel).addEventListener("input", paintRows);
+  });
+
+  // Plain buttons rather than <select>: a native dropdown inside the sandboxed
+  // frame can render its popup and then fail to commit the choice.
+  document.querySelector(".filterbar").addEventListener("click", function(e){
+    var f = e.target.closest(".fchip");
+    if(f){
+      filterStatus = f.dataset.status;
+      Array.prototype.forEach.call(document.querySelectorAll(".fchip"), function(b){
+        b.setAttribute("aria-pressed", String(b === f));
+      });
+      paintRows();
+      return;
+    }
+    var so = e.target.closest(".schip");
+    if(so){
+      sortBy = so.dataset.sort;
+      Array.prototype.forEach.call(document.querySelectorAll(".schip"), function(b){
+        b.setAttribute("aria-pressed", String(b === so));
+      });
+      paintRows();
+    }
   });
   Array.prototype.forEach.call(document.querySelectorAll('[role="tab"]'), function(t){
     t.addEventListener("click", function(){
