@@ -4,7 +4,7 @@ Innsbruck, Austria  |  +43 660 6519 008  |  saifaslam155@gmail.com
 github.com/saifaslam246  |  linkedin.com/in/saif-rehman-432383183  |  saifaslam246.github.io/portfolio
 
 PROFESSIONAL SUMMARY
-Frontend Developer with 4+ years building large, long-lived application front ends. Lead developer on the practice dashboard of a medical practice-management suite - roughly 40 feature areas in Angular 19 and Ionic 8 - and on a patient booking wizard in Next.js 16 and React 19. Experienced in state management, offline-first synchronisation, internationalisation and shipping shared component libraries as versioned packages.
+Frontend-focused Full Stack Developer with 4+ years building large, long-lived applications. Lead developer on a medical practice-management dashboard covering roughly 40 feature areas in Angular and Ionic, and on a patient booking wizard in Next.js and React. Experienced in state management, offline-first synchronisation, internationalisation and shipping shared component libraries as versioned packages.
 
 TECHNICAL SKILLS
 Languages: TypeScript, JavaScript (ES6+), Python, SQL, HTML5, CSS3
@@ -22,7 +22,7 @@ PROFESSIONAL EXPERIENCE
 
 Full Stack Developer
 TMN Development KG - Austria | Mar 2025 - Present
-- Lead developer on Ludwig, a nine-application medical practice-management suite for physiotherapy and doctors' practices in Germany and Austria, owning features end to end from data model and API integration through to the interface.
+- Lead developer on Ludwig, a medical practice-management and patient-booking suite for physiotherapy and doctors' practices in Germany and Austria, owning features end to end from data model and API integration through to the interface.
 - Built clinical documentation to the standards Austrian and German practices are legally required to keep, including an anatomical body chart stored as structured data so it opens unchanged on any client.
 - Delivered statutory health-insurance invoicing: tariff-priced position lines, gap-free invoice numbering per company, and PDF export with SEPA payment QR codes.
 - Implemented multi-tenancy on two axes, so one deployment serves many practices while practice groups partition patients, invoicing and outbound mail across sub-companies.

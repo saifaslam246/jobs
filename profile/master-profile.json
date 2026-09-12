@@ -31,8 +31,8 @@
     "years_experience": 4
   },
   "summary_variants": {
-    "fullstack": "Full Stack Developer with 4+ years shipping production web and mobile software, currently lead developer on the practice dashboard of a nine-application medical practice-management suite for the German and Austrian market. Comfortable across Angular, React and Next.js on the front end with Node.js and Python behind them, and experienced in the regulated-domain work that goes with it: clinical documentation, statutory insurance billing, multi-tenancy and offline-first synchronisation.",
-    "frontend": "Frontend Developer with 4+ years building large, long-lived application front ends. Lead developer on the practice dashboard of a medical practice-management suite - roughly 40 feature areas in Angular 19 and Ionic 8 - and on a patient booking wizard in Next.js 16 and React 19. Experienced in state management, offline-first synchronisation, internationalisation and shipping shared component libraries as versioned packages.",
+    "fullstack": "Full Stack Developer with 4+ years shipping production web and mobile software, currently lead developer on a medical practice-management suite for the German and Austrian market. Comfortable across Angular, React and Next.js on the front end with Node.js and Python behind them, and experienced in the regulated-domain work that goes with it: clinical documentation, statutory insurance billing, multi-tenancy and offline-first synchronisation.",
+    "frontend": "Frontend-focused Full Stack Developer with 4+ years building large, long-lived applications. Lead developer on a medical practice-management dashboard covering roughly 40 feature areas in Angular and Ionic, and on a patient booking wizard in Next.js and React. Experienced in state management, offline-first synchronisation, internationalisation and shipping shared component libraries as versioned packages.",
     "mobile": "Mobile Developer with 4+ years delivering cross-platform apps in React Native, shipped to the App Store and Play Store with real-time chat, push notifications, offline handling and media upload. Backed by full-stack Angular, React and Node.js experience, so a mobile feature is owned end to end rather than handed off.",
     "backend": "Full Stack Developer with 4+ years designing and consuming REST APIs in Node.js (NestJS, Express) and Python (FastAPI), with PostgreSQL, MongoDB, MariaDB and Redis behind them, containerised with Docker on AWS. Experienced in multi-tenant data partitioning, invoicing and billing logic, third-party integrations and offline synchronisation with conflict resolution.",
     "data_scraping": "Full Stack Developer with 4+ years including large-scale data extraction and structuring - Python pipelines that ingest and normalise millions of property listings from third-party sources into searchable data, and live feed integrations from major real-estate portals. Comfortable owning the full path from crawler to API to UI."
@@ -167,7 +167,7 @@
         "Playwright"
       ],
       "bullets": [
-        "Lead developer on Ludwig, a nine-application medical practice-management suite for physiotherapy and doctors' practices in Germany and Austria, owning features end to end from data model and API integration through to the interface.",
+        "Lead developer on Ludwig, a medical practice-management and patient-booking suite for physiotherapy and doctors' practices in Germany and Austria, owning features end to end from data model and API integration through to the interface.",
         "Built clinical documentation to the standards Austrian and German practices are legally required to keep, including an anatomical body chart stored as structured data so it opens unchanged on any client.",
         "Delivered statutory health-insurance invoicing: tariff-priced position lines, gap-free invoice numbering per company, and PDF export with SEPA payment QR codes.",
         "Implemented multi-tenancy on two axes, so one deployment serves many practices while practice groups partition patients, invoicing and outbound mail across sub-companies.",
@@ -249,11 +249,11 @@
         "Playwright",
         "PDF generation"
       ],
-      "one_liner": "Nine-application practice-management and patient-booking suite for German and Austrian physiotherapy and medical practices, sharing one backend.",
+      "one_liner": "Practice-management and patient-booking software for German and Austrian physiotherapy and medical practices.",
       "bullets": [
         "Lead contributor to the practice dashboard, covering calendar, patients, clinical documentation, invoicing, courses and insurance tariffs in Angular and Ionic.",
         "Built appointment scheduling against real constraints: recurring series, practitioner and room resources, absences, waiting lists and free-slot computation.",
-        "Worked across five runtimes on one domain model, publishing shared Angular libraries as versioned packages."
+        "Built shared Angular libraries published as versioned packages, and a body-chart format that renders identically on web and mobile."
       ],
       "weight": 6
     },
