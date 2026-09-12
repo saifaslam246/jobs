@@ -121,10 +121,11 @@
     font-size:11.5px; color:var(--muted);
   }
   .row .meta .mono{font-size:11px}
-  .chips{display:flex; flex-wrap:wrap; gap:4px; margin-top:6px}
+  .chips{display:flex; flex-wrap:wrap; align-items:center; gap:4px; margin-top:6px}
   .chip{
-    font-family:"IBM Plex Mono",monospace; font-size:10.5px; padding:1.5px 6px;
-    border-radius:4px; background:var(--surface-2); color:var(--ink-2); border:1px solid var(--line);
+    font-family:"IBM Plex Mono",monospace; font-size:10.5px; line-height:16px;
+    padding:1px 6px; border-radius:4px;
+    background:var(--surface-2); color:var(--ink-2); border:1px solid var(--line);
   }
   .chip.mail{background:var(--accent-soft); color:var(--accent-ink); border-color:transparent}
   .chip.flag{background:var(--warn-soft); color:var(--warn); border-color:transparent}
@@ -255,7 +256,7 @@
   <header class="top">
     <div class="brand">
       <h1>Contract Desk</h1>
-      <p>Daily harvest across 8 boards, scored against your stack. Austria / EU / remote.</p>
+      <p id="subtitle">Daily harvest across 8 boards, scored against your stack. Austria / EU / remote.</p>
     </div>
     <div class="counters" id="counters"></div>
   </header>
@@ -367,6 +368,16 @@
   ];
 
   var jobs = [], state = {}, outbox = [], openId = null, db = null;
+  var SEED = window.__SEED__ || null;   // set by the static snapshot build
+  var LOCAL_KEY = "contract-desk-pipeline";
+
+  function readLocal(){
+    try { return JSON.parse(localStorage.getItem(LOCAL_KEY) || "{}"); }
+    catch(e){ return {}; }
+  }
+  function writeLocal(){
+    try { localStorage.setItem(LOCAL_KEY, JSON.stringify(state)); } catch(e){}
+  }
   var $ = function(s){ return document.querySelector(s); };
   var rowsEl = $("#rows"), drawer = $("#drawer"), scrim = $("#scrim");
 
@@ -549,6 +560,7 @@
         "<p>If this stays empty, the harvest has not reached the portal yet. The Setup tab " +
         "lists what is still open.</p></div>";
       return;
+      return;
     }
     if(!list.length){
       rowsEl.innerHTML = '<div class="panel empty"><h2>Nothing matches these filters</h2>' +
@@ -664,7 +676,7 @@
     state[id] = Object.assign({}, state[id], patch, {updated_at: new Date().toISOString()});
     paintRows();
     paintCounters();
-    if(!db) return Promise.resolve(false);
+    if(!db){ writeLocal(); return Promise.resolve(false); }
     return db.doc("pipeline/" + id).set(state[id]).then(function(){ return true; })
       .catch(function(){ return false; });
   }
@@ -712,9 +724,20 @@
 
   /* ---------------- boot ---------------- */
   paintSetup();
+  if(SEED){
+    jobs = SEED.jobs || [];
+    outbox = SEED.outbox || [];
+    state = readLocal();
+  }
   paintCounters();
   paintRows();
   paintOutbox();
+
+  if(SEED){
+    $("#subtitle").textContent =
+      "Snapshot of " + (SEED.generated_at || "the last harvest") +
+      " - " + (SEED.jobs || []).length + " scored roles. Status changes stay in this browser.";
+  }
 
   if(window.claude && typeof window.claude.use === "function"){
     window.claude.use("db").then(function(d){
