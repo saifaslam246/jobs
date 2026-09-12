@@ -8,7 +8,10 @@ Rules that decide whether these land or go to spam:
 - **No tracking pixels, no link shorteners, no attachments on the first mail to a
   person** (attachments to a jobs@ address are fine and expected).
 - **Plain text.** No HTML signature blocks, no images.
-- **One link maximum** in a cold email.
+- **One link maximum** in a cold email, and it is the LinkedIn profile:
+  `linkedin.com/in/saif-rehman-432383183`. A recruiter checks LinkedIn first, and it
+  carries the recommendations and history a GitHub profile does not. GitHub and the
+  portfolio are already on the CV itself, so the email does not need to repeat them.
 - **Subject lines under 60 characters**, no "Re:" fakery, no ALL CAPS, no emoji.
 - **Send 08:00-10:00 local time of the recipient**, Tuesday to Thursday best.
 - Every mail names something specific about *their* product. A template that could
@@ -34,7 +37,7 @@ CV attached. Happy to walk through the relevant work on a short call this week.
 
 Best,
 Saif ur Rehman
-+43 660 6519 008 | github.com/saifaslam246
++43 660 6519 008 | linkedin.com/in/saif-rehman-432383183
 ```
 
 ---
@@ -59,7 +62,7 @@ If it's useful I can look at your current setup and come back with a concrete
 plan before you commit to anything.
 
 Saif
-{ONE_LINK}
+linkedin.com/in/saif-rehman-432383183
 ```
 
 ---
