@@ -217,6 +217,28 @@
   .empty h2{font-size:17px; margin-bottom:6px}
   .empty p{color:var(--muted); max-width:48ch; margin:0 auto}
 
+  .tabbadge{
+    display:inline-block; min-width:17px; padding:0 5px; margin-left:5px;
+    background:var(--accent); color:#fff; border-radius:999px;
+    font-family:"IBM Plex Mono",monospace; font-size:10px; line-height:16px; text-align:center;
+  }
+  .mail{
+    background:var(--surface); border:1px solid var(--line);
+    border-left:3px solid var(--band, var(--accent));
+    border-radius:var(--r); padding:14px 16px; display:flex; flex-direction:column; gap:9px;
+  }
+  .mail header{display:flex; flex-wrap:wrap; gap:6px 12px; align-items:baseline; justify-content:space-between}
+  .mail .to{font-family:"IBM Plex Mono",monospace; font-size:12px; color:var(--accent-ink)}
+  .mail .subj{font-weight:600; font-size:14px}
+  .mail pre{
+    margin:0; white-space:pre-wrap; font-family:"IBM Plex Sans",sans-serif;
+    font-size:13px; line-height:1.55; color:var(--ink-2);
+    background:var(--surface-2); border:1px solid var(--line); border-radius:var(--r);
+    padding:11px 13px; max-height:260px; overflow-y:auto;
+  }
+  .mail .att{font-size:11.5px; color:var(--muted)}
+  .mail .acts{display:flex; flex-wrap:wrap; gap:7px; align-items:center}
+
   .hidden{display:none !important}
 
   @media (max-width:760px){
@@ -240,6 +262,7 @@
 
   <nav class="tabs" role="tablist">
     <button role="tab" id="tab-pipeline" aria-selected="true" aria-controls="view-pipeline">Pipeline</button>
+    <button role="tab" id="tab-outbox" aria-selected="false" aria-controls="view-outbox">Outbox <span id="outboxbadge" class="tabbadge hidden">0</span></button>
     <button role="tab" id="tab-setup" aria-selected="false" aria-controls="view-setup">Setup</button>
   </nav>
 
@@ -266,6 +289,18 @@
       <label class="toggle"><input type="checkbox" id="fcontract"> Contract only</label>
     </div>
     <div class="rows" id="rows"></div>
+  </section>
+
+  <section id="view-outbox" role="tabpanel" aria-labelledby="tab-outbox" class="hidden">
+    <div class="panel" style="margin-top:16px">
+      <span class="eyebrow">How sending works</span>
+      <h2>Nothing leaves without your approval</h2>
+      <p>Claude drafts each email against the specific posting and attaches the CV tailored
+         to it. You approve here. A GitHub workflow sends approved mail on weekday mornings,
+         capped at 10 a day and 2 per company — the limits that keep a personal Gmail out of
+         spam folders.</p>
+    </div>
+    <div class="rows" id="outbox" style="margin-top:12px"></div>
   </section>
 
   <section id="view-setup" role="tabpanel" aria-labelledby="tab-setup" class="hidden">
@@ -331,7 +366,7 @@
     ["Shortlist threshold","Match score 55 and above"]
   ];
 
-  var jobs = [], state = {}, openId = null, db = null;
+  var jobs = [], state = {}, outbox = [], openId = null, db = null;
   var $ = function(s){ return document.querySelector(s); };
   var rowsEl = $("#rows"), drawer = $("#drawer"), scrim = $("#scrim");
 
@@ -401,6 +436,82 @@
              c[0] + "</b><span>" + c[1] + "</span></div>";
     }).join("");
   }
+
+  /* ---------------- render: outbox ---------------- */
+  function paintOutbox(){
+    var el = $("#outbox"), badge = $("#outboxbadge");
+    var pending = outbox.filter(function(m){ return m.status === "draft"; });
+    badge.textContent = pending.length;
+    badge.classList.toggle("hidden", pending.length === 0);
+
+    if(!outbox.length){
+      el.innerHTML = '<div class="panel empty"><h2>No drafts yet</h2>' +
+        "<p>Drafts appear here after the next weekday run writes them — one per role you " +
+        "shortlist that has a contact address.</p></div>";
+      return;
+    }
+    var order = {draft:0, approved:1, failed:2, sent:3, skipped:4};
+    var ordered = outbox.slice().sort(function(a, b){
+      return (order[a.status] || 9) - (order[b.status] || 9);
+    });
+    el.innerHTML = ordered.map(function(m){
+      var st = m.status || "draft";
+      var band = st === "sent" ? "var(--good)" : st === "failed" ? "var(--crit)"
+               : st === "approved" ? "var(--cool)" : "var(--accent)";
+      var acts;
+      if(st === "draft"){
+        acts = '<button class="btn" data-approve="' + esc(m.id) + '">Approve &amp; queue</button>' +
+               '<button class="btn ghost" data-skip="' + esc(m.id) + '">Skip this one</button>';
+      } else if(st === "approved"){
+        acts = '<span class="pill" data-s="applied">Queued to send</span>' +
+               '<button class="btn ghost" data-unapprove="' + esc(m.id) + '">Undo</button>';
+      } else if(st === "sent"){
+        acts = '<span class="pill" data-s="replied">Sent ' + esc((m.sent_at || "").slice(0, 10)) + "</span>";
+      } else if(st === "failed"){
+        acts = '<span class="pill" data-s="rejected">Failed</span>' +
+               '<span class="att">' + esc(m.error || "") + "</span>";
+      } else {
+        acts = '<span class="pill" data-s="dismissed">Skipped</span>' +
+               '<button class="btn ghost" data-unapprove="' + esc(m.id) + '">Restore</button>';
+      }
+      return '<article class="mail" style="--band:' + band + '">' +
+        "<header><span>" +
+          '<span class="subj">' + esc(m.subject || "(no subject)") + "</span><br>" +
+          '<span class="to">to ' + esc(m.to || "?") + "</span>" +
+        "</span></header>" +
+        "<pre>" + esc(m.body || "") + "</pre>" +
+        (m.attachments && m.attachments.length
+          ? '<span class="att">📎 ' + m.attachments.map(function(a){
+              return esc(String(a).split("/").pop());
+            }).join(", ") + "</span>"
+          : '<span class="att">No CV attached — check before approving.</span>') +
+        '<div class="acts">' + acts + "</div>" +
+      "</article>";
+    }).join("");
+  }
+
+  function setMailStatus(id, status){
+    for(var i = 0; i < outbox.length; i++){
+      if(outbox[i].id === id){
+        outbox[i] = Object.assign({}, outbox[i], {status: status});
+        if(status === "approved") outbox[i].approved_at = new Date().toISOString();
+        break;
+      }
+    }
+    paintOutbox();
+    if(!db) return;
+    var patch = {status: status};
+    if(status === "approved") patch.approved_at = new Date().toISOString();
+    db.doc("outbox/" + id).update(patch).catch(function(){});
+  }
+
+  $("#outbox").addEventListener("click", function(e){
+    var b = e.target.closest("button");
+    if(!b) return;
+    if(b.dataset.approve) setMailStatus(b.dataset.approve, "approved");
+    else if(b.dataset.skip) setMailStatus(b.dataset.skip, "skipped");
+    else if(b.dataset.unapprove) setMailStatus(b.dataset.unapprove, "draft");
+  });
 
   /* ---------------- render: rows ---------------- */
   function visible(){
@@ -604,6 +715,7 @@
   paintSetup();
   paintCounters();
   paintRows();
+  paintOutbox();
 
   if(window.claude && typeof window.claude.use === "function"){
     window.claude.use("db").then(function(d){
@@ -613,6 +725,14 @@
         snap.docs.forEach(function(doc){ state[doc.id] = doc.data(); });
         paintRows();
         paintCounters();
+      }, function(){});
+      db.collection("outbox").limit(200).onSnapshot(function(snap){
+        outbox = snap.docs.map(function(doc){
+          var x = Object.assign({}, doc.data());
+          x.id = doc.id;
+          return x;
+        });
+        paintOutbox();
       }, function(){});
       db.collection("jobs").orderBy("score", "desc").limit(400).onSnapshot(function(snap){
         jobs = snap.docs.map(function(doc){

@@ -1,0 +1,58 @@
+name: Send approved outreach
+
+# Sends only what is already marked approved in outreach/queue/. Drafting is Claude's
+# job, approving is Saif's; this workflow is purely the postman.
+
+on:
+  schedule:
+    # 08:10 UTC on weekdays = mid-morning in Vienna, which is when recruiters read mail.
+    - cron: '10 8 * * 1-5'
+  workflow_dispatch:
+    inputs:
+      daily_cap:
+        description: 'Maximum emails this run'
+        required: false
+        default: '10'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: send-approved
+  cancel-in-progress: false
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Send
+        env:
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASS: ${{ secrets.SMTP_PASS }}
+          FROM_NAME: ${{ secrets.FROM_NAME }}
+          DAILY_CAP: ${{ github.event.inputs.daily_cap || '10' }}
+        run: python outreach/send.py | tee "$GITHUB_STEP_SUMMARY"
+
+      - name: Record what was sent
+        run: |
+          git config user.name  'job-harvester[bot]'
+          git config user.email 'job-harvester@users.noreply.github.com'
+          git add outreach/queue/
+          if git diff --staged --quiet; then
+            echo 'Nothing sent.'
+          else
+            git commit -m "outreach: send log $(date -u +%Y-%m-%d)"
+            for i in 1 2 3 4; do
+              git pull --rebase origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && exit 0
+              sleep $((2 ** i))
+            done
+            exit 1
+          fi

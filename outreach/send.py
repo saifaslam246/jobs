@@ -1,0 +1,150 @@
+"""Send approved outreach emails. Runs in GitHub Actions, never from a Claude session.
+
+Nothing here decides what to send. It sends only what is already sitting in
+outreach/queue/ with status "approved" - drafted by Claude, approved by Saif in the
+portal. A draft is never sent, and a sent item is never sent twice.
+
+Guardrails, in order of how badly they matter:
+  * DAILY_CAP sends per calendar day, counted from the queue itself, not from a
+    counter that could be reset. Above ~20 cold sends a day a personal Gmail starts
+    tripping spam filters.
+  * status must be exactly "approved"
+  * sent_at must be empty
+  * a per-recipient-domain cap, so one bad day cannot carpet one company
+  * plain text only, one attachment (the tailored CV), no tracking, no HTML
+
+Required secrets (repository Settings -> Secrets and variables -> Actions):
+  SMTP_HOST      smtp.gmail.com
+  SMTP_PORT      587
+  SMTP_USER      your gmail address
+  SMTP_PASS      a Gmail App Password - NOT your account password
+  FROM_NAME      Saif ur Rehman
+"""
+from __future__ import annotations
+
+import json
+import mimetypes
+import os
+import smtplib
+import ssl
+import sys
+from datetime import datetime, timezone
+from email.message import EmailMessage
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent.parent
+QUEUE = ROOT / "outreach" / "queue"
+
+DAILY_CAP = int(os.getenv("DAILY_CAP", "10"))
+PER_DOMAIN_CAP = 2
+
+
+def log(m: str) -> None:
+    print(f"[send] {m}", flush=True)
+
+
+def load() -> list[tuple[Path, dict]]:
+    items = []
+    for fp in sorted(QUEUE.glob("*.json")):
+        try:
+            items.append((fp, json.loads(fp.read_text())))
+        except Exception as e:  # noqa: BLE001
+            log(f"skipping unreadable {fp.name}: {e}")
+    return items
+
+
+def sent_today(items) -> int:
+    today = datetime.now(timezone.utc).date().isoformat()
+    return sum(1 for _, d in items if (d.get("sent_at") or "").startswith(today))
+
+
+def build(d: dict, from_addr: str, from_name: str) -> EmailMessage:
+    msg = EmailMessage()
+    msg["From"] = f"{from_name} <{from_addr}>"
+    msg["To"] = d["to"]
+    msg["Subject"] = d["subject"]
+    msg["Reply-To"] = from_addr
+    msg.set_content(d["body"])
+
+    for rel in d.get("attachments", []) or []:
+        p = (ROOT / rel).resolve()
+        # never let a queue file reach outside the repo
+        if not str(p).startswith(str(ROOT)) or not p.is_file():
+            log(f"  skipping attachment outside the repo or missing: {rel}")
+            continue
+        ctype, _ = mimetypes.guess_type(p.name)
+        maintype, _, subtype = (ctype or "application/octet-stream").partition("/")
+        msg.add_attachment(p.read_bytes(), maintype=maintype, subtype=subtype, filename=p.name)
+    return msg
+
+
+def main() -> int:
+    host = os.getenv("SMTP_HOST")
+    port = int(os.getenv("SMTP_PORT", "587"))
+    user = os.getenv("SMTP_USER")
+    password = os.getenv("SMTP_PASS")
+    from_name = os.getenv("FROM_NAME", "Saif ur Rehman")
+
+    items = load()
+    approved = [(fp, d) for fp, d in items
+                if d.get("status") == "approved" and not d.get("sent_at")]
+    if not approved:
+        log("nothing approved and unsent - done")
+        return 0
+
+    if not (host and user and password):
+        log("SMTP secrets are not set, so nothing can be sent.")
+        log(f"{len(approved)} approved email(s) are waiting in outreach/queue/.")
+        log("Add SMTP_HOST, SMTP_PORT, SMTP_USER and SMTP_PASS as repository secrets.")
+        return 0
+
+    already = sent_today(items)
+    budget = max(0, DAILY_CAP - already)
+    if budget == 0:
+        log(f"daily cap reached ({already}/{DAILY_CAP}) - stopping")
+        return 0
+    log(f"{len(approved)} approved, {already} already sent today, budget {budget}")
+
+    domain_count: dict[str, int] = {}
+    for _, d in items:
+        if d.get("sent_at"):
+            domain_count[d["to"].split("@")[-1].lower()] = \
+                domain_count.get(d["to"].split("@")[-1].lower(), 0) + 1
+
+    ctx = ssl.create_default_context()
+    sent = failed = 0
+    with smtplib.SMTP(host, port, timeout=60) as s:
+        s.starttls(context=ctx)
+        s.login(user, password)
+        for fp, d in approved:
+            if budget <= 0:
+                log("budget spent - the rest stay queued for tomorrow")
+                break
+            dom = d["to"].split("@")[-1].lower()
+            if domain_count.get(dom, 0) >= PER_DOMAIN_CAP:
+                log(f"  skip {fp.name}: already {domain_count[dom]} sent to {dom}")
+                continue
+            try:
+                s.send_message(build(d, user, from_name))
+            except Exception as e:  # noqa: BLE001 - one bad address must not stop the batch
+                d["error"] = str(e)[:300]
+                d["status"] = "failed"
+                fp.write_text(json.dumps(d, indent=2, ensure_ascii=False))
+                log(f"  FAILED {d['to']}: {e}")
+                failed += 1
+                continue
+            d["sent_at"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
+            d["status"] = "sent"
+            d.pop("error", None)
+            fp.write_text(json.dumps(d, indent=2, ensure_ascii=False))
+            domain_count[dom] = domain_count.get(dom, 0) + 1
+            budget -= 1
+            sent += 1
+            log(f"  sent -> {d['to']} | {d['subject'][:60]}")
+
+    log(f"done: {sent} sent, {failed} failed, {len(approved) - sent - failed} still queued")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

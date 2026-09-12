@@ -4,7 +4,7 @@ Innsbruck, Austria  |  +43 660 6519 008  |  saifaslam155@gmail.com
 github.com/saifaslam246  |  linkedin.com/in/saif-rehman-432383183  |  saifaslam246.github.io/portfolio
 
 PROFESSIONAL SUMMARY
-Full Stack Developer with 4+ years building and shipping production web and mobile applications across logistics, marketplace, real-estate and healthcare domains. Strong across the whole stack - React, Next.js and Angular on the front end, Node.js (NestJS/Express) and Python on the back end, with PostgreSQL, MongoDB and Redis behind them, deployed on AWS with Docker and CI/CD. Currently building client platforms for a European software company from Austria.
+Mobile Developer with 4+ years delivering cross-platform apps in React Native and Flutter, shipped to the App Store and Play Store with real-time chat, push notifications, offline handling and media upload. Backed by full-stack Node.js and API experience, so mobile features are owned end to end rather than handed off.
 
 TECHNICAL SKILLS
 Languages: TypeScript, JavaScript (ES6+), Python, Dart, SQL, HTML5, CSS3
