@@ -30,13 +30,24 @@ rots.
 
 ## 3. Pick the day's targets
 
-From `data/matches.json`, take roles where `match.verdict == "shortlist"` and
-`status == "new"`. Cap at **6 a day**. Prefer, in order:
+Cap at **6 a day**, filled in this order:
 
-1. a direct contact email in the posting
-2. contract, freelance, part-time or project-based
-3. posted in the last 48 hours
-4. higher score
+1. **Anything Saif marked `shortlisted`.** He picked it by hand, which outranks any
+   score this pipeline produced. These come first, every time, until they are done.
+2. Then roles where `match.verdict == "shortlist"` and `status == "new"`.
+
+Within each group prefer, in order:
+
+- a direct contact email in the posting
+- contract, freelance, part-time or project-based
+- posted in the last 48 hours
+- higher score
+
+Skip anything already `applied`, `replied`, `interview`, `rejected` or `dismissed` -
+those are closed as far as this run is concerned.
+
+When a tailored CV has been built for a role, set its status to `cv_ready` so the portal
+shows it is ready to go out. Never set any other status: the rest are Saif's.
 
 Volume is not the goal. Six well-aimed applications beat sixty generic ones, and the
 send cap is 10 a day regardless.
