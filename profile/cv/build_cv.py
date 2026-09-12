@@ -26,7 +26,7 @@ from pathlib import Path
 from docx import Document
 from docx.enum.text import WD_ALIGN_PARAGRAPH
 from docx.shared import Pt, RGBColor, Inches
-from reportlab.lib.enums import TA_CENTER
+from reportlab.lib.enums import TA_CENTER, TA_JUSTIFY
 from reportlab.lib.pagesizes import A4
 from reportlab.lib.styles import ParagraphStyle, getSampleStyleSheet
 from reportlab.lib.units import mm
@@ -146,8 +146,10 @@ def write_docx(c: dict, path: Path) -> None:
         s.left_margin = s.right_margin = Inches(0.6)
 
     def para(text="", size=10.5, bold=False, italic=False, space_before=0, space_after=0,
-             align=None, color=None, caps=False):
+             align=None, color=None, caps=False, justify=False):
         pr = doc.add_paragraph()
+        if justify:
+            pr.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
         pr.paragraph_format.space_before = Pt(space_before)
         pr.paragraph_format.space_after = Pt(space_after)
         if align:
@@ -178,6 +180,7 @@ def write_docx(c: dict, path: Path) -> None:
 
     def bullet(text):
         pr = doc.add_paragraph()
+        pr.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
         pr.paragraph_format.left_indent = Inches(0.22)
         pr.paragraph_format.first_line_indent = Inches(-0.14)
         pr.paragraph_format.space_after = Pt(1.5)
@@ -192,11 +195,12 @@ def write_docx(c: dict, path: Path) -> None:
     para(c["links_line"], size=9.5, align=WD_ALIGN_PARAGRAPH.CENTER, space_after=0)
 
     heading("Professional Summary")
-    para(c["summary"], space_after=2)
+    para(c["summary"], space_after=2, justify=True)
 
     heading("Technical Skills")
     for cat, items in c["skills"].items():
         pr = doc.add_paragraph()
+        pr.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
         pr.paragraph_format.space_after = Pt(1.5)
         r = pr.add_run(f"{cat}: ")
         r.bold = True
@@ -262,12 +266,13 @@ def write_pdf(c: dict, path: Path) -> None:
                          fontSize=11, leading=13, spaceBefore=10, spaceAfter=4,
                          borderWidth=0, textColor="#000000")
     body = ParagraphStyle("bd", parent=ss["Normal"], fontName="Helvetica",
-                          fontSize=10, leading=13.2, spaceAfter=2)
+                          fontSize=10, leading=13.2, spaceAfter=2, alignment=TA_JUSTIFY)
     role = ParagraphStyle("rl", parent=body, fontName="Helvetica-Bold", fontSize=10.8,
-                          spaceBefore=6, spaceAfter=0)
+                          spaceBefore=6, spaceAfter=0, alignment=0)
     sub = ParagraphStyle("sb", parent=body, fontName="Helvetica-Oblique", fontSize=9.5,
-                         textColor="#444444", spaceAfter=2)
-    bul = ParagraphStyle("bl", parent=body, fontSize=10, leading=13, spaceAfter=1.5)
+                         textColor="#444444", spaceAfter=2, alignment=0)
+    bul = ParagraphStyle("bl", parent=body, fontSize=10, leading=13, spaceAfter=1.5,
+                         alignment=TA_JUSTIFY)
 
     def rule():
         return Paragraph('<para spaceb="0"><font size="1" color="#888888">'

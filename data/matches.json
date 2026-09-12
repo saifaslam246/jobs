@@ -766,69 +766,6 @@
     "first_seen": "2026-09-12"
   },
   {
-    "id": "aeab62e0394bbed1",
-    "source": "remoteok",
-    "title": "Senior Data Engineer",
-    "company": "Lemon.io",
-    "location": "",
-    "url": "https://remoteOK.com/remote-jobs/remote-senior-data-engineer-lemon-io-1136594",
-    "description": "Are you a talented Senior Data Engineer looking for a remote job that lets you show your skills and get decent compensation? Look no further than Lemon.io â the marketplace that connects you with hand-picked startups in the US and Europe.\n\n What we offer: \n\n - The rate depends on your skills and experience. We've already paid out over $11M to our engineers.\n- No more hunting for clients or negotiating rates â let us handle the business side of things so you can focus on what you do best.\n- We'll manually find the best project for you according to your skills and preferences.\n- Choose a schedule that works best for you. Itâs possible to communicate async or minimally overlap within team working hours.\n- We respect your seniority so you can expect no micromanagement or screen trackers.\n- Communicate directly with the clients. Most of them have technical backgrounds. Sounds good, yeah?\n- We will support you from the time you submit the application throughout all cooperation stages.\n- Most of our projects involve working in a fast-paced startup environment. We hope you like it as much as we do.\n- Through our community, we will connect you with the best developers from more than 75 countries.\n We have several different roles for Data Engineers â please check the details if you're interested.\n\n Requirements â Data Engineers: \n\n - 5+ years of commercial experience as a Data Engineer\n- 2+ years of commercial experience with Azure DevOps is a must\n- 2+ years of commercial experience with Databricks\n- 2+ years of experience with DBT is required\n- Experience with Airflow is a plus\n Requirements â Data Engineers: \n\n - 4+ years of commercial experience as a Data Engineer\n- 3+ years of experience with Apache Airflow and 2+ years of experience with Snowflake\n- 3+ years of experience with Python and 1+ year with SQL\n- Experience with AWS/GCP/Microsoft Azure/Snowflake is a must\n \n\n - Strong technical skills: as a Senior Data Engineer, you are expected to be able to create projects from scratch and have a deep understanding of application architecture.\n- Clear and effective communication in English â advanced ability to discuss business tasks, justify decisions, and communicate issues. Good self-presentation is also essential for upcoming client calls.\n- Strong self-organizational skills â ability to work full-time remotely with no supervision.\n- Reliability â we want to trust you and expect that you wonât let us and the client down.\n- Adaptability and Flexibility â the ability to onboard the project promptly after accepting it and start delivering results quickly.\n Sounds good for you? Apply now and join the Lemon.io community!\n\n NOT YOUR TECH STACK? \n\n We have a variety of projects, so if you have 4+ years of commercial software development experience and are proficient in AI Agent Architecture, AI Automation Architecture, AI Engineering, Site Reliability Engineering, Platform Engineering, React & Python, React & Golang, Golang, React & Java, React & Ruby, Ruby, PHP & Vue, Vue & Node.js, React & .NET, Android & iOS, iOS & Swift, Flutter & Dart, Blockchain (Ethereum/Ethers.js/Wagmi/Viem/Solana), Angular & Node.js, Vue & .NET, Python & Vue, DevOps, MLOps, Data Science, Angular & PHP, Angular & .NET, Symfony & React, Symfony & Vue, Symfony & Angular, Python, Symfony & JavaScript & Next.js & TypeScript, Data Analysis, React & PHP,Â  Project Management, Product Management, QA Automation, QA Manual, Embedded Software Engineering, React Native & Node, React Native & React, React Native & Ruby, React Native & Python, WordPress, Android, Data Annotation, Angular, Python & Node, React & Node.js, Java & Spring, Svelte & Python, Svelte & Node.js, Svelte & TypeScript, Rust, Shopify & JavaScript, Vue & Nuxt, PHP & Laravel, UI/UX Design, Animation, Graphic Design, React & Node & React Native, .NET & C#, Electron, Scala, C++, Unreal Engine & C++, Python & LLM, Unity, or Machine Learning Engineering, we would be happy to connect with you and match you with a project that fits your experience.\n\n We do not provide visa assistance, and our cooperation model does not include the benefits typically offered with direct hire.\n\n We work with developers from 75+ countries across Europe, Latin America, North America (the U.S. and Canada), selected countries in Asia (Japan, Singapore, South Korea, the Philippines, Indonesia, Malaysia, Vietnam, Thailand, and Israel), Oceania (Australia, New Zealand, and Papua New Guinea), and Africa (including Morocco and South Africa).\n\n \n\nPlease mention the word **GENIUS** and tag RMjAuMTY5Ljk0LjE2NA== when applying to show you read the job post completely (#RMjAuMTY5Ljk0LjE2NA==). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
-    "tags": [
-      "dev",
-      "engineer",
-      "full time",
-      "senior",
-      "python",
-      "sql",
-      "aws",
-      "gcp",
-      "apache"
-    ],
-    "salary": "$40000 - $180000",
-    "employment_type": "",
-    "posted_at": "2026-08-13T16:06:05+00:00",
-    "contact_emails": [],
-    "fetched_at": "2026-09-12T09:28:31+00:00",
-    "also_seen_on": [
-      "remotive"
-    ],
-    "match": {
-      "score": 50,
-      "verdict": "watch",
-      "reasons": [
-        "stack match: angular, aws, dart, flutter, next.js, node.js, react, react native, typescript",
-        "familiar domain: marketplace"
-      ],
-      "matched": [
-        "angular",
-        "aws",
-        "dart",
-        "flutter",
-        "next.js",
-        "node.js",
-        "react",
-        "react native",
-        "typescript"
-      ],
-      "gaps": [
-        "rust",
-        "java",
-        "swift",
-        "vue",
-        "svelte",
-        "laravel",
-        "azure",
-        "gcp"
-      ],
-      "flags": []
-    },
-    "status": "new",
-    "notes": "",
-    "applied_at": null,
-    "cv_path": null,
-    "first_seen": "2026-09-12"
-  },
-  {
     "id": "9b6f7a24ac4e20bb",
     "source": "weworkremotely",
     "title": "Senior Fullstack Developer (React.js / Node.js)",
@@ -1299,6 +1236,68 @@
       "gaps": [
         "kubernetes",
         "go"
+      ],
+      "flags": []
+    },
+    "status": "new",
+    "notes": "",
+    "applied_at": null,
+    "cv_path": null,
+    "first_seen": "2026-09-12"
+  },
+  {
+    "id": "aeab62e0394bbed1",
+    "source": "remoteok",
+    "title": "Senior Data Engineer",
+    "company": "Lemon.io",
+    "location": "",
+    "url": "https://remoteOK.com/remote-jobs/remote-senior-data-engineer-lemon-io-1136594",
+    "description": "Are you a talented Senior Data Engineer looking for a remote job that lets you show your skills and get decent compensation? Look no further than Lemon.io â the marketplace that connects you with hand-picked startups in the US and Europe.\n\n What we offer: \n\n - The rate depends on your skills and experience. We've already paid out over $11M to our engineers.\n- No more hunting for clients or negotiating rates â let us handle the business side of things so you can focus on what you do best.\n- We'll manually find the best project for you according to your skills and preferences.\n- Choose a schedule that works best for you. Itâs possible to communicate async or minimally overlap within team working hours.\n- We respect your seniority so you can expect no micromanagement or screen trackers.\n- Communicate directly with the clients. Most of them have technical backgrounds. Sounds good, yeah?\n- We will support you from the time you submit the application throughout all cooperation stages.\n- Most of our projects involve working in a fast-paced startup environment. We hope you like it as much as we do.\n- Through our community, we will connect you with the best developers from more than 75 countries.\n We have several different roles for Data Engineers â please check the details if you're interested.\n\n Requirements â Data Engineers: \n\n - 5+ years of commercial experience as a Data Engineer\n- 2+ years of commercial experience with Azure DevOps is a must\n- 2+ years of commercial experience with Databricks\n- 2+ years of experience with DBT is required\n- Experience with Airflow is a plus\n Requirements â Data Engineers: \n\n - 4+ years of commercial experience as a Data Engineer\n- 3+ years of experience with Apache Airflow and 2+ years of experience with Snowflake\n- 3+ years of experience with Python and 1+ year with SQL\n- Experience with AWS/GCP/Microsoft Azure/Snowflake is a must\n \n\n - Strong technical skills: as a Senior Data Engineer, you are expected to be able to create projects from scratch and have a deep understanding of application architecture.\n- Clear and effective communication in English â advanced ability to discuss business tasks, justify decisions, and communicate issues. Good self-presentation is also essential for upcoming client calls.\n- Strong self-organizational skills â ability to work full-time remotely with no supervision.\n- Reliability â we want to trust you and expect that you wonât let us and the client down.\n- Adaptability and Flexibility â the ability to onboard the project promptly after accepting it and start delivering results quickly.\n Sounds good for you? Apply now and join the Lemon.io community!\n\n NOT YOUR TECH STACK? \n\n We have a variety of projects, so if you have 4+ years of commercial software development experience and are proficient in AI Agent Architecture, AI Automation Architecture, AI Engineering, Site Reliability Engineering, Platform Engineering, React & Python, React & Golang, Golang, React & Java, React & Ruby, Ruby, PHP & Vue, Vue & Node.js, React & .NET, Android & iOS, iOS & Swift, Flutter & Dart, Blockchain (Ethereum/Ethers.js/Wagmi/Viem/Solana), Angular & Node.js, Vue & .NET, Python & Vue, DevOps, MLOps, Data Science, Angular & PHP, Angular & .NET, Symfony & React, Symfony & Vue, Symfony & Angular, Python, Symfony & JavaScript & Next.js & TypeScript, Data Analysis, React & PHP,Â  Project Management, Product Management, QA Automation, QA Manual, Embedded Software Engineering, React Native & Node, React Native & React, React Native & Ruby, React Native & Python, WordPress, Android, Data Annotation, Angular, Python & Node, React & Node.js, Java & Spring, Svelte & Python, Svelte & Node.js, Svelte & TypeScript, Rust, Shopify & JavaScript, Vue & Nuxt, PHP & Laravel, UI/UX Design, Animation, Graphic Design, React & Node & React Native, .NET & C#, Electron, Scala, C++, Unreal Engine & C++, Python & LLM, Unity, or Machine Learning Engineering, we would be happy to connect with you and match you with a project that fits your experience.\n\n We do not provide visa assistance, and our cooperation model does not include the benefits typically offered with direct hire.\n\n We work with developers from 75+ countries across Europe, Latin America, North America (the U.S. and Canada), selected countries in Asia (Japan, Singapore, South Korea, the Philippines, Indonesia, Malaysia, Vietnam, Thailand, and Israel), Oceania (Australia, New Zealand, and Papua New Guinea), and Africa (including Morocco and South Africa).\n\n \n\nPlease mention the word **GENIUS** and tag RMjAuMTY5Ljk0LjE2NA== when applying to show you read the job post completely (#RMjAuMTY5Ljk0LjE2NA==). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+    "tags": [
+      "dev",
+      "engineer",
+      "full time",
+      "senior",
+      "python",
+      "sql",
+      "aws",
+      "gcp",
+      "apache"
+    ],
+    "salary": "$40000 - $180000",
+    "employment_type": "",
+    "posted_at": "2026-08-13T16:06:05+00:00",
+    "contact_emails": [],
+    "fetched_at": "2026-09-12T09:28:31+00:00",
+    "also_seen_on": [
+      "remotive"
+    ],
+    "match": {
+      "score": 45,
+      "verdict": "watch",
+      "reasons": [
+        "stack match: angular, aws, flutter, next.js, node.js, react, react native, typescript",
+        "familiar domain: marketplace"
+      ],
+      "matched": [
+        "angular",
+        "aws",
+        "flutter",
+        "next.js",
+        "node.js",
+        "react",
+        "react native",
+        "typescript"
+      ],
+      "gaps": [
+        "rust",
+        "java",
+        "swift",
+        "vue",
+        "svelte",
+        "laravel",
+        "azure",
+        "gcp"
       ],
       "flags": []
     },

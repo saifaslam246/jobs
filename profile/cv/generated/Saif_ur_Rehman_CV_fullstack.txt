@@ -1,20 +1,20 @@
 SAIF UR REHMAN
-Full Stack Developer - Angular / React / Next.js / Flutter
+Full Stack Developer - Angular / React / Next.js / Node.js
 Innsbruck, Austria  |  +43 660 6519 008  |  saifaslam155@gmail.com
 github.com/saifaslam246  |  linkedin.com/in/saif-rehman-432383183  |  saifaslam246.github.io/portfolio
 
 PROFESSIONAL SUMMARY
-Full Stack Developer with 4+ years shipping production web and mobile software, currently lead developer on the practice dashboard of a nine-application medical practice-management suite for the German and Austrian market. Comfortable across Angular, React and Next.js on the front end, Node.js and Python behind them, and Flutter on mobile - with the regulated-domain work to go with it: clinical documentation, statutory insurance billing, multi-tenancy and offline-first synchronisation.
+Full Stack Developer with 4+ years shipping production web and mobile software, currently lead developer on the practice dashboard of a nine-application medical practice-management suite for the German and Austrian market. Comfortable across Angular, React and Next.js on the front end with Node.js and Python behind them, and experienced in the regulated-domain work that goes with it: clinical documentation, statutory insurance billing, multi-tenancy and offline-first synchronisation.
 
 TECHNICAL SKILLS
-Languages: TypeScript, JavaScript (ES6+), Python, Dart, SQL, HTML5, CSS3
+Languages: TypeScript, JavaScript (ES6+), Python, SQL, HTML5, CSS3
 Frontend: Angular, React, Next.js, Ionic, React Native, Flutter, TypeScript, RxJS, NgRx Signals, Redux, Tailwind CSS, Angular Material, PrimeNG
 Backend: Node.js, NestJS, Express.js, FastAPI, REST APIs, WebSockets / Socket.IO, Firebase Functions, Microservices
 Databases: PostgreSQL, MongoDB, MySQL, MariaDB, Redis, Firebase Firestore, TypeORM, Prisma, Sequelize, Mongoose
 Cloud & DevOps: AWS (EC2, S3, Lambda, SNS), Docker, CI/CD, GitHub Actions, Vercel, Nginx
-Integrations: Stripe, Shopify, Amazon FBA/FBM, WooCommerce, Twilio, Firebase Cloud Messaging, OAuth 2.0, Payment Gateways
+Integrations: Stripe, Twilio, Firebase Cloud Messaging, OAuth 2.0, Payment Gateways
 Data: Python web scraping, Scrapy / BeautifulSoup / Playwright, ETL pipelines, Data normalisation
-Mobile: Flutter, Dart, Riverpod, React Native, Capacitor, iOS, Android
+Mobile: Flutter, React Native, Capacitor, iOS, Android
 Domain: Healthcare / practice management, Clinical documentation, Statutory health-insurance billing, Appointment scheduling, Multi-tenant architecture, Offline-first & conflict resolution, GDPR
 Practices & Tools: Agile / Scrum, Code review, Playwright end-to-end testing, Unit & integration testing, i18n (DE/EN), Versioned internal libraries, Trunk-based Git, Technical documentation, Client communication, Git, GitHub, Bitbucket, Jira, Figma, ESLint, SonarQube, Postman, Android Studio, Xcode
 
@@ -23,19 +23,19 @@ PROFESSIONAL EXPERIENCE
 Full Stack Developer - Lead Frontend, Ludwig Practice Suite
 TMN Development KG - Austria | Mar 2025 - Present
 - Lead developer on the practice dashboard of Ludwig, a nine-application medical practice-management suite for physiotherapy and doctors' practices in Germany and Austria, built by a team of fourteen.
-- Built clinical documentation to the standards Austrian and German practices are legally required to keep, with an anatomical body chart shared between the Angular dashboard and the Flutter app.
+- Built clinical documentation to the standards Austrian and German practices are legally required to keep, including an anatomical body chart stored as structured data so it opens unchanged on any client.
 - Delivered statutory health-insurance invoicing: tariff-priced position lines, gap-free invoice numbering per company, and PDF export with SEPA payment QR codes.
 - Implemented multi-tenancy on two axes, so one deployment serves many practices while practice groups partition patients, invoicing and outbound mail across sub-companies.
 - Built offline-first working with two-way synchronisation and conflict review, so practitioners keep working in the field without overwriting colleagues' changes.
 - Shipped a configuration-driven patient booking wizard in Next.js and React, with per-practice theming, one-time-code login and embeddable appointment and course booking.
-Stack: Angular 19, Ionic 8, TypeScript, Next.js 16, React 19, Flutter, Dart, Riverpod, RxJS, NgRx Signals, Tailwind CSS, Playwright
+Stack: Angular 19, Ionic 8, TypeScript, Next.js 16, React 19, Flutter, RxJS, NgRx Signals, Tailwind CSS, Playwright
 
 Full Stack Developer
 Pikessoft - Lahore, Pakistan | Sep 2022 - Feb 2025
 - Led delivery on client platforms across logistics, marketplace, real-estate and field-service products, from architecture through release.
 - Built real-time features including chat, group messaging, push notifications and live order tracking across web and mobile clients.
 - Designed REST APIs over MongoDB, MariaDB and Redis, tuning queries and caching to keep dashboards responsive at scale.
-- Integrated Shopify, Amazon, WooCommerce and Stripe to automate order and fulfilment flows.
+- Integrated payment providers and third-party APIs to automate order and fulfilment flows.
 - Mentored junior developers, ran code reviews, and handled client requirements and delivery planning directly.
 Stack: React, Angular, Next.js, React Native, Node.js, NestJS, MongoDB, MariaDB, Redis, Firebase, AWS, Docker
 
@@ -47,14 +47,14 @@ Stack: React, JavaScript, Node.js, REST APIs
 SELECTED PROJECTS
 
 Ludwig Practice Suite - Medical Practice Software (Germany / Austria)
-Angular, Ionic, TypeScript, Next.js, React, Flutter, Dart, Riverpod, RxJS, Tailwind CSS, Playwright, PDF generation
+Angular, Ionic, TypeScript, Next.js, React, Flutter, RxJS, Tailwind CSS, Playwright, PDF generation
 - Lead contributor to the practice dashboard, covering calendar, patients, clinical documentation, invoicing, courses and insurance tariffs in Angular and Ionic.
 - Built appointment scheduling against real constraints: recurring series, practitioner and room resources, absences, waiting lists and free-slot computation.
 
 Atomix Logistics - 3PL Fulfilment Platform
-React, Angular, NestJS, Node.js, MariaDB, Redis, Stripe, AWS, Shopify, Amazon, WooCommerce
+React, Angular, NestJS, Node.js, MariaDB, Redis, Stripe, AWS
 - Built order-fulfilment and inventory features on a 3PL platform handling real-time order tracking, custom packaging and nationwide two-day delivery.
-- Integrated Shopify, Amazon FBA/FBM and WooCommerce so merchant orders flow into fulfilment automatically instead of being keyed in by hand.
+- Worked on the e-commerce order flow so merchant orders reach fulfilment automatically instead of being keyed in by hand.
 
 EquipX - Heavy Equipment Marketplace
 Angular, Next.js, Node.js, MongoDB, Socket.IO, Stripe, AWS, Docker
