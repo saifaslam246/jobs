@@ -1,0 +1,17 @@
+{
+  "id": "2026-09-12-fueled-senior-full-stack-engineer",
+  "job_id": "66119cc28fb5a2e8",
+  "to": "jobs@fueled.com",
+  "subject": "Senior Full Stack Engineer - React/Next.js/Node, remote",
+  "body": "Hi Fueled team,\n\nI saw your Senior Full Stack Engineer posting. I'm a full-stack developer based in\nAustria with 4+ years across React, Next.js, TypeScript and Node.js, and most of\nthat has been agency work - several client platforms at a time, with the client in\nthe room rather than behind a product manager.\n\nThe part of the posting that matched closest was modelling relational and\nnon-relational data and implementing effective caching. On Atomix Logistics, a 3PL\nfulfilment platform, I built order and inventory features over MariaDB with Redis\ncaching to keep the dashboards responsive, and integrated Shopify, Amazon FBA/FBM\nand WooCommerce so merchant orders flow into fulfilment automatically instead of\nbeing keyed in by hand. On EquipX, a heavy-equipment marketplace, I built the\nsearchable listing system over MongoDB and real-time one-to-one and group chat so\nbuyers and sellers negotiate inside the platform.\n\nI'm on CET but flexible into US hours, and available immediately - contract or\nfull-time, whichever suits the engagement.\n\nCV attached. Happy to walk through either project on a short call.\n\nBest,\nSaif ur Rehman\n+43 660 6519 008 | github.com/saifaslam246\n",
+  "attachments": [
+    "profile/cv/generated/Saif_ur_Rehman_CV_fueled_senior-full-stack-engineer.pdf"
+  ],
+  "score": 52,
+  "is_contract": true,
+  "flags": [],
+  "status": "draft",
+  "created_at": "2026-09-12T16:14:58+00:00",
+  "approved_at": null,
+  "sent_at": null
+}

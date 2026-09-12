@@ -85,10 +85,25 @@ def build_content(p: dict, variant: str, job: dict | None, title_override: str |
     if job:
         hay = f"{job.get('title','')} {job.get('description','')}".lower()
 
+        # Only count technologies the scorer actually detected in this posting, and
+        # weigh each project's own strength. Counting raw substring hits let a generic
+        # description - which names almost nothing - pick projects at random, and
+        # "react" matched inside "React Native" as well.
+        detected = {t.lower() for t in (job.get("match") or {}).get("matched", [])}
+
+        def mentions(term: str) -> bool:
+            """Whole-word match. Plain substring search had "ai" matching inside
+            "maintainable" and "data" inside "data models", so every project collected
+            domain hits from generic prose."""
+            return re.search(rf"(?<![a-z0-9]){re.escape(term.lower())}(?![a-z0-9])", hay) is not None
+
         def relevance(pr: dict) -> int:
-            t = sum(3 for x in pr["tech"] if x.lower() in hay)
-            d = sum(2 for x in pr["domain"] if x.lower() in hay)
-            return -(t + d)
+            t = sum(4 for x in pr["tech"] if x.lower() in detected)
+            d = sum(3 for x in pr["domain"] if mentions(x))
+            # Weight counts double: when a posting is generic prose - as agency and
+            # consultancy ads usually are - the strongest work should lead, not whichever
+            # project happens to share two framework names.
+            return -(t + d + pr.get("weight", 0) * 2)
 
         projects.sort(key=relevance)
     projects = projects[:4]

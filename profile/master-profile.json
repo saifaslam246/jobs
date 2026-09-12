@@ -236,7 +236,8 @@
         "Built order-fulfilment and inventory features on a 3PL platform handling real-time order tracking, custom packaging and nationwide two-day delivery.",
         "Integrated Shopify, Amazon FBA/FBM and WooCommerce so merchant orders flow into fulfilment automatically instead of being keyed in by hand.",
         "Implemented shipping automation and carrier-selection logic to cut per-order shipping cost and manual handling."
-      ]
+      ],
+      "weight": 5
     },
     {
       "id": "equipx",
@@ -261,7 +262,8 @@
         "Built the searchable listing and filtering system over a large machinery catalogue, plus financing and logistics modules.",
         "Implemented real-time one-to-one and group chat so buyers and sellers negotiate inside the platform.",
         "Delivered customer and admin dashboards covering rental tracking, payment processing and digital agreement management."
-      ]
+      ],
+      "weight": 5
     },
     {
       "id": "sandseekers",
@@ -283,31 +285,8 @@
         "Led end-to-end delivery of a residential and commercial property platform, owning architecture, the development team and client communication.",
         "Built a custom CRM for listings, leads and property-demo bookings.",
         "Integrated live property feeds from Bayut, Dubizzle and Property Finder and normalised them into a single searchable catalogue."
-      ]
-    },
-    {
-      "id": "rentalytics",
-      "name": "Rentalytics.ai - Property Data Platform",
-      "url": null,
-      "domain": [
-        "data",
-        "real-estate",
-        "scraping"
       ],
-      "tech": [
-        "React",
-        "Node.js",
-        "Python",
-        "MongoDB",
-        "Firebase",
-        "Scraping"
-      ],
-      "one_liner": "Data platform extracting and structuring millions of property listings from major real-estate sources into a searchable dataset.",
-      "bullets": [
-        "Built extraction and structuring pipelines that ingest millions of property listings from third-party real-estate sources.",
-        "Normalised inconsistent source data into a unified schema queryable by location, price and property features.",
-        "Delivered the search and filtering front end over the resulting dataset."
-      ]
+      "weight": 4
     },
     {
       "id": "99dpf",
@@ -331,7 +310,33 @@
         "Shipped a React Native mobile app alongside the React web client from one shared Node.js API.",
         "Built real-time chat, push notifications, image upload and live order-status updates for both customers and service partners.",
         "Implemented the booking, dispatch and guarantee-tracking flows connecting customers to partner workshops."
-      ]
+      ],
+      "weight": 4
+    },
+    {
+      "id": "rentalytics",
+      "name": "Rentalytics.ai - Property Data Platform",
+      "url": null,
+      "domain": [
+        "data",
+        "real-estate",
+        "scraping"
+      ],
+      "tech": [
+        "React",
+        "Node.js",
+        "Python",
+        "MongoDB",
+        "Firebase",
+        "Scraping"
+      ],
+      "one_liner": "Data platform extracting and structuring millions of property listings from major real-estate sources into a searchable dataset.",
+      "bullets": [
+        "Built extraction and structuring pipelines that ingest millions of property listings from third-party real-estate sources.",
+        "Normalised inconsistent source data into a unified schema queryable by location, price and property features.",
+        "Delivered the search and filtering front end over the resulting dataset."
+      ],
+      "weight": 3
     },
     {
       "id": "his",
@@ -355,7 +360,8 @@
         "Built scheduling logic for complex hospital rostering including rotating and night shifts.",
         "Implemented attendance, leave-request and overtime tracking with automated reporting, replacing manual record-keeping.",
         "Delivered matching web and mobile clients on a shared TypeScript codebase."
-      ]
+      ],
+      "weight": 3
     },
     {
       "id": "corporatemerch",
@@ -377,7 +383,8 @@
         "Built AI-assisted design generation into the product configurator so companies produce branded merchandise in seconds.",
         "Integrated CRM systems to automate corporate gifting and giveaway campaigns.",
         "Delivered the storefront, configurator and ordering flow in Next.js."
-      ]
+      ],
+      "weight": 3
     },
     {
       "id": "ggamer",
@@ -397,7 +404,8 @@
       "bullets": [
         "Owned complete front-end delivery in React and Next.js with Tailwind CSS and Framer Motion.",
         "Built real-time match updates, player statistics and embedded stream views tuned for fast page loads."
-      ]
+      ],
+      "weight": 2
     },
     {
       "id": "definepedia",
@@ -415,7 +423,8 @@
       "one_liner": "Education platform providing study resources and paid tutor support.",
       "bullets": [
         "Built the study-resource catalogue and tutor-booking flow with payment gateway integration."
-      ]
+      ],
+      "weight": 1
     }
   ],
   "education": [

@@ -1,0 +1,79 @@
+SAIF UR REHMAN
+Senior React Native Developer
+Innsbruck, Austria  |  +43 660 6519 008  |  saifaslam155@gmail.com
+github.com/saifaslam246  |  linkedin.com/in/saif-rehman-432383183  |  saifaslam246.github.io/portfolio
+
+PROFESSIONAL SUMMARY
+Mobile Developer with 4+ years delivering cross-platform apps in React Native and Flutter, shipped to the App Store and Play Store with real-time chat, push notifications, offline handling and media upload. Backed by full-stack Node.js and API experience, so mobile features are owned end to end rather than handed off.
+
+TECHNICAL SKILLS
+Frontend: React, Next.js, React Native, Flutter, Angular, Ionic, Redux, Tailwind CSS, PrimeNG, Framer Motion
+Backend: Node.js, NestJS, Express.js, FastAPI, REST APIs, WebSockets / Socket.IO, Firebase Functions, Microservices
+Languages: TypeScript, JavaScript (ES6+), Python, Dart, SQL, HTML5, CSS3
+Cloud & DevOps: AWS (EC2, S3, Lambda, SNS), Docker, CI/CD, GitHub Actions, Vercel, Nginx
+Data: Python web scraping, Scrapy / BeautifulSoup / Playwright, ETL pipelines, Data normalisation
+Databases: PostgreSQL, MongoDB, MySQL, MariaDB, Redis, Firebase Firestore, TypeORM, Prisma, Sequelize, Mongoose
+Integrations: Stripe, Shopify, Amazon FBA/FBM, WooCommerce, Twilio, Firebase Cloud Messaging, OAuth 2.0, Payment Gateways
+Practices: Agile / Scrum, Code review, Unit & integration testing, Git flow, Technical documentation, Client communication
+Tools: Git, GitHub, Bitbucket, Jira, Figma, ESLint, SonarQube, Postman, Android Studio, Xcode
+
+PROFESSIONAL EXPERIENCE
+
+Full Stack Developer
+TMN Development KG - Austria | Mar 2025 - Present
+- Build and ship production web and mobile applications for European clients, owning features end to end from requirements through deployment.
+- Develop and deploy backend services and REST APIs in Node.js and NestJS, containerised with Docker and released through CI/CD pipelines.
+- Integrate third-party platforms and payment providers, and design the data models and API contracts that front-end and mobile clients consume.
+- Work in an Agile team with code review, technical documentation and direct client communication on requirements and delivery.
+Stack: React, Next.js, React Native, Node.js, NestJS, TypeScript, PostgreSQL, MongoDB, Docker, AWS
+
+Full Stack Developer
+Pikessoft - Lahore, Pakistan | Sep 2022 - Feb 2025
+- Led development on multiple client platforms - logistics, marketplace, real-estate and field-service products - from architecture through release.
+- Built real-time features including chat, group messaging, push notifications and live order tracking across web and mobile clients.
+- Designed and integrated REST APIs against MongoDB, MariaDB and Redis, and tuned queries and caching to keep dashboards responsive at scale.
+- Integrated e-commerce and payment platforms including Shopify, Amazon, WooCommerce and Stripe to automate order and fulfilment flows.
+- Mentored junior developers, ran code reviews, and handled direct client requirement-gathering and delivery planning.
+Stack: React, Angular, Next.js, React Native, Node.js, NestJS, MongoDB, MariaDB, Redis, Firebase, AWS, Docker
+
+Web Developer Intern
+Innovage.io - Pakistan | Apr 2022 - Aug 2022
+- Built responsive user interfaces and integrated payment and geolocation APIs into client web applications.
+- Supported backend development and manual testing across the release cycle.
+Stack: React, JavaScript, Node.js, REST APIs
+
+SELECTED PROJECTS
+
+99DPF - Service Booking Platform (Web + Mobile)
+React, React Native, Node.js, MongoDB, Socket.IO, Push Notifications
+- Shipped a React Native mobile app alongside the React web client from one shared Node.js API.
+- Built real-time chat, push notifications, image upload and live order-status updates for both customers and service partners.
+
+HIS - Healthcare Workforce Management System
+React, React Native, TypeScript, Node.js, AWS, Docker
+- Built scheduling logic for complex hospital rostering including rotating and night shifts.
+- Implemented attendance, leave-request and overtime tracking with automated reporting, replacing manual record-keeping.
+
+EquipX - Heavy Equipment Marketplace
+Angular, Next.js, Node.js, MongoDB, Socket.IO, Stripe, AWS, Docker
+- Built the searchable listing and filtering system over a large machinery catalogue, plus financing and logistics modules.
+- Implemented real-time one-to-one and group chat so buyers and sellers negotiate inside the platform.
+
+SandSeekers - Dubai Real Estate Platform
+Next.js, Node.js, MongoDB, Data Integrations
+- Led end-to-end delivery of a residential and commercial property platform, owning architecture, the development team and client communication.
+- Built a custom CRM for listings, leads and property-demo bookings.
+
+EDUCATION
+MSc Computer Science
+University of Innsbruck - Austria | 2024 - Ongoing
+BSc Computer Science
+COMSATS University - Pakistan | 2018 - 2022
+
+CERTIFICATIONS
+- MERN Stack Developer Certificate
+- Front-End Development Certificate
+- Project Management for Web Developers
+
+LANGUAGES
+English: C1 - Professional working proficiency | Urdu: Native
