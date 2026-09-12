@@ -147,7 +147,9 @@ def main() -> int:
     host = os.getenv("SMTP_HOST")
     port = int(os.getenv("SMTP_PORT", "587"))
     user = os.getenv("SMTP_USER")
-    password = os.getenv("SMTP_PASS")
+    # Google displays an App Password as four groups of four; pasted as shown, the
+    # spaces are part of the secret and the login fails.
+    password = (os.getenv("SMTP_PASS") or "").replace(" ", "") or None
     from_name = os.getenv("FROM_NAME", "Saif ur Rehman")
 
     items = load()

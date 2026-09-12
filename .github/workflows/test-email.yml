@@ -1,0 +1,81 @@
+name: Test email setup
+
+# Run this by hand after adding the Gmail secrets. It sends ONE email to yourself and
+# nothing else, so a wrong password is found here rather than halfway through a real
+# application to a real company.
+#
+# Actions tab -> "Test email setup" -> Run workflow.
+
+on:
+  workflow_dispatch:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Send one test email to yourself
+        env:
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASS: ${{ secrets.SMTP_PASS }}
+          FROM_NAME: ${{ secrets.FROM_NAME }}
+        run: |
+          python - <<'PY' | tee -a "$GITHUB_STEP_SUMMARY"
+          import os, smtplib, ssl, sys
+          from email.message import EmailMessage
+
+          missing = [k for k in ("SMTP_HOST", "SMTP_PORT", "SMTP_USER", "SMTP_PASS")
+                     if not os.getenv(k)]
+          if missing:
+              print("## Not set up yet\n")
+              print("These repository secrets are missing: " + ", ".join("`%s`" % m for m in missing))
+              print("\nAdd them under Settings -> Secrets and variables -> Actions, then run this again.")
+              sys.exit(1)
+
+          host = os.environ["SMTP_HOST"]
+          port = int(os.environ["SMTP_PORT"])
+          user = os.environ["SMTP_USER"]
+          pw   = os.environ["SMTP_PASS"].replace(" ", "")   # Google shows it in groups of four
+          name = os.getenv("FROM_NAME", "Saif ur Rehman")
+
+          msg = EmailMessage()
+          msg["From"] = f"{name} <{user}>"
+          msg["To"] = user
+          msg["Subject"] = "Contract Desk - email sending is working"
+          msg.set_content(
+              "This is the test email from your job pipeline.\n\n"
+              "If you are reading this, the Gmail App Password is correct and applications\n"
+              "can now be sent from this address. Nothing was sent to any company.\n\n"
+              "Next: approve a draft in the Outbox tab of your portal. Approved mail goes\n"
+              "out on weekday mornings, capped at 10 a day and 2 per company.\n"
+          )
+          try:
+              with smtplib.SMTP(host, port, timeout=45) as s:
+                  s.starttls(context=ssl.create_default_context())
+                  s.login(user, pw)
+                  s.send_message(msg)
+          except smtplib.SMTPAuthenticationError:
+              print("## Password rejected\n")
+              print("Google refused the login. Almost always one of:\n")
+              print("- `SMTP_PASS` is your normal Google password, not a 16-character **App Password**")
+              print("- the App Password was copied with a character missing")
+              print("- 2-Step Verification is off, so the App Password is not valid")
+              print("\nMake a fresh one at <https://myaccount.google.com/apppasswords> and replace the secret.")
+              sys.exit(1)
+          except Exception as e:
+              print("## Could not send\n")
+              print("```\n%s\n```" % e)
+              print("\nCheck `SMTP_HOST` is `smtp.gmail.com` and `SMTP_PORT` is `587`.")
+              sys.exit(1)
+
+          print("## Working\n")
+          print(f"A test email was sent to **{user}**. Check your inbox.")
+          print("\nNothing was sent to any company. Your pipeline can now send approved drafts.")
+          PY

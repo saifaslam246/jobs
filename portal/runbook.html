@@ -269,22 +269,50 @@
   </section>
 
   <section>
-    <h2>The one thing blocking everything</h2>
+    <h2>Connecting your email, step by step</h2>
+    <p>Google will not let any program send from your account with your normal password.
+       It needs a separate 16-character <b>App Password</b>, which only exists once
+       2-Step Verification is on. That is the whole reason this takes four steps
+       instead of one.</p>
+
+    <ol class="steps">
+      <li><div><b>Turn on 2-Step Verification — do this first</b>
+        <span>Go to <a href="https://myaccount.google.com/signinoptions/twosv" target="_blank" rel="noopener">myaccount.google.com/signinoptions/twosv</a>
+        and switch it on if it is not already. Without it the App Passwords page does not
+        exist, and you will get “the setting you are looking for is not available”.</span></div></li>
+
+      <li><div><b>Create the App Password</b>
+        <span>Go to <a href="https://myaccount.google.com/apppasswords" target="_blank" rel="noopener">myaccount.google.com/apppasswords</a>.
+        Type any name — <code>jobs pipeline</code> — and press Create. Google shows
+        <b>16 characters in four groups</b>, like <code>abcd efgh ijkl mnop</code>. Copy it
+        now; it is never shown again. Spaces are fine, they get stripped.</span></div></li>
+
+      <li><div><b>Add five secrets to the repository</b>
+        <span>Go to <a href="https://github.com/saifaslam246/jobs/settings/secrets/actions" target="_blank" rel="noopener">github.com/saifaslam246/jobs → Settings → Secrets and variables → Actions</a>.
+        Press <b>New repository secret</b>, fill in Name and Secret, press Add secret —
+        then repeat for each row below. Five separate secrets, not one.</span></div></li>
+
+      <li><div><b>Test it before it touches a real company</b>
+        <span>Go to the <a href="https://github.com/saifaslam246/jobs/actions/workflows/test-email.yml" target="_blank" rel="noopener">Test email setup</a>
+        workflow → <b>Run workflow</b>. It sends exactly one email, to you, and nothing
+        else. A green tick and a message in your inbox means it is done. A red cross tells
+        you which of the three usual mistakes it was.</span></div></li>
+    </ol>
+
     <div class="todo">
-      <h3>The Gmail App Password</h3>
-      <p>Google will not let any program send from your account without one. Until it
-         exists, drafts pile up in your Outbox and the sender exits quietly — nothing is
-         lost, but nothing goes out either.</p>
-      <p>Make one at <code>myaccount.google.com/apppasswords</code>, then add five secrets at
-         <code>github.com/saifaslam246/jobs</code> → Settings → Secrets and variables → Actions:</p>
+      <h3>The five secrets</h3>
       <dl class="kv">
         <dt>SMTP_HOST</dt><dd>smtp.gmail.com</dd>
         <dt>SMTP_PORT</dt><dd>587</dd>
         <dt>SMTP_USER</dt><dd>saifaslam155@gmail.com</dd>
-        <dt>SMTP_PASS</dt><dd>the 16 characters</dd>
+        <dt>SMTP_PASS</dt><dd>the 16 characters from step 2</dd>
         <dt>FROM_NAME</dt><dd>Saif ur Rehman</dd>
       </dl>
-      <p>Put it into GitHub, never into a chat. GitHub encrypts it; a chat transcript does not.</p>
+      <p>Type these into GitHub, never into a chat. GitHub encrypts a secret and never
+         shows it again, even to you. A chat transcript does neither.</p>
+      <p><b>Use the Gmail address, not your TMN one.</b> It is the address already on your
+         CV, and job-hunting from your current employer's domain is not a position you want
+         to be in.</p>
     </div>
   </section>
 
