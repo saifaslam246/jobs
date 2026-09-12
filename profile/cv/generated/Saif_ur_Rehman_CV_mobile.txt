@@ -20,14 +20,15 @@ Practices & Tools: Agile / Scrum, Code review, Playwright end-to-end testing, Un
 
 PROFESSIONAL EXPERIENCE
 
-Full Stack Developer - Lead Frontend, Ludwig Practice Suite
+Full Stack Developer
 TMN Development KG - Austria | Mar 2025 - Present
-- Lead developer on the practice dashboard of Ludwig, a nine-application medical practice-management suite for physiotherapy and doctors' practices in Germany and Austria, built by a team of fourteen.
+- Lead developer on Ludwig, a nine-application medical practice-management suite for physiotherapy and doctors' practices in Germany and Austria, owning features end to end from data model and API integration through to the interface.
 - Built clinical documentation to the standards Austrian and German practices are legally required to keep, including an anatomical body chart stored as structured data so it opens unchanged on any client.
 - Delivered statutory health-insurance invoicing: tariff-priced position lines, gap-free invoice numbering per company, and PDF export with SEPA payment QR codes.
 - Implemented multi-tenancy on two axes, so one deployment serves many practices while practice groups partition patients, invoicing and outbound mail across sub-companies.
 - Built offline-first working with two-way synchronisation and conflict review, so practitioners keep working in the field without overwriting colleagues' changes.
 - Shipped a configuration-driven patient booking wizard in Next.js and React, with per-practice theming, one-time-code login and embeddable appointment and course booking.
+- Delivered three further products alongside Ludwig: a business-connector application, a business-card manager for company details, and a national public registry of deceased persons.
 Stack: Angular 19, Ionic 8, TypeScript, Next.js 16, React 19, Flutter, RxJS, NgRx Signals, Tailwind CSS, Playwright
 
 Full Stack Developer
