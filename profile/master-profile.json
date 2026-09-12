@@ -2,7 +2,7 @@
   "_comment": "SINGLE SOURCE OF TRUTH. Every tailored CV, cover letter and match score is generated from this file. Edit here, never in the generated documents.",
   "identity": {
     "full_name": "Saif ur Rehman",
-    "headline": "Full Stack Developer - React / React Native / Flutter / Node.js",
+    "headline": "Full Stack Developer - Angular / React / Next.js / Flutter",
     "email": "saifaslam155@gmail.com",
     "phone": "+43 660 6519 008",
     "location": "Innsbruck, Austria",
@@ -31,11 +31,11 @@
     "years_experience": 4
   },
   "summary_variants": {
-    "fullstack": "Full Stack Developer with 4+ years building and shipping production web and mobile applications across logistics, marketplace, real-estate and healthcare domains. Strong across the whole stack - React, Next.js and Angular on the front end, Node.js (NestJS/Express) and Python on the back end, with PostgreSQL, MongoDB and Redis behind them, deployed on AWS with Docker and CI/CD. Currently building client platforms for a European software company from Austria.",
-    "frontend": "Frontend-focused Full Stack Developer with 4+ years building responsive, high-performance interfaces in React, Next.js and Angular with TypeScript and Tailwind CSS. Experienced in design-system work, real-time UI, state management and accessibility, backed by the Node.js and API skills to own a feature end to end.",
-    "mobile": "Mobile Developer with 4+ years delivering cross-platform apps in React Native and Flutter, shipped to the App Store and Play Store with real-time chat, push notifications, offline handling and media upload. Backed by full-stack Node.js and API experience, so mobile features are owned end to end rather than handed off.",
-    "backend": "Backend Developer with 4+ years designing and operating REST APIs and services in Node.js (NestJS, Express) and Python (FastAPI), with PostgreSQL, MongoDB, MariaDB and Redis, containerised with Docker and deployed on AWS. Experienced in third-party integrations, payments, real-time messaging and large-scale data ingestion.",
-    "data_scraping": "Full Stack Developer with 4+ years of experience including large-scale data extraction and structuring - building Python scraping pipelines that ingest and normalise millions of listings from third-party sources into searchable, filterable product data. Comfortable owning the full path from crawler to API to UI."
+    "fullstack": "Full Stack Developer with 4+ years shipping production web and mobile software, currently lead developer on the practice dashboard of a nine-application medical practice-management suite for the German and Austrian market. Comfortable across Angular, React and Next.js on the front end, Node.js and Python behind them, and Flutter on mobile - with the regulated-domain work to go with it: clinical documentation, statutory insurance billing, multi-tenancy and offline-first synchronisation.",
+    "frontend": "Frontend Developer with 4+ years building large, long-lived application front ends. Lead developer on the practice dashboard of a medical practice-management suite - roughly 40 feature areas in Angular 19 and Ionic 8 - and on a patient booking wizard in Next.js 16 and React 19. Experienced in state management, offline-first synchronisation, internationalisation and shipping shared component libraries as versioned packages.",
+    "mobile": "Mobile Developer with 4+ years delivering cross-platform apps in Flutter and React Native, shipped to the App Store and Play Store with real-time chat, push notifications, offline handling and media upload. Currently building patient and practitioner apps in Flutter/Riverpod against the same domain model as an Angular dashboard, so clinical records drawn on a tablet open unchanged on the desktop.",
+    "backend": "Full Stack Developer with 4+ years designing and consuming REST APIs in Node.js (NestJS, Express) and Python (FastAPI), with PostgreSQL, MongoDB, MariaDB and Redis behind them, containerised with Docker on AWS. Experienced in multi-tenant data partitioning, invoicing and billing logic, third-party integrations and offline synchronisation with conflict resolution.",
+    "data_scraping": "Full Stack Developer with 4+ years including large-scale data extraction and structuring - Python pipelines that ingest and normalise millions of property listings from third-party sources into searchable data, and live feed integrations from major real-estate portals. Comfortable owning the full path from crawler to API to UI."
   },
   "skills": {
     "Languages": [
@@ -48,16 +48,19 @@
       "CSS3"
     ],
     "Frontend": [
+      "Angular",
       "React",
       "Next.js",
+      "Ionic",
       "React Native",
       "Flutter",
-      "Angular",
-      "Ionic",
+      "TypeScript",
+      "RxJS",
+      "NgRx Signals",
       "Redux",
       "Tailwind CSS",
-      "PrimeNG",
-      "Framer Motion"
+      "Angular Material",
+      "PrimeNG"
     ],
     "Backend": [
       "Node.js",
@@ -107,15 +110,34 @@
       "ETL pipelines",
       "Data normalisation"
     ],
-    "Practices": [
+    "Mobile": [
+      "Flutter",
+      "Dart",
+      "Riverpod",
+      "React Native",
+      "Capacitor",
+      "iOS",
+      "Android"
+    ],
+    "Domain": [
+      "Healthcare / practice management",
+      "Clinical documentation",
+      "Statutory health-insurance billing",
+      "Appointment scheduling",
+      "Multi-tenant architecture",
+      "Offline-first & conflict resolution",
+      "GDPR"
+    ],
+    "Practices & Tools": [
       "Agile / Scrum",
       "Code review",
+      "Playwright end-to-end testing",
       "Unit & integration testing",
-      "Git flow",
+      "i18n (DE/EN)",
+      "Versioned internal libraries",
+      "Trunk-based Git",
       "Technical documentation",
-      "Client communication"
-    ],
-    "Tools": [
+      "Client communication",
       "Git",
       "GitHub",
       "Bitbucket",
@@ -131,7 +153,7 @@
   "experience": [
     {
       "id": "tmn",
-      "title": "Full Stack Developer",
+      "title": "Full Stack Developer - Lead Frontend, Ludwig Practice Suite",
       "company": "TMN Development KG",
       "location": "Austria",
       "start": "2025-03",
@@ -139,24 +161,27 @@
       "current": true,
       "_date_note": "CONFIRM: your old CV says Mar 2025, you said Apr 2025. Currently using Mar 2025 to stay consistent with the CV already in circulation.",
       "stack": [
-        "React",
-        "Next.js",
-        "React Native",
-        "Node.js",
-        "NestJS",
+        "Angular 19",
+        "Ionic 8",
         "TypeScript",
-        "PostgreSQL",
-        "MongoDB",
-        "Docker",
-        "AWS"
+        "Next.js 16",
+        "React 19",
+        "Flutter",
+        "Dart",
+        "Riverpod",
+        "RxJS",
+        "NgRx Signals",
+        "Tailwind CSS",
+        "Playwright"
       ],
       "bullets": [
-        "Build and ship production web and mobile applications for European clients, owning features end to end from requirements through deployment.",
-        "Develop and deploy backend services and REST APIs in Node.js and NestJS, containerised with Docker and released through CI/CD pipelines.",
-        "Integrate third-party platforms and payment providers, and design the data models and API contracts that front-end and mobile clients consume.",
-        "Work in an Agile team with code review, technical documentation and direct client communication on requirements and delivery."
-      ],
-      "_gap": "NEEDS YOUR INPUT: name the projects you built here (you mentioned 'Ludwig' and others), what each one does, your specific role, and any measurable outcome. This is your most recent and most credible role - right now it is the thinnest section on the CV."
+        "Lead developer on the practice dashboard of Ludwig, a medical practice-management suite for physiotherapy and doctors' practices in Germany and Austria - 1,140 of 1,553 commits over 14 months on a 14-contributor, nine-application product.",
+        "Built clinical documentation to the conventions Austrian and German practices are legally obliged to keep - patient history, diagnosis, examination findings and therapy progress - with an anatomical body chart stored as structured data so a chart drawn in the Flutter app opens in the Angular dashboard.",
+        "Delivered statutory health-insurance invoicing: tariff-priced position lines, gap-free per-company invoice number ranges, customer-supplied layouts rebuilt as a data-driven template library, and PDF export with SEPA payment QR codes.",
+        "Implemented multi-tenancy on two axes - one deployment serving many practices, and practice groups partitioning patients, invoicing, number ranges and outbound mail across sub-companies.",
+        "Built offline-first practice work with two-way synchronisation and a conflict-review screen, so practitioners keep working in the field without overwriting colleagues' changes.",
+        "Shipped a configuration-driven patient booking wizard in Next.js 16 and React 19 - per-practice theming, one-time-code email login, appointment and course booking with waiting lists, embeddable in a practice's own website."
+      ]
     },
     {
       "id": "pikessoft",
@@ -203,12 +228,44 @@
         "REST APIs"
       ],
       "bullets": [
-        "Built responsive user interfaces and integrated payment and geolocation APIs into client web applications.",
-        "Supported backend development and manual testing across the release cycle."
+        "Built responsive interfaces and integrated payment and geolocation APIs into client web applications, with backend support and manual testing."
       ]
     }
   ],
   "projects": [
+    {
+      "id": "ludwig",
+      "name": "Ludwig Practice Suite - Medical Practice Software (Germany / Austria)",
+      "url": null,
+      "domain": [
+        "healthcare",
+        "saas",
+        "enterprise",
+        "scheduling",
+        "billing"
+      ],
+      "tech": [
+        "Angular",
+        "Ionic",
+        "TypeScript",
+        "Next.js",
+        "React",
+        "Flutter",
+        "Dart",
+        "Riverpod",
+        "RxJS",
+        "Tailwind CSS",
+        "Playwright",
+        "PDF generation"
+      ],
+      "one_liner": "Nine-application practice-management and patient-booking suite for German and Austrian physiotherapy and medical practices, sharing one backend.",
+      "bullets": [
+        "Lead contributor to the practice dashboard - calendar, patients, clinical documentation, invoicing, courses, insurance tariffs and staff across roughly 40 feature areas in Angular 19 and Ionic 8.",
+        "Built appointment scheduling against real constraints: recurring series, practitioner and room resources, absences, waiting lists, free-slot computation and overlapping-appointment layout, with per-week incremental loading.",
+        "Worked across five runtimes on one domain model - Angular/Ionic dashboard, Next.js/React booking wizard, Flutter patient and practitioner apps, and shared Angular libraries published as versioned packages."
+      ],
+      "weight": 6
+    },
     {
       "id": "atomix",
       "name": "Atomix Logistics - 3PL Fulfilment Platform",
@@ -312,6 +369,27 @@
         "Implemented the booking, dispatch and guarantee-tracking flows connecting customers to partner workshops."
       ],
       "weight": 4
+    },
+    {
+      "id": "mt-wizard",
+      "name": "Meine Termine - White-label Appointment Booking",
+      "url": null,
+      "domain": [
+        "saas",
+        "scheduling",
+        "healthcare"
+      ],
+      "tech": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Multi-tenant"
+      ],
+      "one_liner": "Multi-tenant white-label appointment-booking wizard, the predecessor of Ludwig's patient wizard.",
+      "bullets": [
+        "Top contributor with 116 of 281 commits, building the per-tenant booking flows that the Ludwig patient wizard was later built on."
+      ],
+      "weight": 3
     },
     {
       "id": "rentalytics",
@@ -467,57 +545,76 @@
   ],
   "matching": {
     "must_have_any": [
-      "react",
-      "react native",
-      "next.js",
-      "node",
-      "nodejs",
-      "node.js",
-      "typescript",
-      "javascript",
+      "angular",
+      "back-end",
+      "backend",
+      "dart",
       "flutter",
+      "front-end",
+      "frontend",
       "full stack",
       "fullstack",
-      "frontend",
-      "front-end",
-      "backend",
-      "back-end",
-      "angular",
+      "ionic",
+      "javascript",
       "nestjs",
-      "python"
-    ],
-    "strong_signals": [
+      "next.js",
+      "node",
+      "node.js",
+      "nodejs",
+      "python",
       "react",
       "react native",
-      "next.js",
-      "nestjs",
-      "node.js",
-      "typescript",
-      "mongodb",
-      "postgresql",
-      "flutter",
-      "tailwind",
-      "docker",
+      "rxjs",
+      "typescript"
+    ],
+    "strong_signals": [
+      "angular",
       "aws",
-      "stripe",
-      "socket.io",
-      "websocket",
-      "graphql",
-      "prisma",
+      "capacitor",
+      "dart",
+      "docker",
       "express",
+      "flutter",
+      "graphql",
+      "ionic",
+      "mongodb",
+      "multi-tenant",
+      "nestjs",
+      "next.js",
+      "ngrx",
+      "node.js",
+      "offline",
+      "playwright",
+      "postgresql",
+      "prisma",
+      "react",
+      "react native",
       "redis",
+      "riverpod",
+      "rxjs",
       "scraping",
-      "playwright"
+      "socket.io",
+      "stripe",
+      "tailwind",
+      "typescript",
+      "websocket"
     ],
     "domain_bonus": [
+      "billing",
+      "booking",
+      "e-commerce",
+      "fintech",
+      "healthcare",
+      "insurance",
+      "invoicing",
       "logistics",
       "marketplace",
-      "real estate",
+      "medtech",
+      "practice management",
       "proptech",
-      "healthcare",
-      "e-commerce",
+      "real estate",
       "saas",
-      "fintech"
+      "scheduling"
     ],
     "hard_reject": [
       "unpaid",

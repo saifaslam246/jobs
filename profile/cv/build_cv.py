@@ -106,7 +106,9 @@ def build_content(p: dict, variant: str, job: dict | None, title_override: str |
             return -(t + d + pr.get("weight", 0) * 2)
 
         projects.sort(key=relevance)
-    projects = projects[:4]
+    # Three projects, not four: the Ludwig role now carries six bullets of its own, and a
+    # two-page CV is worth more than a fourth project nobody reads.
+    projects = projects[:3]
     # two bullets per project keeps the CV to two pages; the third is detail the
     # interview is for, not the screen.
     projects = [{**pr, "bullets": pr["bullets"][:2]} for pr in projects]
