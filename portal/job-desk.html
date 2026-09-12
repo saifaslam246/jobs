@@ -98,6 +98,13 @@
   .toggle input{accent-color:var(--accent); margin:0}
 
   /* ---------- job rows ---------- */
+  .legend{
+    margin:0 0 12px; padding:10px 13px; font-size:12.5px; line-height:1.5;
+    color:var(--ink-2); background:var(--surface-2);
+    border:1px solid var(--line); border-radius:var(--r);
+  }
+  .legend b{color:var(--ink)}
+
   .rows{display:flex; flex-direction:column; gap:6px; margin-top:2px}
   .row{
     display:grid; grid-template-columns:52px minmax(0,1fr) auto;
@@ -312,7 +319,7 @@
       <select id="fstatus" aria-label="Filter by status">
         <option value="">All statuses</option>
         <option value="open">Open (not closed out)</option>
-        <option value="new">New</option>
+        <option value="new">Not reviewed</option>
         <option value="shortlisted">Shortlisted</option>
         <option value="cv_ready">CV ready (set for you)</option>
         <option value="applied">Applied</option>
@@ -328,6 +335,12 @@
       </select>
       <label class="toggle"><input type="checkbox" id="fcontract"> Contract only</label>
     </div>
+    <p class="legend">
+      The number is how closely a posting matches your stack, out of 100 —
+      <b>55 and above is worth applying to</b>. It says nothing about how many other
+      people applied. <b>Open any role</b> to shortlist it, mark where it stands, or
+      download the CV built for it.
+    </p>
     <div class="rows" id="rows"></div>
   </section>
 
@@ -380,7 +393,7 @@
   "use strict";
 
   var STATUSES = [
-    ["new","New"],["shortlisted","Shortlisted"],["applied","Applied"],
+    ["new","Not reviewed"],["shortlisted","Shortlisted"],["applied","Applied"],
     ["replied","Replied"],["interview","Interview"],["rejected","Rejected"],["dismissed","Dismissed"]
   ];
   var CLOSED = {rejected:1, dismissed:1};
@@ -433,7 +446,7 @@
     return "var(--muted)";
   }
   function bandLabel(n){
-    return n >= 85 ? "strong" : n >= 70 ? "good" : n >= 55 ? "short" : "watch";
+    return n >= 85 ? "excellent" : n >= 70 ? "strong" : n >= 55 ? "good" : "weak";
   }
   function ago(iso){
     if(!iso) return "";
@@ -782,9 +795,10 @@
               return '<button data-v="' + st[0] + '" aria-pressed="' + (st[0] === s) + '">' + st[1] + "</button>";
             }).join("") +
           "</div>" +
-          '<span class="hint">Marking a role stops it coming back tomorrow and moves your counters at ' +
-          "the top. In practice you only need three: <b>Applied</b> once you send something, " +
-          "<b>Dismissed</b> for anything you do not want, and <b>Replied</b> when you hear back.</span>" +
+          '<span class="hint"><b>Shortlisted</b> is an instruction, not a note: tomorrow morning ' +
+          "these are worked on first - CV rewritten for this posting, email drafted - ahead of " +
+          "everything the scoring picked. <b>Dismissed</b> means never show me this again. " +
+          "<b>Applied</b> and <b>Replied</b> are for tracking once something is in motion.</span>" +
         "</div>" +
 
         '<div class="field"><span class="eyebrow">Why it scored ' + j.score + "</span>" +
