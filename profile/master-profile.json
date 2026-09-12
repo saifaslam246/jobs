@@ -19,7 +19,13 @@
     "_timezone_note": "You said you can work any timezone - this widens US/UK contract matches significantly.",
     "work_authorization": "Austria - employed by an Austrian company since 2025; residence permit status to be confirmed",
     "_auth_note": "CONFIRM: student permit vs Rot-Weiss-Rot card vs other. This decides whether EU-only or worldwide-remote filters apply.",
-    "open_to": ["contract", "freelance", "part-time", "project-based", "full-time-remote"],
+    "open_to": [
+      "contract",
+      "freelance",
+      "part-time",
+      "project-based",
+      "full-time-remote"
+    ],
     "min_rate_eur_hour": null,
     "_rate_note": "TELL ME YOUR FLOOR. Used to auto-reject lowball postings. Suggested band for 4 yrs full-stack in Austria: EUR 45-70/hr contract, EUR 55-75k/yr permanent.",
     "years_experience": 4
@@ -32,16 +38,95 @@
     "data_scraping": "Full Stack Developer with 4+ years of experience including large-scale data extraction and structuring - building Python scraping pipelines that ingest and normalise millions of listings from third-party sources into searchable, filterable product data. Comfortable owning the full path from crawler to API to UI."
   },
   "skills": {
-    "Languages": ["TypeScript", "JavaScript (ES6+)", "Python", "Dart", "SQL", "HTML5", "CSS3"],
-    "Frontend": ["React", "Next.js", "React Native", "Flutter", "Angular", "Ionic", "Redux", "Tailwind CSS", "PrimeNG", "Framer Motion"],
-    "Backend": ["Node.js", "NestJS", "Express.js", "FastAPI", "REST APIs", "WebSockets / Socket.IO", "Firebase Functions", "Microservices"],
-    "Databases": ["PostgreSQL", "MongoDB", "MySQL", "MariaDB", "Redis", "Firebase Firestore"],
-    "ORMs": ["TypeORM", "Prisma", "Sequelize", "Mongoose"],
-    "Cloud & DevOps": ["AWS (EC2, S3, Lambda, SNS)", "Docker", "CI/CD", "GitHub Actions", "Vercel", "Nginx"],
-    "Integrations": ["Stripe", "Shopify", "Amazon FBA/FBM", "WooCommerce", "Twilio", "Firebase Cloud Messaging", "OAuth 2.0", "Payment Gateways"],
-    "Data": ["Python web scraping", "Scrapy / BeautifulSoup / Playwright", "ETL pipelines", "Data normalisation"],
-    "Practices": ["Agile / Scrum", "Code review", "Unit & integration testing", "Git flow", "Technical documentation", "Client communication"],
-    "Tools": ["Git", "GitHub", "Bitbucket", "Jira", "Figma", "ESLint", "SonarQube", "Postman", "Android Studio", "Xcode"]
+    "Languages": [
+      "TypeScript",
+      "JavaScript (ES6+)",
+      "Python",
+      "Dart",
+      "SQL",
+      "HTML5",
+      "CSS3"
+    ],
+    "Frontend": [
+      "React",
+      "Next.js",
+      "React Native",
+      "Flutter",
+      "Angular",
+      "Ionic",
+      "Redux",
+      "Tailwind CSS",
+      "PrimeNG",
+      "Framer Motion"
+    ],
+    "Backend": [
+      "Node.js",
+      "NestJS",
+      "Express.js",
+      "FastAPI",
+      "REST APIs",
+      "WebSockets / Socket.IO",
+      "Firebase Functions",
+      "Microservices"
+    ],
+    "Databases": [
+      "PostgreSQL",
+      "MongoDB",
+      "MySQL",
+      "MariaDB",
+      "Redis",
+      "Firebase Firestore"
+    ],
+    "ORMs": [
+      "TypeORM",
+      "Prisma",
+      "Sequelize",
+      "Mongoose"
+    ],
+    "Cloud & DevOps": [
+      "AWS (EC2, S3, Lambda, SNS)",
+      "Docker",
+      "CI/CD",
+      "GitHub Actions",
+      "Vercel",
+      "Nginx"
+    ],
+    "Integrations": [
+      "Stripe",
+      "Shopify",
+      "Amazon FBA/FBM",
+      "WooCommerce",
+      "Twilio",
+      "Firebase Cloud Messaging",
+      "OAuth 2.0",
+      "Payment Gateways"
+    ],
+    "Data": [
+      "Python web scraping",
+      "Scrapy / BeautifulSoup / Playwright",
+      "ETL pipelines",
+      "Data normalisation"
+    ],
+    "Practices": [
+      "Agile / Scrum",
+      "Code review",
+      "Unit & integration testing",
+      "Git flow",
+      "Technical documentation",
+      "Client communication"
+    ],
+    "Tools": [
+      "Git",
+      "GitHub",
+      "Bitbucket",
+      "Jira",
+      "Figma",
+      "ESLint",
+      "SonarQube",
+      "Postman",
+      "Android Studio",
+      "Xcode"
+    ]
   },
   "experience": [
     {
@@ -53,7 +138,18 @@
       "end": null,
       "current": true,
       "_date_note": "CONFIRM: your old CV says Mar 2025, you said Apr 2025. Currently using Mar 2025 to stay consistent with the CV already in circulation.",
-      "stack": ["React", "Next.js", "React Native", "Node.js", "NestJS", "TypeScript", "PostgreSQL", "MongoDB", "Docker", "AWS"],
+      "stack": [
+        "React",
+        "Next.js",
+        "React Native",
+        "Node.js",
+        "NestJS",
+        "TypeScript",
+        "PostgreSQL",
+        "MongoDB",
+        "Docker",
+        "AWS"
+      ],
       "bullets": [
         "Build and ship production web and mobile applications for European clients, owning features end to end from requirements through deployment.",
         "Develop and deploy backend services and REST APIs in Node.js and NestJS, containerised with Docker and released through CI/CD pipelines.",
@@ -70,7 +166,20 @@
       "start": "2022-09",
       "end": "2025-02",
       "current": false,
-      "stack": ["React", "Angular", "Next.js", "React Native", "Node.js", "NestJS", "MongoDB", "MariaDB", "Redis", "Firebase", "AWS", "Docker"],
+      "stack": [
+        "React",
+        "Angular",
+        "Next.js",
+        "React Native",
+        "Node.js",
+        "NestJS",
+        "MongoDB",
+        "MariaDB",
+        "Redis",
+        "Firebase",
+        "AWS",
+        "Docker"
+      ],
       "bullets": [
         "Led development on multiple client platforms - logistics, marketplace, real-estate and field-service products - from architecture through release.",
         "Built real-time features including chat, group messaging, push notifications and live order tracking across web and mobile clients.",
@@ -87,7 +196,12 @@
       "start": "2022-04",
       "end": "2022-08",
       "current": false,
-      "stack": ["React", "JavaScript", "Node.js", "REST APIs"],
+      "stack": [
+        "React",
+        "JavaScript",
+        "Node.js",
+        "REST APIs"
+      ],
       "bullets": [
         "Built responsive user interfaces and integrated payment and geolocation APIs into client web applications.",
         "Supported backend development and manual testing across the release cycle."
@@ -99,8 +213,24 @@
       "id": "atomix",
       "name": "Atomix Logistics - 3PL Fulfilment Platform",
       "url": "atomixlogistics.com",
-      "domain": ["logistics", "saas", "e-commerce"],
-      "tech": ["React", "Angular", "NestJS", "Node.js", "MariaDB", "Redis", "Stripe", "AWS", "Shopify", "Amazon", "WooCommerce"],
+      "domain": [
+        "logistics",
+        "saas",
+        "e-commerce"
+      ],
+      "tech": [
+        "React",
+        "Angular",
+        "NestJS",
+        "Node.js",
+        "MariaDB",
+        "Redis",
+        "Stripe",
+        "AWS",
+        "Shopify",
+        "Amazon",
+        "WooCommerce"
+      ],
       "one_liner": "Third-party logistics platform for order fulfilment, real-time tracking and multi-channel e-commerce integration.",
       "bullets": [
         "Built order-fulfilment and inventory features on a 3PL platform handling real-time order tracking, custom packaging and nationwide two-day delivery.",
@@ -112,8 +242,20 @@
       "id": "equipx",
       "name": "EquipX - Heavy Equipment Marketplace",
       "url": "equipx.com",
-      "domain": ["marketplace", "e-commerce"],
-      "tech": ["Angular", "Next.js", "Node.js", "MongoDB", "Socket.IO", "Stripe", "AWS", "Docker"],
+      "domain": [
+        "marketplace",
+        "e-commerce"
+      ],
+      "tech": [
+        "Angular",
+        "Next.js",
+        "Node.js",
+        "MongoDB",
+        "Socket.IO",
+        "Stripe",
+        "AWS",
+        "Docker"
+      ],
       "one_liner": "Marketplace for listing, buying, selling and financing heavy machinery, with real-time chat and rental management.",
       "bullets": [
         "Built the searchable listing and filtering system over a large machinery catalogue, plus financing and logistics modules.",
@@ -125,8 +267,17 @@
       "id": "sandseekers",
       "name": "SandSeekers - Dubai Real Estate Platform",
       "url": null,
-      "domain": ["real-estate", "crm", "data"],
-      "tech": ["Next.js", "Node.js", "MongoDB", "Data Integrations"],
+      "domain": [
+        "real-estate",
+        "crm",
+        "data"
+      ],
+      "tech": [
+        "Next.js",
+        "Node.js",
+        "MongoDB",
+        "Data Integrations"
+      ],
       "one_liner": "Real-estate platform and custom CRM aggregating live Dubai property data from Bayut, Dubizzle and Property Finder.",
       "bullets": [
         "Led end-to-end delivery of a residential and commercial property platform, owning architecture, the development team and client communication.",
@@ -138,8 +289,19 @@
       "id": "rentalytics",
       "name": "Rentalytics.ai - Property Data Platform",
       "url": null,
-      "domain": ["data", "real-estate", "scraping"],
-      "tech": ["React", "Node.js", "Python", "MongoDB", "Firebase", "Scraping"],
+      "domain": [
+        "data",
+        "real-estate",
+        "scraping"
+      ],
+      "tech": [
+        "React",
+        "Node.js",
+        "Python",
+        "MongoDB",
+        "Firebase",
+        "Scraping"
+      ],
       "one_liner": "Data platform extracting and structuring millions of property listings from major real-estate sources into a searchable dataset.",
       "bullets": [
         "Built extraction and structuring pipelines that ingest millions of property listings from third-party real-estate sources.",
@@ -151,8 +313,19 @@
       "id": "99dpf",
       "name": "99DPF - Service Booking Platform (Web + Mobile)",
       "url": null,
-      "domain": ["marketplace", "mobile", "field-service"],
-      "tech": ["React", "React Native", "Node.js", "MongoDB", "Socket.IO", "Push Notifications"],
+      "domain": [
+        "marketplace",
+        "mobile",
+        "field-service"
+      ],
+      "tech": [
+        "React",
+        "React Native",
+        "Node.js",
+        "MongoDB",
+        "Socket.IO",
+        "Push Notifications"
+      ],
       "one_liner": "Web and mobile platform for booking diesel particulate filter cleaning, with partner dispatch and real-time order tracking.",
       "bullets": [
         "Shipped a React Native mobile app alongside the React web client from one shared Node.js API.",
@@ -164,8 +337,19 @@
       "id": "his",
       "name": "HIS - Healthcare Workforce Management System",
       "url": null,
-      "domain": ["healthcare", "saas", "enterprise"],
-      "tech": ["React", "React Native", "TypeScript", "Node.js", "AWS", "Docker"],
+      "domain": [
+        "healthcare",
+        "saas",
+        "enterprise"
+      ],
+      "tech": [
+        "React",
+        "React Native",
+        "TypeScript",
+        "Node.js",
+        "AWS",
+        "Docker"
+      ],
       "one_liner": "Cloud platform for hospital staff attendance, leave, shift scheduling and overtime tracking.",
       "bullets": [
         "Built scheduling logic for complex hospital rostering including rotating and night shifts.",
@@ -177,8 +361,17 @@
       "id": "corporatemerch",
       "name": "CorporateMerch.com - AI Merchandise Platform",
       "url": "corporatemerch.com",
-      "domain": ["e-commerce", "ai"],
-      "tech": ["Next.js", "Tailwind CSS", "AI Integration", "CRM Integration", "E-commerce"],
+      "domain": [
+        "e-commerce",
+        "ai"
+      ],
+      "tech": [
+        "Next.js",
+        "Tailwind CSS",
+        "AI Integration",
+        "CRM Integration",
+        "E-commerce"
+      ],
       "one_liner": "Corporate gifting platform that generates custom branded merchandise designs with AI and syncs with client CRMs.",
       "bullets": [
         "Built AI-assisted design generation into the product configurator so companies produce branded merchandise in seconds.",
@@ -190,8 +383,16 @@
       "id": "ggamer",
       "name": "GGamer - eSports News & Streaming Platform",
       "url": null,
-      "domain": ["media", "streaming"],
-      "tech": ["React", "Next.js", "Tailwind CSS", "Framer Motion"],
+      "domain": [
+        "media",
+        "streaming"
+      ],
+      "tech": [
+        "React",
+        "Next.js",
+        "Tailwind CSS",
+        "Framer Motion"
+      ],
       "one_liner": "Responsive platform for live gaming competitions, eSports news and embedded game streaming.",
       "bullets": [
         "Owned complete front-end delivery in React and Next.js with Tailwind CSS and Framer Motion.",
@@ -202,8 +403,15 @@
       "id": "definepedia",
       "name": "Definepedia - Education Platform",
       "url": null,
-      "domain": ["education", "e-commerce"],
-      "tech": ["React", "AWS", "Payment Gateway"],
+      "domain": [
+        "education",
+        "e-commerce"
+      ],
+      "tech": [
+        "React",
+        "AWS",
+        "Payment Gateway"
+      ],
       "one_liner": "Education platform providing study resources and paid tutor support.",
       "bullets": [
         "Built the study-resource catalogue and tutor-booking flow with payment gateway integration."
@@ -234,18 +442,118 @@
     "Project Management for Web Developers"
   ],
   "languages": [
-    {"language": "English", "level": "C1 - Professional working proficiency"},
-    {"language": "Urdu", "level": "Native"},
-    {"language": "German", "level": null, "_note": "TELL ME YOUR LEVEL (A1/A2/B1/B2). Austrian and German employers filter on this - even A2 is worth listing."}
+    {
+      "language": "English",
+      "level": "C1 - Professional working proficiency"
+    },
+    {
+      "language": "Urdu",
+      "level": "Native"
+    },
+    {
+      "language": "German",
+      "level": null,
+      "_note": "TELL ME YOUR LEVEL (A1/A2/B1/B2). Austrian and German employers filter on this - even A2 is worth listing."
+    }
   ],
   "matching": {
-    "must_have_any": ["react", "react native", "next.js", "node", "nodejs", "node.js", "typescript", "javascript", "flutter", "full stack", "fullstack", "frontend", "front-end", "backend", "back-end", "angular", "nestjs", "python"],
-    "strong_signals": ["react", "react native", "next.js", "nestjs", "node.js", "typescript", "mongodb", "postgresql", "flutter", "tailwind", "docker", "aws", "stripe", "socket.io", "websocket", "graphql", "prisma", "express", "redis", "scraping", "playwright"],
-    "domain_bonus": ["logistics", "marketplace", "real estate", "proptech", "healthcare", "e-commerce", "saas", "fintech"],
-    "hard_reject": ["unpaid", "equity only", "no pay", "commission only", "php developer", "wordpress only", ".net developer", "java developer", "salesforce", "sap abap", "drupal", "magento developer", "ruby on rails"],
-    "seniority_reject": ["principal engineer", "staff engineer", "engineering manager", "vp of engineering", "cto", "head of engineering", "10+ years", "12+ years", "15+ years"],
+    "must_have_any": [
+      "react",
+      "react native",
+      "next.js",
+      "node",
+      "nodejs",
+      "node.js",
+      "typescript",
+      "javascript",
+      "flutter",
+      "full stack",
+      "fullstack",
+      "frontend",
+      "front-end",
+      "backend",
+      "back-end",
+      "angular",
+      "nestjs",
+      "python"
+    ],
+    "strong_signals": [
+      "react",
+      "react native",
+      "next.js",
+      "nestjs",
+      "node.js",
+      "typescript",
+      "mongodb",
+      "postgresql",
+      "flutter",
+      "tailwind",
+      "docker",
+      "aws",
+      "stripe",
+      "socket.io",
+      "websocket",
+      "graphql",
+      "prisma",
+      "express",
+      "redis",
+      "scraping",
+      "playwright"
+    ],
+    "domain_bonus": [
+      "logistics",
+      "marketplace",
+      "real estate",
+      "proptech",
+      "healthcare",
+      "e-commerce",
+      "saas",
+      "fintech"
+    ],
+    "hard_reject": [
+      "unpaid",
+      "equity only",
+      "no pay",
+      "commission only",
+      "php developer",
+      "wordpress only",
+      ".net developer",
+      "java developer",
+      "salesforce",
+      "sap abap",
+      "drupal",
+      "magento developer",
+      "ruby on rails"
+    ],
+    "seniority_reject": [
+      "principal engineer",
+      "staff engineer",
+      "engineering manager",
+      "vp of engineering",
+      "cto",
+      "head of engineering",
+      "10+ years",
+      "12+ years",
+      "15+ years"
+    ],
     "_reject_note": "hard_reject only fires when the term is the PRIMARY stack of the role, not when it is one line in a long nice-to-have list. See pipeline/score.py.",
-    "location_ok": ["remote", "worldwide", "anywhere", "europe", "emea", "eu", "austria", "germany", "vienna", "innsbruck", "cet", "uk", "united states", "us", "canada"],
+    "location_ok": [
+      "remote",
+      "worldwide",
+      "anywhere",
+      "europe",
+      "emea",
+      "eu",
+      "austria",
+      "germany",
+      "vienna",
+      "innsbruck",
+      "cet",
+      "uk",
+      "united states",
+      "us",
+      "canada"
+    ],
     "min_score_to_shortlist": 55
   }
 }

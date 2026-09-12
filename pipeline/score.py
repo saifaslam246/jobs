@@ -25,6 +25,23 @@ CONTRACT_TERMS = [
 ]
 REMOTE_TERMS = ["remote", "anywhere", "worldwide", "distributed", "work from home", "wfh"]
 
+# A technology in the TITLE is the role's primary stack, whatever the body lists as
+# nice-to-haves. "Senior Full Stack Developer - PHP Laravel" is a PHP job that happens
+# to mention React, not a React job.
+PRIMARY_TECH_REJECT = [
+    "php", "laravel", "symfony", "wordpress", "drupal", "magento",
+    ".net", "c#", "asp.net", "dotnet", "rails", "ruby",
+    "django", "java", "kotlin", "scala", "golang", "rust", "elixir",
+    "salesforce", "sap", "sharepoint", "unity", "unreal", "solidity", "web3",
+]
+# Regions that exclude an Austria-based candidate outright.
+REGION_EXCLUDE = [
+    "latam", "latin america", "brazil", "argentina", "colombia", "mexico only",
+    "india only", "philippines", "pakistan only", "nigeria", "kenya", "vietnam",
+    "us only", "usa only", "united states only", "canada only", "australia only",
+    "new zealand", "singapore only", "japan", "south korea",
+]
+
 # Terms that mean "we will not sponsor / must already be here".
 VISA_BLOCKERS = [
     "must be authorized to work in the us", "us citizen", "u.s. citizen",
@@ -90,6 +107,16 @@ def score_job(job: dict, m: dict) -> dict:
     for term in m["hard_reject"]:
         if contains(title, term) or contains(norm(body[:400]), term):
             rejects.append(f"primary stack mismatch: {term}")
+    # a non-JS technology named in the title is the role's primary stack, unless the
+    # title also names one of his core technologies
+    core_in_title = any(contains(title, k) for k in
+                        ("react", "node", "node.js", "nodejs", "next.js", "typescript",
+                         "javascript", "nestjs", "react native", "flutter", "angular"))
+    if not core_in_title:
+        for term in PRIMARY_TECH_REJECT:
+            if contains(title, term):
+                rejects.append(f"role is primarily {term}")
+                break
     # --- gate 3: seniority out of range ---
     for term in m["seniority_reject"]:
         if contains(title, term) or contains(head, term):
@@ -102,19 +129,39 @@ def score_job(job: dict, m: dict) -> dict:
 
     # --- stack match (max 50) ---
     strong = []
+    stack_pts = 0.0
     for k in m["strong_signals"]:
         if contains(title, k):
-            score += 6
+            stack_pts += 7
             strong.append(k)
         elif contains(tags, k):
-            score += 4
+            stack_pts += 5
             strong.append(k)
         elif contains(body, k):
-            score += 2
+            stack_pts += 3
             strong.append(k)
-    score = min(score, 50)
+    # breadth matters on its own: a role naming six of his technologies is a better
+    # fit than one naming the same two over and over.
+    stack_pts += max(0, len(strong) - 2) * 2
+    score += min(stack_pts, 50)
     if strong:
         reasons.append(f"stack match: {', '.join(strong[:10])}")
+
+    # --- ecosystem fit (max 10, can go negative) ---
+    js_core = ["javascript", "typescript", "node.js", "nodejs", "react", "next.js",
+               "react native", "nestjs", "express", "vue", "angular"]
+    other_backend = ["kotlin", "java", "golang", " go ", "rust", "scala", "c#", ".net",
+                     "php", "ruby", "elixir", "clojure"]
+    js_hits = sum(1 for k in js_core if contains(head, k))
+    other_hits = sum(1 for k in other_backend if contains(head, k))
+    if js_hits >= 2 and other_hits == 0:
+        score += 10
+        reasons.append("JS/TypeScript shop")
+    elif js_hits >= 2 and other_hits <= 1:
+        score += 5
+    elif other_hits >= 2 and js_hits <= 1:
+        score -= 12
+        reasons.append("primarily a non-JS stack")
 
     # --- role shape (max 15) ---
     if any(contains(title, t) for t in ("full stack", "fullstack", "full-stack")):
@@ -172,6 +219,12 @@ def score_job(job: dict, m: dict) -> dict:
         elif age > 60:
             score -= 15
             reasons.append("stale posting (>60 days)")
+
+    # --- region lock: a role restricted to a region he cannot work from ---
+    region_lock = [r for r in REGION_EXCLUDE if contains(f"{loc} {title}", r)]
+    if region_lock:
+        score -= 30
+        reasons.append(f"restricted to {region_lock[0]} - you cannot work from there")
 
     # --- flags: things to check before applying, not auto-rejects ---
     flags = [v for v in VISA_BLOCKERS if v in body]
