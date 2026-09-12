@@ -349,9 +349,9 @@
     ["Adzuna · AT/DE","off"],["LinkedIn","no"],["Indeed","no"],["Upwork","no"]
   ];
   var STEPS = [
-    ["Merge the branch so the schedule starts","GitHub only runs cron workflows from the default branch. Until then the harvest runs on demand from the Actions tab."],
-    ["Add the Adzuna key","Free at developer.adzuna.com. It is the single biggest lift to Austrian and German coverage. Add ADZUNA_APP_ID and ADZUNA_APP_KEY as repository secrets."],
-    ["Confirm your residence permit type","Decides whether the filter is EU-only or worldwide-remote — it changes which half of the results are even worth reading."],
+    ["Add the Gmail App Password","Without it the sender reports what is waiting and exits — nothing goes out. myaccount.google.com/apppasswords, then add SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS and FROM_NAME as repository secrets. Never paste it into a chat."],
+    ["Add the Adzuna key","Free at developer.adzuna.com, and the single biggest lift to Austrian and German coverage. Add ADZUNA_APP_ID and ADZUNA_APP_KEY as repository secrets."],
+    ["Confirm your residence permit type","Decides whether the filter is EU-only or worldwide-remote — it changes which half of the results are worth reading at all."],
     ["Name your hourly floor","Lowball postings get auto-rejected instead of using up your attention."],
     ["Tell me your German level","Austrian and German employers filter on it. Even A2 is worth listing."],
     ["Fill in the TMN projects","Your most recent role is the thinnest section on the CV. Ludwig and the rest need one line each: what it does, what you built, what changed."]
@@ -545,10 +545,9 @@
     var list = visible();
     if(!jobs.length){
       rowsEl.innerHTML =
-        '<div class="panel empty"><h2>No harvest yet</h2>' +
-        '<p>The first run fills this desk with scored roles. Until the workflow is on the ' +
-        'default branch you can trigger it by hand from the repository’s Actions tab — ' +
-        'see the Setup tab for what is still open.</p></div>';
+        '<div class="panel empty"><h2>Loading the desk…</h2>' +
+        "<p>If this stays empty, the harvest has not reached the portal yet. The Setup tab " +
+        "lists what is still open.</p></div>";
       return;
     }
     if(!list.length){
