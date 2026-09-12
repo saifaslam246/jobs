@@ -66,8 +66,11 @@
   .count{
     display:flex; align-items:baseline; gap:6px;
     background:var(--surface); border:1px solid var(--line); border-radius:999px;
-    padding:5px 12px 5px 10px;
+    padding:5px 12px 5px 10px; cursor:pointer; font:inherit; color:inherit;
   }
+  .count:hover{border-color:var(--accent)}
+  .count[aria-pressed="true"]{border-color:var(--accent); background:var(--accent-soft)}
+  .count[aria-pressed="true"] span{color:var(--accent-ink)}
   .count b{font-family:"IBM Plex Mono",monospace; font-size:14px; font-weight:600}
   .count span{font-size:11px; color:var(--muted); letter-spacing:.02em}
   .count.is-live b{color:var(--accent)}
@@ -340,12 +343,12 @@
         <span class="flabel">Show</span>
         <button class="fchip" data-status="open" aria-pressed="true">Still open</button>
         <button class="fchip" data-status="" aria-pressed="false">Everything</button>
-        <button class="fchip" data-status="new" aria-pressed="false">Not reviewed</button>
+        <button class="fchip" data-status="toreview" aria-pressed="false">To review</button>
+        <button class="fchip" data-status="email" aria-pressed="false">Direct email</button>
         <button class="fchip" data-status="shortlisted" aria-pressed="false">Shortlisted</button>
         <button class="fchip" data-status="cv_ready" aria-pressed="false">CV ready</button>
-        <button class="fchip" data-status="applied" aria-pressed="false">Applied</button>
-        <button class="fchip" data-status="replied" aria-pressed="false">Replied</button>
-        <button class="fchip" data-status="interview" aria-pressed="false">Interview</button>
+        <button class="fchip" data-status="sent" aria-pressed="false">Applied</button>
+        <button class="fchip" data-status="inplay" aria-pressed="false">In play</button>
         <button class="fchip" data-status="dismissed" aria-pressed="false">Dismissed</button>
       </div>
       <div class="fgroup" role="group" aria-label="Sort order">
@@ -418,6 +421,8 @@
     ["replied","Replied"],["interview","Interview"],["rejected","Rejected"],["dismissed","Dismissed"]
   ];
   var CLOSED = {rejected:1, dismissed:1};
+  var SENT = {applied:1, replied:1, interview:1};   // anything you have actually sent
+  var INPLAY = {replied:1, interview:1};            // they answered - a live conversation
   var SOURCES = [
     ["Remotive","on"],["RemoteOK","on"],["Arbeitnow · DACH","on"],["Jobicy","on"],
     ["Himalayas","on"],["WeWorkRemotely","on"],["HN · hiring","on"],["HN · freelance","on"],
@@ -504,22 +509,27 @@
 
   /* ---------------- render: counters ---------------- */
   function paintCounters(){
-    var open = 0, shortlist = 0, applied = 0, live = 0, mail = 0;
+    var open = 0, toreview = 0, sent = 0, inplay = 0, mail = 0;
     jobs.forEach(function(j){
       var s = statusOf(j.id);
       if(!CLOSED[s]) open++;
-      if(j.score >= 55 && s === "new") shortlist++;
-      if(s === "applied" || s === "replied" || s === "interview") applied++;
-      if(s === "replied" || s === "interview") live++;
-      if(j.contact_emails && j.contact_emails.length && !CLOSED[s]) mail++;
+      if(!CLOSED[s] && s === "new" && j.score >= 55) toreview++;
+      if(SENT[s]) sent++;
+      if(INPLAY[s]) inplay++;
+      if(!CLOSED[s] && (j.contact_emails || []).length) mail++;
     });
     var items = [
-      [open, "open"], [shortlist, "to review"], [mail, "direct email"],
-      [applied, "applied"], [live, "in play", true]
+      [open,     "open",         "open",       "Everything you have not closed out"],
+      [toreview, "to review",    "toreview",   "Scored 55+ and you have not looked at it yet"],
+      [mail,     "direct email", "email",      "The posting carries an address, so it can be emailed"],
+      [sent,     "applied",      "sent",       "You have sent something to these"],
+      [inplay,   "in play",      "inplay",     "They replied, or an interview is booked", true]
     ];
     $("#counters").innerHTML = items.map(function(c){
-      return '<div class="count' + (c[2] && c[0] > 0 ? " is-live" : "") + '"><b>' +
-             c[0] + "</b><span>" + c[1] + "</span></div>";
+      return '<button class="count' + (c[4] && c[0] > 0 ? " is-live" : "") +
+             '" data-status="' + c[2] + '" title="' + esc(c[3]) + '"' +
+             (filterStatus === c[2] ? ' aria-pressed="true"' : '') + "><b>" +
+             c[0] + "</b><span>" + c[1] + "</span></button>";
     }).join("");
   }
 
@@ -608,8 +618,12 @@
 
     var out = jobs.filter(function(j){
       var s = statusOf(j.id);
-      if(fs === "open" && CLOSED[s]) return false;
-      if(fs && fs !== "open" && s !== fs) return false;
+      if(fs === "open"){ if(CLOSED[s]) return false; }
+      else if(fs === "toreview"){ if(CLOSED[s] || s !== "new" || j.score < 55) return false; }
+      else if(fs === "email"){ if(CLOSED[s] || !(j.contact_emails || []).length) return false; }
+      else if(fs === "sent"){ if(!SENT[s]) return false; }
+      else if(fs === "inplay"){ if(!INPLAY[s]) return false; }
+      else if(fs){ if(s !== fs) return false; }
       if(contractOnly && !j.is_contract) return false;
       if(q){
         var hay = (j.title + " " + j.company + " " + (j.matched || []).join(" ") + " " +
@@ -914,16 +928,26 @@
 
   // Plain buttons rather than <select>: a native dropdown inside the sandboxed
   // frame can render its popup and then fail to commit the choice.
+  function setFilter(mode){
+    filterStatus = mode;
+    Array.prototype.forEach.call(document.querySelectorAll(".fchip"), function(b){
+      b.setAttribute("aria-pressed", String(b.dataset.status === mode));
+    });
+    paintRows();
+    paintCounters();
+    document.querySelector(".filterbar").scrollIntoView({block: "nearest"});
+  }
+
+  $("#counters").addEventListener("click", function(e){
+    var c = e.target.closest(".count");
+    if(!c) return;
+    setFilter(filterStatus === c.dataset.status ? "open" : c.dataset.status);
+    document.getElementById("tab-pipeline").click();
+  });
+
   document.querySelector(".filterbar").addEventListener("click", function(e){
     var f = e.target.closest(".fchip");
-    if(f){
-      filterStatus = f.dataset.status;
-      Array.prototype.forEach.call(document.querySelectorAll(".fchip"), function(b){
-        b.setAttribute("aria-pressed", String(b === f));
-      });
-      paintRows();
-      return;
-    }
+    if(f){ setFilter(f.dataset.status); return; }
     var so = e.target.closest(".schip");
     if(so){
       sortBy = so.dataset.sort;
