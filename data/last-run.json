@@ -1,0 +1,44 @@
+{
+  "stats": {
+    "scanned": 2511,
+    "kept": 1265,
+    "shortlist": 0,
+    "with_contact_email": 461,
+    "generated_at": "2026-09-12T09:28:41+00:00"
+  },
+  "sources": {
+    "remotive": {
+      "ok": true,
+      "count": 32
+    },
+    "remoteok": {
+      "ok": true,
+      "count": 99
+    },
+    "arbeitnow": {
+      "ok": true,
+      "count": 600
+    },
+    "jobicy": {
+      "ok": true,
+      "count": 100
+    },
+    "himalayas": {
+      "ok": true,
+      "count": 20
+    },
+    "weworkremotely": {
+      "ok": true,
+      "count": 152
+    },
+    "hn-hiring": {
+      "ok": true,
+      "count": 1626
+    },
+    "adzuna": {
+      "ok": false,
+      "count": 0,
+      "error": "ADZUNA_APP_ID/KEY secrets not set - Austria/Germany coverage is reduced"
+    }
+  }
+}
