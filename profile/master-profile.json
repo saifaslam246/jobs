@@ -175,12 +175,12 @@
         "Playwright"
       ],
       "bullets": [
-        "Lead developer on the practice dashboard of Ludwig, a medical practice-management suite for physiotherapy and doctors' practices in Germany and Austria - 1,140 of 1,553 commits over 14 months on a 14-contributor, nine-application product.",
-        "Built clinical documentation to the conventions Austrian and German practices are legally obliged to keep - patient history, diagnosis, examination findings and therapy progress - with an anatomical body chart stored as structured data so a chart drawn in the Flutter app opens in the Angular dashboard.",
-        "Delivered statutory health-insurance invoicing: tariff-priced position lines, gap-free per-company invoice number ranges, customer-supplied layouts rebuilt as a data-driven template library, and PDF export with SEPA payment QR codes.",
-        "Implemented multi-tenancy on two axes - one deployment serving many practices, and practice groups partitioning patients, invoicing, number ranges and outbound mail across sub-companies.",
-        "Built offline-first practice work with two-way synchronisation and a conflict-review screen, so practitioners keep working in the field without overwriting colleagues' changes.",
-        "Shipped a configuration-driven patient booking wizard in Next.js 16 and React 19 - per-practice theming, one-time-code email login, appointment and course booking with waiting lists, embeddable in a practice's own website."
+        "Lead developer on the practice dashboard of Ludwig, a nine-application medical practice-management suite for physiotherapy and doctors' practices in Germany and Austria, built by a team of fourteen.",
+        "Built clinical documentation to the standards Austrian and German practices are legally required to keep, with an anatomical body chart shared between the Angular dashboard and the Flutter app.",
+        "Delivered statutory health-insurance invoicing: tariff-priced position lines, gap-free invoice numbering per company, and PDF export with SEPA payment QR codes.",
+        "Implemented multi-tenancy on two axes, so one deployment serves many practices while practice groups partition patients, invoicing and outbound mail across sub-companies.",
+        "Built offline-first working with two-way synchronisation and conflict review, so practitioners keep working in the field without overwriting colleagues' changes.",
+        "Shipped a configuration-driven patient booking wizard in Next.js and React, with per-practice theming, one-time-code login and embeddable appointment and course booking."
       ]
     },
     {
@@ -206,11 +206,11 @@
         "Docker"
       ],
       "bullets": [
-        "Led development on multiple client platforms - logistics, marketplace, real-estate and field-service products - from architecture through release.",
+        "Led delivery on client platforms across logistics, marketplace, real-estate and field-service products, from architecture through release.",
         "Built real-time features including chat, group messaging, push notifications and live order tracking across web and mobile clients.",
-        "Designed and integrated REST APIs against MongoDB, MariaDB and Redis, and tuned queries and caching to keep dashboards responsive at scale.",
-        "Integrated e-commerce and payment platforms including Shopify, Amazon, WooCommerce and Stripe to automate order and fulfilment flows.",
-        "Mentored junior developers, ran code reviews, and handled direct client requirement-gathering and delivery planning."
+        "Designed REST APIs over MongoDB, MariaDB and Redis, tuning queries and caching to keep dashboards responsive at scale.",
+        "Integrated Shopify, Amazon, WooCommerce and Stripe to automate order and fulfilment flows.",
+        "Mentored junior developers, ran code reviews, and handled client requirements and delivery planning directly."
       ]
     },
     {
@@ -260,9 +260,9 @@
       ],
       "one_liner": "Nine-application practice-management and patient-booking suite for German and Austrian physiotherapy and medical practices, sharing one backend.",
       "bullets": [
-        "Lead contributor to the practice dashboard - calendar, patients, clinical documentation, invoicing, courses, insurance tariffs and staff across roughly 40 feature areas in Angular 19 and Ionic 8.",
-        "Built appointment scheduling against real constraints: recurring series, practitioner and room resources, absences, waiting lists, free-slot computation and overlapping-appointment layout, with per-week incremental loading.",
-        "Worked across five runtimes on one domain model - Angular/Ionic dashboard, Next.js/React booking wizard, Flutter patient and practitioner apps, and shared Angular libraries published as versioned packages."
+        "Lead contributor to the practice dashboard, covering calendar, patients, clinical documentation, invoicing, courses and insurance tariffs in Angular and Ionic.",
+        "Built appointment scheduling against real constraints: recurring series, practitioner and room resources, absences, waiting lists and free-slot computation.",
+        "Worked across five runtimes on one domain model, publishing shared Angular libraries as versioned packages."
       ],
       "weight": 6
     },
@@ -387,7 +387,7 @@
       ],
       "one_liner": "Multi-tenant white-label appointment-booking wizard, the predecessor of Ludwig's patient wizard.",
       "bullets": [
-        "Top contributor with 116 of 281 commits, building the per-tenant booking flows that the Ludwig patient wizard was later built on."
+        "Principal contributor to a multi-tenant white-label booking wizard, the predecessor of Ludwig's patient-facing flow."
       ],
       "weight": 3
     },
