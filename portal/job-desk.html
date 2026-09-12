@@ -240,6 +240,24 @@
   .mail .att{font-size:11.5px; color:var(--muted)}
   .mail .acts{display:flex; flex-wrap:wrap; gap:7px; align-items:center}
 
+  .conn{
+    display:flex; flex-wrap:wrap; align-items:center; gap:8px 12px;
+    margin-top:12px; padding:9px 13px; border-radius:var(--r);
+    border:1px solid var(--line); background:var(--surface); font-size:12.5px;
+  }
+  .conn .dot{width:8px; height:8px; border-radius:999px; background:var(--muted)}
+  .conn[data-k="ok"]{border-color:transparent; background:var(--good-soft); color:var(--good)}
+  .conn[data-k="ok"] .dot{background:var(--good)}
+  .conn[data-k="busy"] .dot{background:var(--warn)}
+  .conn[data-k="warn"]{border-color:transparent; background:var(--warn-soft); color:var(--ink)}
+  .conn[data-k="warn"] .dot{background:var(--warn)}
+  .conn[data-k="bad"]{border-color:transparent; background:var(--crit-soft); color:var(--ink)}
+  .conn[data-k="bad"] .dot{background:var(--crit)}
+  .conn button{
+    background:var(--surface); border:1px solid var(--line); border-radius:999px;
+    padding:4px 13px; font-size:12px; font-weight:600; color:var(--ink);
+  }
+
   .hidden{display:none !important}
 
   @media (max-width:760px){
@@ -266,6 +284,11 @@
     <button role="tab" id="tab-outbox" aria-selected="false" aria-controls="view-outbox">Outbox <span id="outboxbadge" class="tabbadge hidden">0</span></button>
     <button role="tab" id="tab-setup" aria-selected="false" aria-controls="view-setup">Setup</button>
   </nav>
+
+  <div class="conn" id="conn" data-k="busy" role="status" aria-live="polite">
+    <span class="dot"></span><span id="conntext">Connecting to your portal database…</span>
+    <button id="connbtn" class="hidden"></button>
+  </div>
 
   <section id="view-pipeline" role="tabpanel" aria-labelledby="tab-pipeline">
     <div class="controls">
@@ -739,34 +762,104 @@
       " - " + (SEED.jobs || []).length + " scored roles. Status changes stay in this browser.";
   }
 
-  if(window.claude && typeof window.claude.use === "function"){
-    window.claude.use("db").then(function(d){
-      if(!d) return;
-      db = d;
-      db.collection("pipeline").onSnapshot(function(snap){
-        snap.docs.forEach(function(doc){ state[doc.id] = doc.data(); });
-        paintRows();
-        paintCounters();
-      }, function(){});
-      db.collection("outbox").limit(200).onSnapshot(function(snap){
-        outbox = snap.docs.map(function(doc){
-          var x = Object.assign({}, doc.data());
-          x.id = doc.id;
-          return x;
-        });
-        paintOutbox();
-      }, function(){});
-      db.collection("jobs").orderBy("score", "desc").limit(400).onSnapshot(function(snap){
-        jobs = snap.docs.map(function(doc){
-          var x = doc.data();
-          x.id = doc.id;
-          x.score = Number(x.score) || 0;
-          return x;
-        });
-        paintRows();
-        paintCounters();
-      }, function(){});
-    }).catch(function(){});
+  /* ---------------- connection state ---------------- */
+  var subs = [];
+
+  function setConn(kind, text, label, action){
+    var el = $("#conn"), btn = $("#connbtn");
+    el.dataset.k = kind;
+    $("#conntext").textContent = text;
+    if(label && action){
+      btn.textContent = label;
+      btn.classList.remove("hidden");
+      btn.onclick = action;
+    } else {
+      btn.classList.add("hidden");
+      btn.onclick = null;
+    }
   }
+
+  function onDbError(e){
+    var code = (e && e.code) || "unknown";
+    if(code === "not_granted" || code === "capability_disabled"){ askPermission(); return; }
+    setConn("bad", "Lost the portal database (" + code + ").", "Reconnect", probe);
+  }
+
+  function subscribe(){
+    subs.forEach(function(u){ try { u(); } catch(err){} });
+    subs = [];
+    subs.push(db.collection("pipeline").onSnapshot(function(snap){
+      snap.docs.forEach(function(doc){ state[doc.id] = doc.data(); });
+      paintRows(); paintCounters();
+    }, onDbError));
+    subs.push(db.collection("outbox").limit(200).onSnapshot(function(snap){
+      outbox = snap.docs.map(function(doc){
+        var x = Object.assign({}, doc.data());
+        x.id = doc.id;
+        return x;
+      });
+      paintOutbox();
+    }, onDbError));
+    subs.push(db.collection("jobs").orderBy("score", "desc").limit(400).onSnapshot(function(snap){
+      jobs = snap.docs.map(function(doc){
+        var x = Object.assign({}, doc.data());
+        x.id = doc.id;
+        x.score = Number(x.score) || 0;
+        return x;
+      });
+      setConn("ok", jobs.length + " roles loaded. Changes you make here are saved to your portal.");
+      paintRows(); paintCounters();
+    }, onDbError));
+  }
+
+  function askPermission(){
+    setConn("warn",
+      "This page needs your permission to load your job list.",
+      "Allow access",
+      function(){
+        setConn("busy", "Waiting for your answer…");
+        window.claude.use("permissions").then(function(perms){
+          if(!perms){
+            setConn("bad", "This view cannot grant database access. Open the artifact from claude.ai.");
+            return;
+          }
+          perms.request(["db"]).then(function(st){
+            if(st && st.db === "granted") probe();
+            else setConn("warn",
+              "Access was not granted, so your jobs cannot load. Reload the page to be asked again.",
+              "Ask again", askPermission);
+          }).catch(function(){
+            setConn("bad", "Could not ask for access.", "Try again", askPermission);
+          });
+        });
+      });
+  }
+
+  function probe(){
+    setConn("busy", "Connecting to your portal database…");
+    db.collection("jobs").limit(1).get().then(function(){
+      subscribe();
+    }).catch(onDbError);
+  }
+
+  if(SEED){
+    setConn("warn", "Offline snapshot of " + (SEED.generated_at || "an earlier harvest") +
+      ". Status changes stay in this browser and do not reach your portal.");
+  } else if(window.claude && typeof window.claude.use === "function"){
+    window.claude.use("db").then(function(d){
+      if(!d){
+        setConn("bad",
+          "No portal database in this view. Open the artifact from claude.ai rather than a saved copy of the file.");
+        return;
+      }
+      db = d;
+      probe();
+    }).catch(function(){
+      setConn("bad", "Could not reach the portal database.", "Retry", function(){ location.reload(); });
+    });
+  } else {
+    setConn("warn", "Running as a plain file — no portal database. Status changes stay in this browser.");
+  }
+
 })();
 </script>
