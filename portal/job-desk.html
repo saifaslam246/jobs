@@ -225,12 +225,13 @@
   }
   .cvbox .fname{font-family:"IBM Plex Mono",monospace; font-size:11.5px; color:var(--ink-2); word-break:break-all}
   .cvbox .links{display:flex; flex-wrap:wrap; gap:7px}
-  .cvbox .links a{
+  .cvbox .links a, .cvbox .links button.cvbtn{
     display:inline-block; text-decoration:none; font-weight:600; font-size:12.5px;
     background:var(--surface); border:1px solid var(--line); border-radius:999px;
     padding:5px 13px; color:var(--ink);
   }
-  .cvbox .links a:hover{border-color:var(--accent); color:var(--accent-ink)}
+  .cvbox .links a:hover, .cvbox .links button.cvbtn:hover{border-color:var(--accent); color:var(--accent-ink)}
+  .cvbox .links button.cvbtn{font-family:inherit; cursor:pointer}
   .hint{font-size:12px; color:var(--muted); line-height:1.45}
 
   .tabbadge{
@@ -373,6 +374,7 @@
 <button class="scrim hidden" id="scrim" aria-label="Close details"></button>
 <aside class="drawer hidden" id="drawer" role="dialog" aria-modal="true" aria-labelledby="dtitle"></aside>
 
+<script src="cvdata.js"></script>
 <script>
 (function(){
   "use strict";
@@ -639,17 +641,21 @@
   /* ---------------- CV for a role ---------------- */
   // Which master CV to send when no per-job version has been built yet. The weekday
   // run replaces this with one rewritten against the posting itself.
-  // The artifact can serve a PDF but not a .docx, so the Word version is linked in the
-  // repository, where the daily run writes it anyway.
+  // A published artifact runs in a sandboxed frame: target="_blank" cannot open a
+  // tab and page-initiated downloads are blocked, so links to a served file fail.
+  // The supported route is the downloads capability, fed from bytes embedded in
+  // cvdata.js. The repo link stays as the fallback when that is unavailable.
   var REPO_CV = "https://github.com/saifaslam246/jobs/raw/" +
                 "claude/job-portal-cv-manager-7w6cxz/profile/cv/generated/";
+  var CV_BLOBS = window.__CV_BLOBS__ || {};
+  var downloads = null, downloadsAsked = false;
 
   var CV_VARIANTS = {
-    mobile:        {label: "Mobile",            file: "Saif_ur_Rehman_CV_mobile"},
-    frontend:      {label: "Frontend",          file: "Saif_ur_Rehman_CV_frontend"},
-    backend:       {label: "Backend",           file: "Saif_ur_Rehman_CV_backend"},
-    data_scraping: {label: "Data / scraping",   file: "Saif_ur_Rehman_CV_data_scraping"},
-    fullstack:     {label: "Full stack",        file: "Saif_ur_Rehman_CV_fullstack"}
+    mobile:        {label: "Mobile",          file: "Saif_ur_Rehman_CV_mobile"},
+    frontend:      {label: "Frontend",        file: "Saif_ur_Rehman_CV_frontend"},
+    backend:       {label: "Backend",         file: "Saif_ur_Rehman_CV_backend"},
+    data_scraping: {label: "Data / scraping", file: "Saif_ur_Rehman_CV_data_scraping"},
+    fullstack:     {label: "Full stack",      file: "Saif_ur_Rehman_CV_fullstack"}
   };
 
   function pickVariant(j){
@@ -665,6 +671,64 @@
     return "fullstack";
   }
 
+  function b64ToBlob(b64, type){
+    var bin = atob(b64);
+    var bytes = new Uint8Array(bin.length);
+    for(var i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
+    return new Blob([bytes], {type: type});
+  }
+
+  var MIME = {
+    pdf: "application/pdf",
+    docx: "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+  };
+
+  function saveCv(filename, btn){
+    var b64 = CV_BLOBS[filename];
+    var label = btn.textContent;
+    function fail(msg){
+      btn.textContent = msg;
+      setTimeout(function(){ btn.textContent = label; }, 2800);
+    }
+    if(!b64){ fail("not available here"); return; }
+
+    function doSave(){
+      var ext = filename.split(".").pop().toLowerCase();
+      downloads.save({filename: filename, data: b64ToBlob(b64, MIME[ext] || "application/octet-stream")})
+        .then(function(){ btn.textContent = "Saved"; setTimeout(function(){ btn.textContent = label; }, 2200); })
+        .catch(function(e){
+          var c = e && e.code;
+          fail(c === "declined" ? label
+             : c === "rate_limited" ? "try again in a moment"
+             : "could not save");
+        });
+    }
+
+    if(downloads){ doSave(); return; }
+    if(downloadsAsked){ fail("saving unavailable"); return; }
+    downloadsAsked = true;
+    btn.textContent = "…";
+    window.claude.use("downloads").then(function(d){
+      if(!d){ fail("saving unavailable"); return; }
+      downloads = d;
+      doSave();
+    }).catch(function(){ fail("saving unavailable"); });
+  }
+
+  function cvLinks(base){
+    var canSave = !!(window.claude && CV_BLOBS[base + ".pdf"]);
+    if(canSave){
+      return '<span class="links">' +
+        '<button class="cvbtn" data-cv="' + esc(base) + '.pdf">Download PDF</button>' +
+        '<button class="cvbtn" data-cv="' + esc(base) + '.docx">Download Word</button>' +
+      "</span>";
+    }
+    return '<span class="links">' +
+      '<a href="' + REPO_CV + encodeURIComponent(base) + '.pdf" target="_blank" rel="noopener">PDF in repo</a>' +
+      '<a href="' + REPO_CV + encodeURIComponent(base) + '.docx" target="_blank" rel="noopener">Word in repo</a>' +
+    "</span>";
+  }
+
   function cvPanel(j){
     var tailored = j.cv_file || (state[j.id] && state[j.id].cv_file);
     if(tailored){
@@ -672,22 +736,17 @@
       return '<div class="field"><span class="eyebrow">Your CV for this role</span>' +
         '<div class="cvbox">' +
           "<span><b>Tailored to this posting.</b> Rewritten against what they asked for.</span>" +
-          '<span class="fname">' + esc(base) + ".pdf</span>" +
-          '<span class="links">' +
-            '<a href="cv/' + encodeURIComponent(base) + '.pdf" target="_blank" rel="noopener">Open PDF</a>' +
-            '<a href="' + REPO_CV + encodeURIComponent(base) + '.docx" target="_blank" rel="noopener">Word version</a>' +
-          "</span>" +
-          '<span class="hint">Send the Word version to application forms - most screening software reads it more reliably than a PDF.</span>' +
+          '<span class="fname">' + esc(base) + "</span>" +
+          cvLinks(base) +
+          '<span class="hint">Send the Word version to application forms - most screening ' +
+          "software reads it more reliably than a PDF.</span>" +
         "</div></div>";
     }
     var v = CV_VARIANTS[pickVariant(j)];
     return '<div class="field"><span class="eyebrow">Your CV for this role</span>' +
       '<div class="cvbox">' +
         "<span><b>" + esc(v.label) + " version</b> - the closest fit until a tailored one is built.</span>" +
-        '<span class="links">' +
-          '<a href="cv/' + v.file + '.pdf" target="_blank" rel="noopener">Open PDF</a>' +
-          '<a href="' + REPO_CV + v.file + '.docx" target="_blank" rel="noopener">Word version</a>' +
-        "</span>" +
+        cvLinks(v.file) +
         '<span class="hint">Use this now if you are applying yourself. A version rewritten against ' +
         "this exact posting is built on the next weekday run, and replaces this one here.</span>" +
       "</div></div>";
@@ -793,6 +852,8 @@
   });
   drawer.addEventListener("click", function(e){
     if(e.target.id === "closeb"){ closeDrawer(); return; }
+    var cvb = e.target.closest("button.cvbtn");
+    if(cvb){ saveCv(cvb.dataset.cv, cvb); return; }
     var sb = e.target.closest("#sgrid button");
     if(sb && openId){
       var id = openId;

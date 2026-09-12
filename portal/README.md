@@ -28,3 +28,28 @@ what makes that guarantee hold.
 
 Edit this file, then republish it to the **same URL** (pass the URL as `url` if you are in
 a different conversation). Publishing without the URL creates a second, unrelated artifact.
+
+## Why the CV files are embedded
+
+A published artifact runs in a sandboxed frame. Two consequences shape the CV panel:
+
+* `target="_blank"` cannot open a tab, so a link to a served file navigates the frame
+  itself and the browser refuses it (`ERR_BLOCKED_BY_RESPONSE`).
+* Page-initiated downloads are blocked outright, so `<a download>` and `blob:` URLs
+  are inert too.
+
+Handing the viewer a file is a runtime capability (`downloads`), which takes bytes from
+the page. So `portal/build_cvdata.py` base64-encodes every built CV into
+`portal/cvdata.js`, published as a supporting file and loaded by the page. JavaScript
+is a servable type; `.docx` is not, which is why the documents ride inside the script
+rather than sitting beside it.
+
+Rebuild it whenever the CVs change:
+
+```bash
+python profile/cv/build_cv.py --variant frontend   # or --job <id>
+python portal/build_cvdata.py
+```
+
+The standalone snapshot has no supporting files and no capabilities, so it falls back
+to linking the copies in the repository.
