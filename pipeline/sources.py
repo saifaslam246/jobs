@@ -55,15 +55,31 @@ def _json(url: str, headers: dict | None = None):
 
 
 def strip_html(s: str | None) -> str:
+    """HTML (or HTML-escaped HTML) to readable plain text.
+
+    Unescaping has to happen BEFORE tags are stripped, and again after. Some feeds
+    (Arbeitnow among them) return HTML that is itself HTML-escaped - "&lt;h2&gt;" -
+    so stripping first leaves the tags untouched and the later unescape reveals them
+    as literal markup in the posting. Unescape up to three times, since a value that
+    has been round-tripped through two systems can be doubly escaped, then strip.
+    """
     if not s:
         return ""
+    for _ in range(3):
+        prev = s
+        s = html.unescape(s)
+        if s == prev:
+            break
+    s = re.sub(r"<(script|style)[^>]*>.*?</\1>", " ", s, flags=re.I | re.S)
     s = re.sub(r"<br\s*/?>", "\n", s, flags=re.I)
-    s = re.sub(r"</p>", "\n\n", s, flags=re.I)
+    s = re.sub(r"</(p|div|h[1-6]|tr)>", "\n\n", s, flags=re.I)
     s = re.sub(r"</li>", "\n", s, flags=re.I)
     s = re.sub(r"<li[^>]*>", "- ", s, flags=re.I)
     s = TAG_RE.sub(" ", s)
     s = html.unescape(s)
+    s = s.replace("\xa0", " ")
     s = re.sub(r"[ \t]+", " ", s)
+    s = re.sub(r"\n[ \t]+", "\n", s)
     s = re.sub(r"\n{3,}", "\n\n", s)
     return s.strip()
 
