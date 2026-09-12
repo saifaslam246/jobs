@@ -95,6 +95,13 @@ def find_emails(*texts: str | None) -> list[str]:
             # drop obvious non-contact addresses
             if any(x in low for x in ("example.com", "sentry.io", "@2x", ".png", ".jpg", "wixpress")):
                 continue
+            # accommodations and accessibility inboxes exist for a legal purpose; an
+            # application sent there is worse than one not sent at all
+            if any(x in low.split("@")[0] for x in
+                   ("accommodation", "accessibility", "ada-", "disability", "unsubscribe",
+                    "privacy", "gdpr", "dsar", "abuse", "security", "noreply", "no-reply",
+                    "support", "assistance", "helpdesk", "billing", "sales")):
+                continue
             if low not in [f.lower() for f in found]:
                 found.append(m)
     return found[:5]
@@ -280,51 +287,70 @@ def weworkremotely() -> list[dict]:
 
 
 def hn_hiring(months_back: int = 2) -> list[dict]:
-    """Hacker News 'Who is hiring?' and 'freelancer? seeking freelancer?' threads.
+    """Hacker News 'Who is hiring?' and 'Freelancer? Seeking freelancer?' threads.
 
-    These are the highest-signal source for contract and project work, and the
-    comments frequently contain a direct email address - which is exactly what
-    the outreach step needs.
+    These are the best source of contract work with a direct email address in the post.
+
+    The threads are found via `search_by_date` restricted to the `whoishiring` account,
+    which posts them monthly. A plain `search` sorts by RELEVANCE, not date, and happily
+    returns the 2014 and 2016 threads - the first version of this did exactly that, and
+    every HN result was five years stale.
+
+    Only "seeking freelancer" is kept from the freelance thread; "seeking work" posts are
+    other developers advertising themselves, and they score well precisely because they
+    list the same stack.
     """
     out = []
-    queries = [
-        "Ask HN: Who is hiring?",
-        "Ask HN: Freelancer? Seeking freelancer?",
-    ]
-    for q in queries:
-        try:
-            search = _json(
-                "https://hn.algolia.com/api/v1/search?"
-                + urllib.parse.urlencode({"query": q, "tags": "story", "hitsPerPage": months_back})
-            )
-        except Exception as e:  # noqa: BLE001
-            log(f"hn search failed: {e}")
+    try:
+        search = _json(
+            "https://hn.algolia.com/api/v1/search_by_date?"
+            + urllib.parse.urlencode({"tags": "story,author_whoishiring", "hitsPerPage": 12})
+        )
+    except Exception as e:  # noqa: BLE001
+        log(f"hn search failed: {e}")
+        return out
+
+    wanted = []
+    for story in search.get("hits", []):
+        title = (story.get("title") or "").lower()
+        if "who is hiring" in title or "freelancer" in title:
+            wanted.append(story)
+        if len(wanted) >= max(2, months_back * 2):
+            break
+    if not wanted:
+        log("hn: no recent hiring threads found")
+        return out
+
+    for story in wanted:
+        sid = story.get("objectID")
+        if not sid:
             continue
-        for story in search.get("hits", []):
-            sid = story.get("objectID")
-            if not sid:
+        log(f"hn thread: {story.get('title')} ({story.get('created_at', '')[:10]})")
+        try:
+            thread = _json(f"https://hn.algolia.com/api/v1/items/{sid}")
+        except Exception as e:  # noqa: BLE001
+            log(f"hn thread {sid} failed: {e}")
+            continue
+        freelance = "freelancer" in (story.get("title") or "").lower()
+        for c in thread.get("children", []) or []:
+            text = strip_html(c.get("text") or "")
+            if len(text) < 80:
                 continue
-            try:
-                thread = _json(f"https://hn.algolia.com/api/v1/items/{sid}")
-            except Exception as e:  # noqa: BLE001
-                log(f"hn thread {sid} failed: {e}")
-                continue
-            for c in thread.get("children", []) or []:
-                text = strip_html(c.get("text") or "")
-                if len(text) < 80:
-                    continue
-                first = text.split("\n")[0][:180]
-                company = first.split("|")[0].strip()[:80] or "HN poster"
-                out.append(normalise(
-                    source="hn-hiring",
-                    title=first,
-                    company=company,
-                    url=f"https://news.ycombinator.com/item?id={c.get('id')}",
-                    description=text,
-                    location="See post",
-                    posted_at=c.get("created_at", ""),
-                    contract_hint="freelance" if "freelanc" in q.lower() else "",
-                ))
+            first = text.split("\n")[0][:180]
+            head = first.upper().replace("*", "").strip()
+            if head.startswith("SEEKING WORK") or head.startswith("WANTED:"):
+                continue    # another freelancer advertising, not someone hiring
+            company = first.split("|")[0].strip()[:80] or "HN poster"
+            out.append(normalise(
+                source="hn-hiring",
+                title=first,
+                company=company,
+                url=f"https://news.ycombinator.com/item?id={c.get('id')}",
+                description=text,
+                location="See post",
+                posted_at=c.get("created_at", ""),
+                contract_hint="freelance" if freelance else "",
+            ))
     return out
 
 

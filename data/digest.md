@@ -1,6 +1,6 @@
-# Job digest - 2026-09-12 13:24 UTC
+# Job digest - 2026-09-12 16:12 UTC
 
-**2511 scanned - 1186 relevant - 7 new shortlist - 439 with a direct contact email**
+**2247 scanned - 254 relevant - 7 new shortlist - 13 with a direct contact email**
 
 ## New shortlist
 

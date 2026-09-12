@@ -74,6 +74,12 @@ JUNK_LOCALPARTS = {
     "noreply", "no-reply", "donotreply", "postmaster", "abuse", "privacy", "dpo",
     "datenschutz", "legal", "press", "presse", "marketing", "sales", "billing",
     "invoice", "webmaster", "security", "unsubscribe",
+    # exist for a legal or accessibility purpose - an application sent here is worse
+    # than one not sent at all
+    "accommodation", "accommodations", "reasonable-accommodations", "accessibility",
+    "disability", "gdpr", "dsar", "compliance",
+    # customer-facing inboxes: an application here reaches a support queue, not a recruiter
+    "support", "assistance", "helpdesk", "service", "customercare",
 }
 
 CONTACT_PATHS = [

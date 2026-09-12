@@ -216,6 +216,12 @@ def score_job(job: dict, m: dict) -> dict:
             score += 6
         elif age <= 21:
             score += 2
+        elif age > 120:
+            # a four-month-old posting is filled. A score penalty was not enough:
+            # an old post with a perfect stack match still outranked fresh ones.
+            return {"score": 0, "verdict": "reject",
+                    "reasons": [f"posting is {int(age)} days old"],
+                    "matched": matched_must, "gaps": [], "flags": []}
         elif age > 60:
             score -= 15
             reasons.append("stale posting (>60 days)")
