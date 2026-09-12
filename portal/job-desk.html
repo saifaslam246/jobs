@@ -218,6 +218,21 @@
   .empty h2{font-size:17px; margin-bottom:6px}
   .empty p{color:var(--muted); max-width:48ch; margin:0 auto}
 
+  .cvbox{
+    border:1px solid var(--line); border-left:3px solid var(--accent);
+    border-radius:var(--r); background:var(--surface-2); padding:12px 14px;
+    display:flex; flex-direction:column; gap:8px;
+  }
+  .cvbox .fname{font-family:"IBM Plex Mono",monospace; font-size:11.5px; color:var(--ink-2); word-break:break-all}
+  .cvbox .links{display:flex; flex-wrap:wrap; gap:7px}
+  .cvbox .links a{
+    display:inline-block; text-decoration:none; font-weight:600; font-size:12.5px;
+    background:var(--surface); border:1px solid var(--line); border-radius:999px;
+    padding:5px 13px; color:var(--ink);
+  }
+  .cvbox .links a:hover{border-color:var(--accent); color:var(--accent-ink)}
+  .hint{font-size:12px; color:var(--muted); line-height:1.45}
+
   .tabbadge{
     display:inline-block; min-width:17px; padding:0 5px; margin-left:5px;
     background:var(--accent); color:#fff; border-radius:999px;
@@ -363,7 +378,7 @@
   "use strict";
 
   var STATUSES = [
-    ["new","New"],["shortlisted","Shortlisted"],["cv_ready","CV ready"],["applied","Applied"],
+    ["new","New"],["shortlisted","Shortlisted"],["applied","Applied"],
     ["replied","Replied"],["interview","Interview"],["rejected","Rejected"],["dismissed","Dismissed"]
   ];
   var CLOSED = {rejected:1, dismissed:1};
@@ -621,6 +636,63 @@
     }).join("");
   }
 
+  /* ---------------- CV for a role ---------------- */
+  // Which master CV to send when no per-job version has been built yet. The weekday
+  // run replaces this with one rewritten against the posting itself.
+  // The artifact can serve a PDF but not a .docx, so the Word version is linked in the
+  // repository, where the daily run writes it anyway.
+  var REPO_CV = "https://github.com/saifaslam246/jobs/raw/" +
+                "claude/job-portal-cv-manager-7w6cxz/profile/cv/generated/";
+
+  var CV_VARIANTS = {
+    mobile:        {label: "Mobile",            file: "Saif_ur_Rehman_CV_mobile"},
+    frontend:      {label: "Frontend",          file: "Saif_ur_Rehman_CV_frontend"},
+    backend:       {label: "Backend",           file: "Saif_ur_Rehman_CV_backend"},
+    data_scraping: {label: "Data / scraping",   file: "Saif_ur_Rehman_CV_data_scraping"},
+    fullstack:     {label: "Full stack",        file: "Saif_ur_Rehman_CV_fullstack"}
+  };
+
+  function pickVariant(j){
+    // Title only. The matched-skills list is drawn from the whole posting, so a
+    // backend role that mentions React Native once used to be read as a mobile job.
+    var t = (j.title || "").toLowerCase();
+    if(/full.?stack|fullstack/.test(t)) return "fullstack";
+    if(/react native|flutter|\bios\b|android|mobile/.test(t)) return "mobile";
+    if(/scraping|crawler|etl|data engineer|data pipeline/.test(t)) return "data_scraping";
+    if(/front.?end|\bui\b|\bux\b/.test(t)) return "frontend";
+    if(/back.?end|\bapi\b|node|nestjs|platform|server|infrastructure/.test(t)) return "backend";
+    if(/react|next\.js|angular|vue/.test(t)) return "frontend";
+    return "fullstack";
+  }
+
+  function cvPanel(j){
+    var tailored = j.cv_file || (state[j.id] && state[j.id].cv_file);
+    if(tailored){
+      var base = String(tailored).split("/").pop().replace(/\.(pdf|docx|txt)$/i, "");
+      return '<div class="field"><span class="eyebrow">Your CV for this role</span>' +
+        '<div class="cvbox">' +
+          "<span><b>Tailored to this posting.</b> Rewritten against what they asked for.</span>" +
+          '<span class="fname">' + esc(base) + ".pdf</span>" +
+          '<span class="links">' +
+            '<a href="cv/' + encodeURIComponent(base) + '.pdf" target="_blank" rel="noopener">Open PDF</a>' +
+            '<a href="' + REPO_CV + encodeURIComponent(base) + '.docx" target="_blank" rel="noopener">Word version</a>' +
+          "</span>" +
+          '<span class="hint">Send the Word version to application forms - most screening software reads it more reliably than a PDF.</span>' +
+        "</div></div>";
+    }
+    var v = CV_VARIANTS[pickVariant(j)];
+    return '<div class="field"><span class="eyebrow">Your CV for this role</span>' +
+      '<div class="cvbox">' +
+        "<span><b>" + esc(v.label) + " version</b> - the closest fit until a tailored one is built.</span>" +
+        '<span class="links">' +
+          '<a href="cv/' + v.file + '.pdf" target="_blank" rel="noopener">Open PDF</a>' +
+          '<a href="' + REPO_CV + v.file + '.docx" target="_blank" rel="noopener">Word version</a>' +
+        "</span>" +
+        '<span class="hint">Use this now if you are applying yourself. A version rewritten against ' +
+        "this exact posting is built on the next weekday run, and replaces this one here.</span>" +
+      "</div></div>";
+  }
+
   /* ---------------- drawer ---------------- */
   function openJob(id){
     var j = null;
@@ -643,12 +715,18 @@
           (j.location ? " · " + esc(j.location) : "") + (j.salary ? " · " + esc(j.salary) : "") + "</p>" +
       "</div>" +
       '<div class="dbody">' +
-        '<div class="field"><span class="eyebrow">Status</span>' +
+        cvPanel(j) +
+
+        '<div class="field"><span class="eyebrow">Where this one stands</span>' +
           '<div class="statusgrid" id="sgrid">' +
             STATUSES.map(function(st){
               return '<button data-v="' + st[0] + '" aria-pressed="' + (st[0] === s) + '">' + st[1] + "</button>";
             }).join("") +
-          "</div></div>" +
+          "</div>" +
+          '<span class="hint">Marking a role stops it coming back tomorrow and moves your counters at ' +
+          "the top. In practice you only need three: <b>Applied</b> once you send something, " +
+          "<b>Dismissed</b> for anything you do not want, and <b>Replied</b> when you hear back.</span>" +
+        "</div>" +
 
         '<div class="field"><span class="eyebrow">Why it scored ' + j.score + "</span>" +
           '<ul class="reasons">' + (j.reasons || []).map(function(r){
