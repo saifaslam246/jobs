@@ -1,0 +1,15 @@
+{
+  "_comment": "Controls how outreach leaves the building. Change 'mode' and push - nothing else needs editing.",
+  "mode": "approve_first",
+  "_mode": "approve_first = Claude drafts, you tap Approve in the portal, GitHub sends. auto = Claude drafts and GitHub sends without you, for drafts that clear every bar below.",
+  "daily_cap": 10,
+  "per_company_cap": 2,
+  "auto": {
+    "min_score": 60,
+    "require_contact_email": true,
+    "require_contract_signal": false,
+    "max_per_day": 6,
+    "skip_if_flags": true
+  },
+  "_auto": "Only used when mode is 'auto'. A draft must clear every one of these to send unattended. Anything that fails one stays a draft and waits for you in the portal - it is never discarded."
+}

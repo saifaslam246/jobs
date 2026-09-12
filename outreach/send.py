@@ -34,9 +34,28 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 QUEUE = ROOT / "outreach" / "queue"
+CONFIG = ROOT / "outreach" / "config.json"
 
-DAILY_CAP = int(os.getenv("DAILY_CAP", "10"))
-PER_DOMAIN_CAP = 2
+
+def load_config() -> dict:
+    default = {"mode": "approve_first", "daily_cap": 10, "per_company_cap": 2,
+               "auto": {"min_score": 60, "require_contact_email": True,
+                        "require_contract_signal": False, "max_per_day": 6,
+                        "skip_if_flags": True}}
+    if not CONFIG.exists():
+        return default
+    try:
+        cfg = json.loads(CONFIG.read_text())
+    except Exception as e:  # noqa: BLE001 - a broken config must not start sending
+        print(f"[send] config unreadable ({e}); falling back to approve_first", flush=True)
+        return default
+    default.update({k: v for k, v in cfg.items() if not k.startswith("_")})
+    return default
+
+
+CFG = load_config()
+DAILY_CAP = int(os.getenv("DAILY_CAP") or CFG["daily_cap"])
+PER_DOMAIN_CAP = int(CFG.get("per_company_cap", 2))
 
 
 def log(m: str) -> None:
@@ -56,6 +75,52 @@ def load() -> list[tuple[Path, dict]]:
 def sent_today(items) -> int:
     today = datetime.now(timezone.utc).date().isoformat()
     return sum(1 for _, d in items if (d.get("sent_at") or "").startswith(today))
+
+
+def auto_clears_bar(d: dict) -> tuple[bool, str]:
+    """In auto mode, decide whether a draft may send without Saif seeing it.
+
+    A draft that fails any bar is not discarded - it stays a draft and waits in the
+    portal. Unattended sending is the fast path, never the only path.
+    """
+    a = CFG.get("auto", {})
+    score = d.get("score")
+    if a.get("min_score") is not None and (score is None or score < a["min_score"]):
+        return False, f"score {score} below auto minimum {a['min_score']}"
+    if a.get("require_contact_email", True) and not d.get("to"):
+        return False, "no contact address"
+    if a.get("require_contract_signal") and not d.get("is_contract"):
+        return False, "not flagged as contract work"
+    if a.get("skip_if_flags", True) and d.get("flags"):
+        return False, f"eligibility flag: {'; '.join(d['flags'])[:80]}"
+    if not d.get("attachments"):
+        return False, "no CV attached"
+    return True, ""
+
+
+def promote_auto(items) -> int:
+    """Mark qualifying drafts approved when mode is auto. Returns how many."""
+    if CFG.get("mode") != "auto":
+        return 0
+    a = CFG.get("auto", {})
+    budget = int(a.get("max_per_day", 6))
+    promoted = 0
+    for fp, d in items:
+        if promoted >= budget:
+            break
+        if d.get("status") != "draft":
+            continue
+        ok, why = auto_clears_bar(d)
+        if not ok:
+            log(f"  auto-hold {fp.name}: {why}")
+            continue
+        d["status"] = "approved"
+        d["approved_at"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
+        d["approved_by"] = "auto"
+        fp.write_text(json.dumps(d, indent=2, ensure_ascii=False))
+        promoted += 1
+        log(f"  auto-approved {fp.name} -> {d['to']}")
+    return promoted
 
 
 def build(d: dict, from_addr: str, from_name: str) -> EmailMessage:
@@ -86,6 +151,9 @@ def main() -> int:
     from_name = os.getenv("FROM_NAME", "Saif ur Rehman")
 
     items = load()
+    log(f"mode: {CFG.get('mode')}")
+    if promote_auto(items):
+        items = load()
     approved = [(fp, d) for fp, d in items
                 if d.get("status") == "approved" and not d.get("sent_at")]
     if not approved:
