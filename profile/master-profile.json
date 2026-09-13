@@ -648,21 +648,11 @@
     },
     {
       "name": "SandSeekers - Dubai Real Estate Platform",
-      "dates": "",
+      "dates": "added on LinkedIn by Saif",
       "association": "Pikessoft",
       "priority": 6,
       "description": "Led development of a real-estate platform for the Dubai market, letting users buy, rent and explore residential and commercial property.\n\nBuilt a custom CRM to manage listings, leads and property-demo bookings, and integrated live property feeds from Bayut, Dubizzle and Property Finder, normalising inconsistent sources into one searchable catalogue. I also built the payment side, integrating a payment gateway so transactions complete inside the platform instead of being handled off to one side.\n\nI handled client communication, gathered requirements, and managed the development team.\n\nTechnologies: Next.js, Node.js, PostgreSQL, TypeORM, payment gateway integration, third-party data feeds",
-      "skills": "Next.js · Node.js · PostgreSQL · TypeORM · Payment Gateways",
-      "needs": "your start and end dates"
-    },
-    {
-      "name": "99DPF - Service Booking Platform (Web and Mobile)",
-      "dates": "",
-      "association": "Pikessoft",
-      "priority": 7,
-      "description": "Built a web and mobile platform for booking diesel particulate filter cleaning, connecting customers with partner workshops.\n\nShipped a React Native mobile app alongside the React web client from one shared Node.js API, with real-time chat, push notifications, image upload and live order-status updates for both customers and service partners. Implemented the booking, dispatch and guarantee-tracking flows.\n\nTechnologies: React, React Native, Node.js, MongoDB, Socket.IO, push notifications",
-      "skills": "React · React Native · Node.js · MongoDB · Socket.IO · Mobile Development",
-      "needs": "your start and end dates"
+      "skills": "Next.js · Node.js · PostgreSQL · TypeORM · Payment Gateways"
     },
     {
       "name": "Atomix - 3PL Logistics & Fulfilment Platform",
@@ -851,6 +841,15 @@
     "definepedia": {
       "database": "MongoDB with Mongoose - correct, one of the two NoSQL projects",
       "mern_stack_tag": "correct here"
+    },
+    "closed_decisions": {
+      "_note": "Saif decided these. Do not raise them again.",
+      "linkedin_certifications": "Not adding. Certifications stay on the CV only.",
+      "linkedin_languages": "Not adding a Languages section. The language skills already cover it. Stays on the CV.",
+      "linkedin_open_to_work": "Does not want the Open to Work banner shown at all. Stop suggesting Vienna/Remote/job types.",
+      "linkedin_99dpf": "Not published as a LinkedIn project. Keep it in the CV tailoring pool only.",
+      "linkedin_sandseekers_dates": "Saif added them on LinkedIn. Closed.",
+      "cv_innovage": "Innovage.io stays off the CV. Two companies is enough. Do not suggest adding it again."
     }
   }
 }
