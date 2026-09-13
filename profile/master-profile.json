@@ -675,8 +675,8 @@
       "priority": 46,
       "dates": "December 2023 - November 2024",
       "association": "Pikessoft",
-      "skills": "React · Node.js · Express.js · MongoDB · Web Scraping",
-      "description": "Rentalytics is a data platform that collects and structures millions of property records so they can be searched and worked with in one place.\n\nI worked on both sides. On the frontend I built the React interface for browsing and managing that data. On the backend I designed the scraping and ingestion systems, which is where the real problem was: at that volume, anything written the obvious way is either too slow or falls over.\n\nMost of the effort went into asynchronous processing, so long-running jobs stay off the request path, and into tests, because a scraper that quietly drifts is worse than one that fails loudly.\n\nTechnologies: React, Node.js, Express.js, MongoDB"
+      "skills": "Python · Node.js · React.js · SQL · Web Scraping",
+      "description": "Rentalytics is a data platform that collects and structures millions of property records so they can be searched and worked with in one place.\n\nI worked on both sides. On the frontend I built the React interface for browsing and managing that data. On the backend I designed the scraping and ingestion systems in Python, which is where the real problem was: at that volume, anything written the obvious way is either too slow or falls over.\n\nMost of the effort went into asynchronous processing, so long-running jobs stay off the request path, and into tests, because a scraper that quietly drifts is worse than one that fails loudly.\n\nTechnologies: React, Next.js, TypeScript, Node.js, Express.js, Python, PostgreSQL, Amazon S3, Jest"
     },
     {
       "name": "HIS - Attendance & Leave Management SaaS",
@@ -804,6 +804,21 @@
         "functions (server-side logic)"
       ],
       "_note": "The Ludwig backend runs on Spica, not a hand-rolled service. He built the buckets and functions; the client apps integrate against them."
+    },
+    "rentalytics": {
+      "database": "SQL - exact engine unconfirmed (PostgreSQL assumed)",
+      "confirmed_by_skill_tags": [
+        "Python",
+        "SQL",
+        "Next.js",
+        "Jest",
+        "TypeScript",
+        "Amazon S3",
+        "REST APIs",
+        "Unit Testing",
+        "3rd Party Integrations"
+      ],
+      "_open": "Which SQL engine? MongoDB and MERN Stack are wrong here per his SQL rule."
     }
   }
 }
