@@ -53,9 +53,9 @@ Angular, PrimeNG, TypeScript, Node.js, Express.js, Sequelize, MariaDB, Firebase,
 - Implemented real-time order updates and operational dashboards using Angular, PrimeNG, TypeScript, Node.js, Express.js, Sequelize, MariaDB, Firebase, and AWS S3.
 
 EquipX - Heavy Equipment Marketplace
-Angular, Next.js, Node.js, MongoDB, Socket.IO, Stripe, AWS, Docker
+React, Next.js, Node.js, Express.js, MongoDB, Socket.IO, Cloudinary, Stripe, AWS
 - Developed marketplace functionality covering search, filtering, financing, logistics, and product discovery.
-- Built real-time chat and communication features using Angular, Next.js, Node.js, and Socket.IO, with Stripe, MongoDB, AWS, and Docker integrations.
+- Built real-time chat and communication features using React, Next.js, Node.js, Express.js, and Socket.IO, with Stripe, MongoDB, Cloudinary, and AWS integrations.
 
 EDUCATION
 Master of Science in Computer Science

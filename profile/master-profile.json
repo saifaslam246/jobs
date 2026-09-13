@@ -255,8 +255,8 @@
         "Next.js",
         "Node.js",
         "Express.js",
-        "GraphQL",
         "MongoDB",
+        "Socket.IO",
         "Cloudinary",
         "Stripe",
         "AWS"
@@ -264,7 +264,7 @@
       "one_liner": "Marketplace for listing, buying, selling and financing heavy machinery, with real-time chat and rental management.",
       "bullets": [
         "Developed marketplace functionality covering search, filtering, financing, logistics, and product discovery.",
-        "Built real-time chat and communication features using Angular, Next.js, Node.js, and Socket.IO, with Stripe, MongoDB, AWS, and Docker integrations."
+        "Built real-time chat and communication features using React, Next.js, Node.js, Express.js, and Socket.IO, with Stripe, MongoDB, Cloudinary, and AWS integrations."
       ],
       "weight": 5
     },
@@ -709,8 +709,8 @@
       "priority": 48,
       "dates": "September 2022 - March 2023",
       "association": "Pikessoft",
-      "skills": "Node.js · MongoDB · GraphQL · React.js · Cloudinary",
-      "description": "EquipX is a marketplace for finding and buying heavy equipment.\n\nI worked across both sides, with most of my time on the backend. Before any code I modelled the database from an ERD, because a marketplace's listing and category structure is the one thing you cannot cheaply change later.\n\nOn top of that I built the GraphQL APIs, so each client asks for exactly the fields it needs instead of over-fetching a whole listing page, and an image pipeline that processes uploaded product photos and generates the sizes each screen needs. Those are stored on Cloudinary, so pages stay quick on a slow connection.\n\nTechnologies: React, Next.js, Node.js, Express.js, GraphQL, MongoDB, Cloudinary, Stripe, AWS"
+      "skills": "Node.js · MongoDB · React.js · Socket.IO · Stripe",
+      "description": "EquipX is a marketplace for finding and buying heavy equipment.\n\nI worked across both sides, with most of my time on the backend. Before any code I modelled the database from an ERD, because a marketplace's listing and category structure is the one thing you cannot cheaply change later.\n\nOn top of that I built the APIs, and an image pipeline that processes uploaded product photos and generates the sizes each screen needs. Those are stored on Cloudinary, so pages stay quick on a slow connection.\n\nThe other two pieces were real-time chat with Socket.IO, so buyers and sellers talk inside the platform rather than swapping phone numbers, and Stripe payments, so a purchase completes without leaving the site.\n\nTechnologies: React, Next.js, Node.js, Express.js, MongoDB, Socket.IO, Cloudinary, Stripe, AWS"
     },
     {
       "name": "Definepedia - Tutoring Marketplace",
@@ -846,20 +846,23 @@
       ]
     },
     "equipx": {
-      "database": "MongoDB - one of the two NoSQL projects",
-      "stack_per_saif": [
+      "database": "MongoDB",
+      "confirmed": [
         "React",
-        "Node.js",
         "Next.js",
-        "Express",
+        "Node.js",
+        "Express.js",
         "MongoDB",
-        "Cloudinary"
+        "Socket.IO",
+        "Cloudinary",
+        "Stripe",
+        "AWS"
       ],
-      "_open": [
-        "Angular on the CV is not tagged and he did not name it - probably wrong",
-        "Socket.IO and real-time chat are on the CV only",
-        "Stripe is tagged but payments are not described"
-      ]
+      "not": [
+        "Angular",
+        "GraphQL"
+      ],
+      "_note": "Saif confirmed 13 Sep 2026: React not Angular, Stripe and Socket.IO real, no GraphQL on this project."
     }
   }
 }
