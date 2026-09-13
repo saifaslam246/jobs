@@ -664,7 +664,7 @@
       "dates": "",
       "association": "Pikessoft",
       "priority": 6,
-      "description": "Led development of a real-estate platform for the Dubai market, letting users buy, rent and explore residential and commercial property.\n\nBuilt a custom CRM to manage listings, leads and property-demo bookings, and integrated live property feeds from Bayut, Dubizzle and Property Finder, normalising inconsistent sources into one searchable catalogue. I handled client communication, gathered requirements, and managed the development team.\n\nTechnologies: Next.js, Node.js, PostgreSQL, TypeORM, payment gateway integration, third-party data feeds",
+      "description": "Led development of a real-estate platform for the Dubai market, letting users buy, rent and explore residential and commercial property.\n\nBuilt a custom CRM to manage listings, leads and property-demo bookings, and integrated live property feeds from Bayut, Dubizzle and Property Finder, normalising inconsistent sources into one searchable catalogue. I also built the payment side, integrating a payment gateway so transactions complete inside the platform instead of being handled off to one side.\n\nI handled client communication, gathered requirements, and managed the development team.\n\nTechnologies: Next.js, Node.js, PostgreSQL, TypeORM, payment gateway integration, third-party data feeds",
       "skills": "Next.js · Node.js · PostgreSQL · TypeORM · Payment Gateways",
       "needs": "your start and end dates"
     },
@@ -832,7 +832,8 @@
       "database": "PostgreSQL with TypeORM - confirmed by its own skill tags",
       "not": [
         "MongoDB"
-      ]
+      ],
+      "payments": "Confirmed by Saif: he built the payment integration."
     }
   }
 }
