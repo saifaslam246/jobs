@@ -38,7 +38,7 @@ Pikessoft - Lahore, Pakistan | September 2022 - February 2025
 - Developed REST APIs and backend services using MongoDB, MariaDB, Redis, Firebase, and Node.js.
 - Integrated payment gateways, third-party services, cloud infrastructure, and notification systems into client-facing platforms.
 - Conducted code reviews, mentored junior developers, clarified client requirements, and supported delivery planning and technical decision-making.
-Stack: React, Angular, Next.js, React Native, Node.js, NestJS, MongoDB, MariaDB, Redis, Firebase, AWS, Docker, REST APIs
+Stack: Node.js, NestJS, Express.js, TypeScript, React, Angular, Next.js, React Native, PostgreSQL, MongoDB, MariaDB, Redis, TypeORM, Sequelize, Mongoose, GraphQL, REST APIs, AWS (S3, SNS), Cloudinary, Docker, Firebase, Jest
 
 SELECTED PROJECTS
 

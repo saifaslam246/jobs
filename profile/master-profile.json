@@ -148,19 +148,28 @@
       "end": "2025-02",
       "current": false,
       "stack": [
+        "Node.js",
+        "NestJS",
+        "Express.js",
+        "TypeScript",
         "React",
         "Angular",
         "Next.js",
         "React Native",
-        "Node.js",
-        "NestJS",
+        "PostgreSQL",
         "MongoDB",
         "MariaDB",
         "Redis",
-        "Firebase",
-        "AWS",
+        "TypeORM",
+        "Sequelize",
+        "Mongoose",
+        "GraphQL",
+        "REST APIs",
+        "AWS (S3, SNS)",
+        "Cloudinary",
         "Docker",
-        "REST APIs"
+        "Firebase",
+        "Jest"
       ],
       "bullets": [
         "Led a team of 5-10 developers delivering full stack web and mobile applications for logistics, marketplaces, real estate, and field-service businesses.",
@@ -170,7 +179,7 @@
         "Integrated payment gateways, third-party services, cloud infrastructure, and notification systems into client-facing platforms.",
         "Conducted code reviews, mentored junior developers, clarified client requirements, and supported delivery planning and technical decision-making."
       ],
-      "linkedin_description": "Two and a half years building web and mobile products for clients in logistics, marketplaces, real estate and field services. I started as a developer and moved into leading a team of 5-10.\n\nMost of my work was backend: system design, APIs and data. I built scalable APIs in Node.js and TypeScript, worked with SQL and NoSQL through TypeORM, Sequelize and Mongoose, and spent real time on the database structure before writing the code on top of it.\n\nThe harder pieces:\n• Billing systems and payment gateway integrations\n• Large CSV exports that had to stay fast as the data grew\n• Asynchronous processing to keep heavy jobs off the request path\n• File and media handling with AWS S3 and Cloudinary\n• Logging and alerting through AWS SNS, so problems surfaced before clients reported them\n• GraphQL and Google Maps API integration\n• Unit tests with Jest\n\nThe products this went into:\n• Atomix, a 3PL logistics and fulfilment platform. I moved billing from a third-party service in-house and made the large exports fast.\n• EquipX, a heavy equipment marketplace. I designed the database and built its GraphQL APIs and image pipeline.\n• SandSeekers, a Dubai real estate platform with its own CRM, pulling live feeds from Bayut, Dubizzle and Property Finder into one catalogue.\n• Rentalytics, a data platform that scrapes and structures millions of property records.\n• HIS, a SaaS product for attendance and leave management, where I owned the backend.\n• 99DPF, a service booking platform on web and mobile, with real-time chat, push notifications and live order status.\n• CorporateMerch, a corporate gifting platform with AI-generated designs.\n\nAs team lead I reviewed code, mentored juniors, joined client calls to turn vague requirements into something we could build, and planned what shipped when.\n\nTechnologies: Node.js, NestJS, TypeScript, React, Angular, Next.js, React Native, PostgreSQL, MongoDB, MariaDB, Redis, TypeORM, Sequelize, Mongoose, GraphQL, AWS (S3, SNS), Cloudinary, Jest",
+      "linkedin_description": "Two and a half years building web and mobile products for clients in logistics, marketplaces, real estate and field service. I started as a developer and moved into leading a team of 5-10.\n\nMost of my work was backend: system design, APIs and data. I built scalable APIs in Node.js and TypeScript, worked with SQL and NoSQL through TypeORM, Sequelize and Mongoose, and spent real time on the database structure before writing the code above it.\n\nThe harder pieces:\n• Billing systems and payment gateway integrations\n• Large CSV exports that stayed fast as the data grew\n• Asynchronous processing to keep heavy jobs off the request path\n• File and media handling with AWS S3 and Cloudinary\n• Logging and alerting through AWS SNS, so problems surfaced before clients did\n• GraphQL and Google Maps API integration\n• Unit tests with Jest\n\nThe products this went into:\n• Atomix, a 3PL logistics and fulfilment platform. I moved billing from a third-party service in-house and made the exports fast.\n• EquipX, a heavy equipment marketplace. I designed the database and built its GraphQL APIs and image pipeline.\n• SandSeekers, a Dubai real estate platform with its own CRM, pulling live feeds from Bayut, Dubizzle and Property Finder into one place.\n• Rentalytics, a data platform that scrapes and structures millions of property records.\n• HIS, a SaaS product for attendance and leave management, where I owned the backend.\n• 99DPF, a service booking platform on web and mobile, with real-time chat, push notifications and live order status.\n• CorporateMerch, a corporate gifting platform with AI-generated designs.\n\nAs team lead I reviewed code, mentored juniors, joined client calls to turn vague requirements into something we could build, and planned what shipped when.\n\nTechnologies: Node.js, NestJS, Express.js, TypeScript, React, Angular, Next.js, React Native, PostgreSQL, MongoDB, MariaDB, Redis, TypeORM, Sequelize, Mongoose, GraphQL, REST APIs, AWS (S3, SNS), Cloudinary, Docker, Firebase, Jest",
       "employment_type": "Full-time"
     }
   ],
