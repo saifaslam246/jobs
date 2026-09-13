@@ -38,7 +38,7 @@ def blocks(d: dict) -> list[dict]:
         {"field": "Headline", "where": "Profile → pencil icon → Headline",
          "limit": LIMITS["headline"], "text": ident["headline"]},
         {"field": "About", "where": "Profile → About → pencil icon",
-         "limit": LIMITS["about"], "text": d["summary"]},
+         "limit": LIMITS["about"], "text": d.get("linkedin_about", d["summary"])},
     ]
     for e in d["experience"]:
         body = "\n".join("• " + b for b in e["bullets"])
