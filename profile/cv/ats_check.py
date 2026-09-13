@@ -82,8 +82,11 @@ def check(path: Path) -> int:
 
     # --- dates ---
     dates = DATE_RE.findall(text)
-    line(ok if len(dates) >= 4 else warn,
-         f"{len(dates)} dates in 'Mon YYYY' form - the format parsers handle most reliably")
+    # Two roles produce three month-dates once the current one ends in "Present"; degree
+    # rows carry years only, which is normal. The old threshold of four was arbitrary and
+    # warned on a perfectly parseable CV.
+    line(ok if len(dates) >= 3 else warn,
+         f"{len(dates)} month-and-year dates - the format parsers handle most reliably")
 
     # --- fonts ---
     fonts = {s.split("+")[-1] for p in doc for f in p.get_fonts(full=True) for s in [f[3]]}
