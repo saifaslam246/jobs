@@ -632,16 +632,16 @@
       "dates": "March 2025 - Present",
       "association": "TMN Development KG",
       "priority": 3,
-      "description": "A public registry that lists people who have died in the country: the full searchable record, and the recent deaths shown separately so a visitor can find a notice without knowing where to look.\n\nIt is a straightforward product with an unusual requirement behind it. The data is sensitive and the people using it are often not looking for software, they are looking for one name, so the search and the reading experience matter more than anything clever.\n\nOne of several products I contribute to at TMN alongside leading Ludwig.\n\nTechnologies: Next.js, React, TypeScript",
-      "skills": "Next.js · React · TypeScript · Web Development"
+      "description": "A public registry that lists people who have died in the country: the full searchable record, and the recent deaths shown separately so a visitor can find a notice without knowing where to look.\n\nIt is a straightforward product with an unusual requirement behind it. The data is sensitive and the people using it are often not looking for software, they are looking for one name, so the search and the reading experience matter more than anything clever.\n\nOne of several products I contributed to at TMN alongside leading Ludwig.\n\nTechnologies: Next.js, React, TypeScript",
+      "skills": "Next.js · React.js · TypeScript"
     },
     {
       "name": "Business Card Management Platform",
-      "dates": "March 2025 - Present",
+      "dates": "September 2025 - February 2026",
       "association": "TMN Development KG",
       "priority": 5,
-      "description": "A platform for managing business details and contact cards in one place, so a company's people, their roles and their contact details stay current everywhere they are shown instead of living in printed cards and stale signatures.\n\nOne of several products I contribute to at TMN alongside leading Ludwig.\n\nTechnologies: Next.js, React, TypeScript",
-      "skills": "Next.js · React · TypeScript · Web Development"
+      "description": "A platform for managing business details and contact cards in one place, so a company's people, their roles and their contact details stay current everywhere they are shown instead of living in printed cards and stale signatures.\n\nOne of several products I contributed to at TMN alongside leading Ludwig.\n\nTechnologies: Angular, Ionic, TypeScript",
+      "skills": "Angular · Ionic Framework · TypeScript"
     },
     {
       "name": "SandSeekers - Dubai Real Estate Platform",
