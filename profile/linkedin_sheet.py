@@ -87,19 +87,25 @@ def blocks(d: dict) -> list[dict]:
                      + (f"  ·  Still needs {pr['needs']}." if pr.get("needs") else "")),
         })
 
-    seen, skills = set(), []
-    for cat in ("Frontend", "Backend", "Databases", "Programming Languages",
-                "Cloud and DevOps", "Mobile", "Integrations and Testing"):
-        for s in d["skills"].get(cat, []):
-            if s.lower() not in seen:
-                seen.add(s.lower())
-                skills.append(s)
+    # A curated order beats the CV's category order here: LinkedIn caps the section
+    # at 50 and pins the first three to the top card, so the order is the message.
+    skills = list(d.get("linkedin_skills") or [])
+    note = ("Add them in this order. LinkedIn pins the first three to your top card, "
+            "so add those first even if you stop early.")
+    if not skills:
+        seen = set()
+        for cat in ("Frontend", "Backend", "Databases", "Programming Languages",
+                    "Cloud and DevOps", "Mobile", "Integrations and Testing"):
+            for s in d["skills"].get(cat, []):
+                if s.lower() not in seen:
+                    seen.add(s.lower())
+                    skills.append(s)
+        note = (f"{len(skills)} in your profile, LinkedIn caps at {LIMITS['skills']} - "
+                "the most relevant are listed, in the order worth adding them.")
     out.append({
         "field": "Skills", "where": "Profile → Skills → + → add one at a time",
         "limit": LIMITS["skills"], "unit": "skills",
-        "text": "\n".join(skills[:LIMITS["skills"]]),
-        "note": f"{len(skills)} in your profile, LinkedIn caps at {LIMITS['skills']} - "
-                "the most relevant are listed, in the order worth adding them.",
+        "text": "\n".join(skills[:LIMITS["skills"]]), "note": note,
     })
 
     # The settings half of a profile. No long text to paste, but these decide
