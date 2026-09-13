@@ -35,6 +35,28 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 QUEUE = ROOT / "outreach" / "queue"
 CONFIG = ROOT / "outreach" / "config.json"
+PROFILE = ROOT / "profile" / "master-profile.json"
+
+
+def forbidden_claims() -> list[str]:
+    """Technologies Saif has said he has not worked with.
+
+    Removing them from the profile does not reach a draft that was written before the
+    correction - one such draft was written, corrected in the CV, and still went on to
+    be approved with the claim intact. This is the last gate before an email leaves.
+    """
+    try:
+        return json.loads(PROFILE.read_text()).get("do_not_claim", [])
+    except Exception:  # noqa: BLE001 - an unreadable profile must not silently open the gate
+        log("WARNING: could not read the profile; refusing to send")
+        return ["*"]
+
+
+def claim_violations(d: dict, banned: list[str]) -> list[str]:
+    if banned == ["*"]:
+        return ["profile unreadable"]
+    text = f"{d.get('subject', '')} {d.get('body', '')}".lower()
+    return [b for b in banned if b.lower() in text]
 
 
 def load_config() -> dict:
@@ -160,6 +182,27 @@ def main() -> int:
                 if d.get("status") == "approved" and not d.get("sent_at")]
     if not approved:
         log("nothing approved and unsent - done")
+        return 0
+
+    # Screen every approved draft for a claim Saif has disowned, before a connection is
+    # opened. A draft that fails this is returned to draft rather than dropped: the
+    # posting is still worth applying to, the sentence is not.
+    banned = forbidden_claims()
+    held = 0
+    for fp, d in list(approved):
+        bad = claim_violations(d, banned)
+        if not bad:
+            continue
+        d["status"] = "draft"
+        d["error"] = "held: claims " + ", ".join(bad) + " - not yours to claim"
+        fp.write_text(json.dumps(d, indent=2, ensure_ascii=False))
+        log(f"  HELD {fp.name}: claims {', '.join(bad)} - returned to draft for rewriting")
+        approved.remove((fp, d))
+        held += 1
+    if held:
+        log(f"{held} draft(s) held back; {len(approved)} still approved")
+    if not approved:
+        log("nothing left to send after screening")
         return 0
 
     if not (host and user and password):

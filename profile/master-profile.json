@@ -655,5 +655,14 @@
       "canada"
     ],
     "min_score_to_shortlist": 55
-  }
+  },
+  "do_not_claim": [
+    "Shopify",
+    "Amazon FBA",
+    "Amazon FBM",
+    "WooCommerce",
+    "Dart",
+    "Riverpod"
+  ],
+  "_do_not_claim": "Technologies Saif has confirmed he has not worked with. Removing them from the profile is not enough: a draft written earlier still carried them, and was approved for sending. outreach/send.py now refuses any email containing one of these. Add to this list, never quietly delete from it."
 }
