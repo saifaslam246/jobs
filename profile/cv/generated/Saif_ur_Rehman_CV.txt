@@ -10,11 +10,11 @@ Lead Full Stack Developer with 4+ years of experience building and delivering pr
 TECHNICAL SKILLS
 Programming Languages: TypeScript, JavaScript, Python, SQL, HTML5, CSS3
 Frontend: Angular, React, Next.js, Ionic, RxJS, NgRx, Redux, Tailwind CSS, Angular Material, PrimeNG
-Backend: Node.js, NestJS, Express.js, FastAPI, REST APIs, WebSockets, Socket.IO, Firebase Functions, Microservices
+Backend: Node.js, NestJS, Express.js, FastAPI, REST APIs, GraphQL, WebSockets, Socket.IO, Firebase Functions, Microservices, Spica
 Databases: PostgreSQL, MongoDB, MySQL, MariaDB, Redis, Firestore, TypeORM, Prisma, Sequelize, Mongoose
-Cloud and DevOps: AWS EC2, AWS S3, AWS Lambda, AWS SNS, Docker, Nginx, GitHub Actions, CI/CD, Vercel
+Cloud and DevOps: AWS EC2, AWS S3, AWS Lambda, AWS SNS, Docker, Nginx, GitHub Actions, CI/CD, Vercel, Git, GitHub, GitLab, Bitbucket
 Mobile: Ionic, React Native, Flutter
-Integrations and Testing: Stripe, Twilio, Firebase Cloud Messaging, OAuth, third-party APIs, Playwright, Git, GitHub
+Integrations and Testing: Stripe, Twilio, Cloudinary, Firebase Cloud Messaging, OAuth, Google Maps APIs, third-party APIs, Jest, Playwright, ESLint, SonarQube
 
 PROFESSIONAL EXPERIENCE
 
@@ -26,13 +26,13 @@ TMN Development KG - Innsbruck, Austria | March 2025 - Present
 - Developed clinical documentation, patient management, appointment scheduling, recurring bookings, resource management, therapist absences, waiting lists, available time slots, and statutory health insurance invoicing.
 - Implemented multi-tenant architecture and offline-first synchronization with conflict handling to support reliable usage across practices and environments.
 - Develop responsive web and mobile experiences using Angular, Ionic, TypeScript, Next.js, React, and Flutter.
-- Guide a team of 3-4 engineers across additional products through technical direction, code reviews, implementation support, and delivery guidance.
+- Guide a team of 3–4 engineers across additional products through technical direction, code reviews, implementation support, and delivery guidance.
 - Contributed to additional products including a business connector, business-card management platform, and regional public registry platform for recently deceased persons.
 Stack: Angular 19, Ionic 8, TypeScript, Next.js 16, React 19, Flutter, RxJS, NgRx Signals, Tailwind CSS, Playwright, Spica (buckets and functions), PDF workflows
 
 Full Stack Developer | Team Lead
 Pikessoft - Lahore, Pakistan | September 2022 - February 2025
-- Led a team of 5-10 developers delivering full stack web and mobile applications for logistics, marketplaces, real estate, and field-service businesses.
+- Led a team of 5–10 developers delivering full stack web and mobile applications for logistics, marketplaces, real estate, and field-service businesses.
 - Designed and developed scalable frontend and backend systems using React, Angular, Next.js, Node.js, NestJS, and React Native.
 - Built real-time communication features including chat, group messaging, push notifications, live order tracking, and operational status updates.
 - Developed REST APIs and backend services using MongoDB, MariaDB, Redis, Firebase, and Node.js.
@@ -42,17 +42,17 @@ Stack: Node.js, NestJS, Express.js, TypeScript, Python, React, Angular, Next.js,
 
 SELECTED PROJECTS
 
-Ludwig Practice Suite - Healthcare Practice Management and Patient Booking Platform
+Ludwig Practice Suite — Healthcare Practice Management and Patient Booking Platform
 Angular, Ionic, TypeScript, Next.js, React, Flutter, RxJS, Tailwind CSS, Playwright, PDF generation, Spica
 - Developed patient management, clinical documentation, appointment scheduling, recurring bookings, therapist availability, waiting lists, resource management, and statutory insurance invoicing.
 - Built web and mobile interfaces with Angular, Ionic, React, Next.js, and Flutter, including offline-first synchronization, multi-tenancy, PDF workflows, Playwright testing, and a Spica backend of buckets and functions.
 
-Atomix Logistics - 3PL Logistics and Order Fulfilment Platform
+Atomix Logistics — 3PL Logistics and Order Fulfilment Platform
 Angular, PrimeNG, TypeScript, Node.js, Express.js, Sequelize, MariaDB, Firebase, AWS S3
 - Developed order fulfilment, inventory management, packaging, ecommerce automation, and delivery-tracking workflows.
 - Implemented real-time order updates and operational dashboards using Angular, PrimeNG, TypeScript, Node.js, Express.js, Sequelize, MariaDB, Firebase, and AWS S3.
 
-EquipX - Heavy Equipment Marketplace
+EquipX — Heavy Equipment Marketplace
 React, Next.js, Node.js, Express.js, MongoDB, Socket.IO, Cloudinary, Stripe, AWS
 - Developed marketplace functionality covering search, filtering, financing, logistics, and product discovery.
 - Built real-time chat and communication features using React, Next.js, Node.js, Express.js, and Socket.IO, with Stripe, MongoDB, Cloudinary, and AWS integrations.

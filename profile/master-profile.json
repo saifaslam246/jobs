@@ -58,10 +58,12 @@
       "Express.js",
       "FastAPI",
       "REST APIs",
+      "GraphQL",
       "WebSockets",
       "Socket.IO",
       "Firebase Functions",
-      "Microservices"
+      "Microservices",
+      "Spica"
     ],
     "Databases": [
       "PostgreSQL",
@@ -84,7 +86,11 @@
       "Nginx",
       "GitHub Actions",
       "CI/CD",
-      "Vercel"
+      "Vercel",
+      "Git",
+      "GitHub",
+      "GitLab",
+      "Bitbucket"
     ],
     "Mobile": [
       "Ionic",
@@ -94,12 +100,15 @@
     "Integrations and Testing": [
       "Stripe",
       "Twilio",
+      "Cloudinary",
       "Firebase Cloud Messaging",
       "OAuth",
+      "Google Maps APIs",
       "third-party APIs",
+      "Jest",
       "Playwright",
-      "Git",
-      "GitHub"
+      "ESLint",
+      "SonarQube"
     ]
   },
   "experience": [
@@ -133,7 +142,7 @@
         "Developed clinical documentation, patient management, appointment scheduling, recurring bookings, resource management, therapist absences, waiting lists, available time slots, and statutory health insurance invoicing.",
         "Implemented multi-tenant architecture and offline-first synchronization with conflict handling to support reliable usage across practices and environments.",
         "Develop responsive web and mobile experiences using Angular, Ionic, TypeScript, Next.js, React, and Flutter.",
-        "Guide a team of 3-4 engineers across additional products through technical direction, code reviews, implementation support, and delivery guidance.",
+        "Guide a team of 3–4 engineers across additional products through technical direction, code reviews, implementation support, and delivery guidance.",
         "Contributed to additional products including a business connector, business-card management platform, and regional public registry platform for recently deceased persons."
       ],
       "linkedin_description": "I lead development on Ludwig, a practice-management platform for physiotherapy clinics in Germany and Austria. It is used day to day by 20+ therapists and holds records for more than 10,000 patients.\n\nI built most of it from scratch: architecture, UI, frontend, backend integration, testing, deployment, and everything since. I work directly with the CEO, so requirements reach me as business problems and I turn them into something that works for people who are busy and not technical.\n\nWhat is in it:\n• Clinical documentation and patient records\n• Appointment scheduling, recurring bookings and available time-slot calculation\n• Resource management, therapist absences and waiting lists\n• Statutory health insurance (GKV) invoicing\n• A booking wizard practices embed in their own website\n• Mobile apps for therapists\n\nTwo parts were the hard ones. Multi-tenant architecture, so one deployment serves many practices with their data properly separated. And offline-first sync with conflict handling, because a therapist in a treatment room often has no signal and still needs to write notes, and when two people touch the same record nobody's work should disappear.\n\nI also guide a team of 3-4 engineers on our other products: a business connector, a business-card management platform, and a regional public registry. That means technical direction, code reviews, and unblocking people.\n\nTechnologies: Angular 19, Ionic 8, TypeScript, Next.js 16, React 19, Flutter, RxJS, NgRx Signals, Tailwind CSS, Playwright, Spica (buckets and functions), PDF workflows",
@@ -173,7 +182,7 @@
         "Jest"
       ],
       "bullets": [
-        "Led a team of 5-10 developers delivering full stack web and mobile applications for logistics, marketplaces, real estate, and field-service businesses.",
+        "Led a team of 5–10 developers delivering full stack web and mobile applications for logistics, marketplaces, real estate, and field-service businesses.",
         "Designed and developed scalable frontend and backend systems using React, Angular, Next.js, Node.js, NestJS, and React Native.",
         "Built real-time communication features including chat, group messaging, push notifications, live order tracking, and operational status updates.",
         "Developed REST APIs and backend services using MongoDB, MariaDB, Redis, Firebase, and Node.js.",
@@ -187,7 +196,7 @@
   "projects": [
     {
       "id": "ludwig",
-      "name": "Ludwig Practice Suite - Healthcare Practice Management and Patient Booking Platform",
+      "name": "Ludwig Practice Suite — Healthcare Practice Management and Patient Booking Platform",
       "url": null,
       "domain": [
         "healthcare",
@@ -218,7 +227,7 @@
     },
     {
       "id": "atomix",
-      "name": "Atomix Logistics - 3PL Logistics and Order Fulfilment Platform",
+      "name": "Atomix Logistics — 3PL Logistics and Order Fulfilment Platform",
       "url": "atomixlogistics.com",
       "domain": [
         "logistics",
@@ -245,7 +254,7 @@
     },
     {
       "id": "equipx",
-      "name": "EquipX - Heavy Equipment Marketplace",
+      "name": "EquipX — Heavy Equipment Marketplace",
       "url": "equipx.com",
       "domain": [
         "marketplace",
@@ -695,7 +704,7 @@
       "description": "Definepedia is a tutoring marketplace in the mould of Chegg: students post questions, and tutors either answer them or get hired for longer help.\n\nI built the backend from scratch. I designed the architecture and the data model in Express.js and MongoDB with Mongoose schemas, and added Stripe payments so a student can hire and pay a tutor inside the platform rather than being sent somewhere else.\n\nTechnologies: Node.js, Express.js, MongoDB, Mongoose, Stripe"
     }
   ],
-  "linkedin_about": "I'm a Lead Full Stack Developer based in Innsbruck, Austria, with 4+ years of experience building web and mobile products.\n\nRight now I lead development on Ludwig, a practice-management platform for physiotherapy clinics. I built most of it from scratch, and it runs day to day for 20+ therapists and more than 10,000 patients in Germany and Austria. I work in a team of 3-4 engineers and I'm involved from planning through to release.\n\nBefore this I spent two and a half years at Pikessoft, in teams of 5-10 developers, working across a lot of different products: a 3PL logistics and order fulfilment system, a heavy equipment marketplace, a real estate platform with its own CRM for the Dubai market, a service booking product for web and mobile, and a data platform that collects and structures millions of property listings.\n\nPicking up a new domain is normal for me. Logistics, healthcare, real estate, e-commerce. The business rules change, the engineering doesn't.\n\nI've worked in Agile/Scrum teams throughout, with daily standups, sprint planning and code reviews as part of the routine.\n\n⚙️ Frontend: Angular, React, Next.js, TypeScript, JavaScript, RxJS, NgRx, Redux, Tailwind CSS, Angular Material, PrimeNG\n🛠️ Backend: Node.js, NestJS, Express.js, FastAPI, REST APIs, WebSockets, Socket.IO, Microservices\n📱 Mobile: React Native, Ionic, Flutter\n🗄️ Databases: PostgreSQL, MySQL, MongoDB, MariaDB, Redis, Firestore, Prisma, TypeORM\n☁️ Cloud & DevOps: AWS (EC2, S3, Lambda, SNS), Docker, Nginx, GitHub Actions, CI/CD, Vercel\n✅ Code Quality: ESLint, Prettier, Husky, SonarQube, Playwright, code reviews\n🔀 Version Control: Git, GitHub, GitLab, Bitbucket\n📋 Project Management: Jira, Trello, ClickUp\n🧩 Other: Stripe, Twilio, Firebase, OAuth, Google Maps APIs, third-party API integrations\n\nOpen to full-time roles as well as contract, part-time and project work.",
+  "linkedin_about": "I'm a Lead Full Stack Developer based in Innsbruck, Austria, with 4+ years of experience building web and mobile products.\n\nRight now I lead development on Ludwig, a practice-management platform for physiotherapy clinics. I built most of it from scratch, and it runs day to day for 20+ therapists and more than 10,000 patients in Germany and Austria. I work in a team of 3-4 engineers and I'm involved from planning through to release.\n\nBefore this I spent two and a half years at Pikessoft, in teams of 5-10 developers, working across a lot of different products: a 3PL logistics and order fulfilment system, a heavy equipment marketplace, a real estate platform with its own CRM for the Dubai market, a service booking product for web and mobile, and a data platform that collects and structures millions of property listings.\n\nPicking up a new domain is normal for me. Logistics, healthcare, real estate, e-commerce. The business rules change, the engineering doesn't.\n\nI've worked in Agile/Scrum teams throughout, with daily standups, sprint planning and code reviews as part of the routine.\n\n⚙️ Frontend: Angular, React, Next.js, TypeScript, JavaScript, RxJS, NgRx, Redux, Tailwind CSS, Angular Material, PrimeNG\n🛠️ Backend: Node.js, NestJS, Express.js, FastAPI, REST APIs, WebSockets, Socket.IO, Microservices\n📱 Mobile: React Native, Ionic, Flutter\n🗄️ Databases: PostgreSQL, MySQL, MongoDB, MariaDB, Redis, Firestore, Prisma, TypeORM\n☁️ Cloud & DevOps: AWS (EC2, S3, Lambda, SNS), Docker, Nginx, GitHub Actions, CI/CD, Vercel\n✅ Code Quality: ESLint, Prettier, Husky, SonarQube, Playwright, code reviews\n🔀 Version Control: Git, GitHub, GitLab, Bitbucket\n📋 Project Management: Jira, Trello, ClickUp\n🧩 Other: Stripe, Twilio, Firebase, OAuth, Google Maps APIs, third-party API integrations",
   "linkedin_skills": [
     "TypeScript",
     "Node.js",
