@@ -1,7 +1,7 @@
 {
   "_comment": "SINGLE SOURCE OF TRUTH. Every tailored CV, cover letter and match score is generated from this file. Edit here, never in the generated documents.",
   "identity": {
-    "full_name": "Saif ur Rehman",
+    "full_name": "Saif Ur Rehman",
     "headline": "Lead Full Stack Developer | Angular, React, Next.js, Node.js",
     "email": "saifaslam155@gmail.com",
     "phone": "+43 660 6519 008",
@@ -201,7 +201,7 @@
     },
     {
       "id": "atomix",
-      "name": "Atomix Logistics - 3PL Fulfilment Platform",
+      "name": "Atomix Logistics - 3PL Logistics and Order Fulfilment Platform",
       "url": "atomixlogistics.com",
       "domain": [
         "logistics",
@@ -435,16 +435,16 @@
   ],
   "education": [
     {
-      "degree": "MSc Computer Science",
+      "degree": "Master of Science in Computer Science",
       "institution": "University of Innsbruck",
-      "location": "Austria",
+      "location": "Innsbruck, Austria",
       "start": "2024",
       "end": null,
-      "status": "Ongoing"
+      "status": "Present"
     },
     {
-      "degree": "BSc Computer Science",
-      "institution": "COMSATS University",
+      "degree": "Bachelor of Science in Computer Science",
+      "institution": "COMSATS University Islamabad",
       "location": "Pakistan",
       "start": "2018",
       "end": "2022",
@@ -452,8 +452,8 @@
     }
   ],
   "certifications": [
-    "MERN Stack Developer Certificate",
-    "Front-End Development Certificate",
+    "MERN Stack Developer",
+    "Front-End Development",
     "Project Management for Web Developers"
   ],
   "languages": [

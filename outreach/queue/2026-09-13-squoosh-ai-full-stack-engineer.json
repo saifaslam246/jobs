@@ -5,7 +5,7 @@
   "subject": "HN - Full Stack",
   "body": "Hi Tyler,\n\nApplying for the Full-Stack Engineer role from your Hacker News post.\n\nI'm a full-stack developer in Austria with 4+ years, currently lead developer on\nLudwig - practice-management software for physiotherapy and doctors' practices in\nGermany and Austria. React, Next.js and TypeScript on the front, Node.js and\nPostgres behind it, which is most of the stack you listed.\n\nThe browser-automation line is where I'd be most immediately useful. I have built\nPython extraction pipelines that ingest and normalise millions of property listings\nfrom third-party real-estate sources, and I use Playwright for end-to-end suites on\nthe product I work on now.\n\nWork sample and my own contribution: the clearest piece is Ludwig's patient booking\nwizard, which I built end to end in Next.js 16 and React 19. The backend describes\neach practice's booking flow and the frontend normalises that into rendered steps,\nso a practice can change what it asks patients without a release. It sits behind a\nclient login rather than being public, so I have attached my CV and I am happy to\nwalk through the code on a call. Public repositories: github.com/saifaslam246\n\nI am on CET and flexible into US hours. Available immediately.\n\nBest,\nSaif ur Rehman\n+43 660 6519 008 | linkedin.com/in/saif-rehman-432383183\n",
   "attachments": [
-    "profile/cv/generated/Saif_ur_Rehman_CV.pdf"
+    "profile/cv/master/Saif_Ur_Rehman.pdf"
   ],
   "score": 67,
   "is_contract": false,

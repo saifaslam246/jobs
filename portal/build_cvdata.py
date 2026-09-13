@@ -20,6 +20,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 GENERATED = ROOT / "profile" / "cv" / "generated"
+MASTER = ROOT / "profile" / "cv" / "master"
 OUT = ROOT / "portal" / "cvdata.js"
 
 WANTED = (".pdf", ".docx")
@@ -27,6 +28,11 @@ WANTED = (".pdf", ".docx")
 
 def main() -> None:
     blobs: dict[str, str] = {}
+    # his own file first, so the portal hands over the master itself rather than a
+    # re-render of it
+    for f in sorted(MASTER.iterdir()):
+        if f.suffix.lower() in WANTED:
+            blobs[f.name] = base64.b64encode(f.read_bytes()).decode("ascii")
     for f in sorted(GENERATED.iterdir()):
         if f.suffix.lower() not in WANTED:
             continue

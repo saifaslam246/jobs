@@ -715,7 +715,8 @@
   var REPO_CV = "https://github.com/saifaslam246/jobs/raw/" +
                 "claude/job-portal-cv-manager-7w6cxz/profile/cv/generated/";
   var CV_BLOBS = window.__CV_BLOBS__ || {};
-  var MASTER_CV = "Saif_ur_Rehman_CV";
+  // his own file, not a re-render of it
+  var MASTER_CV = "Saif_Ur_Rehman";
   var downloads = null, downloadsAsked = false;
 
   function b64ToBlob(b64, type){
@@ -795,7 +796,7 @@
       links = cvLinks(MASTER_CV);
       note = "";
     } else {
-      head = "<b>Your CV.</b> This exact file is what gets attached to this application.";
+      head = "<b>Your CV, exactly as you wrote it.</b> This file is attached to this application unchanged.";
       links = cvLinks(MASTER_CV);
       note = "";
     }

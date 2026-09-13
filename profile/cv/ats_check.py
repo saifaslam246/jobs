@@ -109,7 +109,45 @@ def check(path: Path) -> int:
     return 1 if fail else 0
 
 
+def compare_to_master() -> int:
+    """Assert the untailored build still says exactly what his master CV says.
+
+    The generator exists only so a tailored CV looks like his document. If the two
+    drift apart, a tailored application stops being recognisably the same CV - and
+    that drift would otherwise go unnoticed until an employer saw both.
+    """
+    import difflib
+    import re
+
+    import pymupdf
+
+    def words(path):
+        t = "\n".join(pg.get_text() for pg in pymupdf.open(path))
+        t = t.replace("\u2014", "-").replace("\u2013", "-").replace("\u2022", "-")
+        return re.sub(r"[ \t]+", " ", t).split()
+
+    master = ROOT / "profile/cv/master/Saif_Ur_Rehman.pdf"
+    built = ROOT / "profile/cv/generated/Saif_ur_Rehman_CV.pdf"
+    if not built.exists():
+        print("   FAIL  no untailored build to compare - run build_cv.py first")
+        return 1
+    a, b = words(master), words(built)
+    sm = difflib.SequenceMatcher(None, a, b)
+    diffs = [op for op in sm.get_opcodes() if op[0] != "equal"]
+    print(f"\n  generator vs your master CV: {sm.ratio() * 100:.1f}% word match")
+    if not diffs:
+        print("   PASS  identical wording\n")
+        return 0
+    for tag, i1, i2, j1, j2 in diffs[:10]:
+        print(f"   FAIL  {tag}: yours={' '.join(a[i1:i2])[:70] or '-'} "
+              f"| built={' '.join(b[j1:j2])[:70] or '-'}")
+    print()
+    return 1
+
+
 if __name__ == "__main__":
-    target = Path(sys.argv[1]) if len(sys.argv) > 1 else \
-        ROOT / "profile/cv/generated/Saif_ur_Rehman_CV_fullstack.pdf"
+    if "--compare" in sys.argv:
+        raise SystemExit(compare_to_master())
+    paths = [a for a in sys.argv[1:] if not a.startswith("--")]
+    target = Path(paths[0]) if paths else ROOT / "profile/cv/master/Saif_Ur_Rehman.pdf"
     raise SystemExit(check(target))

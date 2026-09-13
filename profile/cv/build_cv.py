@@ -37,7 +37,8 @@ PROFILE = ROOT / "profile" / "master-profile.json"
 MATCHES = ROOT / "data" / "matches.json"
 OUT = ROOT / "profile" / "cv" / "generated"
 
-MONTHS = ["", "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+MONTHS = ["", "January", "February", "March", "April", "May", "June",
+          "July", "August", "September", "October", "November", "December"]
 
 
 def fmt_date(v: str | None, current: bool = False) -> str:
@@ -66,10 +67,12 @@ def build_content(p: dict, job: dict | None, title_override: str | None) -> dict
     ident = p["identity"]
     headline = title_override or ident["headline"]
 
-    contact = [ident["location"], ident["phone"], ident["email"]]
-    links = [ident["github"], ident["linkedin"]]
+    contact_lines = [
+        " | ".join([ident["location"], ident["phone"], ident["email"]]),
+        f"LinkedIn: {ident['linkedin']} | GitHub: {ident['github']}",
+    ]
     if ident.get("portfolio_public") and ident.get("portfolio"):
-        links.append(ident["portfolio"])
+        contact_lines.append(f"Portfolio: {ident['portfolio']}")
 
     summary = p["summary"]
 
@@ -122,10 +125,9 @@ def build_content(p: dict, job: dict | None, title_override: str | None) -> dict
     projects = [{**pr, "bullets": pr["bullets"][:2]} for pr in projects]
 
     return {
-        "name": ident["full_name"].upper(),
+        "name": ident["full_name"],
         "headline": headline,
-        "contact_line": "  |  ".join(contact),
-        "links_line": "  |  ".join(links),
+        "contact_lines": contact_lines,
         "summary": summary,
         "skills": skills,
         "experience": p["experience"],
@@ -196,11 +198,10 @@ def write_docx(c: dict, path: Path) -> None:
         run.font.size = Pt(10.5)
 
     # --- header (in the body, not a Word header) ---
-    para(c["name"], size=19, bold=True, align=WD_ALIGN_PARAGRAPH.CENTER, space_after=1)
-    para(c["headline"], size=11.5, align=WD_ALIGN_PARAGRAPH.CENTER, space_after=2,
-         color=(0x33, 0x33, 0x33))
-    para(c["contact_line"], size=9.5, align=WD_ALIGN_PARAGRAPH.CENTER, space_after=0)
-    para(c["links_line"], size=9.5, align=WD_ALIGN_PARAGRAPH.CENTER, space_after=0)
+    para(c["name"], size=20, bold=True, space_after=1)
+    para(c["headline"], size=10.5, space_after=3)
+    for ln in c["contact_lines"]:
+        para(ln, size=9, space_after=0)
 
     heading("Professional Summary")
     para(c["summary"], space_after=2, justify=True)
@@ -262,94 +263,99 @@ def write_docx(c: dict, path: Path) -> None:
 # ---------------------------------------------------------------------------
 
 def write_pdf(c: dict, path: Path) -> None:
-    ss = getSampleStyleSheet()
-    name = ParagraphStyle("nm", parent=ss["Normal"], fontName="Helvetica-Bold",
-                          fontSize=19, leading=22, alignment=TA_CENTER, spaceAfter=1)
-    head = ParagraphStyle("hd", parent=ss["Normal"], fontName="Helvetica",
-                          fontSize=11.5, leading=14, alignment=TA_CENTER, spaceAfter=2,
-                          textColor="#333333")
-    meta = ParagraphStyle("mt", parent=ss["Normal"], fontName="Helvetica",
-                          fontSize=9.2, leading=12, alignment=TA_CENTER, textColor="#222222")
-    sec = ParagraphStyle("sc", parent=ss["Normal"], fontName="Helvetica-Bold",
-                         fontSize=11, leading=13, spaceBefore=10, spaceAfter=4,
-                         borderWidth=0, textColor="#000000")
-    body = ParagraphStyle("bd", parent=ss["Normal"], fontName="Helvetica",
-                          fontSize=10, leading=13.2, spaceAfter=2, alignment=TA_JUSTIFY)
-    role = ParagraphStyle("rl", parent=body, fontName="Helvetica-Bold", fontSize=10.8,
-                          spaceBefore=6, spaceAfter=0, alignment=0)
-    sub = ParagraphStyle("sb", parent=body, fontName="Helvetica-Oblique", fontSize=9.5,
-                         textColor="#444444", spaceAfter=2, alignment=0)
-    bul = ParagraphStyle("bl", parent=body, fontSize=10, leading=13, spaceAfter=1.5,
-                         alignment=TA_JUSTIFY)
+    """Reproduce the master CV's layout exactly.
 
-    def rule():
-        return Paragraph('<para spaceb="0"><font size="1" color="#888888">'
-                         + "_" * 200 + "</font></para>", body)
+    Every measurement here is read off profile/cv/master/Saif_Ur_Rehman.pdf - his own
+    file - so a tailored CV is recognisably the same document rather than a different
+    one carrying the same words. A4, 20mm side margins, left-aligned throughout,
+    Helvetica at his sizes: name 20, section headings 11.5, company and project names
+    10, body 9, skills and bullets 8.7-8.8.
+    """
+    ss = getSampleStyleSheet()
+    L = 57          # his left margin, in points
+    W = 595 - L * 2
+
+    def st(name, size, leading, bold=False, space_before=0, space_after=0, indent=0,
+           bullet_indent=0, color="#000000"):
+        return ParagraphStyle(
+            name, parent=ss["Normal"],
+            fontName="Helvetica-Bold" if bold else "Helvetica",
+            fontSize=size, leading=leading, textColor=color,
+            spaceBefore=space_before, spaceAfter=space_after,
+            leftIndent=indent, bulletIndent=bullet_indent,
+        )
+
+    s_name    = st("nm", 20, 23, bold=True, space_after=2)
+    s_head    = st("hd", 10.5, 13, space_after=3)
+    s_contact = st("ct", 8.8, 11.4)
+    s_section = st("sc", 11.5, 14, bold=True, space_before=11, space_after=4)
+    s_body    = st("bd", 9, 12.2, space_after=2)
+    s_org     = st("og", 10, 13, bold=True, space_before=7, space_after=1)
+    s_role    = st("rl", 9, 12, space_after=2)
+    s_skill   = st("sk", 8.7, 11.8, space_after=1.5)
+    s_bullet  = st("bl", 8.8, 11.6, space_after=1.5, indent=11, bullet_indent=1)
+    s_tech    = st("tc", 8.7, 11.6, space_before=2, space_after=1)
 
     story = [
-        Paragraph(c["name"], name),
-        Paragraph(c["headline"], head),
-        Paragraph(c["contact_line"].replace("|", "&nbsp;|&nbsp;"), meta),
-        Paragraph(c["links_line"].replace("|", "&nbsp;|&nbsp;"), meta),
+        Paragraph(c["name"], s_name),
+        Paragraph(c["headline"], s_head),
     ]
+    for ln in c["contact_lines"]:
+        story.append(Paragraph(ln, s_contact))
 
     def section(t):
-        story.append(Paragraph(t.upper(), sec))
+        story.append(Paragraph(t, s_section))
 
     def bullets(items):
-        story.append(ListFlowable(
-            [ListItem(Paragraph(i, bul), leftIndent=12) for i in items],
-            bulletType="bullet", start="•", leftIndent=12, bulletFontSize=8,
-            spaceBefore=0, spaceAfter=2,
-        ))
+        for b in items:
+            story.append(Paragraph(b, s_bullet, bulletText="\u2022"))
 
-    section("Professional Summary")
-    story.append(Paragraph(c["summary"], body))
+    section("PROFESSIONAL SUMMARY")
+    story.append(Paragraph(c["summary"], s_body))
 
-    section("Technical Skills")
+    section("TECHNICAL SKILLS")
     for cat, items in c["skills"].items():
-        story.append(Paragraph(f"<b>{cat}:</b> {', '.join(items)}", body))
+        story.append(Paragraph(f"<b>{cat}:</b> {', '.join(items)}", s_skill))
 
-    section("Professional Experience")
+    section("PROFESSIONAL EXPERIENCE")
     for e in c["experience"]:
-        story.append(Paragraph(e["title"], role))
+        story.append(Paragraph(f"{e['company']} &mdash; {e['location']}", s_org))
         story.append(Paragraph(
-            f"{e['company']} - {e['location']} &nbsp;|&nbsp; "
-            f"{fmt_date(e['start'])} - {fmt_date(e.get('end'), e.get('current', False))}", sub))
+            f"<b>{e['title']}</b> | {fmt_date(e['start'])} &ndash; "
+            f"{fmt_date(e.get('end'), e.get('current', False))}", s_role))
         bullets(e["bullets"])
         if e.get("stack"):
-            story.append(Paragraph(f"<i>Stack: {', '.join(e['stack'])}</i>", sub))
+            story.append(Paragraph(f"<b>Technologies:</b> {', '.join(e['stack'])}", s_tech))
 
-    section("Selected Projects")
+    section("SELECTED PROJECTS")
     for pr_ in c["projects"]:
-        story.append(Paragraph(pr_["name"], role))
-        m = ", ".join(pr_["tech"])
+        name = pr_["name"]
         if pr_.get("url"):
-            m = f"{pr_['url']} &nbsp;|&nbsp; {m}"
-        story.append(Paragraph(m, sub))
+            name += f" | {pr_['url']}"
+        story.append(Paragraph(name, s_org))
         bullets(pr_["bullets"])
 
-    section("Education")
+    section("EDUCATION")
     for ed in c["education"]:
-        story.append(Paragraph(ed["degree"], role))
-        end = ed.get("end") or ed.get("status", "")
-        story.append(Paragraph(f"{ed['institution']} - {ed['location']} &nbsp;|&nbsp; "
-                               f"{ed['start']} - {end}", sub))
+        story.append(Paragraph(f"{ed['institution']} &mdash; {ed['location']}", s_role.clone(
+            "edorg", fontName="Helvetica-Bold", spaceBefore=6, spaceAfter=0)))
+        end_yr = ed.get("end") or ed.get("status", "")
+        story.append(Paragraph(f"{ed['degree']} | {ed['start']} &ndash; {end_yr}", s_role))
 
     if c["certifications"]:
-        section("Certifications")
-        bullets(c["certifications"])
+        section("CERTIFICATIONS")
+        story.append(Paragraph(" | ".join(c["certifications"]), s_body))
 
     if c["languages"]:
-        section("Languages")
+        section("LANGUAGES")
         story.append(Paragraph(
-            " &nbsp;|&nbsp; ".join(f"{l['language']}: {l['level']}" for l in c["languages"]), body))
+            " | ".join(f"{l['language']} &mdash; {l['level'].split(' - ')[0]}"
+                       for l in c["languages"]), s_body))
 
     SimpleDocTemplate(
         str(path), pagesize=A4,
-        leftMargin=15 * mm, rightMargin=15 * mm, topMargin=12 * mm, bottomMargin=12 * mm,
-        title=f"{c['name'].title()} - CV", author=c["name"].title(),
-        subject=c["headline"],
+        leftMargin=L, rightMargin=L, topMargin=52, bottomMargin=40,
+        title=f"{c['name']} - CV", author=c["name"], subject=c["headline"],
     ).build(story)
 
 
@@ -358,7 +364,7 @@ def write_pdf(c: dict, path: Path) -> None:
 # ---------------------------------------------------------------------------
 
 def write_txt(c: dict, path: Path) -> None:
-    L = [c["name"], c["headline"], c["contact_line"], c["links_line"], "",
+    L = [c["name"], c["headline"], *c["contact_lines"], "",
          "PROFESSIONAL SUMMARY", c["summary"], "", "TECHNICAL SKILLS"]
     for cat, items in c["skills"].items():
         L.append(f"{cat}: {', '.join(items)}")

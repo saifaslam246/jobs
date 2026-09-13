@@ -62,34 +62,35 @@ Open the description in `matches.json`. Do not apply from the title. Check:
 - What is the single most specific requirement he genuinely matches? That sentence is
   what the email is built around.
 
-## 5. Attach the CV - master by default
+## 5. Attach the CV - his own file by default
 
-**Default: send the master CV, unchanged.**
+**Default: attach `profile/cv/master/Saif_Ur_Rehman.pdf` unchanged.** That is Saif's own
+PDF, byte for byte as he wrote it. Do not regenerate it, do not reword it, do not swap in
+a build. Most applications get exactly this file.
 
-```bash
-python profile/cv/build_cv.py          # profile/cv/generated/Saif_ur_Rehman_CV.pdf
-```
-
-That is the CV Saif wrote. Most applications get exactly this file.
-
-**Only tailor when the switch is on for that role.** The portal has a per-job switch,
+**Only tailor when the switch is on for that role.** The portal carries a per-job switch,
 off by default; turning it on writes `tailor: true` into that role's `pipeline/<job_id>`
-document. Read that collection, and for roles where it is set:
+document. For those roles only:
 
 ```bash
 python profile/cv/build_cv.py --job <job_id> --title "<their exact job title>"
-```
-
-Tailoring **reorders** his material - skills categories the posting asks for first, most
-relevant projects first - and mirrors their job title. It does not rewrite a single
-sentence: every line on a tailored CV is a line he approved on the master. If a posting
-wants something the master does not say, raise it with him; never write it in.
-
-Then rebuild the portal's copies so the new file is downloadable:
-
-```bash
 python portal/build_cvdata.py
 ```
+
+The generator reproduces the master's layout exactly - same fonts, sizes, margins,
+section order and wording - so a tailored CV is his document with its skills and projects
+reordered around one posting, not a different CV. It **reorders only**. Never rewrite,
+add or remove a sentence, and never introduce a technology that is not already in his
+profile.
+
+Before relying on a tailored build, confirm the generator has not drifted from his file:
+
+```bash
+python profile/cv/build_cv.py && python profile/cv/ats_check.py --compare
+```
+
+That must report a 100% word match. If it does not, stop and report it rather than
+sending a CV that no longer matches the one he wrote.
 
 ## 6. Draft the email
 
