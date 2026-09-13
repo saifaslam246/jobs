@@ -666,8 +666,8 @@
       "priority": 45,
       "dates": "November 2024 - February 2025",
       "association": "Pikessoft",
-      "skills": "Angular · Node.js · TypeScript · AWS S3 · PrimeNG",
-      "description": "Atomix is a 3PL logistics and order fulfilment platform for high-growth brands: inbound and outbound orders, inventory across warehouses, and the reporting the operations team runs the day on.\n\nI worked across both sides of it, frontend and backend. Three pieces were worth doing properly.\n\nLarge data exports. They were built in one pass and started falling over as the data grew. I moved them to chunked processing with the finished file uploaded to S3, so an export completes at any size instead of timing out on the request.\n\nBilling. It ran through a third-party service. I helped move it to an in-house system, which took out the recurring cost and put the logic somewhere we could change it.\n\nThe frontend migration from Angular Material to PrimeNG, which I led. Fewer component workarounds and a UI the team could build against faster.\n\nTechnologies: Angular, PrimeNG, Node.js, TypeScript, AWS S3"
+      "skills": "Angular · Node.js · TypeScript · MariaDB · Express.js",
+      "description": "Atomix is a 3PL logistics and order fulfilment platform for high-growth brands: inbound and outbound orders, inventory across warehouses, and the reporting the operations team runs the day on.\n\nI worked across both sides of it, frontend and backend. Three pieces were worth doing properly.\n\nLarge data exports. They were built in one pass and started falling over as the data grew. I moved them to chunked processing with the finished file uploaded to S3, so an export completes at any size instead of timing out on the request.\n\nBilling. It ran through a third-party service. I helped move it to an in-house system, which took out the recurring cost and put the logic somewhere we could change it.\n\nThe frontend migration from Angular Material to PrimeNG, which I led. Fewer component workarounds and a UI the team could build against faster.\n\nTechnologies: Angular, PrimeNG, TypeScript, Node.js, Express.js, Sequelize, MariaDB, Firebase, AWS S3"
     },
     {
       "name": "Rentalytics - Property Data Platform",
@@ -774,7 +774,27 @@
         "React",
         "NestJS"
       ],
-      "_note": "The CV's Atomix line claiming React and NestJS is wrong and must be corrected."
+      "_note": "The CV's Atomix line claiming React and NestJS is wrong and must be corrected.",
+      "confirmed_by_skill_tags": [
+        "Express.js",
+        "Sequelize.js",
+        "MariaDB",
+        "Firebase",
+        "Amazon S3",
+        "PrimeNG",
+        "TypeScript",
+        "Node.js",
+        "Bitbucket",
+        "Jira",
+        "ESLint",
+        "Logging",
+        "Agile"
+      ],
+      "not_in_skill_tags": [
+        "Redis",
+        "Stripe"
+      ],
+      "_open": "The CV claims Redis and Stripe on Atomix; neither appears in his LinkedIn skill tags. Unconfirmed."
     },
     "ludwig_backend": {
       "platform": "Spica",
