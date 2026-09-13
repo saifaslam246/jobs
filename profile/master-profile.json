@@ -216,19 +216,20 @@
         "e-commerce"
       ],
       "tech": [
-        "React",
         "Angular",
-        "NestJS",
+        "PrimeNG",
+        "TypeScript",
         "Node.js",
+        "Express.js",
+        "Sequelize",
         "MariaDB",
-        "Redis",
-        "Stripe",
-        "AWS"
+        "Firebase",
+        "AWS S3"
       ],
       "one_liner": "Third-party logistics platform for order fulfilment, real-time tracking and multi-channel e-commerce integration.",
       "bullets": [
         "Developed order fulfilment, inventory management, packaging, ecommerce automation, and delivery-tracking workflows.",
-        "Implemented real-time order updates and operational dashboards using React, Angular, NestJS, Node.js, MariaDB, and Redis; integrated Stripe and AWS infrastructure."
+        "Implemented real-time order updates and operational dashboards using Angular, PrimeNG, TypeScript, Node.js, Express.js, Sequelize, MariaDB, Firebase, and AWS S3."
       ],
       "weight": 5
     },

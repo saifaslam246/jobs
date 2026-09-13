@@ -48,9 +48,9 @@ Angular, Ionic, TypeScript, Next.js, React, Flutter, RxJS, Tailwind CSS, Playwri
 - Built web and mobile interfaces with Angular, Ionic, React, Next.js, and Flutter, including offline-first synchronization, multi-tenancy, PDF workflows, Playwright testing, and a Spica backend of buckets and functions.
 
 Atomix Logistics - 3PL Logistics and Order Fulfilment Platform
-React, Angular, NestJS, Node.js, MariaDB, Redis, Stripe, AWS
+Angular, PrimeNG, TypeScript, Node.js, Express.js, Sequelize, MariaDB, Firebase, AWS S3
 - Developed order fulfilment, inventory management, packaging, ecommerce automation, and delivery-tracking workflows.
-- Implemented real-time order updates and operational dashboards using React, Angular, NestJS, Node.js, MariaDB, and Redis; integrated Stripe and AWS infrastructure.
+- Implemented real-time order updates and operational dashboards using Angular, PrimeNG, TypeScript, Node.js, Express.js, Sequelize, MariaDB, Firebase, and AWS S3.
 
 EquipX - Heavy Equipment Marketplace
 Angular, Next.js, Node.js, MongoDB, Socket.IO, Stripe, AWS, Docker
