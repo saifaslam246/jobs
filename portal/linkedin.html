@@ -1,0 +1,203 @@
+<title>LinkedIn Paste Sheet</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+  :root{
+    --ground:#f4f7f6; --surface:#ffffff; --surface-2:#eef3f1; --line:#dde5e2;
+    --ink:#101e1b; --ink-2:#3c4c48; --muted:#6b7c78;
+    --accent:#0f6e63; --accent-soft:#dceeea; --accent-ink:#0b544b;
+    --good:#1d7a4d; --warn:#a8630c; --warn-soft:#f6e9d6; --crit:#a82a20;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --ground:#0d1412; --surface:#131e1b; --surface-2:#182521; --line:#25332f;
+      --ink:#e7efec; --ink-2:#bcccc7; --muted:#899a95;
+      --accent:#4ec5b1; --accent-soft:#16302c; --accent-ink:#7fdcca;
+      --good:#5ec98c; --warn:#e0a558; --warn-soft:#2e2417; --crit:#e8867a;
+    }
+  }
+  :root[data-theme="dark"]{
+    --ground:#0d1412; --surface:#131e1b; --surface-2:#182521; --line:#25332f;
+    --ink:#e7efec; --ink-2:#bcccc7; --muted:#899a95;
+    --accent:#4ec5b1; --accent-soft:#16302c; --accent-ink:#7fdcca;
+    --good:#5ec98c; --warn:#e0a558; --warn-soft:#2e2417; --crit:#e8867a;
+  }
+  *{box-sizing:border-box}
+  body{margin:0; background:var(--ground); color:var(--ink);
+       font-family:"IBM Plex Sans",-apple-system,"Segoe UI",sans-serif; font-size:15px; line-height:1.55}
+  .wrap{max-width:760px; margin:0 auto; padding-inline:18px; padding-block:0 64px}
+  h1,h2{font-family:Archivo,sans-serif; margin:0; text-wrap:balance}
+  header.top{padding-block:40px 20px; border-bottom:2px solid var(--ink);
+             display:flex; flex-direction:column; gap:9px}
+  header.top h1{font-size:30px; font-weight:700; letter-spacing:-.02em}
+  header.top p{margin:0; color:var(--ink-2); max-width:60ch}
+  .steps{margin:18px 0 0; padding:14px 16px; background:var(--surface); border:1px solid var(--line);
+         border-radius:10px; font-size:13.5px; color:var(--ink-2)}
+  .steps b{color:var(--ink)}
+  .steps ol{margin:8px 0 0; padding-left:18px; display:flex; flex-direction:column; gap:4px}
+  section{padding-block:24px; border-bottom:1px solid var(--line);
+          display:flex; flex-direction:column; gap:9px}
+  section header{display:flex; flex-wrap:wrap; gap:8px 12px; align-items:baseline; justify-content:space-between}
+  section h2{font-size:17px; font-weight:700}
+  .count{font-family:"IBM Plex Mono",monospace; font-size:11.5px; color:var(--muted);
+         background:var(--surface-2); border:1px solid var(--line); border-radius:999px; padding:2px 9px}
+  .count.over{color:#fff; background:var(--crit); border-color:transparent}
+  .where{margin:0; font-size:12.5px; color:var(--muted)}
+  pre{margin:0; white-space:pre-wrap; font-family:"IBM Plex Sans",sans-serif; font-size:13.5px;
+      line-height:1.55; background:var(--surface); border:1px solid var(--line);
+      border-radius:9px; padding:13px 15px; max-height:330px; overflow-y:auto; color:var(--ink-2)}
+  .copy, .mini{font:inherit; cursor:pointer; border-radius:999px; border:1px solid var(--accent);
+               background:var(--accent); color:#fff; font-weight:600}
+  .copy{align-self:flex-start; padding:7px 16px; font-size:13px}
+  .mini{padding:1px 9px; font-size:11px; margin-left:7px; background:var(--surface);
+        color:var(--accent-ink); font-weight:500}
+  .copy:hover, .mini:hover{filter:brightness(1.08)}
+  .copy.done, .mini.done{background:var(--good); border-color:var(--good); color:#fff}
+  .meta{display:grid; grid-template-columns:auto 1fr; gap:5px 14px; margin:0; font-size:13.5px}
+  .meta dt{color:var(--muted); font-size:12.5px}
+  .meta dd{margin:0}
+  code{font-family:"IBM Plex Mono",monospace; font-size:12.5px; background:var(--surface-2);
+       border:1px solid var(--line); border-radius:4px; padding:1px 6px}
+  .note{margin:0; font-size:12.5px; color:var(--ink); background:var(--warn-soft);
+        border-left:3px solid var(--warn); border-radius:0 7px 7px 0; padding:9px 13px}
+  .cant{margin-top:22px; padding:14px 16px; border:1px solid var(--line); border-left:3px solid var(--muted);
+        border-radius:0 10px 10px 0; background:var(--surface); font-size:13.5px; color:var(--ink-2)}
+  .cant b{color:var(--ink)}
+  :focus-visible{outline:2px solid var(--accent); outline-offset:2px}
+  @media (prefers-reduced-motion: reduce){*{transition:none!important}}
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <h1>LinkedIn Paste Sheet</h1>
+    <p>Every field LinkedIn asks for, written from the same profile your CV comes from —
+       so the two say the same thing. Click Copy, paste, next.</p>
+    <div class="steps">
+      <b>How to use this</b>
+      <ol>
+        <li>Open your profile on linkedin.com in another tab</li>
+        <li>Work down this page: click <b>Copy</b>, click the matching LinkedIn field, paste</li>
+        <li>Six fields. Around five minutes.</li>
+      </ol>
+    </div>
+  </header>
+
+  <section><header><h2>Headline</h2><span class="count ">60 / 220</span></header><p class="where">Profile → pencil icon → Headline</p><pre id="t0">Lead Full Stack Developer | Angular, React, Next.js, Node.js</pre><button class="copy" data-copy="t0">Copy this</button></section>
+<section><header><h2>About</h2><span class="count ">565 / 2600</span></header><p class="where">Profile → About → pencil icon</p><pre id="t1">Lead Full Stack Developer with 4+ years of experience building and delivering production web and mobile applications. Experienced in owning products from architecture and UI design through development, deployment, and ongoing improvement. Currently leading development of a healthcare practice-management and patient-booking platform used by 20+ therapists and more than 10,000 patients across Germany and Austria. Strong background in Angular, React, Next.js, Node.js, TypeScript, real-time systems, healthcare workflows, cloud infrastructure, and team leadership.</pre><button class="copy" data-copy="t1">Copy this</button></section>
+<section><header><h2>Experience — TMN Development KG</h2><span class="count ">1442 / 2000</span></header><p class="where">Profile → Experience → + → fill the fields below</p><dl class="meta"><dt>Title</dt><dd><code>Lead Full Stack Developer</code><button class="mini" data-copy="m2-0">copy</button><span hidden id="m2-0">Lead Full Stack Developer</span></dd><dt>Company</dt><dd><code>TMN Development KG</code><button class="mini" data-copy="m2-1">copy</button><span hidden id="m2-1">TMN Development KG</span></dd><dt>Location</dt><dd><code>Innsbruck, Austria</code><button class="mini" data-copy="m2-2">copy</button><span hidden id="m2-2">Innsbruck, Austria</span></dd><dt>Start</dt><dd><code>March 2025</code><button class="mini" data-copy="m2-3">copy</button><span hidden id="m2-3">March 2025</span></dd><dt>End</dt><dd><code>Present</code><button class="mini" data-copy="m2-4">copy</button><span hidden id="m2-4">Present</span></dd></dl><pre id="t2">• Lead the development of Ludwig, a production healthcare practice-management and patient-booking platform used by 20+ therapists and more than 10,000 patients across Germany and Austria.
+• Built Ludwig largely from scratch, owning product architecture, UI design, frontend development, backend integration, testing, deployment, and ongoing improvements.
+• Work directly with the CEO to translate business requirements into scalable technical solutions and user-friendly healthcare workflows.
+• Developed clinical documentation, patient management, appointment scheduling, recurring bookings, resource management, therapist absences, waiting lists, available time slots, and statutory health insurance invoicing.
+• Implemented multi-tenant architecture and offline-first synchronization with conflict handling to support reliable usage across practices and environments.
+• Develop responsive web and mobile experiences using Angular, Ionic, TypeScript, Next.js, React, and Flutter.
+• Guide a team of 3-4 engineers across additional products through technical direction, code reviews, implementation support, and delivery guidance.
+• Contributed to additional products including a business connector, business-card management platform, and regional public registry platform for recently deceased persons.
+
+Technologies: Angular 19, Ionic 8, TypeScript, Next.js 16, React 19, Flutter, RxJS, NgRx Signals, Tailwind CSS, Playwright, PDF workflows</pre><button class="copy" data-copy="t2">Copy this</button></section>
+<section><header><h2>Experience — Pikessoft</h2><span class="count ">933 / 2000</span></header><p class="where">Profile → Experience → + → fill the fields below</p><dl class="meta"><dt>Title</dt><dd><code>Full Stack Developer | Team Lead</code><button class="mini" data-copy="m3-0">copy</button><span hidden id="m3-0">Full Stack Developer | Team Lead</span></dd><dt>Company</dt><dd><code>Pikessoft</code><button class="mini" data-copy="m3-1">copy</button><span hidden id="m3-1">Pikessoft</span></dd><dt>Location</dt><dd><code>Lahore, Pakistan</code><button class="mini" data-copy="m3-2">copy</button><span hidden id="m3-2">Lahore, Pakistan</span></dd><dt>Start</dt><dd><code>September 2022</code><button class="mini" data-copy="m3-3">copy</button><span hidden id="m3-3">September 2022</span></dd><dt>End</dt><dd><code>February 2025</code><button class="mini" data-copy="m3-4">copy</button><span hidden id="m3-4">February 2025</span></dd></dl><pre id="t3">• Led a team of 5-10 developers delivering full stack web and mobile applications for logistics, marketplaces, real estate, and field-service businesses.
+• Designed and developed scalable frontend and backend systems using React, Angular, Next.js, Node.js, NestJS, and React Native.
+• Built real-time communication features including chat, group messaging, push notifications, live order tracking, and operational status updates.
+• Developed REST APIs and backend services using MongoDB, MariaDB, Redis, Firebase, and Node.js.
+• Integrated payment gateways, third-party services, cloud infrastructure, and notification systems into client-facing platforms.
+• Conducted code reviews, mentored junior developers, clarified client requirements, and supported delivery planning and technical decision-making.
+
+Technologies: React, Angular, Next.js, React Native, Node.js, NestJS, MongoDB, MariaDB, Redis, Firebase, AWS, Docker, REST APIs</pre><button class="copy" data-copy="t3">Copy this</button></section>
+<section><header><h2>Education — University of Innsbruck</h2></header><p class="where">Profile → Education → +</p><dl class="meta"><dt>School</dt><dd><code>University of Innsbruck</code><button class="mini" data-copy="m4-0">copy</button><span hidden id="m4-0">University of Innsbruck</span></dd><dt>Degree</dt><dd><code>Master of Science in Computer Science</code><button class="mini" data-copy="m4-1">copy</button><span hidden id="m4-1">Master of Science in Computer Science</span></dd><dt>From</dt><dd><code>2024</code><button class="mini" data-copy="m4-2">copy</button><span hidden id="m4-2">2024</span></dd><dt>To</dt><dd><code>Present</code><button class="mini" data-copy="m4-3">copy</button><span hidden id="m4-3">Present</span></dd></dl></section>
+<section><header><h2>Education — COMSATS University Islamabad</h2></header><p class="where">Profile → Education → +</p><dl class="meta"><dt>School</dt><dd><code>COMSATS University Islamabad</code><button class="mini" data-copy="m5-0">copy</button><span hidden id="m5-0">COMSATS University Islamabad</span></dd><dt>Degree</dt><dd><code>Bachelor of Science in Computer Science</code><button class="mini" data-copy="m5-1">copy</button><span hidden id="m5-1">Bachelor of Science in Computer Science</span></dd><dt>From</dt><dd><code>2018</code><button class="mini" data-copy="m5-2">copy</button><span hidden id="m5-2">2018</span></dd><dt>To</dt><dd><code>2022</code><button class="mini" data-copy="m5-3">copy</button><span hidden id="m5-3">2022</span></dd></dl></section>
+<section><header><h2>Skills</h2><span class="count ">50 / 50 skills</span></header><p class="where">Profile → Skills → + → add one at a time</p><pre id="t6">Angular
+React
+Next.js
+Ionic
+RxJS
+NgRx
+Redux
+Tailwind CSS
+Angular Material
+PrimeNG
+Node.js
+NestJS
+Express.js
+FastAPI
+REST APIs
+WebSockets
+Socket.IO
+Firebase Functions
+Microservices
+PostgreSQL
+MongoDB
+MySQL
+MariaDB
+Redis
+Firestore
+TypeORM
+Prisma
+Sequelize
+Mongoose
+TypeScript
+JavaScript
+Python
+SQL
+HTML5
+CSS3
+AWS EC2
+AWS S3
+AWS Lambda
+AWS SNS
+Docker
+Nginx
+GitHub Actions
+CI/CD
+Vercel
+React Native
+Flutter
+Stripe
+Twilio
+Firebase Cloud Messaging
+OAuth</pre><button class="copy" data-copy="t6">Copy this</button><p class="note">54 in your profile, LinkedIn caps at 50 - the most relevant are listed, in the order worth adding them.</p></section>
+
+  <div class="cant">
+    <b>Why this isn't automatic.</b> LinkedIn has no API for editing a profile — the only
+    programmatic route is driving your logged-in session, which breaches their terms and
+    gets accounts restricted. Your profile is worth more than the saved minutes, so this
+    page does everything up to the paste and stops there.
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  function copyText(text, btn){
+    var label = btn.textContent;
+    function done(ok){
+      btn.textContent = ok ? "Copied" : "Press Cmd+C";
+      btn.classList.toggle("done", ok);
+      setTimeout(function(){ btn.textContent = label; btn.classList.remove("done"); }, 1800);
+    }
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(text).then(function(){ done(true); }, function(){ fallback(); });
+      return;
+    }
+    fallback();
+    function fallback(){
+      // clipboard access can be refused inside an embedded frame; select the text so
+      // the keyboard shortcut still works rather than leaving a dead button
+      var ta = document.createElement("textarea");
+      ta.value = text;
+      ta.setAttribute("readonly", "");
+      ta.style.cssText = "position:fixed;top:0;left:0;opacity:0";
+      document.body.appendChild(ta);
+      ta.select();
+      var ok = false;
+      try { ok = document.execCommand("copy"); } catch(e){ ok = false; }
+      document.body.removeChild(ta);
+      done(ok);
+    }
+  }
+  document.addEventListener("click", function(e){
+    var btn = e.target.closest("[data-copy]");
+    if(!btn) return;
+    var src = document.getElementById(btn.dataset.copy);
+    if(src) copyText(src.textContent, btn);
+  });
+})();
+</script>
+

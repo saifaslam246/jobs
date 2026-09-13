@@ -1,0 +1,131 @@
+<title>LinkedIn Paste Sheet</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+  :root{
+    --ground:#f4f7f6; --surface:#ffffff; --surface-2:#eef3f1; --line:#dde5e2;
+    --ink:#101e1b; --ink-2:#3c4c48; --muted:#6b7c78;
+    --accent:#0f6e63; --accent-soft:#dceeea; --accent-ink:#0b544b;
+    --good:#1d7a4d; --warn:#a8630c; --warn-soft:#f6e9d6; --crit:#a82a20;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --ground:#0d1412; --surface:#131e1b; --surface-2:#182521; --line:#25332f;
+      --ink:#e7efec; --ink-2:#bcccc7; --muted:#899a95;
+      --accent:#4ec5b1; --accent-soft:#16302c; --accent-ink:#7fdcca;
+      --good:#5ec98c; --warn:#e0a558; --warn-soft:#2e2417; --crit:#e8867a;
+    }
+  }
+  :root[data-theme="dark"]{
+    --ground:#0d1412; --surface:#131e1b; --surface-2:#182521; --line:#25332f;
+    --ink:#e7efec; --ink-2:#bcccc7; --muted:#899a95;
+    --accent:#4ec5b1; --accent-soft:#16302c; --accent-ink:#7fdcca;
+    --good:#5ec98c; --warn:#e0a558; --warn-soft:#2e2417; --crit:#e8867a;
+  }
+  *{box-sizing:border-box}
+  body{margin:0; background:var(--ground); color:var(--ink);
+       font-family:"IBM Plex Sans",-apple-system,"Segoe UI",sans-serif; font-size:15px; line-height:1.55}
+  .wrap{max-width:760px; margin:0 auto; padding-inline:18px; padding-block:0 64px}
+  h1,h2{font-family:Archivo,sans-serif; margin:0; text-wrap:balance}
+  header.top{padding-block:40px 20px; border-bottom:2px solid var(--ink);
+             display:flex; flex-direction:column; gap:9px}
+  header.top h1{font-size:30px; font-weight:700; letter-spacing:-.02em}
+  header.top p{margin:0; color:var(--ink-2); max-width:60ch}
+  .steps{margin:18px 0 0; padding:14px 16px; background:var(--surface); border:1px solid var(--line);
+         border-radius:10px; font-size:13.5px; color:var(--ink-2)}
+  .steps b{color:var(--ink)}
+  .steps ol{margin:8px 0 0; padding-left:18px; display:flex; flex-direction:column; gap:4px}
+  section{padding-block:24px; border-bottom:1px solid var(--line);
+          display:flex; flex-direction:column; gap:9px}
+  section header{display:flex; flex-wrap:wrap; gap:8px 12px; align-items:baseline; justify-content:space-between}
+  section h2{font-size:17px; font-weight:700}
+  .count{font-family:"IBM Plex Mono",monospace; font-size:11.5px; color:var(--muted);
+         background:var(--surface-2); border:1px solid var(--line); border-radius:999px; padding:2px 9px}
+  .count.over{color:#fff; background:var(--crit); border-color:transparent}
+  .where{margin:0; font-size:12.5px; color:var(--muted)}
+  pre{margin:0; white-space:pre-wrap; font-family:"IBM Plex Sans",sans-serif; font-size:13.5px;
+      line-height:1.55; background:var(--surface); border:1px solid var(--line);
+      border-radius:9px; padding:13px 15px; max-height:330px; overflow-y:auto; color:var(--ink-2)}
+  .copy, .mini{font:inherit; cursor:pointer; border-radius:999px; border:1px solid var(--accent);
+               background:var(--accent); color:#fff; font-weight:600}
+  .copy{align-self:flex-start; padding:7px 16px; font-size:13px}
+  .mini{padding:1px 9px; font-size:11px; margin-left:7px; background:var(--surface);
+        color:var(--accent-ink); font-weight:500}
+  .copy:hover, .mini:hover{filter:brightness(1.08)}
+  .copy.done, .mini.done{background:var(--good); border-color:var(--good); color:#fff}
+  .meta{display:grid; grid-template-columns:auto 1fr; gap:5px 14px; margin:0; font-size:13.5px}
+  .meta dt{color:var(--muted); font-size:12.5px}
+  .meta dd{margin:0}
+  code{font-family:"IBM Plex Mono",monospace; font-size:12.5px; background:var(--surface-2);
+       border:1px solid var(--line); border-radius:4px; padding:1px 6px}
+  .note{margin:0; font-size:12.5px; color:var(--ink); background:var(--warn-soft);
+        border-left:3px solid var(--warn); border-radius:0 7px 7px 0; padding:9px 13px}
+  .cant{margin-top:22px; padding:14px 16px; border:1px solid var(--line); border-left:3px solid var(--muted);
+        border-radius:0 10px 10px 0; background:var(--surface); font-size:13.5px; color:var(--ink-2)}
+  .cant b{color:var(--ink)}
+  :focus-visible{outline:2px solid var(--accent); outline-offset:2px}
+  @media (prefers-reduced-motion: reduce){*{transition:none!important}}
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <h1>LinkedIn Paste Sheet</h1>
+    <p>Every field LinkedIn asks for, written from the same profile your CV comes from —
+       so the two say the same thing. Click Copy, paste, next.</p>
+    <div class="steps">
+      <b>How to use this</b>
+      <ol>
+        <li>Open your profile on linkedin.com in another tab</li>
+        <li>Work down this page: click <b>Copy</b>, click the matching LinkedIn field, paste</li>
+        <li>Six fields. Around five minutes.</li>
+      </ol>
+    </div>
+  </header>
+
+  <!--BLOCKS-->
+
+  <div class="cant">
+    <b>Why this isn't automatic.</b> LinkedIn has no API for editing a profile — the only
+    programmatic route is driving your logged-in session, which breaches their terms and
+    gets accounts restricted. Your profile is worth more than the saved minutes, so this
+    page does everything up to the paste and stops there.
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  function copyText(text, btn){
+    var label = btn.textContent;
+    function done(ok){
+      btn.textContent = ok ? "Copied" : "Press Cmd+C";
+      btn.classList.toggle("done", ok);
+      setTimeout(function(){ btn.textContent = label; btn.classList.remove("done"); }, 1800);
+    }
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(text).then(function(){ done(true); }, function(){ fallback(); });
+      return;
+    }
+    fallback();
+    function fallback(){
+      // clipboard access can be refused inside an embedded frame; select the text so
+      // the keyboard shortcut still works rather than leaving a dead button
+      var ta = document.createElement("textarea");
+      ta.value = text;
+      ta.setAttribute("readonly", "");
+      ta.style.cssText = "position:fixed;top:0;left:0;opacity:0";
+      document.body.appendChild(ta);
+      ta.select();
+      var ok = false;
+      try { ok = document.execCommand("copy"); } catch(e){ ok = false; }
+      document.body.removeChild(ta);
+      done(ok);
+    }
+  }
+  document.addEventListener("click", function(e){
+    var btn = e.target.closest("[data-copy]");
+    if(!btn) return;
+    var src = document.getElementById(btn.dataset.copy);
+    if(src) copyText(src.textContent, btn);
+  });
+})();
+</script>
