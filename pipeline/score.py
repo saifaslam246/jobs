@@ -117,6 +117,13 @@ def score_job(job: dict, m: dict) -> dict:
             if contains(title, term):
                 rejects.append(f"role is primarily {term}")
                 break
+    # --- gate 2b: work offered without pay ---
+    # "$0 + equity" is a real posting shape on HN and reads as a full-time role until
+    # you get to the compensation line.
+    money = f"{title} {norm(body[:900])}"
+    if re.search(r"\$\s*0\b", money) or "0 + equity" in money:
+        rejects.append("unpaid - equity only")
+
     # --- gate 3: seniority out of range ---
     for term in m["seniority_reject"]:
         if contains(title, term) or contains(head, term):

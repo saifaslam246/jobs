@@ -340,6 +340,13 @@ def hn_hiring(months_back: int = 2) -> list[dict]:
             head = first.upper().replace("*", "").strip()
             if head.startswith("SEEKING WORK") or head.startswith("WANTED:"):
                 continue    # another freelancer advertising, not someone hiring
+            # The same self-advertisement also appears in the canonical
+            # "Location: / Remote: / Willing to relocate: / Technologies: / Résumé:"
+            # template, which does not begin with SEEKING WORK and slipped through.
+            low = text[:600].lower()
+            if "willing to relocate" in low or (
+                    head.startswith("LOCATION:") and ("résumé" in low or "resume:" in low)):
+                continue
             company = first.split("|")[0].strip()[:80] or "HN poster"
             out.append(normalise(
                 source="hn-hiring",

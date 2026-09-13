@@ -45,14 +45,7 @@
     "notes": "",
     "applied_at": null,
     "cv_path": null,
-    "first_seen": "2026-09-13",
-    "enrichment": {
-      "apply_url": "https://www.arbeitnow.co.uk/jobs/companies/maze/senior-full-stack-product-engineer-typescript-united-kingdom-287394",
-      "ats": null,
-      "company_domain": "",
-      "email_source": "",
-      "email_confidence": 0
-    }
+    "first_seen": "2026-09-13"
   },
   {
     "id": "44ef7a4d3031e46b",
@@ -102,14 +95,7 @@
     "notes": "",
     "applied_at": null,
     "cv_path": null,
-    "first_seen": "2026-09-13",
-    "enrichment": {
-      "apply_url": "https://www.arbeitnow.com/jobs/companies/gamigo/remote-senior-fullstack-engineer-node-react-all-genders-germany-250238",
-      "ats": null,
-      "company_domain": "",
-      "email_source": "",
-      "email_confidence": 0
-    }
+    "first_seen": "2026-09-13"
   },
   {
     "id": "d40969a7bff4a5ac",
@@ -158,14 +144,7 @@
     "notes": "",
     "applied_at": null,
     "cv_path": null,
-    "first_seen": "2026-09-12",
-    "enrichment": {
-      "apply_url": "https://weworkremotely.com/remote-jobs/lemon-io-senior-react-native-developer-1",
-      "ats": null,
-      "company_domain": "",
-      "email_source": "",
-      "email_confidence": 0
-    }
+    "first_seen": "2026-09-12"
   },
   {
     "id": "696b4bff12ce682f",
@@ -213,14 +192,7 @@
     "notes": "",
     "applied_at": null,
     "cv_path": null,
-    "first_seen": "2026-09-13",
-    "enrichment": {
-      "apply_url": "https://www.arbeitnow.com/jobs/companies/liveeo-gmbh/tech-lead-full-stack-engineer-liveeo-gmbh-berlin-office-hybrid-196417",
-      "ats": null,
-      "company_domain": "",
-      "email_source": "",
-      "email_confidence": 0
-    }
+    "first_seen": "2026-09-13"
   },
   {
     "id": "d68714ea6d67ab86",
@@ -265,14 +237,7 @@
     "notes": "",
     "applied_at": null,
     "cv_path": null,
-    "first_seen": "2026-09-12",
-    "enrichment": {
-      "apply_url": "https://addons.mozilla.org/en-US/firefox/addon/remote-jobs/",
-      "ats": null,
-      "company_domain": "addons.mozilla.org",
-      "email_source": "",
-      "email_confidence": 0
-    }
+    "first_seen": "2026-09-12"
   },
   {
     "id": "e8bc9dcdbb952f24",
@@ -314,14 +279,7 @@
     "notes": "",
     "applied_at": null,
     "cv_path": null,
-    "first_seen": "2026-09-13",
-    "enrichment": {
-      "apply_url": "https://news.ycombinator.com/item?id=49662536",
-      "ats": null,
-      "company_domain": "",
-      "email_source": "posting",
-      "email_confidence": 100
-    }
+    "first_seen": "2026-09-13"
   },
   {
     "id": "6eba76e29d316913",
@@ -376,14 +334,7 @@
     "notes": "",
     "applied_at": null,
     "cv_path": null,
-    "first_seen": "2026-09-12",
-    "enrichment": {
-      "apply_url": "https://weworkremotely.com/remote-jobs/lemon-io-senior-react-full-stack-developer-6",
-      "ats": null,
-      "company_domain": "",
-      "email_source": "",
-      "email_confidence": 0
-    }
+    "first_seen": "2026-09-12"
   },
   {
     "id": "404995e19d7408e6",
@@ -430,14 +381,7 @@
     "notes": "",
     "applied_at": null,
     "cv_path": null,
-    "first_seen": "2026-09-13",
-    "enrichment": {
-      "apply_url": "https://www.arbeitnow.co.uk/jobs/companies/maze/senior-site-reliability-engineer-sre-remote-eu-cet-united-kingdom-44874",
-      "ats": null,
-      "company_domain": "",
-      "email_source": "",
-      "email_confidence": 0
-    }
+    "first_seen": "2026-09-13"
   },
   {
     "id": "0d7d1dc93d03be51",
@@ -490,14 +434,7 @@
     "notes": "",
     "applied_at": null,
     "cv_path": null,
-    "first_seen": "2026-09-13",
-    "enrichment": {
-      "apply_url": "https://www.arbeitnow.com/jobs/companies/doc-cirrus-gmbh/full-stack-software-developer-e-health-x-berlin-168459",
-      "ats": null,
-      "company_domain": "",
-      "email_source": "",
-      "email_confidence": 0
-    }
+    "first_seen": "2026-09-13"
   },
   {
     "id": "606e226ad0f8e32c",
@@ -549,14 +486,7 @@
     "notes": "",
     "applied_at": null,
     "cv_path": null,
-    "first_seen": "2026-09-12",
-    "enrichment": {
-      "apply_url": "https://weworkremotely.com/remote-jobs/collaboration-ai-senior-software-engineer",
-      "ats": null,
-      "company_domain": "",
-      "email_source": "",
-      "email_confidence": 0
-    }
+    "first_seen": "2026-09-12"
   },
   {
     "id": "c9b5b3fb04338995",
@@ -598,14 +528,7 @@
     "notes": "",
     "applied_at": null,
     "cv_path": null,
-    "first_seen": "2026-09-13",
-    "enrichment": {
-      "apply_url": "https://news.ycombinator.com/item?id=49534032",
-      "ats": null,
-      "company_domain": "",
-      "email_source": "",
-      "email_confidence": 0
-    }
+    "first_seen": "2026-09-13"
   },
   {
     "id": "11fa076f8f723fa6",
@@ -654,72 +577,7 @@
     "notes": "",
     "applied_at": null,
     "cv_path": null,
-    "first_seen": "2026-09-12",
-    "enrichment": {
-      "apply_url": "https://addons.mozilla.org/en-US/firefox/addon/remote-jobs/",
-      "ats": null,
-      "company_domain": "addons.mozilla.org",
-      "email_source": "",
-      "email_confidence": 0
-    }
-  },
-  {
-    "id": "910d79a348f2bc5e",
-    "source": "hn-hiring",
-    "title": "Location: Croatia, Dubrovnik / Europe",
-    "company": "Location: Croatia, Dubrovnik / Europe",
-    "location": "See post",
-    "url": "https://news.ycombinator.com/item?id=48385780",
-    "description": "Location: Croatia, Dubrovnik / Europe\nRemote: Yes, remote-first or fully remote only\nWilling to relocate: No, remote preferred\nTechnologies: TypeScript, JavaScript, React, Next.js, Node.js, Express, PostgreSQL, Prisma, Supabase, MongoDB, REST APIs, Stripe, OAuth, JWT, Docker, Vercel, Jest, Vitest, Cypress, Tailwind CSS\nRésumé/CV: https://personal-website-tau-sandy.vercel.app/Resume.pdf \nEmail: lazarbukejlovic@icloud.com Full-Stack Engineer with 3+ years of experience building production-ready React/TypeScript systems for SaaS, fintech, AI workflow, and data-heavy products. I’m strongest in frontend-focused full-stack work: polished React/Next.js product interfaces, dashboards, auth flows, protected routes, API integrations, database-backed features, Stripe billing, deployment, QA, and debugging the production issues behind the UI. Recent projects include MindPad AI, Flowstate, AtlasBrief, GeoRisk, and EchoRoom. These are not basic portfolio clones — they include real auth, payments, persistence, AI-assisted workflows, dashboards, billing logic, team flows, and deployed production-style architecture. I’m looking for remote Frontend Engineer, Full-Stack Engineer, React Engineer, or Software Engineer roles where I can own real product work end-to-end and contribute quickly.",
-    "tags": [],
-    "salary": "",
-    "employment_type": "",
-    "posted_at": "2026-06-03T15:56:08.000Z",
-    "contact_emails": [
-      "lazarbukejlovic@icloud.com"
-    ],
-    "fetched_at": "2026-09-13T12:21:18+00:00",
-    "match": {
-      "score": 59,
-      "verdict": "shortlist",
-      "reasons": [
-        "stack match: docker, express, mongodb, next.js, node.js, postgresql, prisma, react, stripe, tailwind",
-        "JS/TypeScript shop",
-        "familiar domain: billing, fintech, saas",
-        "direct contact email in posting",
-        "stale posting (>60 days)"
-      ],
-      "matched": [
-        "docker",
-        "express",
-        "mongodb",
-        "next.js",
-        "node.js",
-        "postgresql",
-        "prisma",
-        "react",
-        "stripe",
-        "tailwind",
-        "typescript"
-      ],
-      "gaps": [
-        "jest",
-        "cypress"
-      ],
-      "flags": []
-    },
-    "status": "new",
-    "notes": "",
-    "applied_at": null,
-    "cv_path": null,
-    "first_seen": "2026-09-13",
-    "enrichment": {
-      "apply_url": "https://news.ycombinator.com/item?id=48385780",
-      "ats": null,
-      "company_domain": "",
-      "email_source": "posting",
-      "email_confidence": 100
-    }
+    "first_seen": "2026-09-12"
   },
   {
     "id": "69b9a6504f0c3b46",
@@ -765,14 +623,7 @@
     "notes": "",
     "applied_at": null,
     "cv_path": null,
-    "first_seen": "2026-09-13",
-    "enrichment": {
-      "apply_url": "https://www.arbeitnow.fr/jobs/companies/staycation/fullstack-developer-paris-374869",
-      "ats": null,
-      "company_domain": "",
-      "email_source": "",
-      "email_confidence": 0
-    }
+    "first_seen": "2026-09-13"
   },
   {
     "id": "a9f7b73140c7acc6",
@@ -818,14 +669,7 @@
     "notes": "",
     "applied_at": null,
     "cv_path": null,
-    "first_seen": "2026-09-13",
-    "enrichment": {
-      "apply_url": "https://www.arbeitnow.co.uk/jobs/companies/adaptyio/senior-frontend-engineer-london-349982",
-      "ats": null,
-      "company_domain": "",
-      "email_source": "",
-      "email_confidence": 0
-    }
+    "first_seen": "2026-09-13"
   },
   {
     "id": "f248a54fec991f42",
@@ -870,14 +714,7 @@
     "notes": "",
     "applied_at": null,
     "cv_path": null,
-    "first_seen": "2026-09-12",
-    "enrichment": {
-      "apply_url": "https://weworkremotely.com/remote-jobs/intellectsoft-senior-shopify-full-stack-developer-ir-471",
-      "ats": null,
-      "company_domain": "",
-      "email_source": "",
-      "email_confidence": 0
-    }
+    "first_seen": "2026-09-12"
   },
   {
     "id": "307bd1415fc9b439",
@@ -919,14 +756,7 @@
     "notes": "",
     "applied_at": null,
     "cv_path": null,
-    "first_seen": "2026-09-13",
-    "enrichment": {
-      "apply_url": "https://news.ycombinator.com/item?id=49552714",
-      "ats": null,
-      "company_domain": "",
-      "email_source": "posting",
-      "email_confidence": 100
-    }
+    "first_seen": "2026-09-13"
   },
   {
     "id": "33b9c1b9244021b3",
@@ -971,14 +801,7 @@
     "notes": "",
     "applied_at": null,
     "cv_path": null,
-    "first_seen": "2026-09-13",
-    "enrichment": {
-      "apply_url": "https://join.com/privacy-policy",
-      "ats": "Join",
-      "company_domain": "",
-      "email_source": "",
-      "email_confidence": 0
-    }
+    "first_seen": "2026-09-13"
   },
   {
     "id": "d375741beedaf923",
@@ -1024,63 +847,7 @@
     "notes": "",
     "applied_at": null,
     "cv_path": null,
-    "first_seen": "2026-09-13",
-    "enrichment": {
-      "apply_url": "https://news.ycombinator.com/item?id=49191343",
-      "ats": null,
-      "company_domain": "",
-      "email_source": "posting",
-      "email_confidence": 100
-    }
-  },
-  {
-    "id": "625ccb12a2239060",
-    "source": "hn-hiring",
-    "title": "Founding Technologist + Full Stack Developer | REMOTE | Part-or-full-time | $0 + equity Looking for a founding dev for an early wellness and spirituality project. Product focus is",
-    "company": "Founding Technologist + Full Stack Developer",
-    "location": "See post",
-    "url": "https://news.ycombinator.com/item?id=48919859",
-    "description": "Founding Technologist + Full Stack Developer | REMOTE | Part-or-full-time | $0 + equity Looking for a founding dev for an early wellness and spirituality project. Product focus is on video streaming, audio quality, data privacy, and global payments. A working MVP is live on web, Android, and iOS. Stack includes: Next.js/React Native, Tailwind, TypeScript, Agora RTC, and Firebase. We're two non-YC entrepreneurs with experience in blockchain, education, hospitality, and service-based businesses. We hope to find someone who shares an interest in developing their wellness and spirituality practice. The aim is to keep the team small and development tight, as the product goals are clearly defined. Please reach out over email if you have the capacity to learn more! -Andrew, -Michal hataginow@gmail.com",
-    "tags": [],
-    "salary": "",
-    "employment_type": "",
-    "posted_at": "2026-07-15T12:32:31.000Z",
-    "contact_emails": [
-      "hataginow@gmail.com"
-    ],
-    "fetched_at": "2026-09-13T12:21:18+00:00",
-    "match": {
-      "score": 55,
-      "verdict": "shortlist",
-      "reasons": [
-        "stack match: next.js, react, react native, tailwind, typescript",
-        "JS/TypeScript shop",
-        "full-stack role",
-        "remote",
-        "direct contact email in posting"
-      ],
-      "matched": [
-        "next.js",
-        "react",
-        "react native",
-        "tailwind",
-        "typescript"
-      ],
-      "gaps": [],
-      "flags": []
-    },
-    "status": "new",
-    "notes": "",
-    "applied_at": null,
-    "cv_path": null,
-    "first_seen": "2026-09-13",
-    "enrichment": {
-      "apply_url": "https://news.ycombinator.com/item?id=48919859",
-      "ats": null,
-      "company_domain": "",
-      "email_source": "posting",
-      "email_confidence": 100
-    }
+    "first_seen": "2026-09-13"
   },
   {
     "id": "cacbde878e0ade28",
@@ -1127,14 +894,7 @@
     "notes": "",
     "applied_at": null,
     "cv_path": null,
-    "first_seen": "2026-09-12",
-    "enrichment": {
-      "apply_url": "https://addons.mozilla.org/en-US/firefox/addon/remote-jobs/",
-      "ats": null,
-      "company_domain": "addons.mozilla.org",
-      "email_source": "",
-      "email_confidence": 0
-    }
+    "first_seen": "2026-09-12"
   },
   {
     "id": "617382449c74d121",
@@ -1180,14 +940,7 @@
     "notes": "",
     "applied_at": null,
     "cv_path": null,
-    "first_seen": "2026-09-13",
-    "enrichment": {
-      "apply_url": "https://news.ycombinator.com/item?id=49615973",
-      "ats": null,
-      "company_domain": "",
-      "email_source": "",
-      "email_confidence": 0
-    }
+    "first_seen": "2026-09-13"
   },
   {
     "id": "79b6534bf7df82c4",
@@ -1229,14 +982,7 @@
     "notes": "",
     "applied_at": null,
     "cv_path": null,
-    "first_seen": "2026-09-12",
-    "enrichment": {
-      "apply_url": "https://weworkremotely.com/remote-jobs/cosuno-senior-full-stack-developer-typescript",
-      "ats": null,
-      "company_domain": "",
-      "email_source": "",
-      "email_confidence": 0
-    }
+    "first_seen": "2026-09-12"
   },
   {
     "id": "ca7d10d11f030d0a",
@@ -1281,14 +1027,7 @@
     "notes": "",
     "applied_at": null,
     "cv_path": null,
-    "first_seen": "2026-09-13",
-    "enrichment": {
-      "apply_url": "https://www.arbeitnow.co.uk/jobs/companies/kaluza/pre-sales-senior-engineer-london-223227",
-      "ats": null,
-      "company_domain": "",
-      "email_source": "",
-      "email_confidence": 0
-    }
+    "first_seen": "2026-09-13"
   },
   {
     "id": "66119cc28fb5a2e8",
@@ -1332,14 +1071,7 @@
     "notes": "",
     "applied_at": null,
     "cv_path": null,
-    "first_seen": "2026-09-12",
-    "enrichment": {
-      "apply_url": "https://jobicy.com/jobs/152547-senior-full-stack-engineer",
-      "ats": null,
-      "company_domain": "",
-      "email_source": "posting",
-      "email_confidence": 100
-    }
+    "first_seen": "2026-09-12"
   },
   {
     "id": "ae5d1a98ed7f348d",
@@ -1378,14 +1110,7 @@
     "notes": "",
     "applied_at": null,
     "cv_path": null,
-    "first_seen": "2026-09-12",
-    "enrichment": {
-      "apply_url": "https://weworkremotely.com/remote-jobs/huzzle-full-stack-developer-python-react-ai-1",
-      "ats": null,
-      "company_domain": "",
-      "email_source": "",
-      "email_confidence": 0
-    }
+    "first_seen": "2026-09-12"
   },
   {
     "id": "31cb18417850e9ad",
@@ -1427,14 +1152,7 @@
     "notes": "",
     "applied_at": null,
     "cv_path": null,
-    "first_seen": "2026-09-12",
-    "enrichment": {
-      "apply_url": "https://weworkremotely.com/remote-jobs/cosuno-principal-full-stack-developer-typescript",
-      "ats": null,
-      "company_domain": "",
-      "email_source": "",
-      "email_confidence": 0
-    }
+    "first_seen": "2026-09-12"
   },
   {
     "id": "15be22daf28aece7",
@@ -1480,14 +1198,7 @@
     "notes": "",
     "applied_at": null,
     "cv_path": null,
-    "first_seen": "2026-09-13",
-    "enrichment": {
-      "apply_url": "https://www.arbeitnow.fr/jobs/companies/lemrock/founding-full-stack-software-engineer-paris-230299",
-      "ats": null,
-      "company_domain": "",
-      "email_source": "",
-      "email_confidence": 0
-    }
+    "first_seen": "2026-09-13"
   },
   {
     "id": "d64c53dd073e5488",
@@ -1532,14 +1243,7 @@
     "notes": "",
     "applied_at": null,
     "cv_path": null,
-    "first_seen": "2026-09-13",
-    "enrichment": {
-      "apply_url": "https://news.ycombinator.com/item?id=49185343",
-      "ats": null,
-      "company_domain": "",
-      "email_source": "posting",
-      "email_confidence": 100
-    }
+    "first_seen": "2026-09-13"
   },
   {
     "id": "c1be24ef178f7c70",
@@ -1581,14 +1285,7 @@
     "notes": "",
     "applied_at": null,
     "cv_path": null,
-    "first_seen": "2026-09-13",
-    "enrichment": {
-      "apply_url": "https://news.ycombinator.com/item?id=49163907",
-      "ats": null,
-      "company_domain": "",
-      "email_source": "posting",
-      "email_confidence": 100
-    }
+    "first_seen": "2026-09-13"
   },
   {
     "id": "c17b57473e5ac085",
@@ -1636,14 +1333,7 @@
     "notes": "",
     "applied_at": null,
     "cv_path": null,
-    "first_seen": "2026-09-12",
-    "enrichment": {
-      "apply_url": "https://jobicy.com/jobs/153047-senior-software-engineer-front-end-full-stack",
-      "ats": null,
-      "company_domain": "",
-      "email_source": "posting",
-      "email_confidence": 100
-    }
+    "first_seen": "2026-09-12"
   },
   {
     "id": "677acd0497f2e5b2",
@@ -1690,14 +1380,7 @@
     "notes": "",
     "applied_at": null,
     "cv_path": null,
-    "first_seen": "2026-09-12",
-    "enrichment": {
-      "apply_url": "https://addons.mozilla.org/en-US/firefox/addon/remote-jobs/",
-      "ats": null,
-      "company_domain": "addons.mozilla.org",
-      "email_source": "",
-      "email_confidence": 0
-    }
+    "first_seen": "2026-09-12"
   },
   {
     "id": "5c17ed758d0641d0",
@@ -1735,14 +1418,7 @@
     "notes": "",
     "applied_at": null,
     "cv_path": null,
-    "first_seen": "2026-09-13",
-    "enrichment": {
-      "apply_url": "https://news.ycombinator.com/item?id=49661611",
-      "ats": null,
-      "company_domain": "",
-      "email_source": "",
-      "email_confidence": 0
-    }
+    "first_seen": "2026-09-13"
   },
   {
     "id": "3a39d30be6e42e26",
@@ -1785,14 +1461,7 @@
     "notes": "",
     "applied_at": null,
     "cv_path": null,
-    "first_seen": "2026-09-13",
-    "enrichment": {
-      "apply_url": "https://news.ycombinator.com/item?id=49166975",
-      "ats": null,
-      "company_domain": "",
-      "email_source": "posting",
-      "email_confidence": 100
-    }
+    "first_seen": "2026-09-13"
   },
   {
     "id": "f7767bb2dea2b09b",
@@ -1834,14 +1503,7 @@
     "notes": "",
     "applied_at": null,
     "cv_path": null,
-    "first_seen": "2026-09-13",
-    "enrichment": {
-      "apply_url": "https://news.ycombinator.com/item?id=49530424",
-      "ats": null,
-      "company_domain": "",
-      "email_source": "posting",
-      "email_confidence": 100
-    }
+    "first_seen": "2026-09-13"
   },
   {
     "id": "9aa43ddf720d510c",
@@ -1885,14 +1547,7 @@
     "notes": "",
     "applied_at": null,
     "cv_path": null,
-    "first_seen": "2026-09-12",
-    "enrichment": {
-      "apply_url": "https://addons.mozilla.org/en-US/firefox/addon/remote-jobs/",
-      "ats": null,
-      "company_domain": "addons.mozilla.org",
-      "email_source": "",
-      "email_confidence": 0
-    }
+    "first_seen": "2026-09-12"
   },
   {
     "id": "7d38aedfcb3aab50",
@@ -1968,14 +1623,7 @@
     "notes": "",
     "applied_at": null,
     "cv_path": null,
-    "first_seen": "2026-09-12",
-    "enrichment": {
-      "apply_url": "https://www.reddit.com/r/remotivejobs/",
-      "ats": null,
-      "company_domain": "reddit.com",
-      "email_source": "",
-      "email_confidence": 0
-    }
+    "first_seen": "2026-09-12"
   },
   {
     "id": "b549eff61ddf9d50",
@@ -2023,14 +1671,7 @@
     "notes": "",
     "applied_at": null,
     "cv_path": null,
-    "first_seen": "2026-09-12",
-    "enrichment": {
-      "apply_url": "https://addons.mozilla.org/en-US/firefox/addon/remote-jobs/",
-      "ats": null,
-      "company_domain": "addons.mozilla.org",
-      "email_source": "",
-      "email_confidence": 0
-    }
+    "first_seen": "2026-09-12"
   },
   {
     "id": "8b990e12b663b6d7",
@@ -2074,14 +1715,7 @@
     "notes": "",
     "applied_at": null,
     "cv_path": null,
-    "first_seen": "2026-09-13",
-    "enrichment": {
-      "apply_url": "https://www.arbeitnow.com/jobs/companies/raisin/senior-software-engineer-us-payments-and-partner-operations-berlin-berlin-455337",
-      "ats": null,
-      "company_domain": "",
-      "email_source": "",
-      "email_confidence": 0
-    }
+    "first_seen": "2026-09-13"
   },
   {
     "id": "b8d34eb90b74cddb",
@@ -2128,14 +1762,7 @@
     "notes": "",
     "applied_at": null,
     "cv_path": null,
-    "first_seen": "2026-09-13",
-    "enrichment": {
-      "apply_url": "https://news.ycombinator.com/item?id=49524943",
-      "ats": null,
-      "company_domain": "",
-      "email_source": "posting",
-      "email_confidence": 100
-    }
+    "first_seen": "2026-09-13"
   },
   {
     "id": "f6f895ec72263e10",
@@ -9832,50 +9459,6 @@
     "first_seen": "2026-09-13"
   },
   {
-    "id": "106e52a706343400",
-    "source": "hn-hiring",
-    "title": "Hi! I am Max. I am a Design Leader with 13+ years of experience and extensive knowledge in several areas: Design, Development, Analytics. Involved in creation of several startups a",
-    "company": "Hi! I am Max. I am a Design Leader with 13+ years of experience and extensive kn",
-    "location": "See post",
-    "url": "https://news.ycombinator.com/item?id=49184940",
-    "description": "Hi! I am Max. I am a Design Leader with 13+ years of experience and extensive knowledge in several areas: Design, Development, Analytics. Involved in creation of several startups and have previously created my own products and tools. I have a strong mathematical background. Interested in fintech, crypto, LLMs, AI, and complex business-technical systems. Open to joining early-stage startups or other interesting opportunities. Location: Warsaw, Poland Remote: Yes Willing to relocate: Yes Des: User Research, User Flow, UX/UI, Web, Holistic, Design System, Wireframes, Email Design, Dashboards, Mobile App Design, 3D, Illustrations, Animations, Figma, FinTech, E-commerce. Dev: Ruby, Rails, Hotwire, JavaScript, TypeScript, React, Vue, Svelte, Nest, Next, Nuxt, Tailwind, Postgres, Docker, CI/CD, etc. Résumé/CV: https://www.linkedin.com/in/maxberdnikau/ Email: maxberdnikau@gmail.com",
-    "tags": [],
-    "salary": "",
-    "employment_type": "",
-    "posted_at": "2026-08-05T16:18:17.000Z",
-    "contact_emails": [
-      "maxberdnikau@gmail.com"
-    ],
-    "fetched_at": "2026-09-13T12:21:17+00:00",
-    "match": {
-      "score": 25,
-      "verdict": "watch",
-      "reasons": [
-        "stack match: docker, react, tailwind, typescript",
-        "familiar domain: fintech",
-        "direct contact email in posting"
-      ],
-      "matched": [
-        "docker",
-        "react",
-        "tailwind",
-        "typescript"
-      ],
-      "gaps": [
-        "vue",
-        "svelte",
-        "rails",
-        "figma"
-      ],
-      "flags": []
-    },
-    "status": "new",
-    "notes": "",
-    "applied_at": null,
-    "cv_path": null,
-    "first_seen": "2026-09-13"
-  },
-  {
     "id": "5c0f14484846eeee",
     "source": "arbeitnow",
     "title": "Geospatial Data Analyst (f/m/x) in the field of AI & Satellite Data",
@@ -12037,43 +11620,6 @@
     "first_seen": "2026-09-13"
   },
   {
-    "id": "43a6d963fb690b38",
-    "source": "hn-hiring",
-    "title": "Anterior (Sequoia-backed, Series B) | Senior Member of Technical Staff | On-Site (New York, NY) | Full Time | $230,000–$300,000 + equity Company: Anterior builds AI for healthcare",
-    "company": "Anterior (Sequoia-backed, Series B)",
-    "location": "See post",
-    "url": "https://news.ycombinator.com/item?id=49649994",
-    "description": "Anterior (Sequoia-backed, Series B) | Senior Member of Technical Staff | On-Site (New York, NY) | Full Time | $230,000–$300,000 + equity Company: Anterior builds AI for healthcare administration. Health plans review clinical evidence against medical policy before care gets approved, often relying on nurses reading PDFs. Our platform reads policies and clinical records, producing decisions clinicians can audit. We're ~45 people in New York and recently raised $40M, bringing us to $64M total, from Sequoia, NEA, Neo, FPV, Kinnevik, and founders of DeepMind, Google AI, and Inflection. Role: Members of Technical Staff handle everything from system design to production: designing backend services, scaling AWS, debugging, scoping integrations, or evaluating LLM-powered systems. You'll set technical direction and mentor engineers. You: + Strong backend and/or infrastructure experience, and operated at scale + Care about foundations like consistency guarantees and code simplicity + Known for solving tough problems and making lasting architectural calls + Looking to write enduring code + Background in scale-ups, big tech, finance, or AWS-heavy teams Tech: Python, Go, TypeScript, React, Nix, AWS (migrating from CDKTF — bonus if you've done this). See our team in action:\nhttps://www.youtube.com/watch?v=mav15aW9lLM \nhttps://www.youtube.com/watch?v=XAsb7MIAzm8 Bring your GitHub and proudest firefighting story:\nhttps://xn--xp5a.anterior.app/ — mention what resonates. Apply: https://jobs.ashbyhq.com/anterior/1163af7a-d1d6-41db-a8ea-fc...",
-    "tags": [],
-    "salary": "",
-    "employment_type": "",
-    "posted_at": "2026-09-10T20:50:48.000Z",
-    "contact_emails": [],
-    "fetched_at": "2026-09-13T12:21:17+00:00",
-    "match": {
-      "score": 22,
-      "verdict": "watch",
-      "reasons": [
-        "stack match: aws, react, typescript",
-        "familiar domain: healthcare"
-      ],
-      "matched": [
-        "aws",
-        "react",
-        "typescript"
-      ],
-      "gaps": [
-        "go"
-      ],
-      "flags": []
-    },
-    "status": "new",
-    "notes": "",
-    "applied_at": null,
-    "cv_path": null,
-    "first_seen": "2026-09-13"
-  },
-  {
     "id": "5990bf980a4fc6f7",
     "source": "jobicy",
     "title": "Binance Accelerator Program - Applied AI Application Engineer",
@@ -13365,46 +12911,6 @@
       "flags": [
         "us citizen"
       ]
-    },
-    "status": "new",
-    "notes": "",
-    "applied_at": null,
-    "cv_path": null,
-    "first_seen": "2026-09-13"
-  },
-  {
-    "id": "485289307b4dbe89",
-    "source": "hn-hiring",
-    "title": "Location: Dakshina Kannada, Karnataka, India Remote: Yes (IST overlap) Willing to relocate: Within India for strong opportunities Technologies: SIEM monitoring, Splunk ES/SOAR, log",
-    "company": "Location: Dakshina Kannada, Karnataka, India Remote: Yes (IST overlap) Willing t",
-    "location": "See post",
-    "url": "https://news.ycombinator.com/item?id=48531236",
-    "description": "Location: Dakshina Kannada, Karnataka, India Remote: Yes (IST overlap) Willing to relocate: Within India for strong opportunities Technologies: SIEM monitoring, Splunk ES/SOAR, log analysis, threat hunting, incident response basics, vulnerability assessment, penetration testing, digital forensics, AWS security, IAM, Secrets Manager, Linux, Python, Docker, Git, network security Résumé/CV: https://drive.google.com/drive/folders/1KGUmGsSffOLFiFCdzrKj... \nEmail: www.giridharpai@gmail.com\nCybersecurity graduate seeking Information Security Analyst, Cyber Security Analyst, Penetration Tester, or SOC Analyst roles. I have hands-on experience in information security, penetration testing, and SOC operations. I’ve worked with Splunk SIEM monitoring, threat hunting, vulnerability assessment, digital forensics, and incident response fundamentals. I’m ranked in the top 1% on TryHackMe with 13 certifications and placed 2nd in IBM ICE DAY 2025 CTF. Impact: – Built real-time threat detection systems. – Built DDoS mitigation solutions. – Developed secure cloud applications with authentication, encryption, and access control. – IBM academic internship: Tejas Raksha, a zero-day web scanner for OWASP Top 10 vulnerabilities. – Freelance cloud security work: AES-256-GCM and Argon2id file encryption, MFA/SSO/RBAC, WebAuthn/TOTP, and secure healthcare workflows. Links: – LinkedIn: https://linkedin.com/in/giridharpai227/ – GitHub: https://github.com/Giri227 – Portfolio: https://giri227.github.io/Giridharpai/",
-    "tags": [],
-    "salary": "",
-    "employment_type": "",
-    "posted_at": "2026-06-14T19:00:38.000Z",
-    "contact_emails": [
-      "www.giridharpai@gmail.com"
-    ],
-    "fetched_at": "2026-09-13T12:21:18+00:00",
-    "match": {
-      "score": 20,
-      "verdict": "watch",
-      "reasons": [
-        "stack match: aws, docker",
-        "contract/part-time signal: freelance",
-        "remote",
-        "familiar domain: healthcare",
-        "direct contact email in posting",
-        "stale posting (>60 days)"
-      ],
-      "matched": [
-        "aws",
-        "docker"
-      ],
-      "gaps": [],
-      "flags": []
     },
     "status": "new",
     "notes": "",
@@ -18795,46 +18301,6 @@
     "first_seen": "2026-09-13"
   },
   {
-    "id": "b089ff13dc3c76c8",
-    "source": "hn-hiring",
-    "title": "Location: Dallas, TX",
-    "company": "Location: Dallas, TX",
-    "location": "See post",
-    "url": "https://news.ycombinator.com/item?id=49185076",
-    "description": "Location: Dallas, TX\nRemote: Yes\nWilling to relocate: Yes (including internationally)\nTechnologies: Python, LangGraph, LangChain, MCP, RAG, supervised fine-tuning (LoRA/PEFT), Anthropic/OpenAI APIs, PyTorch, Spark, MLflow, Docker, Kubernetes, AWS/Azure/GCP\nRésumé/CV: https://suneelkalva.com \nEmail: suneel.kalva190700@gmail.com AI engineer at U.S. Bank building production LLM systems: a RAG assistant over 500K+ documents for 200+ analysts, LLM eval harnesses (hallucination, PII, prompt-injection), and fine-tuned LLaMA/Mistral models. Outside work I built and published mendrift-mcp (PyPI, listed on the official MCP Registry) an autonomous MLOps incident-response agent with an HMAC-gated approval layer, evaluated on a 19-scenario trajectory harness. Looking for applied AI / ML engineer roles building agentic systems.",
-    "tags": [],
-    "salary": "",
-    "employment_type": "",
-    "posted_at": "2026-08-05T16:26:49.000Z",
-    "contact_emails": [
-      "suneel.kalva190700@gmail.com"
-    ],
-    "fetched_at": "2026-09-13T12:21:17+00:00",
-    "match": {
-      "score": 12,
-      "verdict": "watch",
-      "reasons": [
-        "stack match: aws, docker",
-        "direct contact email in posting"
-      ],
-      "matched": [
-        "aws",
-        "docker"
-      ],
-      "gaps": [
-        "kubernetes",
-        "azure",
-        "gcp"
-      ],
-      "flags": []
-    },
-    "status": "new",
-    "notes": "",
-    "applied_at": null,
-    "cv_path": null,
-    "first_seen": "2026-09-13"
-  },
-  {
     "id": "575bd612d6c0da30",
     "source": "hn-hiring",
     "title": "Octozi | Founding Engineer | Brooklyn, NY | ONSITE | Full-time | https://octozi.com Clinical trials cost about $1B each and roughly $1M for every day they run late. They are still",
@@ -19150,45 +18616,6 @@
         "java",
         "microservices"
       ],
-      "flags": []
-    },
-    "status": "new",
-    "notes": "",
-    "applied_at": null,
-    "cv_path": null,
-    "first_seen": "2026-09-13"
-  },
-  {
-    "id": "63bc1a07bf97c7a1",
-    "source": "hn-hiring",
-    "title": "full-disclosure: i am ex-homeless transitioning from living on the streets to being a participant in society again... Location: United States of America _MST_",
-    "company": "full-disclosure: i am ex-homeless transitioning from living on the streets to be",
-    "location": "See post",
-    "url": "https://news.ycombinator.com/item?id=48754418",
-    "description": "full-disclosure: i am ex-homeless transitioning from living on the streets to being a participant in society again... Location: United States of America _MST_\nRemote: No\nWilling to relocate: Yes\nTechnologies: Irrelevant, but Typescript, Javacript, React, GraphQL, .etc\nResume: https://fur-tea-laser.github.io/resume/\nEmail: fur.tea.laser@gmail.com\n\nI'm a quasi-mathematician who adapts and translates rigorous, nuanced mathematical concepts for more expressive mediums like natural language and code. This results in shared processes for synthesizing and analyzing technical assets that are actionable, pragmatic, and accessible to both deep technical experts and practical execution teams alike. Think of me as an LLM wrangler who uses latent space acupuncture to pin down precise model behaviors, replacing haphazard reactions with a systematized, consistent iterative process. Let's chat!",
-    "tags": [],
-    "salary": "",
-    "employment_type": "",
-    "posted_at": "2026-07-01T23:19:53.000Z",
-    "contact_emails": [
-      "fur.tea.laser@gmail.com"
-    ],
-    "fetched_at": "2026-09-13T12:21:18+00:00",
-    "match": {
-      "score": 12,
-      "verdict": "watch",
-      "reasons": [
-        "stack match: graphql, react, typescript",
-        "JS/TypeScript shop",
-        "direct contact email in posting",
-        "stale posting (>60 days)"
-      ],
-      "matched": [
-        "graphql",
-        "react",
-        "typescript"
-      ],
-      "gaps": [],
       "flags": []
     },
     "status": "new",
@@ -24421,34 +23848,6 @@
     "first_seen": "2026-09-13"
   },
   {
-    "id": "91385807591efd63",
-    "source": "hn-hiring",
-    "title": "Foray Bioscience | Software Engineer, Data & ML | On-Site (Cambridge, MA) | Full Time | $105,000–$130,000 + equity Company:",
-    "company": "Foray Bioscience",
-    "location": "See post",
-    "url": "https://news.ycombinator.com/item?id=49542805",
-    "description": "Foray Bioscience | Software Engineer, Data & ML | On-Site (Cambridge, MA) | Full Time | $105,000–$130,000 + equity Company:\nForay is a plant production company using plant cells, artificial intelligence, and advanced biomanufacturing to grow materials, molecules, and seeds directly from the cell up. Our work is powered by Pando, our intelligent workspace for plant science. Pando combines novel plant datasets and emerging predictive models to help researchers design and optimize plant production workflows with greater speed and reliability. Together, our software and biomanufacturing platforms are creating new ways to produce what we need from plants while building more resilient plant industries. Role:\nWe’re looking for a Software Engineer, Data & ML to help build the software and data foundation behind Pando. You’ll work across the product, with a particular focus on backend systems, APIs, data infrastructure, and the systems supporting our machine learning work. A major part of the role is figuring out how to turn complex scientific and experimental information — including scientific literature, natural language, and data generated in the lab — into reliable, structured data. You’ll work closely with software engineers, biologists, and ML researchers to translate experimental workflows, statistical analyses, and design-of-experiment approaches into scalable software and predictive tools. You’ll join early, have significant ownership, and help make foundational technical and architectural decisions as the platform grows. You:\n+ Strong software engineering generalist with particular depth in backend and data systems\n+ Experience shipping production-grade software and building backend systems, data pipelines, databases, APIs, or other data-intensive infrastructure\n+ Strong in Python and comfortable with relational databases, APIs, and modern software systems\n+ Familiar with MLOps and the infrastructure needed to run AI models in production\n+ Comfortable turning messy, heterogeneous, or unstructured information into trustworthy data, including through NLP, information extraction, or similar techniques\n+ Understand good scientific data practices including quality, provenance, versioning, reproducibility, permissions, and access controls\n+ Enough statistical fluency to reason about experimental data, uncertainty, and design of experiments\n+ Enjoy learning unfamiliar domains, working across disciplines, and solving ambiguous problems with significant ownership\n+ Experience with scientific or biological data, ML infrastructure, predictive modeling, optimization, or AI applications is helpful, but we don’t expect one person to have done all of these things before\n+ Must be authorized to work in the United States Learn more & apply: https://jobs.polymer.co/foray-bioscience/41044?source=Hacker... Referrals: Available in the form of a houseplant or a lab-grown Christmas tree, while supplies last!",
-    "tags": [],
-    "salary": "",
-    "employment_type": "",
-    "posted_at": "2026-09-02T21:26:08.000Z",
-    "contact_emails": [],
-    "fetched_at": "2026-09-13T12:21:17+00:00",
-    "match": {
-      "score": 2,
-      "verdict": "watch",
-      "reasons": [],
-      "matched": [],
-      "gaps": [],
-      "flags": []
-    },
-    "status": "new",
-    "notes": "",
-    "applied_at": null,
-    "cv_path": null,
-    "first_seen": "2026-09-13"
-  },
-  {
     "id": "5b65399cc98b5234",
     "source": "hn-hiring",
     "title": "Frequenz Energy-as-a-Service GmbH | Full-Time | Berlin, Germany We are a vibrant technology company developing groundbreaking solutions that enable the rapid transition towards a w",
@@ -24772,34 +24171,6 @@
       "gaps": [
         "rust"
       ],
-      "flags": []
-    },
-    "status": "new",
-    "notes": "",
-    "applied_at": null,
-    "cv_path": null,
-    "first_seen": "2026-09-13"
-  },
-  {
-    "id": "d69f54c22ea3e16c",
-    "source": "hn-hiring",
-    "title": "SpendAi | Seattle, WA | ONSITE | Senior Software Engineer | Engineer #4 SpendAi is a procurement intelligence startup which uses AI to organize procurement data for downstream cons",
-    "company": "SpendAi",
-    "location": "See post",
-    "url": "https://news.ycombinator.com/item?id=49262437",
-    "description": "SpendAi | Seattle, WA | ONSITE | Senior Software Engineer | Engineer #4 SpendAi is a procurement intelligence startup which uses AI to organize procurement data for downstream consumption of AI agents. Our product turns fragmented procurement data into trusted procurement intelligence.See more at https://spendai.com . We are looking for ambitious full stack engineers who have experience building complicated data systems with agentic interfaces on input and output. People who will be successful are obsessed with data systems, enjoy systems engineering, and are able to operate with a ton of autonomy. The base pay range for this role ranges from $100,000 to $250,000 + Equity + Benefits. Please apply here: https://wellfound.com/recruit/jobs/4574551",
-    "tags": [],
-    "salary": "",
-    "employment_type": "",
-    "posted_at": "2026-08-11T18:25:15.000Z",
-    "contact_emails": [],
-    "fetched_at": "2026-09-13T12:21:17+00:00",
-    "match": {
-      "score": 2,
-      "verdict": "watch",
-      "reasons": [],
-      "matched": [],
-      "gaps": [],
       "flags": []
     },
     "status": "new",

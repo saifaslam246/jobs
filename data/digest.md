@@ -1,6 +1,6 @@
-# Job digest - 2026-09-13 12:21 UTC
+# Job digest - 2026-09-13 12:23 UTC
 
-**1839 scanned - 776 relevant - 18 new shortlist - 176 with a direct contact email**
+**1831 scanned - 767 relevant - 16 new shortlist - 170 with a direct contact email**
 
 ## New shortlist
 
@@ -90,14 +90,6 @@
 - **Why:** stack match: aws, docker, mongodb, postgresql, react, redis, typescript; full-stack role; familiar domain: logistics, marketplace; posted in last 48h
 - **CV needs to cover:** kubernetes, go, java, kotlin, kafka
 
-### 59 | Location: Croatia, Dubrovnik / Europe - Location: Croatia, Dubrovnik / Europe
-`hn-hiring` | See post | salary n/a - contact: `lazarbukejlovic@icloud.com`
-
-<https://news.ycombinator.com/item?id=48385780>
-
-- **Why:** stack match: docker, express, mongodb, next.js, node.js, postgresql, prisma, react, stripe, tailwind; JS/TypeScript shop; familiar domain: billing, fintech, saas; direct contact email in posting
-- **CV needs to cover:** jest, cypress
-
 ### 59 | 📱 Fullstack Developer - Staycation
 `arbeitnow` | Paris, France | salary n/a
 
@@ -136,13 +128,6 @@
 
 - **Why:** stack match: offline, react, react native, typescript, websocket; JS/TypeScript shop; full-stack role; familiar domain: healthcare, saas
 - **CV needs to cover:** german
-
-### 55 | Founding Technologist + Full Stack Developer | REMOTE | Part-or-full-time | $0 + equity Looking for a founding dev for an early wellness and spirituality project. Product focus is - Founding Technologist + Full Stack Developer
-`hn-hiring` | See post | salary n/a - contact: `hataginow@gmail.com`
-
-<https://news.ycombinator.com/item?id=48919859>
-
-- **Why:** stack match: next.js, react, react native, tailwind, typescript; JS/TypeScript shop; full-stack role; remote
 
 ## Source health
 

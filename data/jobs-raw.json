@@ -24070,23 +24070,6 @@
     "fetched_at": "2026-09-13T12:21:17+00:00"
   },
   {
-    "id": "18634554540fa440",
-    "source": "hn-hiring",
-    "title": "Location: Lahore, Pakistan",
-    "company": "Location: Lahore, Pakistan",
-    "location": "See post",
-    "url": "https://news.ycombinator.com/item?id=49625444",
-    "description": "Location: Lahore, Pakistan\nRemote: Yes Willing to relocate: Yes Technologies: Ruby on Rails | React js | Typescript | PHP Laravel | MySQL | Psql | AWS Résumé/CV: https://drive.google.com/file/d/1Q6IQrVH3llpEqX0CRt_YzN08_Jf... Email: afzalali2728@gmail.com",
-    "tags": [],
-    "salary": "",
-    "employment_type": "",
-    "posted_at": "2026-09-09T12:27:50.000Z",
-    "contact_emails": [
-      "afzalali2728@gmail.com"
-    ],
-    "fetched_at": "2026-09-13T12:21:17+00:00"
-  },
-  {
     "id": "18397fa59b50028b",
     "source": "hn-hiring",
     "title": "OpenRent | London, UK | Full-Time | ONSITE+PART REMOTE | https://www.openrent.co.uk What sucked the last time you rented a house or flat? Come and fix it.",
@@ -26704,23 +26687,6 @@
     "fetched_at": "2026-09-13T12:21:17+00:00"
   },
   {
-    "id": "4234c6e2db5fc664",
-    "source": "hn-hiring",
-    "title": "Location: Blacksburg, Virginia, USA Remote: Yes (open to remote, hybrid, or on-site) Willing to relocate: Yes (Anywhere in the US) Technologies: Java, Spring Boot, Python, FastAPI,",
-    "company": "Location: Blacksburg, Virginia, USA Remote: Yes (open to remote, hybrid, or on-s",
-    "location": "See post",
-    "url": "https://news.ycombinator.com/item?id=49180607",
-    "description": "Location: Blacksburg, Virginia, USA Remote: Yes (open to remote, hybrid, or on-site) Willing to relocate: Yes (Anywhere in the US) Technologies: Java, Spring Boot, Python, FastAPI, JavaScript/TypeScript, React, Next.js, Node.js, PostgreSQL, MongoDB, GraphQL, Kafka, Docker, Kubernetes, AWS, Redis, Elasticsearch, CI/CD, PyTorch, TensorFlow, OpenAI, LangChain Résumé/CV: https://drive.google.com/file/d/1cL0z5wFMD6v78Kavk63oTlSX67K... | https://github.com/ansharma07 Email: anshul03@vt.edu Software Engineer with 3+ years of experience building scalable full-stack applications using React, Next.js, Java, Spring Boot, and AWS. Recently completed an M.S. in Computer Engineering from Virginia Tech. Experienced in building production systems, integrating LLMs into real-world applications, and developing end-to-end features from backend services to modern web frontends. Looking for Full Stack Software Engineer, Backend Software Engineer, or AI Software Engineer roles at startups or product-focused companies where I can build impactful products, own features end-to-end, and solve challenging engineering problems at scale.",
-    "tags": [],
-    "salary": "",
-    "employment_type": "",
-    "posted_at": "2026-08-05T09:50:02.000Z",
-    "contact_emails": [
-      "anshul03@vt.edu"
-    ],
-    "fetched_at": "2026-09-13T12:21:17+00:00"
-  },
-  {
     "id": "b5b2e1df4ecd8cff",
     "source": "hn-hiring",
     "title": "Coder | https://coder.com/ | Multiple roles | Multiple locations | Full-time Coder is an AI software development company leading the future of autonomous coding. We empower teams t",
@@ -26765,40 +26731,6 @@
     "employment_type": "",
     "posted_at": "2026-08-05T16:17:31.000Z",
     "contact_emails": [],
-    "fetched_at": "2026-09-13T12:21:17+00:00"
-  },
-  {
-    "id": "106e52a706343400",
-    "source": "hn-hiring",
-    "title": "Hi! I am Max. I am a Design Leader with 13+ years of experience and extensive knowledge in several areas: Design, Development, Analytics. Involved in creation of several startups a",
-    "company": "Hi! I am Max. I am a Design Leader with 13+ years of experience and extensive kn",
-    "location": "See post",
-    "url": "https://news.ycombinator.com/item?id=49184940",
-    "description": "Hi! I am Max. I am a Design Leader with 13+ years of experience and extensive knowledge in several areas: Design, Development, Analytics. Involved in creation of several startups and have previously created my own products and tools. I have a strong mathematical background. Interested in fintech, crypto, LLMs, AI, and complex business-technical systems. Open to joining early-stage startups or other interesting opportunities. Location: Warsaw, Poland Remote: Yes Willing to relocate: Yes Des: User Research, User Flow, UX/UI, Web, Holistic, Design System, Wireframes, Email Design, Dashboards, Mobile App Design, 3D, Illustrations, Animations, Figma, FinTech, E-commerce. Dev: Ruby, Rails, Hotwire, JavaScript, TypeScript, React, Vue, Svelte, Nest, Next, Nuxt, Tailwind, Postgres, Docker, CI/CD, etc. Résumé/CV: https://www.linkedin.com/in/maxberdnikau/ Email: maxberdnikau@gmail.com",
-    "tags": [],
-    "salary": "",
-    "employment_type": "",
-    "posted_at": "2026-08-05T16:18:17.000Z",
-    "contact_emails": [
-      "maxberdnikau@gmail.com"
-    ],
-    "fetched_at": "2026-09-13T12:21:17+00:00"
-  },
-  {
-    "id": "b089ff13dc3c76c8",
-    "source": "hn-hiring",
-    "title": "Location: Dallas, TX",
-    "company": "Location: Dallas, TX",
-    "location": "See post",
-    "url": "https://news.ycombinator.com/item?id=49185076",
-    "description": "Location: Dallas, TX\nRemote: Yes\nWilling to relocate: Yes (including internationally)\nTechnologies: Python, LangGraph, LangChain, MCP, RAG, supervised fine-tuning (LoRA/PEFT), Anthropic/OpenAI APIs, PyTorch, Spark, MLflow, Docker, Kubernetes, AWS/Azure/GCP\nRésumé/CV: https://suneelkalva.com \nEmail: suneel.kalva190700@gmail.com AI engineer at U.S. Bank building production LLM systems: a RAG assistant over 500K+ documents for 200+ analysts, LLM eval harnesses (hallucination, PII, prompt-injection), and fine-tuned LLaMA/Mistral models. Outside work I built and published mendrift-mcp (PyPI, listed on the official MCP Registry) an autonomous MLOps incident-response agent with an HMAC-gated approval layer, evaluated on a 19-scenario trajectory harness. Looking for applied AI / ML engineer roles building agentic systems.",
-    "tags": [],
-    "salary": "",
-    "employment_type": "",
-    "posted_at": "2026-08-05T16:26:49.000Z",
-    "contact_emails": [
-      "suneel.kalva190700@gmail.com"
-    ],
     "fetched_at": "2026-09-13T12:21:17+00:00"
   },
   {
@@ -27651,23 +27583,6 @@
     "employment_type": "",
     "posted_at": "2026-08-13T00:16:07.000Z",
     "contact_emails": [],
-    "fetched_at": "2026-09-13T12:21:17+00:00"
-  },
-  {
-    "id": "d5802d33e6cd48a2",
-    "source": "hn-hiring",
-    "title": "Location: Charleston SC",
-    "company": "Location: Charleston SC",
-    "location": "See post",
-    "url": "https://news.ycombinator.com/item?id=49282255",
-    "description": "Location: Charleston SC\nRemote: Yes\nWilling to relocate: No Technologies: \nPowerShell, Windows Server, Azure, AWS, Linux, Active Directory, SCCM, VMware Hyper V, Dell PowerEdge iDRAC, SIEM and log analysis, incident response, patch management, R, Commvault, DNS and WiFi troubleshooting, POS systems including Toast, network security, automation using PowerShell and Excel, infrastructure engineering, data driven operations analysis, workflow optimization, compliance review under FLSA, customer experience design, business process improvement. Résumé/CV: \nLinkedIn: https://www.linkedin.com/in/giovanniwashington/ \nResume: https://acrobat.adobe.com/id/urn:aaid:sc:va6c2:d91ef141-f4fa... Email: giovanniqwashington@gmail.com Summary: \nSenior Systems Administrator with eight years of enterprise IT experience across healthcare, manufacturing, and freelance environments. Specializes in PowerShell automation, systems reliability, and security focused operations. Completed an Associate of Applied Science in Cybersecurity and currently completing a Bachelor of Science in Information Communication Technology and a Master of Science in Computer Science. Strong ability to evaluate entire business systems including technical infrastructure, operational workflows, and customer facing processes, and deliver structured improvements that enhance stability, compliance, and performance.",
-    "tags": [],
-    "salary": "",
-    "employment_type": "",
-    "posted_at": "2026-08-13T06:03:35.000Z",
-    "contact_emails": [
-      "giovanniqwashington@gmail.com"
-    ],
     "fetched_at": "2026-09-13T12:21:17+00:00"
   },
   {
@@ -29581,23 +29496,6 @@
     "employment_type": "",
     "posted_at": "2026-07-01T23:08:51.000Z",
     "contact_emails": [],
-    "fetched_at": "2026-09-13T12:21:18+00:00"
-  },
-  {
-    "id": "63bc1a07bf97c7a1",
-    "source": "hn-hiring",
-    "title": "full-disclosure: i am ex-homeless transitioning from living on the streets to being a participant in society again... Location: United States of America _MST_",
-    "company": "full-disclosure: i am ex-homeless transitioning from living on the streets to be",
-    "location": "See post",
-    "url": "https://news.ycombinator.com/item?id=48754418",
-    "description": "full-disclosure: i am ex-homeless transitioning from living on the streets to being a participant in society again... Location: United States of America _MST_\nRemote: No\nWilling to relocate: Yes\nTechnologies: Irrelevant, but Typescript, Javacript, React, GraphQL, .etc\nResume: https://fur-tea-laser.github.io/resume/\nEmail: fur.tea.laser@gmail.com\n\nI'm a quasi-mathematician who adapts and translates rigorous, nuanced mathematical concepts for more expressive mediums like natural language and code. This results in shared processes for synthesizing and analyzing technical assets that are actionable, pragmatic, and accessible to both deep technical experts and practical execution teams alike. Think of me as an LLM wrangler who uses latent space acupuncture to pin down precise model behaviors, replacing haphazard reactions with a systematized, consistent iterative process. Let's chat!",
-    "tags": [],
-    "salary": "",
-    "employment_type": "",
-    "posted_at": "2026-07-01T23:19:53.000Z",
-    "contact_emails": [
-      "fur.tea.laser@gmail.com"
-    ],
     "fetched_at": "2026-09-13T12:21:18+00:00"
   },
   {
@@ -35697,23 +35595,6 @@
     "fetched_at": "2026-09-13T12:21:18+00:00"
   },
   {
-    "id": "910d79a348f2bc5e",
-    "source": "hn-hiring",
-    "title": "Location: Croatia, Dubrovnik / Europe",
-    "company": "Location: Croatia, Dubrovnik / Europe",
-    "location": "See post",
-    "url": "https://news.ycombinator.com/item?id=48385780",
-    "description": "Location: Croatia, Dubrovnik / Europe\nRemote: Yes, remote-first or fully remote only\nWilling to relocate: No, remote preferred\nTechnologies: TypeScript, JavaScript, React, Next.js, Node.js, Express, PostgreSQL, Prisma, Supabase, MongoDB, REST APIs, Stripe, OAuth, JWT, Docker, Vercel, Jest, Vitest, Cypress, Tailwind CSS\nRésumé/CV: https://personal-website-tau-sandy.vercel.app/Resume.pdf \nEmail: lazarbukejlovic@icloud.com Full-Stack Engineer with 3+ years of experience building production-ready React/TypeScript systems for SaaS, fintech, AI workflow, and data-heavy products. I’m strongest in frontend-focused full-stack work: polished React/Next.js product interfaces, dashboards, auth flows, protected routes, API integrations, database-backed features, Stripe billing, deployment, QA, and debugging the production issues behind the UI. Recent projects include MindPad AI, Flowstate, AtlasBrief, GeoRisk, and EchoRoom. These are not basic portfolio clones — they include real auth, payments, persistence, AI-assisted workflows, dashboards, billing logic, team flows, and deployed production-style architecture. I’m looking for remote Frontend Engineer, Full-Stack Engineer, React Engineer, or Software Engineer roles where I can own real product work end-to-end and contribute quickly.",
-    "tags": [],
-    "salary": "",
-    "employment_type": "",
-    "posted_at": "2026-06-03T15:56:08.000Z",
-    "contact_emails": [
-      "lazarbukejlovic@icloud.com"
-    ],
-    "fetched_at": "2026-09-13T12:21:18+00:00"
-  },
-  {
     "id": "ebd8180d20de5244",
     "source": "hn-hiring",
     "title": "MindFort AI (YC X25) | Backend Software Engineer, AI Researcher | Los Angeles, CA | Full-Time I'm a founding engineer at MindFort ( https://www.mindfort.ai ). We build autonomous A",
@@ -36715,23 +36596,6 @@
     "employment_type": "",
     "posted_at": "2026-06-12T21:17:38.000Z",
     "contact_emails": [],
-    "fetched_at": "2026-09-13T12:21:18+00:00"
-  },
-  {
-    "id": "485289307b4dbe89",
-    "source": "hn-hiring",
-    "title": "Location: Dakshina Kannada, Karnataka, India Remote: Yes (IST overlap) Willing to relocate: Within India for strong opportunities Technologies: SIEM monitoring, Splunk ES/SOAR, log",
-    "company": "Location: Dakshina Kannada, Karnataka, India Remote: Yes (IST overlap) Willing t",
-    "location": "See post",
-    "url": "https://news.ycombinator.com/item?id=48531236",
-    "description": "Location: Dakshina Kannada, Karnataka, India Remote: Yes (IST overlap) Willing to relocate: Within India for strong opportunities Technologies: SIEM monitoring, Splunk ES/SOAR, log analysis, threat hunting, incident response basics, vulnerability assessment, penetration testing, digital forensics, AWS security, IAM, Secrets Manager, Linux, Python, Docker, Git, network security Résumé/CV: https://drive.google.com/drive/folders/1KGUmGsSffOLFiFCdzrKj... \nEmail: www.giridharpai@gmail.com\nCybersecurity graduate seeking Information Security Analyst, Cyber Security Analyst, Penetration Tester, or SOC Analyst roles. I have hands-on experience in information security, penetration testing, and SOC operations. I’ve worked with Splunk SIEM monitoring, threat hunting, vulnerability assessment, digital forensics, and incident response fundamentals. I’m ranked in the top 1% on TryHackMe with 13 certifications and placed 2nd in IBM ICE DAY 2025 CTF. Impact: – Built real-time threat detection systems. – Built DDoS mitigation solutions. – Developed secure cloud applications with authentication, encryption, and access control. – IBM academic internship: Tejas Raksha, a zero-day web scanner for OWASP Top 10 vulnerabilities. – Freelance cloud security work: AES-256-GCM and Argon2id file encryption, MFA/SSO/RBAC, WebAuthn/TOTP, and secure healthcare workflows. Links: – LinkedIn: https://linkedin.com/in/giridharpai227/ – GitHub: https://github.com/Giri227 – Portfolio: https://giri227.github.io/Giridharpai/",
-    "tags": [],
-    "salary": "",
-    "employment_type": "",
-    "posted_at": "2026-06-14T19:00:38.000Z",
-    "contact_emails": [
-      "www.giridharpai@gmail.com"
-    ],
     "fetched_at": "2026-09-13T12:21:18+00:00"
   },
   {
