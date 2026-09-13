@@ -36,6 +36,9 @@ ROOT = Path(__file__).resolve().parent.parent
 QUEUE = ROOT / "outreach" / "queue"
 CONFIG = ROOT / "outreach" / "config.json"
 PROFILE = ROOT / "profile" / "master-profile.json"
+SWITCHES = ROOT / "data" / "tailor.json"
+MASTER_CV = "profile/cv/master/Saif_Ur_Rehman.pdf"
+TAILORED_CV = "profile/cv/tailored/Saif_ur_Rehman_CV_{job_id}.pdf"
 
 
 def forbidden_claims() -> list[str]:
@@ -145,6 +148,27 @@ def promote_auto(items) -> int:
     return promoted
 
 
+def cv_for(d: dict) -> str:
+    """The CV this one application gets.
+
+    The tailor switch in the portal decides, not whatever path the draft was written
+    with. On and the per-job file exists, that file goes; in every other case the
+    master goes, unchanged. A switch left on for a job nobody built a CV for must not
+    silently send nothing, so it falls back to the master too.
+    """
+    job_id = d.get("job_id") or ""
+    try:
+        on = bool(json.loads(SWITCHES.read_text()).get(job_id))
+    except Exception:  # noqa: BLE001 - no switch file means nothing is tailored
+        on = False
+    if on:
+        rel = TAILORED_CV.format(job_id=job_id)
+        if (ROOT / rel).is_file():
+            return rel
+        log(f"  tailoring is on for {job_id} but no file was built; sending the master")
+    return MASTER_CV
+
+
 def build(d: dict, from_addr: str, from_name: str) -> EmailMessage:
     msg = EmailMessage()
     msg["From"] = f"{from_name} <{from_addr}>"
@@ -153,7 +177,9 @@ def build(d: dict, from_addr: str, from_name: str) -> EmailMessage:
     msg["Reply-To"] = from_addr
     msg.set_content(d["body"])
 
-    for rel in d.get("attachments", []) or []:
+    # One attachment, chosen by the switch - not by whatever the draft recorded.
+    for rel in [cv_for(d)] + [a for a in (d.get("attachments") or [])
+                              if not str(a).endswith(".pdf")]:
         p = (ROOT / rel).resolve()
         # never let a queue file reach outside the repo
         if not str(p).startswith(str(ROOT)) or not p.is_file():

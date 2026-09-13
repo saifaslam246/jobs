@@ -705,14 +705,15 @@
   }
 
   /* ---------------- CV for a role ---------------- */
-  // Which master CV to send when no per-job version has been built yet. The weekday
-  // run replaces this with one rewritten against the posting itself.
+  // The master CV is what every role gets. A role whose tailor switch is on also has
+  // its own file, named by job id, built by profile/cv/tailor_switches.py and shipped
+  // in cvdata.js beside the master. The master itself is never rebuilt or replaced.
   // A published artifact runs in a sandboxed frame: target="_blank" cannot open a
   // tab and page-initiated downloads are blocked, so links to a served file fail.
   // The supported route is the downloads capability, fed from bytes embedded in
   // cvdata.js. The repo link stays as the fallback when that is unavailable.
   var REPO_CV = "https://github.com/saifaslam246/jobs/raw/" +
-                "claude/job-portal-cv-manager-7w6cxz/profile/cv/generated/";
+                "claude/job-portal-cv-manager-7w6cxz/profile/cv/";
   var CV_BLOBS = window.__CV_BLOBS__ || {};
   // his own file, not a re-render of it
   var MASTER_CV = "Saif_Ur_Rehman";
@@ -762,7 +763,10 @@
     }).catch(function(){ fail("saving unavailable"); });
   }
 
+  // The master and the per-job files live in different folders in the repo, so the
+  // fallback link needs to know which one it is pointing at.
   function cvLinks(base){
+    var dir = base === MASTER_CV ? "master/" : "tailored/";
     var canSave = !!(window.claude && CV_BLOBS[base + ".pdf"]);
     if(canSave){
       return '<span class="links">' +
@@ -771,27 +775,35 @@
       "</span>";
     }
     return '<span class="links">' +
-      '<a href="' + REPO_CV + encodeURIComponent(base) + '.pdf" target="_blank" rel="noopener">PDF in repo</a>' +
-      '<a href="' + REPO_CV + encodeURIComponent(base) + '.docx" target="_blank" rel="noopener">Word in repo</a>' +
+      '<a href="' + REPO_CV + dir + encodeURIComponent(base) + '.pdf" target="_blank" rel="noopener">PDF in repo</a>' +
+      '<a href="' + REPO_CV + dir + encodeURIComponent(base) + '.docx" target="_blank" rel="noopener">Word in repo</a>' +
     "</span>";
   }
 
   function tailorOn(id){ return !!(state[id] && state[id].tailor); }
 
+  // A per-job CV is named from the job id alone, so the portal can find it without
+  // being told where it was written.
+  function tailoredBase(id){
+    var base = "Saif_ur_Rehman_CV_" + id;
+    return CV_BLOBS[base + ".pdf"] ? base : null;
+  }
+
   function cvPanel(j){
     var on = tailorOn(j.id);
-    var tailored = j.cv_file || (state[j.id] && state[j.id].cv_file);
+    var tailored = on ? tailoredBase(j.id) : null;
     var head, links, note;
 
-    if(on && tailored){
-      var base = String(tailored).split("/").pop().replace(/\.(pdf|docx|txt)$/i, "");
+    if(tailored){
       head = "<b>Tailored to this posting.</b> Your skills and projects reordered around " +
-             "what they asked for.";
-      links = cvLinks(base);
-      note = "Same sentences as your master CV - nothing is rewritten, only reordered.";
+             "what they asked for, and their job title on the title line. This file is " +
+             "attached to this application instead of the master.";
+      links = cvLinks(tailored);
+      note = "Same sentences as your master CV - nothing is rewritten, only reordered. " +
+             "Your master CV is untouched and still goes to every other role.";
     } else if(on){
-      head = "<b>Tailoring is on.</b> The version for this posting is built on the next " +
-             "weekday run; your master CV is attached until then.";
+      head = "<b>Tailoring is on, the file is not built yet.</b> Ask Claude to build it " +
+             "and it appears here; your master CV is attached until then.";
       links = cvLinks(MASTER_CV);
       note = "";
     } else {
@@ -810,7 +822,8 @@
             'aria-label="Tailor the CV to this posting"></button>' +
           '<span class="lbl"><b>Tailor the CV to this posting</b>' +
           "<span>" + (on
-            ? "On for this role only. Every other role still gets your master CV."
+            ? "On for this role only. Your master CV is not changed, and every other "
+              + "role still gets it."
             : "Off. Your master CV is sent as it is. Turn on to have this one role's CV " +
               "reordered around its description.") + "</span></span>" +
         "</div>" +
