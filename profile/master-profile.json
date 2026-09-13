@@ -377,12 +377,14 @@
         "enterprise"
       ],
       "tech": [
-        "React",
-        "React Native",
+        "Next.js",
         "TypeScript",
         "Node.js",
-        "AWS",
-        "Docker"
+        "GraphQL",
+        "REST APIs",
+        "PostgreSQL",
+        "TypeORM",
+        "Jest"
       ],
       "one_liner": "Cloud platform for hospital staff attendance, leave, shift scheduling and overtime tracking.",
       "bullets": [
@@ -698,8 +700,8 @@
       "priority": 47,
       "dates": "March 2023 - December 2023",
       "association": "Pikessoft",
-      "skills": "Node.js · Express.js · MongoDB · React · SaaS",
-      "description": "HIS is a SaaS product for managing attendance and leave across an organisation: who is in, who is off, and what has been approved.\n\nI worked on both sides, with the backend as my main responsibility. That meant the core of it, the rules that decide what a leave request is allowed to do: entitlements, approvals, balances, and the calendar all of it is calculated against.\n\nAttendance and leave look simple from the outside and are mostly edge cases underneath, so the value was in getting those rules right rather than in the screens sitting on top of them.\n\nTechnologies: React, Node.js, Express.js, MongoDB"
+      "skills": "Node.js · PostgreSQL · TypeORM · GraphQL · Next.js",
+      "description": "HIS is a SaaS product for managing attendance and leave across an organisation: who is in, who is off, and what has been approved.\n\nI worked on both sides, with the backend as my main responsibility. That meant the core of it, the rules that decide what a leave request is allowed to do: entitlements, approvals, balances, and the calendar all of it is calculated against.\n\nAttendance and leave look simple from the outside and are mostly edge cases underneath, so the value was in getting those rules right rather than in the screens sitting on top of them.\n\nTechnologies: Next.js, TypeScript, Node.js, GraphQL, REST APIs, PostgreSQL, TypeORM, Jest"
     },
     {
       "name": "EquipX - Heavy Equipment Marketplace",
@@ -834,6 +836,13 @@
         "MongoDB"
       ],
       "payments": "Confirmed by Saif: he built the payment integration."
+    },
+    "his": {
+      "database": "PostgreSQL with TypeORM - confirmed by its own skill tags",
+      "not": [
+        "MongoDB",
+        "MERN Stack"
+      ]
     }
   }
 }
