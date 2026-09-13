@@ -63,3 +63,13 @@ REST APIs, which the CV lists.
 - Languages: English C1, Urdu native
 - Portfolio link (deliberately withheld from LinkedIn)
 - Project URLs atomixlogistics.com and equipx.com
+
+## Saif's corrections, 13 Sep 2026
+
+- **SQL everywhere except EquipX and Definepedia (Innovage.io)**, which are MongoDB.
+  So the MongoDB in the Rentalytics, HIS and SandSeekers descriptions is wrong,
+  and the `MERN Stack` tag on Rentalytics and HIS is wrong too.
+- **Atomix: never React, never NestJS.** Angular, PrimeNG, Node.js. The CV line
+  claiming React and NestJS is an error in the CV, not in LinkedIn.
+- **EquipX: React, Node.js, Next.js, Express, MongoDB, Cloudinary.** So the CV's
+  Angular on EquipX is wrong.

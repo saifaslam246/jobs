@@ -752,5 +752,27 @@
     "Stripe",
     "Team Leadership",
     "Agile Methodologies"
-  ]
+  ],
+  "facts": {
+    "databases": {
+      "rule": "SQL on every project except EquipX and Definepedia (Innovage.io), which are MongoDB.",
+      "nosql_projects": [
+        "EquipX - Heavy Equipment Marketplace",
+        "Definepedia - Tutoring Marketplace"
+      ],
+      "_note": "Stated by Saif 13 Sep 2026. Any description or skill tag claiming MongoDB outside those two is wrong, and so is a MERN Stack tag on them."
+    },
+    "atomix": {
+      "used": [
+        "Angular",
+        "PrimeNG",
+        "Node.js"
+      ],
+      "never_used": [
+        "React",
+        "NestJS"
+      ],
+      "_note": "The CV's Atomix line claiming React and NestJS is wrong and must be corrected."
+    }
+  }
 }
