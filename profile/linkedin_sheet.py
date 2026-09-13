@@ -77,7 +77,7 @@ def blocks(d: dict) -> list[dict]:
             })
             continue
         meta = [("Project name", pr["name"]),
-                ("Dates", pr["dates"] or "NEEDS YOUR DATES"),
+                ("Dates", pr["dates"] or "leave blank - LinkedIn does not require it"),
                 ("Associated with", pr["association"])]
         out.append({
             "field": f"Project — {pr['name'].split(' -')[0]}",

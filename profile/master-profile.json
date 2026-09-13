@@ -628,30 +628,27 @@
     },
     {
       "name": "RIP - Regional Public Registry",
-      "dates": "",
+      "dates": "March 2025 - Present",
       "association": "TMN Development KG",
       "priority": 3,
-      "description": "",
-      "skills": "",
-      "needs": "what it does, who uses it, what you built, the stack, and the dates"
+      "description": "A public registry that lists people who have died in the country: the full searchable record, and the recent deaths shown separately so a visitor can find a notice without knowing where to look.\n\nIt is a straightforward product with an unusual requirement behind it. The data is sensitive and the people using it are often not looking for software, they are looking for one name, so the search and the reading experience matter more than anything clever.\n\nOne of several products I contribute to at TMN alongside leading Ludwig.\n\nTechnologies: Next.js, React, TypeScript",
+      "skills": "Next.js · React · TypeScript · Web Development"
     },
     {
       "name": "Business Connector",
-      "dates": "",
+      "dates": "March 2025 - Present",
       "association": "TMN Development KG",
       "priority": 4,
-      "description": "",
-      "skills": "",
-      "needs": "what it connects and for whom, what you built, the stack, and the dates"
+      "description": "An application in TMN's product line connecting businesses with each other. One of several products I contribute to alongside leading Ludwig.\n\nTechnologies: Next.js, React, TypeScript",
+      "skills": "Next.js · React · TypeScript"
     },
     {
       "name": "Business Card Management Platform",
-      "dates": "",
+      "dates": "March 2025 - Present",
       "association": "TMN Development KG",
       "priority": 5,
-      "description": "",
-      "skills": "",
-      "needs": "what it does, what you built, the stack, and the dates"
+      "description": "A platform for managing business details and contact cards in one place, so a company's people, their roles and their contact details stay current everywhere they are shown instead of living in printed cards and stale signatures.\n\nOne of several products I contribute to at TMN alongside leading Ludwig.\n\nTechnologies: Next.js, React, TypeScript",
+      "skills": "Next.js · React · TypeScript · Web Development"
     },
     {
       "name": "SandSeekers - Dubai Real Estate Platform",
