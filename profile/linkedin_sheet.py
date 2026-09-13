@@ -101,6 +101,30 @@ def blocks(d: dict) -> list[dict]:
         "note": f"{len(skills)} in your profile, LinkedIn caps at {LIMITS['skills']} - "
                 "the most relevant are listed, in the order worth adding them.",
     })
+
+    # The settings half of a profile. No long text to paste, but these decide
+    # whether a recruiter searching for you finds you at all.
+    out.append({
+        "field": "Profile basics", "where": "Profile → pencil icon (top card)",
+        "limit": 0, "text": "",
+        "meta": [("Location", ident.get("location", "")),
+                 ("Custom URL", ident.get("linkedin_slug", "")),
+                 ("Contact email", ident.get("email", ""))],
+        "note": "Location has to say Innsbruck, Austria - recruiter search filters on "
+                "it before it reads a word you wrote.",
+    })
+    out.append({
+        "field": "Open to work", "where": "Profile → Open to → Finding a new job",
+        "limit": 0, "text": "",
+        "meta": [("Job titles", "Lead Full Stack Developer, Full Stack Developer, "
+                                "Senior Software Engineer, Backend Developer"),
+                 ("Locations", "Innsbruck, Austria · Vienna, Austria · Remote (EU)"),
+                 ("Start date", "Immediately"),
+                 ("Job types", "Full-time, Contract, Part-time"),
+                 ("Visible to", "Recruiters only")],
+        "note": "Choose Recruiters only, not All LinkedIn members. The public "
+                "#OpenToWork photo frame is visible to your current employer too.",
+    })
     return out
 
 
