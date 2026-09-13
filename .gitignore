@@ -1,0 +1,14 @@
+# Python bytecode. These were committed by accident and broke the daily harvest:
+# the runner recompiles them, which leaves tracked files modified, and
+# `git pull --rebase` refuses to run with unstaged changes present.
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Local environments and editor noise
+.venv/
+venv/
+.env
+.DS_Store
+.idea/
+.vscode/

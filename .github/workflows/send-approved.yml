@@ -51,7 +51,7 @@ jobs:
           else
             git commit -m "outreach: send log $(date -u +%Y-%m-%d)"
             for i in 1 2 3 4; do
-              git pull --rebase origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && exit 0
+              git pull --rebase --autostash origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && exit 0
               sleep $((2 ** i))
             done
             exit 1

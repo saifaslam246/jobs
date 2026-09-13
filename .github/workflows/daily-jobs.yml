@@ -56,13 +56,13 @@ jobs:
         run: |
           git config user.name  'job-harvester[bot]'
           git config user.email 'job-harvester@users.noreply.github.com'
-          git add data/
+          git add -A
           if git diff --staged --quiet; then
             echo 'No change in job data.'
           else
             git commit -m "data: job harvest $(date -u +%Y-%m-%d)"
             for i in 1 2 3 4; do
-              git pull --rebase origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && exit 0
+              git pull --rebase --autostash origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && exit 0
               sleep $((2 ** i))
             done
             exit 1
