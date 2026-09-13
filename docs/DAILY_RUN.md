@@ -62,16 +62,34 @@ Open the description in `matches.json`. Do not apply from the title. Check:
 - What is the single most specific requirement he genuinely matches? That sentence is
   what the email is built around.
 
-## 5. Tailor the CV
+## 5. Attach the CV - master by default
+
+**Default: send the master CV, unchanged.**
+
+```bash
+python profile/cv/build_cv.py          # profile/cv/generated/Saif_ur_Rehman_CV.pdf
+```
+
+That is the CV Saif wrote. Most applications get exactly this file.
+
+**Only tailor when the switch is on for that role.** The portal has a per-job switch,
+off by default; turning it on writes `tailor: true` into that role's `pipeline/<job_id>`
+document. Read that collection, and for roles where it is set:
 
 ```bash
 python profile/cv/build_cv.py --job <job_id> --title "<their exact job title>"
 ```
 
-Pick `--variant` by role: `frontend`, `mobile` (React Native / Flutter), `backend`,
-`data_scraping` (crawling / ETL), else `fullstack`. Check `match.gaps` — if the posting
-wants something real that he has and the CV does not say, add it to
-`profile/master-profile.json` and rebuild. **Never add a skill he does not have.**
+Tailoring **reorders** his material - skills categories the posting asks for first, most
+relevant projects first - and mirrors their job title. It does not rewrite a single
+sentence: every line on a tailored CV is a line he approved on the master. If a posting
+wants something the master does not say, raise it with him; never write it in.
+
+Then rebuild the portal's copies so the new file is downloadable:
+
+```bash
+python portal/build_cvdata.py
+```
 
 ## 6. Draft the email
 

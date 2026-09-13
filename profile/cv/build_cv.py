@@ -55,7 +55,14 @@ def slug(s: str) -> str:
 # Content assembly - shared by every output format
 # ---------------------------------------------------------------------------
 
-def build_content(p: dict, variant: str, job: dict | None, title_override: str | None) -> dict:
+def build_content(p: dict, job: dict | None, title_override: str | None) -> dict:
+    """Assemble the CV.
+
+    With no job, this is the master CV exactly as Saif wrote it. With a job, tailoring
+    reorders his existing material - skills categories the posting asks for first, the
+    most relevant projects first - and mirrors their job title. It never rewrites his
+    prose: every sentence on a tailored CV is a sentence he approved on the master.
+    """
     ident = p["identity"]
     headline = title_override or ident["headline"]
 
@@ -64,7 +71,7 @@ def build_content(p: dict, variant: str, job: dict | None, title_override: str |
     if ident.get("portfolio_public") and ident.get("portfolio"):
         links.append(ident["portfolio"])
 
-    summary = p["summary_variants"].get(variant, p["summary_variants"]["fullstack"])
+    summary = p["summary"]
 
     # Skills: when tailoring, lead with the categories the job actually asks for.
     skills = {k: list(v) for k, v in p["skills"].items()}
@@ -380,9 +387,8 @@ def write_txt(c: dict, path: Path) -> None:
 
 def main() -> None:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--variant", default="fullstack",
-                    choices=["fullstack", "frontend", "mobile", "backend", "data_scraping"])
-    ap.add_argument("--job", help="job id from data/matches.json to tailor against")
+    ap.add_argument("--job", help="job id from data/matches.json to tailor against. "
+                                  "Without it you get the master CV, unchanged.")
     ap.add_argument("--title", help="override the headline to mirror the job title")
     ap.add_argument("--out", help="output basename (no extension)")
     args = ap.parse_args()
@@ -395,7 +401,7 @@ def main() -> None:
         if job is None:
             raise SystemExit(f"job id {args.job} not found in {MATCHES}")
 
-    c = build_content(p, args.variant, job, args.title)
+    c = build_content(p, job, args.title)
 
     OUT.mkdir(parents=True, exist_ok=True)
     if args.out:
@@ -403,7 +409,7 @@ def main() -> None:
     elif job:
         base = f"Saif_ur_Rehman_CV_{slug(job['company'])}_{slug(job['title'])}"
     else:
-        base = f"Saif_ur_Rehman_CV_{args.variant}"
+        base = "Saif_ur_Rehman_CV"
 
     docx_p, pdf_p, txt_p = OUT / f"{base}.docx", OUT / f"{base}.pdf", OUT / f"{base}.txt"
     write_docx(c, docx_p)
@@ -412,8 +418,7 @@ def main() -> None:
 
     print(json.dumps({
         "docx": str(docx_p), "pdf": str(pdf_p), "txt": str(txt_p),
-        "variant": args.variant,
-        "tailored_to": f"{job['title']} @ {job['company']}" if job else None,
+        "tailored_to": f"{job['title']} @ {job['company']}" if job else "master CV (not tailored)",
         "built_at": datetime.now().isoformat(timespec="seconds"),
     }, indent=2))
 

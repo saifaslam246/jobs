@@ -30,13 +30,6 @@
     "_rate_note": "TELL ME YOUR FLOOR. Used to auto-reject lowball postings. Suggested band for 4 yrs full-stack in Austria: EUR 45-70/hr contract, EUR 55-75k/yr permanent.",
     "years_experience": 4
   },
-  "summary_variants": {
-    "fullstack": "Lead Full Stack Developer with 4+ years of experience building and delivering production web and mobile applications. Experienced in owning products from architecture and UI design through development, deployment, and ongoing improvement. Currently leading development of a healthcare practice-management and patient-booking platform used by 20+ therapists and more than 10,000 patients across Germany and Austria. Strong background in Angular, React, Next.js, Node.js, TypeScript, real-time systems, healthcare workflows, cloud infrastructure, and team leadership.",
-    "frontend": "Frontend-focused Full Stack Developer with 4+ years building large, long-lived applications. Lead developer on a medical practice-management dashboard covering roughly 40 feature areas in Angular and Ionic, and on a patient booking wizard in Next.js and React. Experienced in state management, offline-first synchronisation, internationalisation and shipping shared component libraries as versioned packages.",
-    "mobile": "Mobile Developer with 4+ years delivering cross-platform apps in React Native, shipped to the App Store and Play Store with real-time chat, push notifications, offline handling and media upload. Backed by full-stack Angular, React and Node.js experience, so a mobile feature is owned end to end rather than handed off.",
-    "backend": "Full Stack Developer with 4+ years designing and consuming REST APIs in Node.js (NestJS, Express) and Python (FastAPI), with PostgreSQL, MongoDB, MariaDB and Redis behind them, containerised with Docker on AWS. Experienced in multi-tenant data partitioning, invoicing and billing logic, third-party integrations and offline synchronisation with conflict resolution.",
-    "data_scraping": "Full Stack Developer with 4+ years including large-scale data extraction and structuring - Python pipelines that ingest and normalise millions of property listings from third-party sources into searchable data, and live feed integrations from major real-estate portals. Comfortable owning the full path from crawler to API to UI."
-  },
   "skills": {
     "Programming Languages": [
       "TypeScript",
@@ -607,5 +600,7 @@
     "Dart",
     "Riverpod"
   ],
-  "_do_not_claim": "Technologies Saif has confirmed he has not worked with. send.py refuses any email containing one. Flutter, Prisma, FastAPI, NgRx, Firebase Functions and Microservices were removed from this list on 13 Sep after he confirmed they are his."
+  "_do_not_claim": "Technologies Saif has confirmed he has not worked with. send.py refuses any email containing one. Flutter, Prisma, FastAPI, NgRx, Firebase Functions and Microservices were removed from this list on 13 Sep after he confirmed they are his.",
+  "summary": "Lead Full Stack Developer with 4+ years of experience building and delivering production web and mobile applications. Experienced in owning products from architecture and UI design through development, deployment, and ongoing improvement. Currently leading development of a healthcare practice-management and patient-booking platform used by 20+ therapists and more than 10,000 patients across Germany and Austria. Strong background in Angular, React, Next.js, Node.js, TypeScript, real-time systems, healthcare workflows, cloud infrastructure, and team leadership.",
+  "_summary": "One summary, written by Saif. There are no per-variant rewrites: tailoring reorders his existing material and mirrors the job title, it never rewrites his prose into something he did not write."
 }
