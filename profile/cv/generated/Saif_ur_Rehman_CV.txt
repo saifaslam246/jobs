@@ -1,5 +1,5 @@
 Saif ur Rehman
-Lead Full Stack Developer | Angular, React, Next.js, Node.js
+Lead Full Stack Developer | Angular, React, Next.js, Node.js, TypeScript
 Innsbruck, Austria | +43 660 6519 008 | saifaslam155@gmail.com
 LinkedIn: linkedin.com/in/saifaslam246 | GitHub: github.com/saifaslam246
 Portfolio: saifaslam246.github.io/portfolio
