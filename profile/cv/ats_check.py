@@ -17,6 +17,7 @@ from __future__ import annotations
 
 import re
 import sys
+import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent.parent
@@ -32,6 +33,16 @@ DATE_RE = re.compile(
     r"\b(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\.?\s+\d{4}\b")
 EMAIL_RE = re.compile(r"[\w.+-]+@[\w-]+\.[\w.]+")
 PHONE_RE = re.compile(r"\+\d[\d\s]{7,}")
+
+
+def _profile_linkedin() -> str:
+    """The LinkedIn URL the master profile claims, so the CV can be checked
+    against it rather than against "any linkedin.com link"."""
+    try:
+        prof = Path(__file__).resolve().parent.parent / "master-profile.json"
+        return json.loads(prof.read_text())["identity"].get("linkedin", "")
+    except Exception:
+        return ""
 
 
 def check(path: Path) -> int:
@@ -78,7 +89,16 @@ def check(path: Path) -> int:
     # --- contact block ---
     for label, rx in (("email", EMAIL_RE), ("phone", PHONE_RE)):
         line(ok if rx.search(text) else fail, f"{label} {'found' if rx.search(text) else 'MISSING'} in the text")
-    line(ok if "linkedin.com/in/" in text.lower() else warn, "LinkedIn URL present")
+    # Not just "a LinkedIn URL" - the one the profile actually says. Changing your
+    # LinkedIn custom URL kills the old one (LinkedIn does not redirect it), and a
+    # dead link on a CV already sent to employers is silent and expensive.
+    want = _profile_linkedin()
+    if not want:
+        line(ok if "linkedin.com/in/" in text.lower() else warn, "LinkedIn URL present")
+    elif want.lower() in text.lower():
+        line(ok, f"LinkedIn URL matches the profile ({want})")
+    else:
+        line(fail, f"LinkedIn URL does NOT match the profile - expected {want}")
 
     # --- dates ---
     dates = DATE_RE.findall(text)
