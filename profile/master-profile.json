@@ -666,6 +666,38 @@
       "association": "Pikessoft",
       "skills": "Angular · Node.js · TypeScript · AWS S3 · PrimeNG",
       "description": "Atomix is a 3PL logistics and order fulfilment platform for high-growth brands: inbound and outbound orders, inventory across warehouses, and the reporting the operations team runs the day on.\n\nI worked across both sides of it, frontend and backend. Three pieces were worth doing properly.\n\nLarge data exports. They were built in one pass and started falling over as the data grew. I moved them to chunked processing with the finished file uploaded to S3, so an export completes at any size instead of timing out on the request.\n\nBilling. It ran through a third-party service. I helped move it to an in-house system, which took out the recurring cost and put the logic somewhere we could change it.\n\nThe frontend migration from Angular Material to PrimeNG, which I led. Fewer component workarounds and a UI the team could build against faster.\n\nTechnologies: Angular, PrimeNG, Node.js, TypeScript, AWS S3"
+    },
+    {
+      "name": "Rentalytics - Property Data Platform",
+      "priority": 46,
+      "dates": "December 2023 - November 2024",
+      "association": "Pikessoft",
+      "skills": "React · Node.js · Express.js · MongoDB · Web Scraping",
+      "description": "Rentalytics is a data platform that collects and structures millions of property records so they can be searched and worked with in one place.\n\nI worked on both sides. On the frontend I built the React interface for browsing and managing that data. On the backend I designed the scraping and ingestion systems, which is where the real problem was: at that volume, anything written the obvious way is either too slow or falls over.\n\nMost of the effort went into asynchronous processing, so long-running jobs stay off the request path, and into tests, because a scraper that quietly drifts is worse than one that fails loudly.\n\nTechnologies: React, Node.js, Express.js, MongoDB"
+    },
+    {
+      "name": "HIS - Attendance & Leave Management SaaS",
+      "priority": 47,
+      "dates": "March 2023 - December 2023",
+      "association": "Pikessoft",
+      "skills": "Node.js · Express.js · MongoDB · React · SaaS",
+      "description": "HIS is a SaaS product for managing attendance and leave across an organisation: who is in, who is off, and what has been approved.\n\nI worked on both sides, with the backend as my main responsibility. That meant the core of it, the rules that decide what a leave request is allowed to do: entitlements, approvals, balances, and the calendar all of it is calculated against.\n\nAttendance and leave look simple from the outside and are mostly edge cases underneath, so the value was in getting those rules right rather than in the screens sitting on top of them.\n\nTechnologies: React, Node.js, Express.js, MongoDB"
+    },
+    {
+      "name": "EquipX - Heavy Equipment Marketplace",
+      "priority": 48,
+      "dates": "September 2022 - March 2023",
+      "association": "Pikessoft",
+      "skills": "Node.js · GraphQL · MongoDB · Cloudinary · Database Design",
+      "description": "EquipX is a marketplace for finding and buying heavy equipment.\n\nI worked on the backend. Before any code I modelled the database from an ERD, because a marketplace's listing and category structure is the one thing you cannot cheaply change later.\n\nOn top of that I built the GraphQL APIs, so each client asks for exactly the fields it needs instead of over-fetching a whole listing page, and an image pipeline that processes uploaded product photos and generates the sizes each screen needs. Those are stored on Cloudinary, so pages stay quick on a slow connection.\n\nTechnologies: Node.js, GraphQL, MongoDB, Cloudinary"
+    },
+    {
+      "name": "Definepedia - Tutoring Marketplace",
+      "priority": 49,
+      "dates": "April 2022 - August 2022",
+      "association": "Innovage.io",
+      "skills": "Node.js · Express.js · MongoDB · Mongoose · Payment Integration",
+      "description": "Definepedia is a tutoring marketplace in the mould of Chegg: students post questions, and tutors either answer them or get hired for longer help.\n\nI built the backend from scratch. I designed the architecture and the data model in Express.js and MongoDB with Mongoose schemas, and added payment integration so a student can hire and pay a tutor inside the platform rather than being sent somewhere else.\n\nTechnologies: Node.js, Express.js, MongoDB, Mongoose"
     }
   ],
   "linkedin_about": "I'm a Full Stack Developer based in Innsbruck, Austria, with 4+ years of experience building web and mobile products.\n\nRight now I lead development on Ludwig, a practice-management platform for physiotherapy clinics. I built most of it from scratch, and it runs day to day for 20+ therapists and more than 10,000 patients in Germany and Austria. I work in a team of 3-4 engineers and I'm involved from planning through to release.\n\nBefore this I spent two and a half years at Pikessoft, in teams of 5-10 developers, working across a lot of different products: a 3PL logistics and order fulfilment system, a heavy equipment marketplace, a real estate platform with its own CRM for the Dubai market, a service booking product for web and mobile, and a data platform that collects and structures millions of property listings.\n\nPicking up a new domain is normal for me. Logistics, healthcare, real estate, e-commerce. The business rules change, the engineering doesn't.\n\nI've worked in Agile/Scrum teams throughout, with daily standups, sprint planning and code reviews as part of the routine.\n\n⚙️ Frontend: Angular, React, Next.js, TypeScript, JavaScript, RxJS, NgRx, Redux, Tailwind CSS, Angular Material, PrimeNG\n🛠️ Backend: Node.js, NestJS, Express.js, FastAPI, REST APIs, WebSockets, Socket.IO, Microservices\n📱 Mobile: React Native, Ionic, Flutter\n🗄️ Databases: PostgreSQL, MySQL, MongoDB, MariaDB, Redis, Firestore, Prisma, TypeORM\n☁️ Cloud & DevOps: AWS (EC2, S3, Lambda, SNS), Docker, Nginx, GitHub Actions, CI/CD, Vercel\n✅ Code Quality: ESLint, Prettier, Husky, SonarQube, Playwright, code reviews\n🔀 Version Control: Git, GitHub, GitLab, Bitbucket\n📋 Project Management: Jira, Trello, ClickUp\n🧩 Other: Stripe, Twilio, Firebase, OAuth, Google Maps APIs, third-party API integrations\n\nOpen to full-time roles as well as contract, part-time and project work.\n📧 saif@tmndevelopment.com",
