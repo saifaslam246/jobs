@@ -96,6 +96,7 @@ def score_job(job: dict, m: dict) -> dict:
 
     reasons: list[str] = []
     rejects: list[str] = []
+    flags: list[str] = []
 
     # --- gate 1: does it touch the stack at all? ---
     matched_must = [k for k in m["must_have_any"] if contains(hay, k)]
@@ -233,6 +234,26 @@ def score_job(job: dict, m: dict) -> dict:
             score -= 15
             reasons.append("stale posting (>60 days)")
 
+    # --- presence requirement: hybrid or country-bound roles ---
+    # LiveEO scored 70 and Gamigo 72 while requiring a Berlin office and German
+    # residency respectively. Neither is reachable from Innsbruck, and a high score on
+    # an unreachable role costs more attention than a low score on a reachable one.
+    here = ("austria", "innsbruck", "vienna", "wien", "tirol", "tyrol", "salzburg")
+    at_home = any(t in f"{loc} {body[:1500]}" for t in here)
+    fully_remote = any(t in f"{loc} {body[:1500]}" for t in
+                       ("fully remote", "remote-first", "remote first", "work from anywhere",
+                        "anywhere in the world", "globally remote", "global remote"))
+    onsite = [t for t in ("hybrid", "on-site", "onsite", "in-office", "in office")
+              if t in loc or t in title]
+    bound = re.search(r"based in (?:the )?(germany|netherlands|uk|united kingdom|ireland|"
+                      r"spain|portugal|poland|france|switzerland|belgium|denmark|sweden)",
+                      body[:2000])
+    if (onsite or bound) and not at_home and not fully_remote:
+        where = bound.group(1) if bound else (loc.strip() or "another location")
+        score -= 25
+        reasons.append(f"needs you on site in {where} - not reachable from Innsbruck")
+        flags.append(f"presence required: {where}")
+
     # --- region lock: a role restricted to a region he cannot work from ---
     region_lock = [r for r in REGION_EXCLUDE if contains(f"{loc} {title}", r)]
     if region_lock:
@@ -240,7 +261,7 @@ def score_job(job: dict, m: dict) -> dict:
         reasons.append(f"restricted to {region_lock[0]} - you cannot work from there")
 
     # --- flags: things to check before applying, not auto-rejects ---
-    flags = [v for v in VISA_BLOCKERS if v in body]
+    flags.extend(v for v in VISA_BLOCKERS if v in body)
 
     # --- gaps: what the JD wants that the profile does not obviously claim ---
     profile_terms = set(m["strong_signals"]) | set(m["must_have_any"])

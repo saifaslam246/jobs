@@ -99,11 +99,12 @@ def build_content(p: dict, variant: str, job: dict | None, title_override: str |
 
         def relevance(pr: dict) -> int:
             t = sum(4 for x in pr["tech"] if x.lower() in detected)
-            d = sum(3 for x in pr["domain"] if mentions(x))
-            # Weight counts double: when a posting is generic prose - as agency and
-            # consultancy ads usually are - the strongest work should lead, not whichever
-            # project happens to share two framework names.
-            return -(t + d + pr.get("weight", 0) * 2)
+            d = sum(6 for x in pr["domain"] if mentions(x))
+            # Weight counts triple, and domain overlap is worth more than a framework
+            # name. Without this, a medical-software posting led with a marketplace
+            # project purely because its tech list happened to name Docker and MongoDB,
+            # pushing the healthcare work - the whole reason he fits - to third.
+            return -(t + d + pr.get("weight", 0) * 3)
 
         projects.sort(key=relevance)
     # Three projects, not four: the Ludwig role now carries six bullets of its own, and a

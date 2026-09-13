@@ -1,6 +1,6 @@
-# Job digest - 2026-09-13 12:23 UTC
+# Job digest - 2026-09-13 12:29 UTC
 
-**1831 scanned - 767 relevant - 16 new shortlist - 170 with a direct contact email**
+**1831 scanned - 767 relevant - 14 new shortlist - 170 with a direct contact email**
 
 ## New shortlist
 
@@ -12,14 +12,6 @@
 - **Why:** stack match: aws, graphql, nestjs, next.js, node.js, postgresql, react, typescript; full-stack role; contract/part-time signal: b2b; familiar domain: booking, insurance, saas
 - **CV needs to cover:** kubernetes
 
-### 72 | (Senior) Fullstack Engineer - Node / React (all genders) - Gamigo
-`arbeitnow` | Germany | salary n/a
-
-<https://www.arbeitnow.com/jobs/companies/gamigo/remote-senior-fullstack-engineer-node-react-all-genders-germany-250238>
-
-- **Why:** stack match: docker, nestjs, next.js, node.js, postgresql, react, typescript; full-stack role; remote; EU/Austria friendly
-- **CV needs to cover:** kubernetes, german
-
 ### 72 | Senior React Native Developer - Lemon.io
 `weworkremotely` | Anywhere in the World | salary n/a
 
@@ -27,14 +19,6 @@
 
 - **Why:** stack match: angular, flutter, next.js, node.js, react, react native, typescript; JS/TypeScript shop; core-stack role title; remote
 - **CV needs to cover:** rust, java, swift, vue, svelte, laravel
-
-### 70 | Tech Lead Full-Stack Engineer (f/m/x) - LiveEO GmbH
-`arbeitnow` | LiveEO GmbH Berlin Office (Hybrid) | salary n/a
-
-<https://www.arbeitnow.com/jobs/companies/liveeo-gmbh/tech-lead-full-stack-engineer-liveeo-gmbh-berlin-office-hybrid-196417>
-
-- **Why:** stack match: aws, express, nestjs, node.js, postgresql, react, react native, typescript; full-stack role; contract/part-time signal: temporary; posted in last 48h
-- **CV needs to cover:** vue
 
 ### 69 | Frontend Engineer React and AWS - Numentica
 `jobicy` | USA | salary n/a

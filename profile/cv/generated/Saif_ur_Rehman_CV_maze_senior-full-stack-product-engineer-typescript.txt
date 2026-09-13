@@ -1,19 +1,19 @@
 SAIF UR REHMAN
-Senior React Native Developer
+Senior Full Stack Product Engineer
 Innsbruck, Austria  |  +43 660 6519 008  |  saifaslam155@gmail.com
 github.com/saifaslam246  |  linkedin.com/in/saif-rehman-432383183  |  saifaslam246.github.io/portfolio
 
 PROFESSIONAL SUMMARY
-Mobile Developer with 4+ years delivering cross-platform apps in React Native, shipped to the App Store and Play Store with real-time chat, push notifications, offline handling and media upload. Backed by full-stack Angular, React and Node.js experience, so a mobile feature is owned end to end rather than handed off.
+Full Stack Developer with 4+ years shipping production web and mobile software, currently lead developer on a medical practice-management suite for the German and Austrian market. Comfortable across Angular, React and Next.js on the front end with Node.js and Python behind them, and experienced in the regulated-domain work that goes with it: clinical documentation, statutory insurance billing, multi-tenancy and offline-first synchronisation.
 
 TECHNICAL SKILLS
 Frontend: Angular, React, Next.js, Ionic, React Native, Flutter, TypeScript, RxJS, NgRx Signals, Redux, Tailwind CSS, Angular Material, PrimeNG
-Mobile: Flutter, React Native, Capacitor, iOS, Android
 Backend: Node.js, NestJS, Express.js, FastAPI, REST APIs, WebSockets / Socket.IO, Firebase Functions, Microservices
-Languages: TypeScript, JavaScript (ES6+), Python, SQL, HTML5, CSS3
 Cloud & DevOps: AWS (EC2, S3, Lambda, SNS), Docker, CI/CD, GitHub Actions, Vercel, Nginx
-Data: Python web scraping, Scrapy / BeautifulSoup / Playwright, ETL pipelines, Data normalisation
 Databases: PostgreSQL, MongoDB, MySQL, MariaDB, Redis, Firebase Firestore, TypeORM, Prisma, Sequelize, Mongoose
+Languages: TypeScript, JavaScript (ES6+), Python, SQL, HTML5, CSS3
+Mobile: Flutter, React Native, Capacitor, iOS, Android
+Data: Python web scraping, Scrapy / BeautifulSoup / Playwright, ETL pipelines, Data normalisation
 Domain: Healthcare / practice management, Clinical documentation, Statutory health-insurance billing, Appointment scheduling, Multi-tenant architecture, Offline-first & conflict resolution, GDPR
 Integrations: Stripe, Twilio, Firebase Cloud Messaging, OAuth 2.0, Payment Gateways
 Practices & Tools: Agile / Scrum, Code review, Playwright end-to-end testing, Unit & integration testing, i18n (DE/EN), Versioned internal libraries, Trunk-based Git, Technical documentation, Client communication, Git, GitHub, Bitbucket, Jira, Figma, ESLint, SonarQube, Postman, Android Studio, Xcode
@@ -47,6 +47,11 @@ Stack: React, JavaScript, Node.js, REST APIs
 
 SELECTED PROJECTS
 
+Atomix Logistics - 3PL Fulfilment Platform
+React, Angular, NestJS, Node.js, MariaDB, Redis, Stripe, AWS
+- Built order-fulfilment and inventory features on a 3PL platform handling real-time order tracking, custom packaging and nationwide two-day delivery.
+- Worked on the e-commerce order flow so merchant orders reach fulfilment automatically instead of being keyed in by hand.
+
 Ludwig Practice Suite - Medical Practice Software (Germany / Austria)
 Angular, Ionic, TypeScript, Next.js, React, Flutter, RxJS, Tailwind CSS, Playwright, PDF generation
 - Lead contributor to the practice dashboard, covering calendar, patients, clinical documentation, invoicing, courses and insurance tariffs in Angular and Ionic.
@@ -56,11 +61,6 @@ EquipX - Heavy Equipment Marketplace
 Angular, Next.js, Node.js, MongoDB, Socket.IO, Stripe, AWS, Docker
 - Built the searchable listing and filtering system over a large machinery catalogue, plus financing and logistics modules.
 - Implemented real-time one-to-one and group chat so buyers and sellers negotiate inside the platform.
-
-99DPF - Service Booking Platform (Web + Mobile)
-React, React Native, Node.js, MongoDB, Socket.IO, Push Notifications
-- Shipped a React Native mobile app alongside the React web client from one shared Node.js API.
-- Built real-time chat, push notifications, image upload and live order-status updates for both customers and service partners.
 
 EDUCATION
 MSc Computer Science

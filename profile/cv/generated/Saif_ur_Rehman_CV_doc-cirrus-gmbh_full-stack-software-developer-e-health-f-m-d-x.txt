@@ -1,21 +1,21 @@
 SAIF UR REHMAN
-Senior React Native Developer
+Full Stack Software Developer E-Health
 Innsbruck, Austria  |  +43 660 6519 008  |  saifaslam155@gmail.com
 github.com/saifaslam246  |  linkedin.com/in/saif-rehman-432383183  |  saifaslam246.github.io/portfolio
 
 PROFESSIONAL SUMMARY
-Mobile Developer with 4+ years delivering cross-platform apps in React Native, shipped to the App Store and Play Store with real-time chat, push notifications, offline handling and media upload. Backed by full-stack Angular, React and Node.js experience, so a mobile feature is owned end to end rather than handed off.
+Full Stack Developer with 4+ years shipping production web and mobile software, currently lead developer on a medical practice-management suite for the German and Austrian market. Comfortable across Angular, React and Next.js on the front end with Node.js and Python behind them, and experienced in the regulated-domain work that goes with it: clinical documentation, statutory insurance billing, multi-tenancy and offline-first synchronisation.
 
 TECHNICAL SKILLS
-Frontend: Angular, React, Next.js, Ionic, React Native, Flutter, TypeScript, RxJS, NgRx Signals, Redux, Tailwind CSS, Angular Material, PrimeNG
-Mobile: Flutter, React Native, Capacitor, iOS, Android
 Backend: Node.js, NestJS, Express.js, FastAPI, REST APIs, WebSockets / Socket.IO, Firebase Functions, Microservices
-Languages: TypeScript, JavaScript (ES6+), Python, SQL, HTML5, CSS3
 Cloud & DevOps: AWS (EC2, S3, Lambda, SNS), Docker, CI/CD, GitHub Actions, Vercel, Nginx
-Data: Python web scraping, Scrapy / BeautifulSoup / Playwright, ETL pipelines, Data normalisation
 Databases: PostgreSQL, MongoDB, MySQL, MariaDB, Redis, Firebase Firestore, TypeORM, Prisma, Sequelize, Mongoose
+Frontend: Angular, React, Next.js, Ionic, React Native, Flutter, TypeScript, RxJS, NgRx Signals, Redux, Tailwind CSS, Angular Material, PrimeNG
+Languages: TypeScript, JavaScript (ES6+), Python, SQL, HTML5, CSS3
+Data: Python web scraping, Scrapy / BeautifulSoup / Playwright, ETL pipelines, Data normalisation
 Domain: Healthcare / practice management, Clinical documentation, Statutory health-insurance billing, Appointment scheduling, Multi-tenant architecture, Offline-first & conflict resolution, GDPR
 Integrations: Stripe, Twilio, Firebase Cloud Messaging, OAuth 2.0, Payment Gateways
+Mobile: Flutter, React Native, Capacitor, iOS, Android
 Practices & Tools: Agile / Scrum, Code review, Playwright end-to-end testing, Unit & integration testing, i18n (DE/EN), Versioned internal libraries, Trunk-based Git, Technical documentation, Client communication, Git, GitHub, Bitbucket, Jira, Figma, ESLint, SonarQube, Postman, Android Studio, Xcode
 
 PROFESSIONAL EXPERIENCE
@@ -57,10 +57,10 @@ Angular, Next.js, Node.js, MongoDB, Socket.IO, Stripe, AWS, Docker
 - Built the searchable listing and filtering system over a large machinery catalogue, plus financing and logistics modules.
 - Implemented real-time one-to-one and group chat so buyers and sellers negotiate inside the platform.
 
-99DPF - Service Booking Platform (Web + Mobile)
-React, React Native, Node.js, MongoDB, Socket.IO, Push Notifications
-- Shipped a React Native mobile app alongside the React web client from one shared Node.js API.
-- Built real-time chat, push notifications, image upload and live order-status updates for both customers and service partners.
+HIS - Healthcare Workforce Management System
+React, React Native, TypeScript, Node.js, AWS, Docker
+- Built scheduling logic for complex hospital rostering including rotating and night shifts.
+- Implemented attendance, leave-request and overtime tracking with automated reporting, replacing manual record-keeping.
 
 EDUCATION
 MSc Computer Science
