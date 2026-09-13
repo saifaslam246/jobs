@@ -220,7 +220,7 @@
       ],
       "one_liner": "Healthcare practice-management and patient-booking platform for German and Austrian practices.",
       "bullets": [
-        "Developed patient management, clinical documentation, appointment scheduling, recurring bookings, therapist availability, waiting lists, resource management, and statutory insurance invoicing.",
+        "Developed patient management, clinical documentation, appointment scheduling, recurring bookings, therapist availability, waiting lists, resource management, and statutory insurance invoicing across a therapist dashboard, an embeddable patient booking wizard, and mobile apps.",
         "Built web and mobile interfaces with Angular, Ionic, React, Next.js, and Flutter, including offline-first synchronization, multi-tenancy, PDF workflows, Playwright testing, and a Spica backend of buckets and functions."
       ],
       "weight": 6
@@ -627,7 +627,8 @@
       "association": "TMN Development KG",
       "priority": 1,
       "description": "Ludwig is a practice-management and patient-booking platform for physiotherapy clinics in Germany and Austria. 20+ therapists use it daily and it holds records for more than 10,000 patients.\n\nIt is three products against one backend and one clinical domain model:\n• A practice dashboard where therapists run their day: patient records, clinical documentation, scheduling, resource management, absences, waiting lists and statutory health insurance invoicing\n• A booking wizard a practice embeds in its own website, so patients book without ever seeing Ludwig\n• Mobile apps for therapists\n\nThe backend runs on Spica. I modelled the data as buckets and wrote the server-side functions the three clients run against, so the clinical rules live in one place instead of being repeated in each app.\n\nTwo parts took the most thought.\n\nMulti-tenancy. One deployment serves many practices and each practice's data stays strictly separated. In healthcare that is not a nice-to-have, so it shaped the data model from the start rather than being added later.\n\nOffline-first. Treatment rooms often have no signal and a therapist still has to write notes. The app keeps working offline and syncs when it reconnects, with conflict handling so that when two people have edited the same record neither one's work quietly disappears.\n\nScheduling has more depth in it than it looks: recurring appointments, therapist absences, room and equipment availability, waiting lists, and computing free slots across all of that fast enough to draw a calendar without the user waiting.\n\nTechnologies: Angular 19, Ionic 8, TypeScript, Next.js 16, React 19, Flutter, RxJS, NgRx Signals, Tailwind CSS, Playwright, Spica (buckets and functions), PDF workflows",
-      "skills": "Angular · TypeScript · Next.js · React · Ionic · Node.js · PostgreSQL · Multi-tenant Architecture · Healthcare IT · Offline-first"
+      "skills": "Angular · TypeScript · Next.js · React · Ionic · Spica · Multi-tenant Architecture · Healthcare IT · Offline-first",
+      "verified_live": "2026-09-14 - description on LinkedIn matches this record word for word"
     },
     {
       "name": "RIP - Regional Public Registry",

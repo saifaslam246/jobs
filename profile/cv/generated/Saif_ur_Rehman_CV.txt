@@ -44,7 +44,7 @@ SELECTED PROJECTS
 
 Ludwig Practice Suite — Healthcare Practice Management and Patient Booking Platform
 Angular, Ionic, TypeScript, Next.js, React, Flutter, RxJS, Tailwind CSS, Playwright, PDF generation, Spica
-- Developed patient management, clinical documentation, appointment scheduling, recurring bookings, therapist availability, waiting lists, resource management, and statutory insurance invoicing.
+- Developed patient management, clinical documentation, appointment scheduling, recurring bookings, therapist availability, waiting lists, resource management, and statutory insurance invoicing across a therapist dashboard, an embeddable patient booking wizard, and mobile apps.
 - Built web and mobile interfaces with Angular, Ionic, React, Next.js, and Flutter, including offline-first synchronization, multi-tenancy, PDF workflows, Playwright testing, and a Spica backend of buckets and functions.
 
 Atomix Logistics — 3PL Logistics and Order Fulfilment Platform
