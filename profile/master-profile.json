@@ -152,6 +152,7 @@
         "NestJS",
         "Express.js",
         "TypeScript",
+        "Python",
         "React",
         "Angular",
         "Next.js",
@@ -179,7 +180,7 @@
         "Integrated payment gateways, third-party services, cloud infrastructure, and notification systems into client-facing platforms.",
         "Conducted code reviews, mentored junior developers, clarified client requirements, and supported delivery planning and technical decision-making."
       ],
-      "linkedin_description": "Two and a half years building web and mobile products for clients in logistics, marketplaces, real estate and field service. I started as a developer and moved into leading a team of 5-10.\n\nMost of my work was backend: system design, APIs and data. I built scalable APIs in Node.js and TypeScript, worked with SQL and NoSQL through TypeORM, Sequelize and Mongoose, and spent real time on the database structure before writing the code above it.\n\nThe harder pieces:\n• Billing systems and payment gateway integrations\n• Large CSV exports that stayed fast as the data grew\n• Asynchronous processing to keep heavy jobs off the request path\n• File and media handling with AWS S3 and Cloudinary\n• Logging and alerting through AWS SNS, so problems surfaced before clients did\n• GraphQL and Google Maps API integration\n• Unit tests with Jest\n\nThe products this went into:\n• Atomix, a 3PL logistics and fulfilment platform. I moved billing from a third-party service in-house and made the exports fast.\n• EquipX, a heavy equipment marketplace. I designed the database and built its GraphQL APIs and image pipeline.\n• SandSeekers, a Dubai real estate platform with its own CRM, pulling live feeds from Bayut, Dubizzle and Property Finder into one place.\n• Rentalytics, a data platform that scrapes and structures millions of property records.\n• HIS, a SaaS product for attendance and leave management, where I owned the backend.\n• 99DPF, a service booking platform on web and mobile, with real-time chat, push notifications and live order status.\n• CorporateMerch, a corporate gifting platform with AI-generated designs.\n\nAs team lead I reviewed code, mentored juniors, joined client calls to turn vague requirements into something we could build, and planned what shipped when.\n\nTechnologies: Node.js, NestJS, Express.js, TypeScript, React, Angular, Next.js, React Native, PostgreSQL, MongoDB, MariaDB, Redis, TypeORM, Sequelize, Mongoose, GraphQL, REST APIs, AWS (S3, SNS), Cloudinary, Docker, Firebase, Jest",
+      "linkedin_description": "Two and a half years building web and mobile products for clients in logistics, marketplaces, real estate and field service. I started as a developer and moved into leading a team of 5-10.\n\nMost of my work was backend: system design, APIs and data. I built scalable APIs in Node.js and TypeScript, worked with SQL and NoSQL through TypeORM, Sequelize and Mongoose, and spent real time on the database structure before writing the code above.\n\nThe harder pieces:\n• Billing systems and payment gateway integrations\n• Large CSV exports that stayed fast as the data grew\n• Asynchronous processing to keep heavy jobs off the request path\n• File and media handling with AWS S3 and Cloudinary\n• Logging and alerting through AWS SNS, so problems surfaced before clients did\n• GraphQL and Google Maps API integration\n• Unit tests with Jest\n\nThe products this went into:\n• Atomix, a 3PL logistics and fulfilment platform. I moved billing from a third-party service in-house and made the exports fast.\n• EquipX, a heavy equipment marketplace. I designed the database and built its GraphQL APIs and image pipeline.\n• SandSeekers, a Dubai real estate platform with its own CRM, pulling live feeds from Bayut, Dubizzle and Property Finder into one place.\n• Rentalytics, a data platform that scrapes and structures millions of property records.\n• HIS, a SaaS product for attendance and leave management, where I owned the backend.\n• 99DPF, a service booking platform on web and mobile, with real-time chat, push notifications and order status.\n• CorporateMerch, a corporate gifting platform with AI-generated designs.\n\nAs team lead I reviewed code, mentored juniors, joined client calls to turn vague requirements into something we could build, and planned what shipped when.\n\nTechnologies: Node.js, NestJS, Express.js, TypeScript, Python, React, Angular, Next.js, React Native, PostgreSQL, MongoDB, MariaDB, Redis, TypeORM, Sequelize, Mongoose, GraphQL, REST APIs, AWS (S3, SNS), Cloudinary, Docker, Firebase, Jest",
       "employment_type": "Full-time"
     }
   ],
@@ -317,27 +318,6 @@
         "Implemented the booking, dispatch and guarantee-tracking flows connecting customers to partner workshops."
       ],
       "weight": 4
-    },
-    {
-      "id": "mt-wizard",
-      "name": "Meine Termine - White-label Appointment Booking",
-      "url": null,
-      "domain": [
-        "saas",
-        "scheduling",
-        "healthcare"
-      ],
-      "tech": [
-        "Next.js",
-        "React",
-        "TypeScript",
-        "Multi-tenant"
-      ],
-      "one_liner": "Multi-tenant white-label appointment-booking wizard, the predecessor of Ludwig's patient wizard.",
-      "bullets": [
-        "Principal contributor to a multi-tenant white-label booking wizard, the predecessor of Ludwig's patient-facing flow."
-      ],
-      "weight": 3
     },
     {
       "id": "rentalytics",
@@ -639,14 +619,6 @@
       "priority": 1,
       "description": "Ludwig is a practice-management and patient-booking platform for physiotherapy clinics in Germany and Austria. 20+ therapists use it daily and it holds records for more than 10,000 patients.\n\nIt is three products against one backend and one clinical domain model:\n• A practice dashboard where therapists run their day: patient records, clinical documentation, scheduling, resource management, absences, waiting lists and statutory health insurance invoicing\n• A booking wizard a practice embeds in its own website, so patients book without ever seeing Ludwig\n• Mobile apps for therapists\n\nThe backend runs on Spica. I modelled the data as buckets and wrote the server-side functions the three clients run against, so the clinical rules live in one place instead of being repeated in each app.\n\nTwo parts took the most thought.\n\nMulti-tenancy. One deployment serves many practices and each practice's data stays strictly separated. In healthcare that is not a nice-to-have, so it shaped the data model from the start rather than being added later.\n\nOffline-first. Treatment rooms often have no signal and a therapist still has to write notes. The app keeps working offline and syncs when it reconnects, with conflict handling so that when two people have edited the same record neither one's work quietly disappears.\n\nScheduling has more depth in it than it looks: recurring appointments, therapist absences, room and equipment availability, waiting lists, and computing free slots across all of that fast enough to draw a calendar without the user waiting.\n\nTechnologies: Angular 19, Ionic 8, TypeScript, Next.js 16, React 19, Flutter, RxJS, NgRx Signals, Tailwind CSS, Playwright, Spica (buckets and functions), PDF workflows",
       "skills": "Angular · TypeScript · Next.js · React · Ionic · Node.js · PostgreSQL · Multi-tenant Architecture · Healthcare IT · Offline-first"
-    },
-    {
-      "name": "Meine Termine - White-label Appointment Booking",
-      "dates": "May 2025 - July 2026",
-      "association": "TMN Development KG",
-      "priority": 2,
-      "description": "Top contributor on a multi-tenant white-label appointment-booking product, the predecessor of Ludwig's patient-facing wizard.\n\nBuilt the per-tenant booking flows: each business configures what it asks its customers and the frontend renders those steps from that configuration, so a change needs no release. The work carried directly into Ludwig's booking wizard.\n\nTechnologies: Next.js, React, TypeScript, multi-tenant architecture",
-      "skills": "Next.js · React · TypeScript · Multi-tenant Architecture"
     },
     {
       "name": "RIP - Regional Public Registry",
