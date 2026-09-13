@@ -62,6 +62,25 @@ def blocks(d: dict) -> list[dict]:
                      ("To", str(ed.get("end") or ed.get("status", "")))],
         })
 
+    for pr in sorted(d.get("linkedin_projects", []), key=lambda x: x["priority"]):
+        if not pr["description"]:
+            out.append({
+                "field": f"Project — {pr['name']}", "where": "Profile → Projects → +",
+                "limit": 0, "text": "",
+                "note": f"Not written yet. Tell Claude {pr['needs']} and this fills in.",
+            })
+            continue
+        meta = [("Project name", pr["name"]),
+                ("Dates", pr["dates"] or "NEEDS YOUR DATES"),
+                ("Associated with", pr["association"])]
+        out.append({
+            "field": f"Project — {pr['name'].split(' -')[0]}",
+            "where": "Profile → Projects → + → fill the fields below",
+            "limit": LIMITS["role"], "text": pr["description"], "meta": meta,
+            "note": (f"Skills to tag: {pr['skills']}"
+                     + (f"  ·  Still needs {pr['needs']}." if pr.get("needs") else "")),
+        })
+
     seen, skills = set(), []
     for cat in ("Frontend", "Backend", "Databases", "Programming Languages",
                 "Cloud and DevOps", "Mobile", "Integrations and Testing"):

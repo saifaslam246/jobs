@@ -602,5 +602,78 @@
   ],
   "_do_not_claim": "Technologies Saif has confirmed he has not worked with. send.py refuses any email containing one. Flutter, Prisma, FastAPI, NgRx, Firebase Functions and Microservices were removed from this list on 13 Sep after he confirmed they are his.",
   "summary": "Lead Full Stack Developer with 4+ years of experience building and delivering production web and mobile applications. Experienced in owning products from architecture and UI design through development, deployment, and ongoing improvement. Currently leading development of a healthcare practice-management and patient-booking platform used by 20+ therapists and more than 10,000 patients across Germany and Austria. Strong background in Angular, React, Next.js, Node.js, TypeScript, real-time systems, healthcare workflows, cloud infrastructure, and team leadership.",
-  "_summary": "One summary, written by Saif. There are no per-variant rewrites: tailoring reorders his existing material and mirrors the job title, it never rewrites his prose into something he did not write."
+  "_summary": "One summary, written by Saif. There are no per-variant rewrites: tailoring reorders his existing material and mirrors the job title, it never rewrites his prose into something he did not write.",
+  "_linkedin_projects": "Projects to add to LinkedIn, in priority order. LinkedIn carries more detail than the CV by design - these are written longer than their CV equivalents on purpose. `dates` empty means Saif still needs to supply them; never invent a date.",
+  "linkedin_projects": [
+    {
+      "name": "Ludwig Practice Suite",
+      "dates": "July 2025 - Present",
+      "association": "TMN Development KG",
+      "priority": 1,
+      "description": "Lead developer on Ludwig, a healthcare practice-management and patient-booking platform used by 20+ therapists and more than 10,000 patients across Germany and Austria.\n\nBuilt Ludwig largely from scratch, owning product architecture, UI design, frontend development, backend integration, testing, deployment, and ongoing improvements. I work directly with the CEO to turn business requirements into scalable technical solutions and user-friendly healthcare workflows.\n\nWhat I built: clinical documentation, patient management, appointment scheduling with recurring bookings, resource management, therapist absences, waiting lists and available time-slot computation, and statutory health insurance invoicing. I implemented multi-tenant architecture so one deployment serves many practices, and offline-first synchronization with conflict handling so therapists keep working without a connection and nobody's changes get overwritten.\n\nThe suite spans a practice dashboard, a patient-facing booking wizard embeddable in a practice's own website, and native mobile apps - all against one backend and one clinical domain model.\n\nTechnologies: Angular 19, Ionic 8, TypeScript, Next.js 16, React 19, Flutter, RxJS, NgRx Signals, Tailwind CSS, Playwright, PDF workflows",
+      "skills": "Angular · TypeScript · Next.js · React · Ionic · Node.js · PostgreSQL · Multi-tenant Architecture · Healthcare IT · Offline-first"
+    },
+    {
+      "name": "Meine Termine - White-label Appointment Booking",
+      "dates": "May 2025 - July 2026",
+      "association": "TMN Development KG",
+      "priority": 2,
+      "description": "Top contributor on a multi-tenant white-label appointment-booking product, the predecessor of Ludwig's patient-facing wizard.\n\nBuilt the per-tenant booking flows: each business configures what it asks its customers and the frontend renders those steps from that configuration, so a change needs no release. The work carried directly into Ludwig's booking wizard.\n\nTechnologies: Next.js, React, TypeScript, multi-tenant architecture",
+      "skills": "Next.js · React · TypeScript · Multi-tenant Architecture"
+    },
+    {
+      "name": "RIP - Regional Public Registry",
+      "dates": "",
+      "association": "TMN Development KG",
+      "priority": 3,
+      "description": "",
+      "skills": "",
+      "needs": "what it does, who uses it, what you built, the stack, and the dates"
+    },
+    {
+      "name": "Business Connector",
+      "dates": "",
+      "association": "TMN Development KG",
+      "priority": 4,
+      "description": "",
+      "skills": "",
+      "needs": "what it connects and for whom, what you built, the stack, and the dates"
+    },
+    {
+      "name": "Business Card Management Platform",
+      "dates": "",
+      "association": "TMN Development KG",
+      "priority": 5,
+      "description": "",
+      "skills": "",
+      "needs": "what it does, what you built, the stack, and the dates"
+    },
+    {
+      "name": "SandSeekers - Dubai Real Estate Platform",
+      "dates": "",
+      "association": "Pikessoft",
+      "priority": 6,
+      "description": "Led development of a real-estate platform for the Dubai market, letting users buy, rent and explore residential and commercial property.\n\nBuilt a custom CRM to manage listings, leads and property-demo bookings, and integrated live property feeds from Bayut, Dubizzle and Property Finder, normalising inconsistent sources into one searchable catalogue. I handled client communication, gathered requirements, and managed the development team.\n\nTechnologies: Next.js, Node.js, MongoDB, third-party data integrations",
+      "skills": "Next.js · Node.js · MongoDB · CRM · Data Integration · Team Leadership",
+      "needs": "your start and end dates"
+    },
+    {
+      "name": "99DPF - Service Booking Platform (Web and Mobile)",
+      "dates": "",
+      "association": "Pikessoft",
+      "priority": 7,
+      "description": "Built a web and mobile platform for booking diesel particulate filter cleaning, connecting customers with partner workshops.\n\nShipped a React Native mobile app alongside the React web client from one shared Node.js API, with real-time chat, push notifications, image upload and live order-status updates for both customers and service partners. Implemented the booking, dispatch and guarantee-tracking flows.\n\nTechnologies: React, React Native, Node.js, MongoDB, Socket.IO, push notifications",
+      "skills": "React · React Native · Node.js · MongoDB · Socket.IO · Mobile Development",
+      "needs": "your start and end dates"
+    },
+    {
+      "name": "CorporateMerch.com - AI Merchandise Platform",
+      "dates": "",
+      "association": "Pikessoft",
+      "priority": 8,
+      "description": "Built a corporate gifting platform where companies design and order branded merchandise, with AI generating custom designs in seconds.\n\nDelivered the storefront, product configurator and ordering flow, and integrated CRM systems so gifting and giveaway campaigns run automatically.\n\nTechnologies: Next.js, Tailwind CSS, AI integration, CRM integration",
+      "skills": "Next.js · Tailwind CSS · AI Integration · E-commerce",
+      "needs": "your start and end dates"
+    }
+  ]
 }
