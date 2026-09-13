@@ -251,14 +251,15 @@
         "e-commerce"
       ],
       "tech": [
-        "Angular",
+        "React",
         "Next.js",
         "Node.js",
+        "Express.js",
+        "GraphQL",
         "MongoDB",
-        "Socket.IO",
+        "Cloudinary",
         "Stripe",
-        "AWS",
-        "Docker"
+        "AWS"
       ],
       "one_liner": "Marketplace for listing, buying, selling and financing heavy machinery, with real-time chat and rental management.",
       "bullets": [
@@ -708,8 +709,8 @@
       "priority": 48,
       "dates": "September 2022 - March 2023",
       "association": "Pikessoft",
-      "skills": "Node.js · GraphQL · MongoDB · Cloudinary · Database Design",
-      "description": "EquipX is a marketplace for finding and buying heavy equipment.\n\nI worked on the backend. Before any code I modelled the database from an ERD, because a marketplace's listing and category structure is the one thing you cannot cheaply change later.\n\nOn top of that I built the GraphQL APIs, so each client asks for exactly the fields it needs instead of over-fetching a whole listing page, and an image pipeline that processes uploaded product photos and generates the sizes each screen needs. Those are stored on Cloudinary, so pages stay quick on a slow connection.\n\nTechnologies: Node.js, GraphQL, MongoDB, Cloudinary"
+      "skills": "Node.js · MongoDB · GraphQL · React.js · Cloudinary",
+      "description": "EquipX is a marketplace for finding and buying heavy equipment.\n\nI worked across both sides, with most of my time on the backend. Before any code I modelled the database from an ERD, because a marketplace's listing and category structure is the one thing you cannot cheaply change later.\n\nOn top of that I built the GraphQL APIs, so each client asks for exactly the fields it needs instead of over-fetching a whole listing page, and an image pipeline that processes uploaded product photos and generates the sizes each screen needs. Those are stored on Cloudinary, so pages stay quick on a slow connection.\n\nTechnologies: React, Next.js, Node.js, Express.js, GraphQL, MongoDB, Cloudinary, Stripe, AWS"
     },
     {
       "name": "Definepedia - Tutoring Marketplace",
@@ -842,6 +843,22 @@
       "not": [
         "MongoDB",
         "MERN Stack"
+      ]
+    },
+    "equipx": {
+      "database": "MongoDB - one of the two NoSQL projects",
+      "stack_per_saif": [
+        "React",
+        "Node.js",
+        "Next.js",
+        "Express",
+        "MongoDB",
+        "Cloudinary"
+      ],
+      "_open": [
+        "Angular on the CV is not tagged and he did not name it - probably wrong",
+        "Socket.IO and real-time chat are on the CV only",
+        "Stripe is tagged but payments are not described"
       ]
     }
   }
