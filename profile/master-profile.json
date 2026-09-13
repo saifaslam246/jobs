@@ -448,9 +448,11 @@
         "e-commerce"
       ],
       "tech": [
-        "React",
-        "AWS",
-        "Payment Gateway"
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "Mongoose",
+        "Stripe"
       ],
       "one_liner": "Education platform providing study resources and paid tutor support.",
       "bullets": [
@@ -717,8 +719,8 @@
       "priority": 49,
       "dates": "April 2022 - August 2022",
       "association": "Innovage.io",
-      "skills": "Node.js · Express.js · MongoDB · Mongoose · Payment Integration",
-      "description": "Definepedia is a tutoring marketplace in the mould of Chegg: students post questions, and tutors either answer them or get hired for longer help.\n\nI built the backend from scratch. I designed the architecture and the data model in Express.js and MongoDB with Mongoose schemas, and added payment integration so a student can hire and pay a tutor inside the platform rather than being sent somewhere else.\n\nTechnologies: Node.js, Express.js, MongoDB, Mongoose"
+      "skills": "Node.js · Express.js · MongoDB · Mongoose · Stripe",
+      "description": "Definepedia is a tutoring marketplace in the mould of Chegg: students post questions, and tutors either answer them or get hired for longer help.\n\nI built the backend from scratch. I designed the architecture and the data model in Express.js and MongoDB with Mongoose schemas, and added Stripe payments so a student can hire and pay a tutor inside the platform rather than being sent somewhere else.\n\nTechnologies: Node.js, Express.js, MongoDB, Mongoose, Stripe"
     }
   ],
   "linkedin_about": "I'm a Full Stack Developer based in Innsbruck, Austria, with 4+ years of experience building web and mobile products.\n\nRight now I lead development on Ludwig, a practice-management platform for physiotherapy clinics. I built most of it from scratch, and it runs day to day for 20+ therapists and more than 10,000 patients in Germany and Austria. I work in a team of 3-4 engineers and I'm involved from planning through to release.\n\nBefore this I spent two and a half years at Pikessoft, in teams of 5-10 developers, working across a lot of different products: a 3PL logistics and order fulfilment system, a heavy equipment marketplace, a real estate platform with its own CRM for the Dubai market, a service booking product for web and mobile, and a data platform that collects and structures millions of property listings.\n\nPicking up a new domain is normal for me. Logistics, healthcare, real estate, e-commerce. The business rules change, the engineering doesn't.\n\nI've worked in Agile/Scrum teams throughout, with daily standups, sprint planning and code reviews as part of the routine.\n\n⚙️ Frontend: Angular, React, Next.js, TypeScript, JavaScript, RxJS, NgRx, Redux, Tailwind CSS, Angular Material, PrimeNG\n🛠️ Backend: Node.js, NestJS, Express.js, FastAPI, REST APIs, WebSockets, Socket.IO, Microservices\n📱 Mobile: React Native, Ionic, Flutter\n🗄️ Databases: PostgreSQL, MySQL, MongoDB, MariaDB, Redis, Firestore, Prisma, TypeORM\n☁️ Cloud & DevOps: AWS (EC2, S3, Lambda, SNS), Docker, Nginx, GitHub Actions, CI/CD, Vercel\n✅ Code Quality: ESLint, Prettier, Husky, SonarQube, Playwright, code reviews\n🔀 Version Control: Git, GitHub, GitLab, Bitbucket\n📋 Project Management: Jira, Trello, ClickUp\n🧩 Other: Stripe, Twilio, Firebase, OAuth, Google Maps APIs, third-party API integrations\n\nOpen to full-time roles as well as contract, part-time and project work.\n📧 saif@tmndevelopment.com",
@@ -863,6 +865,10 @@
         "GraphQL"
       ],
       "_note": "Saif confirmed 13 Sep 2026: React not Angular, Stripe and Socket.IO real, no GraphQL on this project."
+    },
+    "definepedia": {
+      "database": "MongoDB with Mongoose - correct, one of the two NoSQL projects",
+      "mern_stack_tag": "correct here"
     }
   }
 }
