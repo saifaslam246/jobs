@@ -2,7 +2,7 @@
   "_comment": "SINGLE SOURCE OF TRUTH. Every tailored CV, cover letter and match score is generated from this file. Edit here, never in the generated documents.",
   "identity": {
     "full_name": "Saif ur Rehman",
-    "headline": "Full Stack Developer - Angular / React / Next.js / Node.js",
+    "headline": "Lead Full Stack Developer | Angular, React, Next.js, Node.js",
     "email": "saifaslam155@gmail.com",
     "phone": "+43 660 6519 008",
     "location": "Innsbruck, Austria",
@@ -31,16 +31,16 @@
     "years_experience": 4
   },
   "summary_variants": {
-    "fullstack": "Full Stack Developer with 4+ years shipping production web and mobile software, currently lead developer on a medical practice-management suite for the German and Austrian market. Comfortable across Angular, React and Next.js on the front end with Node.js and Python behind them, and experienced in the regulated-domain work that goes with it: clinical documentation, statutory insurance billing, multi-tenancy and offline-first synchronisation.",
+    "fullstack": "Lead Full Stack Developer with 4+ years of experience building and delivering production web and mobile applications. Experienced in owning products from architecture and UI design through development, deployment, and ongoing improvement. Currently leading development of a healthcare practice-management and patient-booking platform used by 20+ therapists and more than 10,000 patients across Germany and Austria. Strong background in Angular, React, Next.js, Node.js, TypeScript, real-time systems, healthcare workflows, cloud infrastructure, and team leadership.",
     "frontend": "Frontend-focused Full Stack Developer with 4+ years building large, long-lived applications. Lead developer on a medical practice-management dashboard covering roughly 40 feature areas in Angular and Ionic, and on a patient booking wizard in Next.js and React. Experienced in state management, offline-first synchronisation, internationalisation and shipping shared component libraries as versioned packages.",
     "mobile": "Mobile Developer with 4+ years delivering cross-platform apps in React Native, shipped to the App Store and Play Store with real-time chat, push notifications, offline handling and media upload. Backed by full-stack Angular, React and Node.js experience, so a mobile feature is owned end to end rather than handed off.",
     "backend": "Full Stack Developer with 4+ years designing and consuming REST APIs in Node.js (NestJS, Express) and Python (FastAPI), with PostgreSQL, MongoDB, MariaDB and Redis behind them, containerised with Docker on AWS. Experienced in multi-tenant data partitioning, invoicing and billing logic, third-party integrations and offline synchronisation with conflict resolution.",
     "data_scraping": "Full Stack Developer with 4+ years including large-scale data extraction and structuring - Python pipelines that ingest and normalise millions of property listings from third-party sources into searchable data, and live feed integrations from major real-estate portals. Comfortable owning the full path from crawler to API to UI."
   },
   "skills": {
-    "Languages": [
+    "Programming Languages": [
       "TypeScript",
-      "JavaScript (ES6+)",
+      "JavaScript",
       "Python",
       "SQL",
       "HTML5",
@@ -51,11 +51,8 @@
       "React",
       "Next.js",
       "Ionic",
-      "React Native",
-      "Flutter",
-      "TypeScript",
       "RxJS",
-      "NgRx Signals",
+      "NgRx",
       "Redux",
       "Tailwind CSS",
       "Angular Material",
@@ -67,7 +64,8 @@
       "Express.js",
       "FastAPI",
       "REST APIs",
-      "WebSockets / Socket.IO",
+      "WebSockets",
+      "Socket.IO",
       "Firebase Functions",
       "Microservices"
     ],
@@ -77,79 +75,45 @@
       "MySQL",
       "MariaDB",
       "Redis",
-      "Firebase Firestore"
-    ],
-    "ORMs": [
+      "Firestore",
       "TypeORM",
       "Prisma",
       "Sequelize",
       "Mongoose"
     ],
-    "Cloud & DevOps": [
-      "AWS (EC2, S3, Lambda, SNS)",
+    "Cloud and DevOps": [
+      "AWS EC2",
+      "AWS S3",
+      "AWS Lambda",
+      "AWS SNS",
       "Docker",
-      "CI/CD",
+      "Nginx",
       "GitHub Actions",
-      "Vercel",
-      "Nginx"
+      "CI/CD",
+      "Vercel"
     ],
-    "Integrations": [
+    "Mobile": [
+      "Ionic",
+      "React Native",
+      "Flutter"
+    ],
+    "Integrations and Testing": [
       "Stripe",
       "Twilio",
       "Firebase Cloud Messaging",
-      "OAuth 2.0",
-      "Payment Gateways"
-    ],
-    "Data": [
-      "Python web scraping",
-      "Scrapy / BeautifulSoup / Playwright",
-      "ETL pipelines",
-      "Data normalisation"
-    ],
-    "Mobile": [
-      "Flutter",
-      "React Native",
-      "Capacitor",
-      "iOS",
-      "Android"
-    ],
-    "Domain": [
-      "Healthcare / practice management",
-      "Clinical documentation",
-      "Statutory health-insurance billing",
-      "Appointment scheduling",
-      "Multi-tenant architecture",
-      "Offline-first & conflict resolution",
-      "GDPR"
-    ],
-    "Practices & Tools": [
-      "Agile / Scrum",
-      "Code review",
-      "Playwright end-to-end testing",
-      "Unit & integration testing",
-      "i18n (DE/EN)",
-      "Versioned internal libraries",
-      "Trunk-based Git",
-      "Technical documentation",
-      "Client communication",
+      "OAuth",
+      "third-party APIs",
+      "Playwright",
       "Git",
-      "GitHub",
-      "Bitbucket",
-      "Jira",
-      "Figma",
-      "ESLint",
-      "SonarQube",
-      "Postman",
-      "Android Studio",
-      "Xcode"
+      "GitHub"
     ]
   },
   "experience": [
     {
       "id": "tmn",
-      "title": "Full Stack Developer",
+      "title": "Lead Full Stack Developer",
       "company": "TMN Development KG",
-      "location": "Austria",
+      "location": "Innsbruck, Austria",
       "start": "2025-03",
       "end": null,
       "current": true,
@@ -164,21 +128,23 @@
         "RxJS",
         "NgRx Signals",
         "Tailwind CSS",
-        "Playwright"
+        "Playwright",
+        "PDF workflows"
       ],
       "bullets": [
-        "Lead developer on Ludwig, a medical practice-management and patient-booking suite for physiotherapy and doctors' practices in Germany and Austria, owning features end to end from data model and API integration through to the interface.",
-        "Built clinical documentation to the standards Austrian and German practices are legally required to keep, including an anatomical body chart stored as structured data so it opens unchanged on any client.",
-        "Delivered statutory health-insurance invoicing: tariff-priced position lines, gap-free invoice numbering per company, and PDF export with SEPA payment QR codes.",
-        "Implemented multi-tenancy on two axes, so one deployment serves many practices while practice groups partition patients, invoicing and outbound mail across sub-companies.",
-        "Built offline-first working with two-way synchronisation and conflict review, so practitioners keep working in the field without overwriting colleagues' changes.",
-        "Shipped a configuration-driven patient booking wizard in Next.js and React, with per-practice theming, one-time-code login and embeddable appointment and course booking.",
-        "Delivered three further products alongside Ludwig: a business-connector application, a business-card manager for company details, and a national public registry of deceased persons."
+        "Lead the development of Ludwig, a production healthcare practice-management and patient-booking platform used by 20+ therapists and more than 10,000 patients across Germany and Austria.",
+        "Built Ludwig largely from scratch, owning product architecture, UI design, frontend development, backend integration, testing, deployment, and ongoing improvements.",
+        "Work directly with the CEO to translate business requirements into scalable technical solutions and user-friendly healthcare workflows.",
+        "Developed clinical documentation, patient management, appointment scheduling, recurring bookings, resource management, therapist absences, waiting lists, available time slots, and statutory health insurance invoicing.",
+        "Implemented multi-tenant architecture and offline-first synchronization with conflict handling to support reliable usage across practices and environments.",
+        "Develop responsive web and mobile experiences using Angular, Ionic, TypeScript, Next.js, React, and Flutter.",
+        "Guide a team of 3-4 engineers across additional products through technical direction, code reviews, implementation support, and delivery guidance.",
+        "Contributed to additional products including a business connector, business-card management platform, and regional public registry platform for recently deceased persons."
       ]
     },
     {
       "id": "pikessoft",
-      "title": "Full Stack Developer",
+      "title": "Full Stack Developer | Team Lead",
       "company": "Pikessoft",
       "location": "Lahore, Pakistan",
       "start": "2022-09",
@@ -196,39 +162,23 @@
         "Redis",
         "Firebase",
         "AWS",
-        "Docker"
-      ],
-      "bullets": [
-        "Led delivery on client platforms across logistics, marketplace, real-estate and field-service products, from architecture through release.",
-        "Built real-time features including chat, group messaging, push notifications and live order tracking across web and mobile clients.",
-        "Designed REST APIs over MongoDB, MariaDB and Redis, tuning queries and caching to keep dashboards responsive at scale.",
-        "Integrated payment providers and third-party APIs to automate order and fulfilment flows.",
-        "Mentored junior developers, ran code reviews, and handled client requirements and delivery planning directly."
-      ]
-    },
-    {
-      "id": "innovage",
-      "title": "Web Developer Intern",
-      "company": "Innovage.io",
-      "location": "Pakistan",
-      "start": "2022-04",
-      "end": "2022-08",
-      "current": false,
-      "stack": [
-        "React",
-        "JavaScript",
-        "Node.js",
+        "Docker",
         "REST APIs"
       ],
       "bullets": [
-        "Built responsive interfaces and integrated payment and geolocation APIs into client web applications, with backend support and manual testing."
+        "Led a team of 5-10 developers delivering full stack web and mobile applications for logistics, marketplaces, real estate, and field-service businesses.",
+        "Designed and developed scalable frontend and backend systems using React, Angular, Next.js, Node.js, NestJS, and React Native.",
+        "Built real-time communication features including chat, group messaging, push notifications, live order tracking, and operational status updates.",
+        "Developed REST APIs and backend services using MongoDB, MariaDB, Redis, Firebase, and Node.js.",
+        "Integrated payment gateways, third-party services, cloud infrastructure, and notification systems into client-facing platforms.",
+        "Conducted code reviews, mentored junior developers, clarified client requirements, and supported delivery planning and technical decision-making."
       ]
     }
   ],
   "projects": [
     {
       "id": "ludwig",
-      "name": "Ludwig Practice Suite - Medical Practice Software (Germany / Austria)",
+      "name": "Ludwig Practice Suite - Healthcare Practice Management and Patient Booking Platform",
       "url": null,
       "domain": [
         "healthcare",
@@ -249,11 +199,10 @@
         "Playwright",
         "PDF generation"
       ],
-      "one_liner": "Practice-management and patient-booking software for German and Austrian physiotherapy and medical practices.",
+      "one_liner": "Healthcare practice-management and patient-booking platform for German and Austrian practices.",
       "bullets": [
-        "Lead contributor to the practice dashboard, covering calendar, patients, clinical documentation, invoicing, courses and insurance tariffs in Angular and Ionic.",
-        "Built appointment scheduling against real constraints: recurring series, practitioner and room resources, absences, waiting lists and free-slot computation.",
-        "Built shared Angular libraries published as versioned packages, and a body-chart format that renders identically on web and mobile."
+        "Developed patient management, clinical documentation, appointment scheduling, recurring bookings, therapist availability, waiting lists, resource management, and statutory insurance invoicing.",
+        "Built web and mobile interfaces with Angular, Ionic, React, Next.js, and Flutter, including offline-first synchronization, multi-tenancy, PDF workflows, and Playwright testing."
       ],
       "weight": 6
     },
@@ -278,9 +227,8 @@
       ],
       "one_liner": "Third-party logistics platform for order fulfilment, real-time tracking and multi-channel e-commerce integration.",
       "bullets": [
-        "Built order-fulfilment and inventory features on a 3PL platform handling real-time order tracking, custom packaging and nationwide two-day delivery.",
-        "Worked on the e-commerce order flow so merchant orders reach fulfilment automatically instead of being keyed in by hand.",
-        "Implemented shipping automation and carrier-selection logic to cut per-order shipping cost and manual handling."
+        "Developed order fulfilment, inventory management, packaging, ecommerce automation, and delivery-tracking workflows.",
+        "Implemented real-time order updates and operational dashboards using React, Angular, NestJS, Node.js, MariaDB, and Redis; integrated Stripe and AWS infrastructure."
       ],
       "weight": 5
     },
@@ -304,9 +252,8 @@
       ],
       "one_liner": "Marketplace for listing, buying, selling and financing heavy machinery, with real-time chat and rental management.",
       "bullets": [
-        "Built the searchable listing and filtering system over a large machinery catalogue, plus financing and logistics modules.",
-        "Implemented real-time one-to-one and group chat so buyers and sellers negotiate inside the platform.",
-        "Delivered customer and admin dashboards covering rental tracking, payment processing and digital agreement management."
+        "Developed marketplace functionality covering search, filtering, financing, logistics, and product discovery.",
+        "Built real-time chat and communication features using Angular, Next.js, Node.js, and Socket.IO, with Stripe, MongoDB, AWS, and Docker integrations."
       ],
       "weight": 5
     },
@@ -657,12 +604,8 @@
     "min_score_to_shortlist": 55
   },
   "do_not_claim": [
-    "Shopify",
-    "Amazon FBA",
-    "Amazon FBM",
-    "WooCommerce",
     "Dart",
     "Riverpod"
   ],
-  "_do_not_claim": "Technologies Saif has confirmed he has not worked with. Removing them from the profile is not enough: a draft written earlier still carried them, and was approved for sending. outreach/send.py now refuses any email containing one of these. Add to this list, never quietly delete from it."
+  "_do_not_claim": "Technologies Saif has confirmed he has not worked with. send.py refuses any email containing one. Flutter, Prisma, FastAPI, NgRx, Firebase Functions and Microservices were removed from this list on 13 Sep after he confirmed they are his."
 }

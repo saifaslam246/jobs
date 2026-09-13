@@ -1,5 +1,5 @@
 SAIF UR REHMAN
-Full Stack Developer - Angular / React / Next.js / Node.js
+Lead Full Stack Developer | Angular, React, Next.js, Node.js
 Innsbruck, Austria  |  +43 660 6519 008  |  saifaslam155@gmail.com
 github.com/saifaslam246  |  linkedin.com/in/saif-rehman-432383183  |  saifaslam246.github.io/portfolio
 
@@ -7,60 +7,54 @@ PROFESSIONAL SUMMARY
 Frontend-focused Full Stack Developer with 4+ years building large, long-lived applications. Lead developer on a medical practice-management dashboard covering roughly 40 feature areas in Angular and Ionic, and on a patient booking wizard in Next.js and React. Experienced in state management, offline-first synchronisation, internationalisation and shipping shared component libraries as versioned packages.
 
 TECHNICAL SKILLS
-Languages: TypeScript, JavaScript (ES6+), Python, SQL, HTML5, CSS3
-Frontend: Angular, React, Next.js, Ionic, React Native, Flutter, TypeScript, RxJS, NgRx Signals, Redux, Tailwind CSS, Angular Material, PrimeNG
-Backend: Node.js, NestJS, Express.js, FastAPI, REST APIs, WebSockets / Socket.IO, Firebase Functions, Microservices
-Databases: PostgreSQL, MongoDB, MySQL, MariaDB, Redis, Firebase Firestore, TypeORM, Prisma, Sequelize, Mongoose
-Cloud & DevOps: AWS (EC2, S3, Lambda, SNS), Docker, CI/CD, GitHub Actions, Vercel, Nginx
-Integrations: Stripe, Twilio, Firebase Cloud Messaging, OAuth 2.0, Payment Gateways
-Data: Python web scraping, Scrapy / BeautifulSoup / Playwright, ETL pipelines, Data normalisation
-Mobile: Flutter, React Native, Capacitor, iOS, Android
-Domain: Healthcare / practice management, Clinical documentation, Statutory health-insurance billing, Appointment scheduling, Multi-tenant architecture, Offline-first & conflict resolution, GDPR
-Practices & Tools: Agile / Scrum, Code review, Playwright end-to-end testing, Unit & integration testing, i18n (DE/EN), Versioned internal libraries, Trunk-based Git, Technical documentation, Client communication, Git, GitHub, Bitbucket, Jira, Figma, ESLint, SonarQube, Postman, Android Studio, Xcode
+Programming Languages: TypeScript, JavaScript, Python, SQL, HTML5, CSS3
+Frontend: Angular, React, Next.js, Ionic, RxJS, NgRx, Redux, Tailwind CSS, Angular Material, PrimeNG
+Backend: Node.js, NestJS, Express.js, FastAPI, REST APIs, WebSockets, Socket.IO, Firebase Functions, Microservices
+Databases: PostgreSQL, MongoDB, MySQL, MariaDB, Redis, Firestore, TypeORM, Prisma, Sequelize, Mongoose
+Cloud and DevOps: AWS EC2, AWS S3, AWS Lambda, AWS SNS, Docker, Nginx, GitHub Actions, CI/CD, Vercel
+Mobile: Ionic, React Native, Flutter
+Integrations and Testing: Stripe, Twilio, Firebase Cloud Messaging, OAuth, third-party APIs, Playwright, Git, GitHub
 
 PROFESSIONAL EXPERIENCE
 
-Full Stack Developer
-TMN Development KG - Austria | Mar 2025 - Present
-- Lead developer on Ludwig, a medical practice-management and patient-booking suite for physiotherapy and doctors' practices in Germany and Austria, owning features end to end from data model and API integration through to the interface.
-- Built clinical documentation to the standards Austrian and German practices are legally required to keep, including an anatomical body chart stored as structured data so it opens unchanged on any client.
-- Delivered statutory health-insurance invoicing: tariff-priced position lines, gap-free invoice numbering per company, and PDF export with SEPA payment QR codes.
-- Implemented multi-tenancy on two axes, so one deployment serves many practices while practice groups partition patients, invoicing and outbound mail across sub-companies.
-- Built offline-first working with two-way synchronisation and conflict review, so practitioners keep working in the field without overwriting colleagues' changes.
-- Shipped a configuration-driven patient booking wizard in Next.js and React, with per-practice theming, one-time-code login and embeddable appointment and course booking.
-- Delivered three further products alongside Ludwig: a business-connector application, a business-card manager for company details, and a national public registry of deceased persons.
-Stack: Angular 19, Ionic 8, TypeScript, Next.js 16, React 19, Flutter, RxJS, NgRx Signals, Tailwind CSS, Playwright
+Lead Full Stack Developer
+TMN Development KG - Innsbruck, Austria | Mar 2025 - Present
+- Lead the development of Ludwig, a production healthcare practice-management and patient-booking platform used by 20+ therapists and more than 10,000 patients across Germany and Austria.
+- Built Ludwig largely from scratch, owning product architecture, UI design, frontend development, backend integration, testing, deployment, and ongoing improvements.
+- Work directly with the CEO to translate business requirements into scalable technical solutions and user-friendly healthcare workflows.
+- Developed clinical documentation, patient management, appointment scheduling, recurring bookings, resource management, therapist absences, waiting lists, available time slots, and statutory health insurance invoicing.
+- Implemented multi-tenant architecture and offline-first synchronization with conflict handling to support reliable usage across practices and environments.
+- Develop responsive web and mobile experiences using Angular, Ionic, TypeScript, Next.js, React, and Flutter.
+- Guide a team of 3-4 engineers across additional products through technical direction, code reviews, implementation support, and delivery guidance.
+- Contributed to additional products including a business connector, business-card management platform, and regional public registry platform for recently deceased persons.
+Stack: Angular 19, Ionic 8, TypeScript, Next.js 16, React 19, Flutter, RxJS, NgRx Signals, Tailwind CSS, Playwright, PDF workflows
 
-Full Stack Developer
+Full Stack Developer | Team Lead
 Pikessoft - Lahore, Pakistan | Sep 2022 - Feb 2025
-- Led delivery on client platforms across logistics, marketplace, real-estate and field-service products, from architecture through release.
-- Built real-time features including chat, group messaging, push notifications and live order tracking across web and mobile clients.
-- Designed REST APIs over MongoDB, MariaDB and Redis, tuning queries and caching to keep dashboards responsive at scale.
-- Integrated payment providers and third-party APIs to automate order and fulfilment flows.
-- Mentored junior developers, ran code reviews, and handled client requirements and delivery planning directly.
-Stack: React, Angular, Next.js, React Native, Node.js, NestJS, MongoDB, MariaDB, Redis, Firebase, AWS, Docker
-
-Web Developer Intern
-Innovage.io - Pakistan | Apr 2022 - Aug 2022
-- Built responsive interfaces and integrated payment and geolocation APIs into client web applications, with backend support and manual testing.
-Stack: React, JavaScript, Node.js, REST APIs
+- Led a team of 5-10 developers delivering full stack web and mobile applications for logistics, marketplaces, real estate, and field-service businesses.
+- Designed and developed scalable frontend and backend systems using React, Angular, Next.js, Node.js, NestJS, and React Native.
+- Built real-time communication features including chat, group messaging, push notifications, live order tracking, and operational status updates.
+- Developed REST APIs and backend services using MongoDB, MariaDB, Redis, Firebase, and Node.js.
+- Integrated payment gateways, third-party services, cloud infrastructure, and notification systems into client-facing platforms.
+- Conducted code reviews, mentored junior developers, clarified client requirements, and supported delivery planning and technical decision-making.
+Stack: React, Angular, Next.js, React Native, Node.js, NestJS, MongoDB, MariaDB, Redis, Firebase, AWS, Docker, REST APIs
 
 SELECTED PROJECTS
 
-Ludwig Practice Suite - Medical Practice Software (Germany / Austria)
+Ludwig Practice Suite - Healthcare Practice Management and Patient Booking Platform
 Angular, Ionic, TypeScript, Next.js, React, Flutter, RxJS, Tailwind CSS, Playwright, PDF generation
-- Lead contributor to the practice dashboard, covering calendar, patients, clinical documentation, invoicing, courses and insurance tariffs in Angular and Ionic.
-- Built appointment scheduling against real constraints: recurring series, practitioner and room resources, absences, waiting lists and free-slot computation.
+- Developed patient management, clinical documentation, appointment scheduling, recurring bookings, therapist availability, waiting lists, resource management, and statutory insurance invoicing.
+- Built web and mobile interfaces with Angular, Ionic, React, Next.js, and Flutter, including offline-first synchronization, multi-tenancy, PDF workflows, and Playwright testing.
 
 Atomix Logistics - 3PL Fulfilment Platform
 React, Angular, NestJS, Node.js, MariaDB, Redis, Stripe, AWS
-- Built order-fulfilment and inventory features on a 3PL platform handling real-time order tracking, custom packaging and nationwide two-day delivery.
-- Worked on the e-commerce order flow so merchant orders reach fulfilment automatically instead of being keyed in by hand.
+- Developed order fulfilment, inventory management, packaging, ecommerce automation, and delivery-tracking workflows.
+- Implemented real-time order updates and operational dashboards using React, Angular, NestJS, Node.js, MariaDB, and Redis; integrated Stripe and AWS infrastructure.
 
 EquipX - Heavy Equipment Marketplace
 Angular, Next.js, Node.js, MongoDB, Socket.IO, Stripe, AWS, Docker
-- Built the searchable listing and filtering system over a large machinery catalogue, plus financing and logistics modules.
-- Implemented real-time one-to-one and group chat so buyers and sellers negotiate inside the platform.
+- Developed marketplace functionality covering search, filtering, financing, logistics, and product discovery.
+- Built real-time chat and communication features using Angular, Next.js, Node.js, and Socket.IO, with Stripe, MongoDB, AWS, and Docker integrations.
 
 EDUCATION
 MSc Computer Science

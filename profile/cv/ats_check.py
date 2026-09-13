@@ -26,7 +26,10 @@ STANDARD_HEADINGS = [
     "PROFESSIONAL EXPERIENCE", "EXPERIENCE", "WORK EXPERIENCE",
     "EDUCATION", "CERTIFICATIONS", "LANGUAGES", "SELECTED PROJECTS", "PROJECTS",
 ]
-DATE_RE = re.compile(r"\b(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+\d{4}\b")
+# Accept full month names too. The abbreviation-only pattern reported "0 dates" on a
+# CV using "March 2025", which was the checker being wrong, not the CV.
+DATE_RE = re.compile(
+    r"\b(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\.?\s+\d{4}\b")
 EMAIL_RE = re.compile(r"[\w.+-]+@[\w-]+\.[\w.]+")
 PHONE_RE = re.compile(r"\+\d[\d\s]{7,}")
 
