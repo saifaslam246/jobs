@@ -59,7 +59,7 @@ Angular, Next.js, Node.js, MongoDB, Socket.IO, Stripe, AWS, Docker
 
 EDUCATION
 Master of Science in Computer Science
-University of Innsbruck - Innsbruck, Austria | 2024 - Present
+University of Innsbruck - Innsbruck, Austria | 2025 - 2027
 Bachelor of Science in Computer Science
 COMSATS University Islamabad - Pakistan | 2018 - 2022
 
