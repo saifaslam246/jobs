@@ -41,17 +41,23 @@ def blocks(d: dict) -> list[dict]:
          "limit": LIMITS["about"], "text": d.get("linkedin_about", d["summary"])},
     ]
     for e in d["experience"]:
-        body = "\n".join("• " + b for b in e["bullets"])
-        if e.get("stack"):
-            body += "\n\nTechnologies: " + ", ".join(e["stack"])
+        # LinkedIn is read by people, the CV by parsers - so a role can carry its
+        # own longer write-up here and fall back to the CV bullets if it has none.
+        body = e.get("linkedin_description")
+        if not body:
+            body = "\n".join("• " + b for b in e["bullets"])
+            if e.get("stack"):
+                body += "\n\nTechnologies: " + ", ".join(e["stack"])
+        meta = [("Title", e["title"]), ("Company", e["company"])]
+        if e.get("employment_type"):
+            meta.append(("Employment type", e["employment_type"]))
+        meta += [("Location", e["location"]),
+                 ("Start", fmt(e["start"])),
+                 ("End", fmt(e.get("end"), e.get("current", False)))]
         out.append({
             "field": f"Experience — {e['company']}",
             "where": "Profile → Experience → + → fill the fields below",
-            "limit": LIMITS["role"], "text": body,
-            "meta": [("Title", e["title"]), ("Company", e["company"]),
-                     ("Location", e["location"]),
-                     ("Start", fmt(e["start"])),
-                     ("End", fmt(e.get("end"), e.get("current", False)))],
+            "limit": LIMITS["role"], "text": body, "meta": meta,
         })
     for ed in d["education"]:
         out.append({
@@ -134,4 +140,6 @@ def render(d: dict) -> str:
 if __name__ == "__main__":
     d = json.loads(PROFILE.read_text())
     tpl = (ROOT / "portal" / "linkedin_template.html").read_text()
-    print(tpl.replace("<!--BLOCKS-->", render(d)))
+    out = ROOT / "portal" / "linkedin.html"
+    out.write_text(tpl.replace("<!--BLOCKS-->", render(d)))
+    print(f"wrote {out}")
