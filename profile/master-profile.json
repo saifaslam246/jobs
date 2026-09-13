@@ -338,11 +338,15 @@
       ],
       "tech": [
         "React",
+        "Next.js",
+        "TypeScript",
         "Node.js",
+        "Express.js",
         "Python",
-        "MongoDB",
-        "Firebase",
-        "Scraping"
+        "PostgreSQL",
+        "TypeORM",
+        "AWS S3",
+        "Jest"
       ],
       "one_liner": "Data platform extracting and structuring millions of property listings from major real-estate sources into a searchable dataset.",
       "bullets": [
@@ -675,8 +679,8 @@
       "priority": 46,
       "dates": "December 2023 - November 2024",
       "association": "Pikessoft",
-      "skills": "Python · Node.js · React.js · SQL · Web Scraping",
-      "description": "Rentalytics is a data platform that collects and structures millions of property records so they can be searched and worked with in one place.\n\nI worked on both sides. On the frontend I built the React interface for browsing and managing that data. On the backend I designed the scraping and ingestion systems in Python, which is where the real problem was: at that volume, anything written the obvious way is either too slow or falls over.\n\nMost of the effort went into asynchronous processing, so long-running jobs stay off the request path, and into tests, because a scraper that quietly drifts is worse than one that fails loudly.\n\nTechnologies: React, Next.js, TypeScript, Node.js, Express.js, Python, PostgreSQL, Amazon S3, Jest"
+      "skills": "Python · Node.js · PostgreSQL · React.js · TypeORM",
+      "description": "Rentalytics is a data platform that collects and structures millions of property records so they can be searched and worked with in one place.\n\nI worked on both sides. On the frontend I built the React interface for browsing and managing that data. On the backend I designed the scraping and ingestion systems in Python, which is where the real problem was: at that volume, anything written the obvious way is either too slow or falls over.\n\nMost of the effort went into asynchronous processing, so long-running jobs stay off the request path, and into tests, because a scraper that quietly drifts is worse than one that fails loudly.\n\nTechnologies: React, Next.js, TypeScript, Node.js, Express.js, Python, PostgreSQL, TypeORM, Amazon S3, Jest"
     },
     {
       "name": "HIS - Attendance & Leave Management SaaS",
@@ -806,19 +810,12 @@
       "_note": "The Ludwig backend runs on Spica, not a hand-rolled service. He built the buckets and functions; the client apps integrate against them."
     },
     "rentalytics": {
-      "database": "SQL - exact engine unconfirmed (PostgreSQL assumed)",
-      "confirmed_by_skill_tags": [
-        "Python",
-        "SQL",
-        "Next.js",
-        "Jest",
-        "TypeScript",
-        "Amazon S3",
-        "REST APIs",
-        "Unit Testing",
-        "3rd Party Integrations"
+      "database": "PostgreSQL with TypeORM - confirmed by Saif",
+      "not": [
+        "MongoDB",
+        "MERN Stack"
       ],
-      "_open": "Which SQL engine? MongoDB and MERN Stack are wrong here per his SQL rule."
+      "_note": "Stated 13 Sep 2026. Removes the MongoDB technologies claim and the MERN Stack tag."
     }
   }
 }
