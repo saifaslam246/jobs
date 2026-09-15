@@ -134,4 +134,3 @@ Never write to `pipeline/*` — that collection is Saif's.
 One commit. Then tell Saif, briefly: how many new shortlisted roles, how many drafts are
 waiting for approval, anything that needs a decision, and anything that broke. If there
 is nothing to approve and nothing broke, say exactly that — do not pad it.
-<!-- scheduled wake test: 2026-09-15 -->
