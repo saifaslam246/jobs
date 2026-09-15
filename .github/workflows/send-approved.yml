@@ -5,14 +5,22 @@ name: Send approved outreach
 
 on:
   schedule:
-    # 08:10 UTC on weekdays = mid-morning in Vienna, which is when recruiters read mail.
-    - cron: '10 8 * * 1-5'
+    # Several attempts across the morning, not one. GitHub queues scheduled workflows
+    # on a best-effort basis: the first run of this workflow fired at 14:58 UTC
+    # instead of 08:10 and two applications landed at 16:58 Vienna. send.py refuses to
+    # send outside SEND_WINDOW_UTC, so a run that arrives late does nothing and the
+    # mail waits for the next morning rather than going out at the end of the day.
+    - cron: '10 6,7,8,9,10 * * 1-5'
   workflow_dispatch:
     inputs:
       daily_cap:
         description: 'Maximum emails this run'
         required: false
         default: '10'
+      force:
+        description: 'Send even outside the morning window'
+        required: false
+        default: 'no'
 
 permissions:
   contents: write
@@ -39,6 +47,9 @@ jobs:
           SMTP_PASS: ${{ secrets.SMTP_PASS }}
           FROM_NAME: ${{ secrets.FROM_NAME }}
           DAILY_CAP: ${{ github.event.inputs.daily_cap || '10' }}
+          SEND_WINDOW_UTC: '06:00-11:00'
+          # A manual run is a deliberate act, so it may send at any hour.
+          FORCE_SEND: ${{ github.event.inputs.force == 'yes' && '1' || '0' }}
         run: python outreach/send.py | tee "$GITHUB_STEP_SUMMARY"
 
       - name: Record what was sent

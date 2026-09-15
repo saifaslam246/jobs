@@ -10,7 +10,19 @@ Timing on a weekday, all UTC:
 
 | 05:30 | GitHub Action harvests and scores, commits `data/` |
 | 06:30 | this run: sync, draft, tailor |
-| 08:10 | GitHub Action sends whatever Saif approved |
+| 06:10-10:10 | GitHub Action tries hourly to send whatever Saif approved |
+
+## 0. Attach the repository — before anything else
+
+Each firing of the Routine starts a new session with no repository authorized, so a
+push is refused with *"not in this session's authorized repository set"* and the whole
+run's work is lost. Call `add_repo` for `saifaslam246/jobs` with `access: "push"`, run
+the clone command it returns, then `register_repo_root`. If it fails, stop and report
+that - do not draft work that cannot be saved.
+
+At the end, confirm the push actually landed. `git status` must say the branch is up to
+date with origin and `git log origin/<branch> -1` must show the run's commit. A run that
+could not push has not succeeded, whatever else it did.
 
 ## 1. Sync approvals out of the portal — do this first
 
@@ -73,9 +85,14 @@ off by default; turning it on writes `tailor: true` into that role's `pipeline/<
 document. For those roles only:
 
 ```bash
-python profile/cv/build_cv.py --job <job_id> --title "<their exact job title>"
+python profile/cv/tailor_switches.py --on <job_id>
 python portal/build_cvdata.py
 ```
+
+That writes `profile/cv/tailored/Saif_ur_Rehman_CV_<job_id>.pdf`, records the switch in
+`data/tailor.json`, and leaves `profile/cv/master/` alone. `outreach/send.py` reads
+`data/tailor.json` to choose the attachment, so that file is what actually decides which
+CV goes out - keep it in step with the `pipeline` collection.
 
 The generator reproduces the master's layout exactly - same fonts, sizes, margins,
 section order and wording - so a tailored CV is his document with its skills and projects

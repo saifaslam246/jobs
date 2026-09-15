@@ -191,6 +191,38 @@ def build(d: dict, from_addr: str, from_name: str) -> EmailMessage:
     return msg
 
 
+def outside_send_window() -> str:
+    """Why this run must not send, or "" if it may.
+
+    GitHub queues scheduled workflows on a best-effort basis, and the first run of
+    this one fired six and a half hours late - so two emails that were meant to land
+    mid-morning went out at 16:58 Vienna instead. A cold application arriving at the
+    end of the working day is read the next morning at best. The cron now tries
+    several times across the morning and this gate stops any run that arrives after
+    the window has passed; the mail simply waits for tomorrow's first attempt.
+
+    SEND_WINDOW_UTC="06:00-11:00" sets it. FORCE_SEND=1 overrides it, which is what a
+    manual workflow_dispatch is for.
+    """
+    if os.getenv("FORCE_SEND") == "1":
+        return ""
+    window = os.getenv("SEND_WINDOW_UTC", "06:00-11:00")
+    try:
+        start, _, end = window.partition("-")
+        sh, _, sm = start.strip().partition(":")
+        eh, _, em = end.strip().partition(":")
+        lo = int(sh) * 60 + int(sm or 0)
+        hi = int(eh) * 60 + int(em or 0)
+    except Exception:  # noqa: BLE001 - a malformed window must not become "send always"
+        return f"SEND_WINDOW_UTC is not readable ({window!r})"
+    now = datetime.now(timezone.utc)
+    mins = now.hour * 60 + now.minute
+    if lo <= mins <= hi:
+        return ""
+    return (f"{now:%H:%M} UTC is outside the send window {window} UTC - "
+            "holding until the next morning run")
+
+
 def main() -> int:
     host = os.getenv("SMTP_HOST")
     port = int(os.getenv("SMTP_PORT", "587"))
@@ -199,6 +231,11 @@ def main() -> int:
     # spaces are part of the secret and the login fails.
     password = (os.getenv("SMTP_PASS") or "").replace(" ", "") or None
     from_name = os.getenv("FROM_NAME", "Saif ur Rehman")
+
+    held = outside_send_window()
+    if held:
+        log(held)
+        return 0
 
     items = load()
     log(f"mode: {CFG.get('mode')}")
