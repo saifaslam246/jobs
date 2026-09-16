@@ -1,16 +1,8 @@
-# Job digest - 2026-09-15 10:13 UTC
+# Job digest - 2026-09-16 10:07 UTC
 
-**1844 scanned - 766 relevant - 13 new shortlist - 164 with a direct contact email**
+**1839 scanned - 780 relevant - 12 new shortlist - 166 with a direct contact email**
 
 ## New shortlist
-
-### 73 | Senior Fullstack Developer (m/w/d) - Techpilot
-`arbeitnow` | München | salary n/a
-
-<https://www.arbeitnow.com/jobs/companies/techpilot/senior-fullstack-developer-munchen-462912>
-
-- **Why:** stack match: aws, docker, offline, postgresql, react, redis, tailwind, typescript; full-stack role; contract/part-time signal: b2b; familiar domain: saas
-- **CV needs to cover:** kubernetes, jest
 
 ### 72 | Senior React Native Developer - Lemon.io
 `weworkremotely` | Anywhere in the World | salary n/a
@@ -58,13 +50,12 @@
 
 - **Why:** stack match: aws, docker, next.js, node.js, postgresql, react, typescript; JS/TypeScript shop; full-stack role; remote
 
-### 60 | Senior Software Engineer (m/w/d) | Fullstack für KI-Produkte - Avenit Ag
-`arbeitnow` | Remote in Deutschland | salary n/a
+### 60 | Senior Frontend Angular Developer (all genders) - Init Ag
+`arbeitnow` | München | salary n/a
 
-<https://www.arbeitnow.com/jobs/companies/avenit-ag/remote-senior-software-engineer-fullstack-fur-ki-produkte-38098>
+<https://www.arbeitnow.com/jobs/companies/init-ag/senior-frontend-angular-developer-all-genders-munchen-135073>
 
-- **Why:** stack match: aws, docker, nestjs, node.js, postgresql, typescript; full-stack role; remote; familiar domain: saas
-- **CV needs to cover:** vue, microservices
+- **Why:** stack match: angular, react, typescript; JS/TypeScript shop; core-stack role title; contract/part-time signal: part time
 
 ### 60 | Senior Fullstack Developer (React.js / Node.js) - Proxify AB
 `weworkremotely` | Anywhere in the World | salary n/a
@@ -73,6 +64,14 @@
 
 - **Why:** stack match: mongodb, node.js, react; JS/TypeScript shop; full-stack role; remote
 - **CV needs to cover:** microservices
+
+### 59 | Senior Fullstack Engineer (all genders) - Reev
+`arbeitnow` | München | salary n/a
+
+<https://www.arbeitnow.com/jobs/companies/reev/senior-fullstack-engineer-all-genders-munchen-92326>
+
+- **Why:** stack match: aws, react, react native, typescript; full-stack role; contract/part-time signal: b2b; familiar domain: saas
+- **CV needs to cover:** java, kotlin, german
 
 ### 58 | Senior Shopify Full-stack Developer (IR-471) - Intellectsoft
 `weworkremotely` | Anywhere in the World | salary n/a
@@ -97,21 +96,13 @@
 - **Why:** stack match: aws, docker, mongodb, postgresql, react, redis, typescript; full-stack role; familiar domain: logistics, marketplace
 - **CV needs to cover:** kubernetes, go, java, kotlin, kafka
 
-### 55 | 📱 Fullstack Developer - Staycation
-`arbeitnow` | Paris, France | salary n/a
-
-<https://www.arbeitnow.fr/jobs/companies/staycation/fullstack-developer-paris-374869>
-
-- **Why:** stack match: aws, nestjs, next.js, node.js, postgresql, react, react native; full-stack role; familiar domain: billing, booking, marketplace
-- **CV needs to cover:** terraform
-
 ## Source health
 
 - `adzuna`: FAILED (0) - ADZUNA_APP_ID/KEY secrets not set - Austria/Germany coverage is reduced
 - `arbeitnow`: ok (600)
 - `himalayas`: ok (20)
-- `hn-hiring`: ok (1057)
+- `hn-hiring`: ok (1059)
 - `jobicy`: ok (100)
 - `remoteok`: ok (99)
-- `remotive`: ok (32)
-- `weworkremotely`: ok (150)
+- `remotive`: ok (30)
+- `weworkremotely`: ok (151)
