@@ -1,16 +1,16 @@
-# Job digest - 2026-09-20 09:53 UTC
+# Job digest - 2026-09-21 10:53 UTC
 
-**1683 scanned - 635 relevant - 13 new shortlist - 163 with a direct contact email**
+**1692 scanned - 683 relevant - 12 new shortlist - 161 with a direct contact email**
 
 ## New shortlist
 
-### 73 | Senior Fullstack Developer (m/w/d) - Techpilot
-`arbeitnow` | München | salary n/a
+### 91 | Senior Shopify Developer - Sanctuary Computer Inc
+`remotive` | Worldwide | $80k - $150k
 
-<https://www.arbeitnow.com/jobs/companies/techpilot/senior-fullstack-developer-munchen-85442>
+<https://remotive.com/remote-jobs/software-development/senior-shopify-developer-2091140>
 
-- **Why:** stack match: aws, docker, offline, postgresql, react, redis, tailwind, typescript; full-stack role; contract/part-time signal: b2b; familiar domain: saas
-- **CV needs to cover:** kubernetes, jest
+- **Why:** stack match: graphql, next.js, node.js, playwright, postgresql, redis, stripe, tailwind, typescript; JS/TypeScript shop; contract/part-time signal: contract, b2b; remote
+- **CV needs to cover:** jest, cypress, figma
 
 ### 72 | Senior React Native Developer - Lemon.io
 `weworkremotely` | Anywhere in the World | salary n/a
@@ -20,21 +20,6 @@
 - **Why:** stack match: angular, flutter, next.js, node.js, react, react native, typescript; JS/TypeScript shop; core-stack role title; remote
 - **CV needs to cover:** rust, java, swift, vue, svelte, laravel
 
-### 67 | Senior Shopify Developer - Sanctuary Computer
-`remoteok` | n/a | $80000 - $250000
-
-<https://remoteOK.com/remote-jobs/remote-senior-shopify-developer-sanctuary-computer-1137405>
-
-- **Why:** stack match: graphql, next.js, node.js, playwright, postgresql, redis, stripe, tailwind, typescript; contract/part-time signal: contract, b2b; posted in last 48h
-- **CV needs to cover:** jest, cypress, figma
-
-### 66 | Senior Full-stack Engineer - Limbic
-`jobicy` | Canada | salary n/a
-
-<https://jobicy.com/jobs/153380-senior-full-stack-engineer-2>
-
-- **Why:** stack match: aws, graphql, mongodb, node.js, postgresql, react, react native, redis, typescript; full-stack role; familiar domain: fintech, healthcare
-
 ### 64 | Senior React Full-stack Developer - Lemon.io
 `weworkremotely` | Anywhere in the World | salary n/a
 
@@ -42,6 +27,14 @@
 
 - **Why:** stack match: angular, aws, flutter, next.js, node.js, react, react native, typescript; full-stack role; remote; familiar domain: marketplace
 - **CV needs to cover:** rust, java, swift, vue, svelte, laravel, rails, azure
+
+### 63 | Senior Shopify Developer - Sanctuary Computer
+`remoteok` | n/a | $80000 - $250000
+
+<https://remoteOK.com/remote-jobs/remote-senior-shopify-developer-sanctuary-computer-1137405>
+
+- **Why:** stack match: graphql, next.js, node.js, playwright, postgresql, redis, stripe, tailwind, typescript; contract/part-time signal: contract, b2b
+- **CV needs to cover:** jest, cypress, figma
 
 ### 62 | Staff Backend Engineer, Hierarchy - ClickUp
 `jobicy` | USA | salary n/a - contact: `AskPeople@ClickUp.com`
@@ -58,13 +51,12 @@
 
 - **Why:** stack match: aws, docker, next.js, node.js, postgresql, react, typescript; JS/TypeScript shop; full-stack role; remote
 
-### 60 | Senior Software Engineer (m/w/d) | Fullstack für KI-Produkte - Avenit Ag
-`arbeitnow` | Remote in Deutschland | salary n/a
+### 59 | Frontend Engineer - Bjak
+`remoteok` | Ireland | salary n/a
 
-<https://www.arbeitnow.com/jobs/companies/avenit-ag/remote-senior-software-engineer-fullstack-fur-ki-produkte-338178>
+<https://remoteOK.com/remote-jobs/remote-frontend-engineer-bjak-1137410>
 
-- **Why:** stack match: aws, docker, nestjs, node.js, postgresql, typescript; full-stack role; remote; familiar domain: saas
-- **CV needs to cover:** vue, microservices
+- **Why:** stack match: graphql, next.js, node.js, react, typescript; JS/TypeScript shop; core-stack role title; familiar domain: scheduling
 
 ### 59 | Senior Full Stack Engineer (Realtime & Voice) Customer Experience Platform - Hopper
 `jobicy` | UK | salary n/a
@@ -109,8 +101,8 @@
 - `adzuna`: FAILED (0) - ADZUNA_APP_ID/KEY secrets not set - Austria/Germany coverage is reduced
 - `arbeitnow`: ok (600)
 - `himalayas`: ok (20)
-- `hn-hiring`: ok (1055)
+- `hn-hiring`: ok (1053)
 - `jobicy`: ok (100)
 - `remoteok`: ok (99)
-- `remotive`: ok (34)
-- `weworkremotely`: ok (73)
+- `remotive`: ok (40)
+- `weworkremotely`: ok (74)
