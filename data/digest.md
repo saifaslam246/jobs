@@ -1,6 +1,6 @@
-# Job digest - 2026-09-21 10:53 UTC
+# Job digest - 2026-09-22 10:08 UTC
 
-**1692 scanned - 683 relevant - 12 new shortlist - 161 with a direct contact email**
+**1737 scanned - 703 relevant - 14 new shortlist - 159 with a direct contact email**
 
 ## New shortlist
 
@@ -11,6 +11,14 @@
 
 - **Why:** stack match: graphql, next.js, node.js, playwright, postgresql, redis, stripe, tailwind, typescript; JS/TypeScript shop; contract/part-time signal: contract, b2b; remote
 - **CV needs to cover:** jest, cypress, figma
+
+### 79 | Fullstack Entwickler (m/w/d) - ICT Digital Solutions
+`arbeitnow` | Munich | salary n/a
+
+<https://www.arbeitnow.com/jobs/companies/ict-digital-solutions/fullstack-entwickler-munich-284639>
+
+- **Why:** stack match: angular, aws, docker, express, graphql, mongodb, nestjs, node.js, postgresql, react; full-stack role; remote; posted in last 48h
+- **CV needs to cover:** kubernetes, java, vue, django, azure, gcp
 
 ### 72 | Senior React Native Developer - Lemon.io
 `weworkremotely` | Anywhere in the World | salary n/a
@@ -36,43 +44,12 @@
 - **Why:** stack match: graphql, next.js, node.js, playwright, postgresql, redis, stripe, tailwind, typescript; contract/part-time signal: contract, b2b
 - **CV needs to cover:** jest, cypress, figma
 
-### 62 | Staff Backend Engineer, Hierarchy - ClickUp
-`jobicy` | USA | salary n/a - contact: `AskPeople@ClickUp.com`
-
-<https://jobicy.com/jobs/151239-staff-backend-engineer-hierarchy>
-
-- **Why:** stack match: angular, docker, express, nestjs, node.js, postgresql, react, typescript; core-stack role title; familiar domain: saas; direct contact email in posting
-- **CV needs to cover:** kubernetes, vue, kafka, microservices
-
 ### 61 | Interview Resources | 2 Full Stack AI Engineer, 1 GTM | REMOTE | Full-Time | $250k seed raised Interview Resources is building an AI-powered deep research platform for interview pr - Interview Resources
 `hn-hiring` | See post | salary n/a
 
 <https://news.ycombinator.com/item?id=49534032>
 
 - **Why:** stack match: aws, docker, next.js, node.js, postgresql, react, typescript; JS/TypeScript shop; full-stack role; remote
-
-### 59 | Frontend Engineer - Bjak
-`remoteok` | Ireland | salary n/a
-
-<https://remoteOK.com/remote-jobs/remote-frontend-engineer-bjak-1137410>
-
-- **Why:** stack match: graphql, next.js, node.js, react, typescript; JS/TypeScript shop; core-stack role title; familiar domain: scheduling
-
-### 59 | Senior Full Stack Engineer (Realtime & Voice) Customer Experience Platform - Hopper
-`jobicy` | UK | salary n/a
-
-<https://jobicy.com/jobs/153659-senior-full-stack-engineer-realtime-voice-customer-experience-platform>
-
-- **Why:** stack match: aws, react, typescript; full-stack role; contract/part-time signal: b2b; familiar domain: booking, fintech, insurance
-- **CV needs to cover:** go, gcp, microservices
-
-### 59 | Senior Backend Developer (Node.js / Nest.js) - Proxify AB
-`weworkremotely` | Anywhere in the World | salary n/a
-
-<https://weworkremotely.com/remote-jobs/proxify-ab-senior-backend-developer-node-js-nest-js-3>
-
-- **Why:** stack match: aws, docker, graphql, mongodb, node.js, postgresql, typescript; core-stack role title; remote
-- **CV needs to cover:** kafka, rabbitmq, azure, gcp, jest, microservices
 
 ### 59 | Squoosh.AI | Full-Stack Engineer (full-time, REMOTE) + PhD Researcher (part-time, REMOTE US) | https://squoosh.ai We build AI systems that simulate how people explore digital exper - Squoosh.AI
 `hn-hiring` | See post | salary n/a - contact: `tyler@squoosh.ai`
@@ -81,6 +58,14 @@
 
 - **Why:** stack match: next.js, react, typescript; JS/TypeScript shop; full-stack role; contract/part-time signal: part time
 
+### 58 | Staff Backend Engineer, Hierarchy - ClickUp
+`jobicy` | USA | salary n/a - contact: `AskPeople@ClickUp.com`
+
+<https://jobicy.com/jobs/151239-staff-backend-engineer-hierarchy>
+
+- **Why:** stack match: angular, docker, express, nestjs, node.js, postgresql, react, typescript; core-stack role title; familiar domain: saas; direct contact email in posting
+- **CV needs to cover:** kubernetes, vue, kafka, microservices
+
 ### 57 | AiMi | Full Stack AI Engineer | Remote(Everywhere) | Full-time AiMi builds agentic AI infrastructure for capital markets: autonomous agents that ingest venue and vendor notificatio - AiMi
 `hn-hiring` | See post | salary n/a - contact: `vishnu.swaroop@aimi.technology`
 
@@ -88,21 +73,50 @@
 
 - **Why:** stack match: aws, mongodb, node.js, react, typescript; JS/TypeScript shop; full-stack role; remote
 
-### 56 | Senior Fullstack Developer (React.js / Node.js) - Proxify AB
+### 56 | Fullstack Engineer - Dispatch
+`jobicy` | USA | salary n/a
+
+<https://jobicy.com/jobs/151365-fullstack-engineer-2>
+
+- **Why:** stack match: node.js, postgresql, react, typescript; full-stack role; contract/part-time signal: b2b; familiar domain: fintech, insurance, saas
+
+### 56 | Senior Full Stack Developer - .NET&#x2f;Angular - Full remote- Salary in USD - goPro Consultancy Group ltd.
+`himalayas` | United States | salary n/a
+
+<https://himalayas.app/companies/gopro-consultancy-group-ltd/jobs/senior-full-stack-developer-net-x2f-angular-full-remote-salary-in-usd-5238020769>
+
+- **Why:** stack match: angular, ionic, node.js, redis, typescript; full-stack role; remote; posted in last 48h
+
+### 55 | Frontend Engineer - Bjak
+`remoteok` | Ireland | salary n/a
+
+<https://remoteOK.com/remote-jobs/remote-frontend-engineer-bjak-1137410>
+
+- **Why:** stack match: graphql, next.js, node.js, react, typescript; JS/TypeScript shop; core-stack role title; familiar domain: scheduling
+
+### 55 | Senior Full Stack Engineer (Realtime & Voice) Customer Experience Platform - Hopper
+`jobicy` | UK | salary n/a
+
+<https://jobicy.com/jobs/153659-senior-full-stack-engineer-realtime-voice-customer-experience-platform>
+
+- **Why:** stack match: aws, react, typescript; full-stack role; contract/part-time signal: b2b; familiar domain: booking, fintech, insurance
+- **CV needs to cover:** go, gcp, microservices
+
+### 55 | Senior Backend Developer (Node.js / Nest.js) - Proxify AB
 `weworkremotely` | Anywhere in the World | salary n/a
 
-<https://weworkremotely.com/remote-jobs/proxify-ab-senior-fullstack-developer-react-js-node-js-4>
+<https://weworkremotely.com/remote-jobs/proxify-ab-senior-backend-developer-node-js-nest-js-3>
 
-- **Why:** stack match: mongodb, node.js, react; JS/TypeScript shop; full-stack role; remote
-- **CV needs to cover:** microservices
+- **Why:** stack match: aws, docker, graphql, mongodb, node.js, postgresql, typescript; core-stack role title; remote
+- **CV needs to cover:** kafka, rabbitmq, azure, gcp, jest, microservices
 
 ## Source health
 
 - `adzuna`: FAILED (0) - ADZUNA_APP_ID/KEY secrets not set - Austria/Germany coverage is reduced
 - `arbeitnow`: ok (600)
 - `himalayas`: ok (20)
-- `hn-hiring`: ok (1053)
+- `hn-hiring`: ok (1052)
 - `jobicy`: ok (100)
 - `remoteok`: ok (99)
-- `remotive`: ok (40)
-- `weworkremotely`: ok (74)
+- `remotive`: ok (36)
+- `weworkremotely`: ok (72)
