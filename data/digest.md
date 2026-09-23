@@ -1,6 +1,6 @@
-# Job digest - 2026-09-22 10:08 UTC
+# Job digest - 2026-09-23 10:10 UTC
 
-**1737 scanned - 703 relevant - 14 new shortlist - 159 with a direct contact email**
+**1742 scanned - 722 relevant - 12 new shortlist - 159 with a direct contact email**
 
 ## New shortlist
 
@@ -11,14 +11,6 @@
 
 - **Why:** stack match: graphql, next.js, node.js, playwright, postgresql, redis, stripe, tailwind, typescript; JS/TypeScript shop; contract/part-time signal: contract, b2b; remote
 - **CV needs to cover:** jest, cypress, figma
-
-### 79 | Fullstack Entwickler (m/w/d) - ICT Digital Solutions
-`arbeitnow` | Munich | salary n/a
-
-<https://www.arbeitnow.com/jobs/companies/ict-digital-solutions/fullstack-entwickler-munich-284639>
-
-- **Why:** stack match: angular, aws, docker, express, graphql, mongodb, nestjs, node.js, postgresql, react; full-stack role; remote; posted in last 48h
-- **CV needs to cover:** kubernetes, java, vue, django, azure, gcp
 
 ### 72 | Senior React Native Developer - Lemon.io
 `weworkremotely` | Anywhere in the World | salary n/a
@@ -44,7 +36,7 @@
 - **Why:** stack match: graphql, next.js, node.js, playwright, postgresql, redis, stripe, tailwind, typescript; contract/part-time signal: contract, b2b
 - **CV needs to cover:** jest, cypress, figma
 
-### 61 | Interview Resources | 2 Full Stack AI Engineer, 1 GTM | REMOTE | Full-Time | $250k seed raised Interview Resources is building an AI-powered deep research platform for interview pr - Interview Resources
+### 59 | Interview Resources | 2 Full Stack AI Engineer, 1 GTM | REMOTE | Full-Time | $250k seed raised Interview Resources is building an AI-powered deep research platform for interview pr - Interview Resources
 `hn-hiring` | See post | salary n/a
 
 <https://news.ycombinator.com/item?id=49534032>
@@ -80,13 +72,6 @@
 
 - **Why:** stack match: node.js, postgresql, react, typescript; full-stack role; contract/part-time signal: b2b; familiar domain: fintech, insurance, saas
 
-### 56 | Senior Full Stack Developer - .NET&#x2f;Angular - Full remote- Salary in USD - goPro Consultancy Group ltd.
-`himalayas` | United States | salary n/a
-
-<https://himalayas.app/companies/gopro-consultancy-group-ltd/jobs/senior-full-stack-developer-net-x2f-angular-full-remote-salary-in-usd-5238020769>
-
-- **Why:** stack match: angular, ionic, node.js, redis, typescript; full-stack role; remote; posted in last 48h
-
 ### 55 | Frontend Engineer - Bjak
 `remoteok` | Ireland | salary n/a
 
@@ -115,7 +100,7 @@
 - `adzuna`: FAILED (0) - ADZUNA_APP_ID/KEY secrets not set - Austria/Germany coverage is reduced
 - `arbeitnow`: ok (600)
 - `himalayas`: ok (20)
-- `hn-hiring`: ok (1052)
+- `hn-hiring`: ok (1050)
 - `jobicy`: ok (100)
 - `remoteok`: ok (99)
 - `remotive`: ok (36)
