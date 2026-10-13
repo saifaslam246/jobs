@@ -1,6 +1,6 @@
-# Job digest - 2026-10-12 13:21 UTC
+# Job digest - 2026-10-13 12:49 UTC
 
-**1823 scanned - 697 relevant - 13 new shortlist - 140 with a direct contact email**
+**1988 scanned - 747 relevant - 13 new shortlist - 143 with a direct contact email**
 
 ## New shortlist
 
@@ -20,22 +20,6 @@
 - **Why:** stack match: angular, aws, flutter, next.js, node.js, react, react native, typescript; full-stack role; remote; familiar domain: marketplace
 - **CV needs to cover:** rust, java, swift, vue, svelte, laravel, azure, gcp
 
-### 79 | Fullstack Entwickler (m/w/d) - ICT Digital Solutions
-`arbeitnow` | Munich | salary n/a
-
-<https://www.arbeitnow.com/jobs/companies/ict-digital-solutions/fullstack-entwickler-munich-359972>
-
-- **Why:** stack match: angular, aws, docker, express, graphql, mongodb, nestjs, node.js, postgresql, react; full-stack role; remote; posted in last 48h
-- **CV needs to cover:** kubernetes, java, vue, django, azure, gcp
-
-### 73 | Frontend Engineer React and AWS - Numentica
-`jobicy` | USA | salary n/a
-
-<https://jobicy.com/jobs/145744-frontend-engineer-react-and-aws>
-
-- **Why:** stack match: aws, graphql, next.js, playwright, react, typescript; JS/TypeScript shop; core-stack role title; contract/part-time signal: contract
-- **CV needs to cover:** jest, cypress
-
 ### 70 | Senior Angular Full-stack Developer - Lemon.io
 `weworkremotely` | Anywhere in the World | salary n/a
 
@@ -43,6 +27,14 @@
 
 - **Why:** stack match: angular, aws, flutter, next.js, node.js, react, react native, typescript; full-stack role; remote; familiar domain: marketplace
 - **CV needs to cover:** rust, java, swift, vue, svelte, laravel, azure, gcp
+
+### 69 | Frontend Engineer React and AWS - Numentica
+`jobicy` | USA | salary n/a
+
+<https://jobicy.com/jobs/145744-frontend-engineer-react-and-aws>
+
+- **Why:** stack match: aws, graphql, next.js, playwright, react, typescript; JS/TypeScript shop; core-stack role title; contract/part-time signal: contract
+- **CV needs to cover:** jest, cypress
 
 ### 69 | PAGNOS | Cloud Engineer, AWS Serverless (TypeScript/Node.js) | REMOTE (Germany) | Full-time | €75k–80k | business-fluent German required We build serverless applications on AWS for - PAGNOS
 `hn-hiring` | See post | salary n/a - contact: `recruiting@pagnos.com`
@@ -60,6 +52,14 @@
 - **Why:** stack match: aws, docker, graphql, nestjs, node.js, typescript; JS/TypeScript shop; core-stack role title; posted in last 48h
 - **CV needs to cover:** elasticsearch, azure
 
+### 63 | Full-stack Software Engineer (Contract) - Lemrock
+`arbeitnow` | Paris | salary n/a
+
+<https://www.arbeitnow.fr/jobs/companies/lemrock/full-stack-software-engineer-contract-paris-129905>
+
+- **Why:** stack match: docker, nestjs, postgresql, react, redis, tailwind, typescript; full-stack role; contract/part-time signal: contract, freelance; posted in last 48h
+- **CV needs to cover:** terraform, gcp
+
 ### 61 | Software Backend Engineer - Senior / Confirmed (Paris or Remote France) - Alma31
 `arbeitnow` | Paris, Paris | salary n/a
 
@@ -68,20 +68,13 @@
 - **Why:** stack match: docker, postgresql, react, redis; core-stack role title; contract/part-time signal: contract; remote
 - **CV needs to cover:** kubernetes, gcp
 
-### 61 | Full Stack Developer - Bookboost
-`arbeitnow` | Germany - Munich | salary n/a
+### 61 | Senior Software Engineer - Lefebvre Sdu
+`arbeitnow` | Den Haag, Zuid-Holland, Nederland | salary n/a
 
-<https://www.arbeitnow.com/jobs/companies/bookboost/full-stack-developer-germany-munich-401554>
+<https://www.arbeitnow.nl/jobs/companies/lefebvre-sdu/senior-software-engineer-den-haag-379522>
 
-- **Why:** stack match: angular, aws, node.js, postgresql, typescript; JS/TypeScript shop; full-stack role; EU/Austria friendly
-- **CV needs to cover:** terraform, go, laravel
-
-### 60 | Senior Frontend Angular Developer (all genders) - Init Ag
-`arbeitnow` | Berlin | salary n/a
-
-<https://www.arbeitnow.com/jobs/companies/init-ag/senior-frontend-angular-developer-all-genders-berlin-159192>
-
-- **Why:** stack match: angular, react, typescript; JS/TypeScript shop; core-stack role title; contract/part-time signal: part time
+- **Why:** stack match: aws, docker, graphql, nestjs, next.js, node.js, prisma, react, redis, typescript; familiar domain: insurance; posted in last 48h
+- **CV needs to cover:** kubernetes
 
 ### 59 | Interview Resources | 2 Full Stack AI Engineer, 1 GTM | REMOTE | Full-Time | $250k seed raised Interview Resources is building an AI-powered deep research platform for interview pr - Interview Resources
 `hn-hiring` | See post | salary n/a
@@ -105,13 +98,21 @@
 
 - **Why:** stack match: aws, mongodb, node.js, react, typescript; JS/TypeScript shop; full-stack role; remote
 
+### 55 | (Senior) DevOps Engineer (m/f/d) - Peter Park
+`arbeitnow` | München | salary n/a
+
+<https://www.arbeitnow.com/jobs/companies/peter-park/senior-devops-engineer-munchen-115767>
+
+- **Why:** stack match: aws, nestjs, postgresql, prisma, redis, typescript; contract/part-time signal: contract, b2b; familiar domain: saas; posted in last 48h
+- **CV needs to cover:** kubernetes, terraform, vue, storybook, microservices, german
+
 ## Source health
 
 - `adzuna`: FAILED (0) - ADZUNA_APP_ID/KEY secrets not set - Austria/Germany coverage is reduced
-- `arbeitnow`: ok (750)
+- `arbeitnow`: ok (900)
 - `himalayas`: ok (20)
-- `hn-hiring`: ok (978)
+- `hn-hiring`: ok (986)
 - `jobicy`: ok (100)
 - `remoteok`: ok (99)
-- `remotive`: ok (30)
-- `weworkremotely`: ok (86)
+- `remotive`: ok (32)
+- `weworkremotely`: ok (89)
