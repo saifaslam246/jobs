@@ -1,6 +1,6 @@
-# Job digest - 2026-10-13 12:49 UTC
+# Job digest - 2026-10-14 10:23 UTC
 
-**1988 scanned - 747 relevant - 13 new shortlist - 143 with a direct contact email**
+**2005 scanned - 767 relevant - 14 new shortlist - 140 with a direct contact email**
 
 ## New shortlist
 
@@ -16,14 +16,6 @@
 `remoteok` | n/a | $80000 - $200000
 
 <https://remoteOK.com/remote-jobs/remote-senior-react-full-stack-developer-lemon-io-1137475>
-
-- **Why:** stack match: angular, aws, flutter, next.js, node.js, react, react native, typescript; full-stack role; remote; familiar domain: marketplace
-- **CV needs to cover:** rust, java, swift, vue, svelte, laravel, azure, gcp
-
-### 70 | Senior Angular Full-stack Developer - Lemon.io
-`weworkremotely` | Anywhere in the World | salary n/a
-
-<https://weworkremotely.com/remote-jobs/lemon-io-senior-angular-full-stack-developer>
 
 - **Why:** stack match: angular, aws, flutter, next.js, node.js, react, react native, typescript; full-stack role; remote; familiar domain: marketplace
 - **CV needs to cover:** rust, java, swift, vue, svelte, laravel, azure, gcp
@@ -44,13 +36,28 @@
 - **Why:** stack match: aws, next.js, node.js, react, typescript; JS/TypeScript shop; core-stack role title; remote
 - **CV needs to cover:** german
 
-### 67 | Senior Backend Software Engineer (TypeScript, NestJS/Node.js) (m/f/x) - Atolls
-`arbeitnow` | Paris, France | salary n/a
+### 68 | Senior Software Engineer Full-stack - CDI - Solteo
+`arbeitnow` | Paris | salary n/a
 
-<https://www.arbeitnow.fr/jobs/companies/atolls/senior-backend-software-engineer-typescript-nestjs-nodejs-paris-163769>
+<https://www.arbeitnow.fr/jobs/companies/solteo/senior-software-engineer-full-stack-cdi-paris-300688>
 
-- **Why:** stack match: aws, docker, graphql, nestjs, node.js, typescript; JS/TypeScript shop; core-stack role title; posted in last 48h
-- **CV needs to cover:** elasticsearch, azure
+- **Why:** stack match: aws, docker, node.js, postgresql, react, react native, typescript; full-stack role; contract/part-time signal: b2b; familiar domain: saas
+
+### 66 | Senior Angular Full-stack Developer - Lemon.io
+`weworkremotely` | Anywhere in the World | salary n/a
+
+<https://weworkremotely.com/remote-jobs/lemon-io-senior-angular-full-stack-developer>
+
+- **Why:** stack match: angular, aws, flutter, next.js, node.js, react, react native, typescript; full-stack role; remote; familiar domain: marketplace
+- **CV needs to cover:** rust, java, swift, vue, svelte, laravel, azure, gcp
+
+### 65 | Senior Backend Engineer (f/m/d) - Predium
+`arbeitnow` | Munich | salary n/a
+
+<https://www.arbeitnow.com/jobs/companies/predium/senior-backend-engineer-munich-296138>
+
+- **Why:** stack match: aws, graphql, nestjs, postgresql, react, typescript; core-stack role title; contract/part-time signal: b2b; familiar domain: proptech, real estate, saas
+- **CV needs to cover:** german
 
 ### 63 | Full-stack Software Engineer (Contract) - Lemrock
 `arbeitnow` | Paris | salary n/a
@@ -60,28 +67,28 @@
 - **Why:** stack match: docker, nestjs, postgresql, react, redis, tailwind, typescript; full-stack role; contract/part-time signal: contract, freelance; posted in last 48h
 - **CV needs to cover:** terraform, gcp
 
-### 61 | Software Backend Engineer - Senior / Confirmed (Paris or Remote France) - Alma31
-`arbeitnow` | Paris, Paris | salary n/a
-
-<https://www.arbeitnow.fr/jobs/companies/alma31/software-backend-engineer-senior-confirmed-paris-or-remote-france-paris-paris-4647>
-
-- **Why:** stack match: docker, postgresql, react, redis; core-stack role title; contract/part-time signal: contract; remote
-- **CV needs to cover:** kubernetes, gcp
-
-### 61 | Senior Software Engineer - Lefebvre Sdu
-`arbeitnow` | Den Haag, Zuid-Holland, Nederland | salary n/a
-
-<https://www.arbeitnow.nl/jobs/companies/lefebvre-sdu/senior-software-engineer-den-haag-379522>
-
-- **Why:** stack match: aws, docker, graphql, nestjs, next.js, node.js, prisma, react, redis, typescript; familiar domain: insurance; posted in last 48h
-- **CV needs to cover:** kubernetes
-
 ### 59 | Interview Resources | 2 Full Stack AI Engineer, 1 GTM | REMOTE | Full-Time | $250k seed raised Interview Resources is building an AI-powered deep research platform for interview pr - Interview Resources
 `hn-hiring` | See post | salary n/a
 
 <https://news.ycombinator.com/item?id=49534032>
 
 - **Why:** stack match: aws, docker, next.js, node.js, postgresql, react, typescript; JS/TypeScript shop; full-stack role; remote
+
+### 59 | Software Engineer: Full-Stack, Backend, Frontend (m/w/d) - Prenode
+`arbeitnow` | Karlsruhe | salary n/a
+
+<https://www.arbeitnow.com/jobs/companies/prenode/software-engineer-full-stack-backend-frontend-karlsruhe-117112>
+
+- **Why:** stack match: angular, docker, node.js, react, typescript; JS/TypeScript shop; full-stack role; posted in last 48h
+- **CV needs to cover:** kubernetes, terraform, java, azure
+
+### 57 | Full Stack Engineer, Frontend-focused (Next.js + Django) - DeWarmte
+`arbeitnow` | The Hague | salary n/a
+
+<https://www.arbeitnow.nl/jobs/companies/dewarmte/full-stack-engineer-frontend-focused-nextjs-django-the-hague-284649>
+
+- **Why:** stack match: next.js, react, typescript; JS/TypeScript shop; full-stack role; contract/part-time signal: contract
+- **CV needs to cover:** django
 
 ### 57 | Senior Shopify Developer - Sanctuary Computer
 `remoteok` | n/a | $80000 - $250000
@@ -98,13 +105,13 @@
 
 - **Why:** stack match: aws, mongodb, node.js, react, typescript; JS/TypeScript shop; full-stack role; remote
 
-### 55 | (Senior) DevOps Engineer (m/f/d) - Peter Park
-`arbeitnow` | München | salary n/a
+### 55 | Senior/Leading Software Engineer (fintech) - TechBiz Global GmbH
+`arbeitnow` | Remote job | salary n/a
 
-<https://www.arbeitnow.com/jobs/companies/peter-park/senior-devops-engineer-munchen-115767>
+<https://www.arbeitnow.com/jobs/companies/techbiz-global-gmbh/remote-senior-leading-software-engineer-fintech-berlin-481208>
 
-- **Why:** stack match: aws, nestjs, postgresql, prisma, redis, typescript; contract/part-time signal: contract, b2b; familiar domain: saas; posted in last 48h
-- **CV needs to cover:** kubernetes, terraform, vue, storybook, microservices, german
+- **Why:** stack match: angular, aws, docker, node.js, postgresql, react, typescript; remote; familiar domain: fintech; posted in last 48h
+- **CV needs to cover:** microservices, german
 
 ## Source health
 
@@ -115,4 +122,4 @@
 - `jobicy`: ok (100)
 - `remoteok`: ok (99)
 - `remotive`: ok (32)
-- `weworkremotely`: ok (89)
+- `weworkremotely`: ok (88)
