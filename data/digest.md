@@ -1,6 +1,6 @@
-# Job digest - 2026-10-14 10:23 UTC
+# Job digest - 2026-10-15 10:08 UTC
 
-**2005 scanned - 767 relevant - 14 new shortlist - 140 with a direct contact email**
+**2020 scanned - 755 relevant - 11 new shortlist - 144 with a direct contact email**
 
 ## New shortlist
 
@@ -51,21 +51,13 @@
 - **Why:** stack match: angular, aws, flutter, next.js, node.js, react, react native, typescript; full-stack role; remote; familiar domain: marketplace
 - **CV needs to cover:** rust, java, swift, vue, svelte, laravel, azure, gcp
 
-### 65 | Senior Backend Engineer (f/m/d) - Predium
-`arbeitnow` | Munich | salary n/a
+### 60 | (Senior) Product Engineer - sustaind GmbH
+`arbeitnow` | Bielefeld | salary n/a
 
-<https://www.arbeitnow.com/jobs/companies/predium/senior-backend-engineer-munich-296138>
+<https://www.arbeitnow.com/jobs/companies/sustaind-gmbh/senior-product-engineer-bielefeld-429098>
 
-- **Why:** stack match: aws, graphql, nestjs, postgresql, react, typescript; core-stack role title; contract/part-time signal: b2b; familiar domain: proptech, real estate, saas
-- **CV needs to cover:** german
-
-### 63 | Full-stack Software Engineer (Contract) - Lemrock
-`arbeitnow` | Paris | salary n/a
-
-<https://www.arbeitnow.fr/jobs/companies/lemrock/full-stack-software-engineer-contract-paris-129905>
-
-- **Why:** stack match: docker, nestjs, postgresql, react, redis, tailwind, typescript; full-stack role; contract/part-time signal: contract, freelance; posted in last 48h
-- **CV needs to cover:** terraform, gcp
+- **Why:** stack match: aws, nestjs, react, redis, typescript; contract/part-time signal: b2b; remote; familiar domain: insurance, saas
+- **CV needs to cover:** kubernetes, terraform
 
 ### 59 | Interview Resources | 2 Full Stack AI Engineer, 1 GTM | REMOTE | Full-Time | $250k seed raised Interview Resources is building an AI-powered deep research platform for interview pr - Interview Resources
 `hn-hiring` | See post | salary n/a
@@ -74,21 +66,13 @@
 
 - **Why:** stack match: aws, docker, next.js, node.js, postgresql, react, typescript; JS/TypeScript shop; full-stack role; remote
 
-### 59 | Software Engineer: Full-Stack, Backend, Frontend (m/w/d) - Prenode
-`arbeitnow` | Karlsruhe | salary n/a
+### 58 | Senior Full Stack Engineer (m/w/d) - Placed Technologies GmbH
+`arbeitnow` | Berlin | salary n/a
 
-<https://www.arbeitnow.com/jobs/companies/prenode/software-engineer-full-stack-backend-frontend-karlsruhe-117112>
+<https://www.arbeitnow.com/jobs/companies/placed-technologies-gmbh/senior-full-stack-engineer-berlin-180965>
 
-- **Why:** stack match: angular, docker, node.js, react, typescript; JS/TypeScript shop; full-stack role; posted in last 48h
-- **CV needs to cover:** kubernetes, terraform, java, azure
-
-### 57 | Full Stack Engineer, Frontend-focused (Next.js + Django) - DeWarmte
-`arbeitnow` | The Hague | salary n/a
-
-<https://www.arbeitnow.nl/jobs/companies/dewarmte/full-stack-engineer-frontend-focused-nextjs-django-the-hague-284649>
-
-- **Why:** stack match: next.js, react, typescript; JS/TypeScript shop; full-stack role; contract/part-time signal: contract
-- **CV needs to cover:** django
+- **Why:** stack match: aws, docker, express, next.js, postgresql, react, redis, typescript; full-stack role; posted in last 48h
+- **CV needs to cover:** terraform, gcp
 
 ### 57 | Senior Shopify Developer - Sanctuary Computer
 `remoteok` | n/a | $80000 - $250000
@@ -105,21 +89,13 @@
 
 - **Why:** stack match: aws, mongodb, node.js, react, typescript; JS/TypeScript shop; full-stack role; remote
 
-### 55 | Senior/Leading Software Engineer (fintech) - TechBiz Global GmbH
-`arbeitnow` | Remote job | salary n/a
-
-<https://www.arbeitnow.com/jobs/companies/techbiz-global-gmbh/remote-senior-leading-software-engineer-fintech-berlin-481208>
-
-- **Why:** stack match: angular, aws, docker, node.js, postgresql, react, typescript; remote; familiar domain: fintech; posted in last 48h
-- **CV needs to cover:** microservices, german
-
 ## Source health
 
 - `adzuna`: FAILED (0) - ADZUNA_APP_ID/KEY secrets not set - Austria/Germany coverage is reduced
 - `arbeitnow`: ok (900)
 - `himalayas`: ok (20)
-- `hn-hiring`: ok (986)
+- `hn-hiring`: ok (989)
 - `jobicy`: ok (100)
 - `remoteok`: ok (99)
-- `remotive`: ok (32)
-- `weworkremotely`: ok (88)
+- `remotive`: ok (30)
+- `weworkremotely`: ok (89)
