@@ -1,6 +1,6 @@
-# Job digest - 2026-10-15 10:08 UTC
+# Job digest - 2026-10-16 09:59 UTC
 
-**2020 scanned - 755 relevant - 11 new shortlist - 144 with a direct contact email**
+**2016 scanned - 777 relevant - 10 new shortlist - 147 with a direct contact email**
 
 ## New shortlist
 
@@ -36,12 +36,13 @@
 - **Why:** stack match: aws, next.js, node.js, react, typescript; JS/TypeScript shop; core-stack role title; remote
 - **CV needs to cover:** german
 
-### 68 | Senior Software Engineer Full-stack - CDI - Solteo
-`arbeitnow` | Paris | salary n/a
+### 67 | Senior Full Stack Engineer (Realtime & Voice) Customer Experience Platform - Hopper
+`arbeitnow` | England - Remote | salary n/a
 
-<https://www.arbeitnow.fr/jobs/companies/solteo/senior-software-engineer-full-stack-cdi-paris-300688>
+<https://www.arbeitnow.co.uk/jobs/companies/hopper/remote-senior-full-stack-engineer-realtime-voice-customer-experience-platform-44760>
 
-- **Why:** stack match: aws, docker, node.js, postgresql, react, react native, typescript; full-stack role; contract/part-time signal: b2b; familiar domain: saas
+- **Why:** stack match: aws, react, typescript; full-stack role; contract/part-time signal: b2b; remote
+- **CV needs to cover:** go, gcp, microservices
 
 ### 66 | Senior Angular Full-stack Developer - Lemon.io
 `weworkremotely` | Anywhere in the World | salary n/a
@@ -51,14 +52,6 @@
 - **Why:** stack match: angular, aws, flutter, next.js, node.js, react, react native, typescript; full-stack role; remote; familiar domain: marketplace
 - **CV needs to cover:** rust, java, swift, vue, svelte, laravel, azure, gcp
 
-### 60 | (Senior) Product Engineer - sustaind GmbH
-`arbeitnow` | Bielefeld | salary n/a
-
-<https://www.arbeitnow.com/jobs/companies/sustaind-gmbh/senior-product-engineer-bielefeld-429098>
-
-- **Why:** stack match: aws, nestjs, react, redis, typescript; contract/part-time signal: b2b; remote; familiar domain: insurance, saas
-- **CV needs to cover:** kubernetes, terraform
-
 ### 59 | Interview Resources | 2 Full Stack AI Engineer, 1 GTM | REMOTE | Full-Time | $250k seed raised Interview Resources is building an AI-powered deep research platform for interview pr - Interview Resources
 `hn-hiring` | See post | salary n/a
 
@@ -66,13 +59,12 @@
 
 - **Why:** stack match: aws, docker, next.js, node.js, postgresql, react, typescript; JS/TypeScript shop; full-stack role; remote
 
-### 58 | Senior Full Stack Engineer (m/w/d) - Placed Technologies GmbH
-`arbeitnow` | Berlin | salary n/a
+### 58 | Sr REACT NATIVE - Somnio Software
+`remoteok` | n/a | salary n/a
 
-<https://www.arbeitnow.com/jobs/companies/placed-technologies-gmbh/senior-full-stack-engineer-berlin-180965>
+<https://remoteOK.com/remote-jobs/remote-sr-react-native-somnio-software-1137523>
 
-- **Why:** stack match: aws, docker, express, next.js, postgresql, react, redis, typescript; full-stack role; posted in last 48h
-- **CV needs to cover:** terraform, gcp
+- **Why:** stack match: flutter, node.js, react, react native; JS/TypeScript shop; core-stack role title; familiar domain: marketplace
 
 ### 57 | Senior Shopify Developer - Sanctuary Computer
 `remoteok` | n/a | $80000 - $250000
@@ -94,8 +86,8 @@
 - `adzuna`: FAILED (0) - ADZUNA_APP_ID/KEY secrets not set - Austria/Germany coverage is reduced
 - `arbeitnow`: ok (900)
 - `himalayas`: ok (20)
-- `hn-hiring`: ok (989)
+- `hn-hiring`: ok (990)
 - `jobicy`: ok (100)
 - `remoteok`: ok (99)
-- `remotive`: ok (30)
-- `weworkremotely`: ok (89)
+- `remotive`: ok (28)
+- `weworkremotely`: ok (92)
