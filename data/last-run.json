@@ -1,15 +1,15 @@
 {
   "stats": {
-    "scanned": 1980,
-    "kept": 782,
-    "shortlist": 9,
-    "with_contact_email": 148,
-    "generated_at": "2026-10-17T09:31:37+00:00"
+    "scanned": 1933,
+    "kept": 772,
+    "shortlist": 14,
+    "with_contact_email": 145,
+    "generated_at": "2026-10-18T09:45:06+00:00"
   },
   "sources": {
     "remotive": {
       "ok": true,
-      "count": 26
+      "count": 24
     },
     "remoteok": {
       "ok": true,
@@ -29,7 +29,7 @@
     },
     "weworkremotely": {
       "ok": true,
-      "count": 93
+      "count": 100
     },
     "hn-hiring": {
       "ok": true,

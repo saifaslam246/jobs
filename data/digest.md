@@ -1,6 +1,6 @@
-# Job digest - 2026-10-17 09:31 UTC
+# Job digest - 2026-10-18 09:45 UTC
 
-**1980 scanned - 782 relevant - 9 new shortlist - 148 with a direct contact email**
+**1933 scanned - 772 relevant - 14 new shortlist - 145 with a direct contact email**
 
 ## New shortlist
 
@@ -43,6 +43,22 @@
 - **Why:** stack match: aws, next.js, node.js, react, typescript; JS/TypeScript shop; core-stack role title; remote
 - **CV needs to cover:** german
 
+### 68 | Senior React Native Engineer - App Owner (w/m/x/d) - MILES Mobility GmbH
+`arbeitnow` | Berlin | salary n/a
+
+<https://www.arbeitnow.com/jobs/companies/miles-mobility-gmbh/senior-react-native-engineer-app-owner-d-berlin-295111>
+
+- **Why:** stack match: offline, react, react native, typescript; JS/TypeScript shop; core-stack role title; contract/part-time signal: contract
+- **CV needs to cover:** java, kotlin, swift, jest
+
+### 67 | (Senior) Full-Stack Engineer [TypeScript] - orcristtechnologies
+`arbeitnow` | n/a | salary n/a
+
+<https://www.arbeitnow.com/jobs/companies/orcristtechnologies/senior-full-stack-engineer-typescript-143468>
+
+- **Why:** stack match: next.js, node.js, react, typescript; JS/TypeScript shop; full-stack role; contract/part-time signal: b2b
+- **CV needs to cover:** kubernetes, german
+
 ### 66 | Senior Angular Full-stack Developer - Lemon.io
 `weworkremotely` | Anywhere in the World | salary n/a
 
@@ -50,6 +66,14 @@
 
 - **Why:** stack match: angular, aws, flutter, next.js, node.js, react, react native, typescript; full-stack role; remote; familiar domain: marketplace
 - **CV needs to cover:** rust, java, swift, vue, svelte, laravel, azure, gcp
+
+### 62 | (Senior) Full-Stack Engineer [TypeScript - Prototyping] - orcristtechnologies
+`arbeitnow` | n/a | salary n/a
+
+<https://www.arbeitnow.com/jobs/companies/orcristtechnologies/senior-full-stack-engineer-typescript-prototyping-252909>
+
+- **Why:** stack match: next.js, node.js, postgresql, react, typescript; full-stack role; contract/part-time signal: b2b; familiar domain: saas
+- **CV needs to cover:** kubernetes, go, kafka, german
 
 ### 59 | Interview Resources | 2 Full Stack AI Engineer, 1 GTM | REMOTE | Full-Time | $250k seed raised Interview Resources is building an AI-powered deep research platform for interview pr - Interview Resources
 `hn-hiring` | See post | salary n/a
@@ -66,12 +90,26 @@
 - **Why:** stack match: graphql, next.js, node.js, playwright, postgresql, redis, stripe, tailwind, typescript; contract/part-time signal: contract, b2b
 - **CV needs to cover:** jest, cypress, figma
 
+### 56 | Medior Web & Mobile Full Stack Developer - Learned
+`arbeitnow` | Utrecht, Utrecht, Nederland | salary n/a
+
+<https://www.arbeitnow.nl/jobs/companies/learned/medior-web-mobile-full-stack-developer-utrecht-375740>
+
+- **Why:** stack match: mongodb, node.js, react, react native, typescript; full-stack role; contract/part-time signal: b2b; familiar domain: saas
+
 ### 55 | AiMi | Full Stack AI Engineer | Remote(Everywhere) | Full-time AiMi builds agentic AI infrastructure for capital markets: autonomous agents that ingest venue and vendor notificatio - AiMi
 `hn-hiring` | See post | salary n/a - contact: `vishnu.swaroop@aimi.technology`
 
 <https://news.ycombinator.com/item?id=49552714>
 
 - **Why:** stack match: aws, mongodb, node.js, react, typescript; JS/TypeScript shop; full-stack role; remote
+
+### 55 | Staff Full-Stack Engineer (Next.js, Medusa) (m/w/d) - Scento
+`arbeitnow` | Berlin | salary n/a
+
+<https://www.arbeitnow.com/jobs/companies/scento/staff-full-stack-engineer-nextjs-medusa-berlin-149279>
+
+- **Why:** stack match: next.js, node.js, offline, postgresql, react, stripe, typescript; full-stack role; posted in last 48h
 
 ## Source health
 
@@ -81,5 +119,5 @@
 - `hn-hiring`: ok (989)
 - `jobicy`: ok (100)
 - `remoteok`: ok (99)
-- `remotive`: ok (26)
-- `weworkremotely`: ok (93)
+- `remotive`: ok (24)
+- `weworkremotely`: ok (100)
