@@ -1,6 +1,6 @@
-# Job digest - 2026-10-18 09:45 UTC
+# Job digest - 2026-10-19 11:00 UTC
 
-**1933 scanned - 772 relevant - 14 new shortlist - 145 with a direct contact email**
+**2022 scanned - 723 relevant - 16 new shortlist - 137 with a direct contact email**
 
 ## New shortlist
 
@@ -12,6 +12,14 @@
 - **Why:** stack match: graphql, next.js, node.js, playwright, postgresql, redis, stripe, tailwind, typescript; JS/TypeScript shop; contract/part-time signal: contract, b2b; remote
 - **CV needs to cover:** jest, cypress, figma
 
+### 79 | Stage Développeur Full Stack (H/F) - OHana Entreprise
+`arbeitnow` | Paris | salary n/a
+
+<https://www.arbeitnow.fr/jobs/companies/ohana-entreprise/stage-developpeur-full-stack-h-f-paris-163341>
+
+- **Why:** stack match: aws, docker, express, flutter, graphql, nestjs, next.js, node.js, playwright, postgresql; full-stack role; remote; posted in last 48h
+- **CV needs to cover:** django, jest
+
 ### 76 | Senior React Full stack Developer - Lemon.io
 `remoteok` | n/a | $80000 - $200000
 
@@ -19,21 +27,6 @@
 
 - **Why:** stack match: angular, aws, flutter, next.js, node.js, react, react native, typescript; full-stack role; remote; familiar domain: marketplace
 - **CV needs to cover:** rust, java, swift, vue, svelte, laravel, azure, gcp
-
-### 70 | Senior Full-stack Engineer - Limbic
-`jobicy` | Canada | salary n/a
-
-<https://jobicy.com/jobs/153380-senior-full-stack-engineer-2>
-
-- **Why:** stack match: aws, graphql, mongodb, node.js, postgresql, react, react native, redis, typescript; full-stack role; familiar domain: fintech, healthcare; posted in last 48h
-
-### 69 | Mobile Engineer - React Native - Alma31
-`arbeitnow` | Paris, Paris | salary n/a
-
-<https://www.arbeitnow.fr/jobs/companies/alma31/mobile-engineer-react-native-paris-paris-490024>
-
-- **Why:** stack match: react, react native, stripe, typescript; JS/TypeScript shop; core-stack role title; contract/part-time signal: contract
-- **CV needs to cover:** jest, figma
 
 ### 69 | PAGNOS | Cloud Engineer, AWS Serverless (TypeScript/Node.js) | REMOTE (Germany) | Full-time | €75k–80k | business-fluent German required We build serverless applications on AWS for - PAGNOS
 `hn-hiring` | See post | salary n/a - contact: `recruiting@pagnos.com`
@@ -43,13 +36,13 @@
 - **Why:** stack match: aws, next.js, node.js, react, typescript; JS/TypeScript shop; core-stack role title; remote
 - **CV needs to cover:** german
 
-### 68 | Senior React Native Engineer - App Owner (w/m/x/d) - MILES Mobility GmbH
+### 68 | Full-Stack & Mobile Engineer - NAIRON
 `arbeitnow` | Berlin | salary n/a
 
-<https://www.arbeitnow.com/jobs/companies/miles-mobility-gmbh/senior-react-native-engineer-app-owner-d-berlin-295111>
+<https://www.arbeitnow.com/jobs/companies/nairon/full-stack-mobile-engineer-berlin-182046>
 
-- **Why:** stack match: offline, react, react native, typescript; JS/TypeScript shop; core-stack role title; contract/part-time signal: contract
-- **CV needs to cover:** java, kotlin, swift, jest
+- **Why:** stack match: docker, next.js, postgresql, prisma, react, react native, tailwind, typescript; full-stack role; remote; familiar domain: billing
+- **CV needs to cover:** kubernetes, swift, german
 
 ### 67 | (Senior) Full-Stack Engineer [TypeScript] - orcristtechnologies
 `arbeitnow` | n/a | salary n/a
@@ -67,6 +60,21 @@
 - **Why:** stack match: angular, aws, flutter, next.js, node.js, react, react native, typescript; full-stack role; remote; familiar domain: marketplace
 - **CV needs to cover:** rust, java, swift, vue, svelte, laravel, azure, gcp
 
+### 66 | Senior Full-stack Engineer - Limbic
+`jobicy` | Canada | salary n/a
+
+<https://jobicy.com/jobs/153380-senior-full-stack-engineer-2>
+
+- **Why:** stack match: aws, graphql, mongodb, node.js, postgresql, react, react native, redis, typescript; full-stack role; familiar domain: fintech, healthcare
+
+### 63 | Senior Backend Developer (Node.js / Nest.js) - Proxify AB
+`weworkremotely` | Anywhere in the World | salary n/a
+
+<https://weworkremotely.com/remote-jobs/proxify-ab-senior-backend-developer-node-js-nest-js-4>
+
+- **Why:** stack match: aws, docker, graphql, mongodb, node.js, postgresql, typescript; core-stack role title; remote; posted in last 48h
+- **CV needs to cover:** kafka, rabbitmq, azure, gcp, jest, microservices
+
 ### 62 | (Senior) Full-Stack Engineer [TypeScript - Prototyping] - orcristtechnologies
 `arbeitnow` | n/a | salary n/a
 
@@ -75,12 +83,27 @@
 - **Why:** stack match: next.js, node.js, postgresql, react, typescript; full-stack role; contract/part-time signal: b2b; familiar domain: saas
 - **CV needs to cover:** kubernetes, go, kafka, german
 
+### 60 | Senior Fullstack Developer (React.js / Node.js) - Proxify AB
+`weworkremotely` | Anywhere in the World | salary n/a
+
+<https://weworkremotely.com/remote-jobs/proxify-ab-senior-fullstack-developer-react-js-node-js-5>
+
+- **Why:** stack match: mongodb, node.js, react; JS/TypeScript shop; full-stack role; remote
+- **CV needs to cover:** microservices
+
 ### 59 | Interview Resources | 2 Full Stack AI Engineer, 1 GTM | REMOTE | Full-Time | $250k seed raised Interview Resources is building an AI-powered deep research platform for interview pr - Interview Resources
 `hn-hiring` | See post | salary n/a
 
 <https://news.ycombinator.com/item?id=49534032>
 
 - **Why:** stack match: aws, docker, next.js, node.js, postgresql, react, typescript; JS/TypeScript shop; full-stack role; remote
+
+### 59 | Senior Full Stack Developer (m/w/d) - TechBiz Global GmbH
+`arbeitnow` | Berlin, Berlin, Germany | salary n/a
+
+<https://www.arbeitnow.com/jobs/companies/techbiz-global-gmbh/senior-full-stack-developer-berlin-329915>
+
+- **Why:** stack match: angular, express, mongodb, node.js, react; full-stack role; contract/part-time signal: consulting; EU/Austria friendly
 
 ### 57 | Senior Shopify Developer - Sanctuary Computer
 `remoteok` | n/a | $80000 - $250000
@@ -104,20 +127,13 @@
 
 - **Why:** stack match: aws, mongodb, node.js, react, typescript; JS/TypeScript shop; full-stack role; remote
 
-### 55 | Staff Full-Stack Engineer (Next.js, Medusa) (m/w/d) - Scento
-`arbeitnow` | Berlin | salary n/a
-
-<https://www.arbeitnow.com/jobs/companies/scento/staff-full-stack-engineer-nextjs-medusa-berlin-149279>
-
-- **Why:** stack match: next.js, node.js, offline, postgresql, react, stripe, typescript; full-stack role; posted in last 48h
-
 ## Source health
 
 - `adzuna`: FAILED (0) - ADZUNA_APP_ID/KEY secrets not set - Austria/Germany coverage is reduced
 - `arbeitnow`: ok (900)
 - `himalayas`: ok (20)
-- `hn-hiring`: ok (989)
+- `hn-hiring`: ok (987)
 - `jobicy`: ok (100)
 - `remoteok`: ok (99)
 - `remotive`: ok (24)
-- `weworkremotely`: ok (100)
+- `weworkremotely`: ok (105)
