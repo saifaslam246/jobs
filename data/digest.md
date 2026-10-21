@@ -1,6 +1,6 @@
-# Job digest - 2026-10-20 10:14 UTC
+# Job digest - 2026-10-21 10:22 UTC
 
-**2009 scanned - 739 relevant - 12 new shortlist - 132 with a direct contact email**
+**2029 scanned - 792 relevant - 13 new shortlist - 133 with a direct contact email**
 
 ## New shortlist
 
@@ -19,6 +19,14 @@
 
 - **Why:** stack match: angular, aws, flutter, next.js, node.js, react, react native, typescript; full-stack role; remote; familiar domain: marketplace
 - **CV needs to cover:** rust, java, swift, vue, svelte, laravel, azure, gcp
+
+### 75 | Senior Full-Stack Engineer (m/f/d) - Buying Labs
+`arbeitnow` | Hamburg | salary n/a
+
+<https://www.arbeitnow.com/jobs/companies/buying-labs/senior-full-stack-engineer-hamburg-306603>
+
+- **Why:** stack match: aws, docker, express, node.js, postgresql, prisma, react, redis, typescript; full-stack role; contract/part-time signal: b2b; posted in last 48h
+- **CV needs to cover:** go, rabbitmq, german
 
 ### 70 | Full-stack Developer - ADOMIK
 `arbeitnow` | Paris | salary n/a
@@ -44,29 +52,13 @@
 - **Why:** stack match: angular, aws, flutter, next.js, node.js, react, react native, typescript; full-stack role; remote; familiar domain: marketplace
 - **CV needs to cover:** rust, java, swift, vue, svelte, laravel, azure, gcp
 
-### 63 | Senior Backend Developer (Node.js / Nest.js) - Proxify AB
-`weworkremotely` | Anywhere in the World | salary n/a
+### 62 | Staff Backend Engineer, Hierarchy - ClickUp
+`jobicy` | USA | salary n/a - contact: `AskPeople@ClickUp.com`
 
-<https://weworkremotely.com/remote-jobs/proxify-ab-senior-backend-developer-node-js-nest-js-4>
+<https://jobicy.com/jobs/151239-staff-backend-engineer-hierarchy>
 
-- **Why:** stack match: aws, docker, graphql, mongodb, node.js, postgresql, typescript; core-stack role title; remote; posted in last 48h
-- **CV needs to cover:** kafka, rabbitmq, azure, gcp, jest, microservices
-
-### 60 | Senior Fullstack Developer (React.js / Node.js) - Proxify AB
-`weworkremotely` | Anywhere in the World | salary n/a
-
-<https://weworkremotely.com/remote-jobs/proxify-ab-senior-fullstack-developer-react-js-node-js-5>
-
-- **Why:** stack match: mongodb, node.js, react; JS/TypeScript shop; full-stack role; remote
-- **CV needs to cover:** microservices
-
-### 59 | Senior Full Stack Engineer (Realtime & Voice) Customer Experience Platform - Hopper
-`jobicy` | UK | salary n/a
-
-<https://jobicy.com/jobs/153659-senior-full-stack-engineer-realtime-voice-customer-experience-platform>
-
-- **Why:** stack match: aws, react, typescript; full-stack role; contract/part-time signal: b2b; familiar domain: booking, fintech, insurance
-- **CV needs to cover:** go, gcp, microservices
+- **Why:** stack match: angular, docker, express, nestjs, node.js, postgresql, react, typescript; core-stack role title; familiar domain: saas; direct contact email in posting
+- **CV needs to cover:** kubernetes, vue, kafka, microservices
 
 ### 59 | Interview Resources | 2 Full Stack AI Engineer, 1 GTM | REMOTE | Full-Time | $250k seed raised Interview Resources is building an AI-powered deep research platform for interview pr - Interview Resources
 `hn-hiring` | See post | salary n/a
@@ -75,12 +67,21 @@
 
 - **Why:** stack match: aws, docker, next.js, node.js, postgresql, react, typescript; JS/TypeScript shop; full-stack role; remote
 
-### 59 | Full-Stack-Entwickler (m/w/d) – React / Next.js mit UI/UX-Fokus - REGION10 GROUP GmbH
-`arbeitnow` | Kösching | salary n/a
+### 59 | Senior Backend Developer (Node.js / Nest.js) - Proxify AB
+`weworkremotely` | Anywhere in the World | salary n/a
 
-<https://www.arbeitnow.com/jobs/companies/region10-group-gmbh/full-stack-entwickler-react-nextjs-mit-ui-ux-fokus-kosching-324697>
+<https://weworkremotely.com/remote-jobs/proxify-ab-senior-backend-developer-node-js-nest-js-4>
 
-- **Why:** stack match: next.js, node.js, postgresql, react, tailwind; JS/TypeScript shop; full-stack role; posted in last 48h
+- **Why:** stack match: aws, docker, graphql, mongodb, node.js, postgresql, typescript; core-stack role title; remote
+- **CV needs to cover:** kafka, rabbitmq, azure, gcp, jest, microservices
+
+### 56 | Senior Fullstack Developer (React.js / Node.js) - Proxify AB
+`weworkremotely` | Anywhere in the World | salary n/a
+
+<https://weworkremotely.com/remote-jobs/proxify-ab-senior-fullstack-developer-react-js-node-js-5>
+
+- **Why:** stack match: mongodb, node.js, react; JS/TypeScript shop; full-stack role; remote
+- **CV needs to cover:** microservices
 
 ### 55 | AiMi | Full Stack AI Engineer | Remote(Everywhere) | Full-time AiMi builds agentic AI infrastructure for capital markets: autonomous agents that ingest venue and vendor notificatio - AiMi
 `hn-hiring` | See post | salary n/a - contact: `vishnu.swaroop@aimi.technology`
@@ -88,6 +89,13 @@
 <https://news.ycombinator.com/item?id=49552714>
 
 - **Why:** stack match: aws, mongodb, node.js, react, typescript; JS/TypeScript shop; full-stack role; remote
+
+### 55 | Full Stack Blockchain Engineer for RWA market - Blockvora
+`arbeitnow` | Zug | salary n/a
+
+<https://www.arbeitnow.ch/jobs/companies/blockvora/full-stack-blockchain-engineer-for-rwa-market-zug-393337>
+
+- **Why:** stack match: next.js, react, typescript; full-stack role; contract/part-time signal: contract, contractor, freelance, freelancer; remote
 
 ### 55 | Staff Software Engineer - Next-Gen - NetDocuments
 `jobicy` | USA | salary n/a - contact: `hrgroup@netdocuments.com`
@@ -102,8 +110,8 @@
 - `adzuna`: FAILED (0) - ADZUNA_APP_ID/KEY secrets not set - Austria/Germany coverage is reduced
 - `arbeitnow`: ok (900)
 - `himalayas`: ok (20)
-- `hn-hiring`: ok (987)
+- `hn-hiring`: ok (985)
 - `jobicy`: ok (100)
 - `remoteok`: ok (99)
 - `remotive`: ok (20)
-- `weworkremotely`: ok (109)
+- `weworkremotely`: ok (112)
