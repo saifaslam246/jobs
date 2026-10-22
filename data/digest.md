@@ -1,16 +1,8 @@
-# Job digest - 2026-10-21 10:22 UTC
+# Job digest - 2026-10-22 10:21 UTC
 
-**2029 scanned - 792 relevant - 13 new shortlist - 133 with a direct contact email**
+**1989 scanned - 724 relevant - 11 new shortlist - 129 with a direct contact email**
 
 ## New shortlist
-
-### 77 | Mobile Engineer - React Native (Paris or Remote France) - Alma
-`jobicy` | France | salary n/a
-
-<https://jobicy.com/jobs/155885-mobile-engineer-react-native-paris-or-remote-france>
-
-- **Why:** stack match: react, react native, stripe, typescript; JS/TypeScript shop; core-stack role title; contract/part-time signal: contract
-- **CV needs to cover:** jest, figma
 
 ### 76 | Senior React Full stack Developer - Lemon.io
 `remoteok` | n/a | $80000 - $200000
@@ -20,21 +12,13 @@
 - **Why:** stack match: angular, aws, flutter, next.js, node.js, react, react native, typescript; full-stack role; remote; familiar domain: marketplace
 - **CV needs to cover:** rust, java, swift, vue, svelte, laravel, azure, gcp
 
-### 75 | Senior Full-Stack Engineer (m/f/d) - Buying Labs
-`arbeitnow` | Hamburg | salary n/a
+### 74 | Senior Vue Developer - Lemon.io
+`weworkremotely` | Anywhere in the World | salary n/a
 
-<https://www.arbeitnow.com/jobs/companies/buying-labs/senior-full-stack-engineer-hamburg-306603>
+<https://weworkremotely.com/remote-jobs/lemon-io-senior-vue-developer-1>
 
-- **Why:** stack match: aws, docker, express, node.js, postgresql, prisma, react, redis, typescript; full-stack role; contract/part-time signal: b2b; posted in last 48h
-- **CV needs to cover:** go, rabbitmq, german
-
-### 70 | Full-stack Developer - ADOMIK
-`arbeitnow` | Paris | salary n/a
-
-<https://www.arbeitnow.fr/jobs/companies/adomik/full-stack-developer-paris-258791>
-
-- **Why:** stack match: aws, mongodb, react, redis, tailwind, typescript; full-stack role; contract/part-time signal: freelance; remote
-- **CV needs to cover:** rails, jest, cypress
+- **Why:** stack match: angular, flutter, next.js, node.js, react, react native, typescript; JS/TypeScript shop; contract/part-time signal: contract; remote
+- **CV needs to cover:** rust, java, swift, vue, svelte, laravel
 
 ### 69 | PAGNOS | Cloud Engineer, AWS Serverless (TypeScript/Node.js) | REMOTE (Germany) | Full-time | €75k–80k | business-fluent German required We build serverless applications on AWS for - PAGNOS
 `hn-hiring` | See post | salary n/a - contact: `recruiting@pagnos.com`
@@ -59,6 +43,14 @@
 
 - **Why:** stack match: angular, docker, express, nestjs, node.js, postgresql, react, typescript; core-stack role title; familiar domain: saas; direct contact email in posting
 - **CV needs to cover:** kubernetes, vue, kafka, microservices
+
+### 61 | Senior Full-Stack Engineer (Web + Infrastructure) - Searoutes
+`arbeitnow` | Germany | salary n/a
+
+<https://www.arbeitnow.com/jobs/companies/searoutes/remote-senior-full-stack-engineer-web-infrastructure-germany-245745>
+
+- **Why:** stack match: docker, playwright, react, tailwind, typescript; full-stack role; remote; EU/Austria friendly
+- **CV needs to cover:** terraform, go, java, jest
 
 ### 59 | Interview Resources | 2 Full Stack AI Engineer, 1 GTM | REMOTE | Full-Time | $250k seed raised Interview Resources is building an AI-powered deep research platform for interview pr - Interview Resources
 `hn-hiring` | See post | salary n/a
@@ -97,21 +89,13 @@
 
 - **Why:** stack match: next.js, react, typescript; full-stack role; contract/part-time signal: contract, contractor, freelance, freelancer; remote
 
-### 55 | Staff Software Engineer - Next-Gen - NetDocuments
-`jobicy` | USA | salary n/a - contact: `hrgroup@netdocuments.com`
-
-<https://jobicy.com/jobs/155863-staff-software-engineer-next-gen>
-
-- **Why:** stack match: aws, graphql, node.js, react, typescript; contract/part-time signal: b2b; familiar domain: healthcare, saas; direct contact email in posting
-- **CV needs to cover:** java, kafka, microservices
-
 ## Source health
 
 - `adzuna`: FAILED (0) - ADZUNA_APP_ID/KEY secrets not set - Austria/Germany coverage is reduced
 - `arbeitnow`: ok (900)
 - `himalayas`: ok (20)
-- `hn-hiring`: ok (985)
+- `hn-hiring`: ok (984)
 - `jobicy`: ok (100)
 - `remoteok`: ok (99)
 - `remotive`: ok (20)
-- `weworkremotely`: ok (112)
+- `weworkremotely`: ok (118)
