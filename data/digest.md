@@ -1,6 +1,6 @@
-# Job digest - 2026-10-23 10:16 UTC
+# Job digest - 2026-10-24 09:39 UTC
 
-**2033 scanned - 760 relevant - 13 new shortlist - 134 with a direct contact email**
+**1987 scanned - 768 relevant - 14 new shortlist - 134 with a direct contact email**
 
 ## New shortlist
 
@@ -12,7 +12,23 @@
 - **Why:** stack match: angular, aws, flutter, next.js, node.js, react, react native, typescript; full-stack role; remote; familiar domain: marketplace
 - **CV needs to cover:** rust, java, swift, vue, svelte, laravel, azure, gcp
 
-### 74 | Senior Vue Developer - Lemon.io
+### 72 | Senior DevOps Engineer - Lemon.io
+`remoteok` | n/a | $50000 - $150000
+
+<https://remoteOK.com/remote-jobs/remote-senior-devops-engineer-lemon-io-1137557>
+
+- **Why:** stack match: angular, aws, flutter, next.js, node.js, react, react native, typescript; contract/part-time signal: contract; remote; posted in last 48h
+- **CV needs to cover:** kubernetes, terraform, rust, java, swift, vue, svelte, laravel
+
+### 72 | Senior Full Stack Engineer - Upflow
+`arbeitnow` | Paris or Remote | salary n/a
+
+<https://www.arbeitnow.fr/jobs/companies/upflow/senior-full-stack-engineer-paris-164464>
+
+- **Why:** stack match: express, graphql, node.js, react, redis, typescript; full-stack role; contract/part-time signal: b2b; remote
+- **CV needs to cover:** terraform, go, gcp
+
+### 70 | Senior Vue Developer - Lemon.io
 `weworkremotely` | Anywhere in the World | salary n/a
 
 <https://weworkremotely.com/remote-jobs/lemon-io-senior-vue-developer-1>
@@ -36,6 +52,14 @@
 - **Why:** stack match: angular, aws, flutter, next.js, node.js, react, react native, typescript; full-stack role; remote; familiar domain: marketplace
 - **CV needs to cover:** rust, java, swift, vue, svelte, laravel, azure, gcp
 
+### 64 | Junior Software Engineer – Early Career (Strong Problem solving & Coding Focus) – 100% Remote within Poland - Docplanner
+`jobicy` | Poland | salary n/a
+
+<https://jobicy.com/jobs/156547-junior-software-engineer-early-career-strong-problem-solving-coding-focus-100-remote-within-poland-2>
+
+- **Why:** stack match: aws, node.js, react, react native, typescript; contract/part-time signal: contract; remote; familiar domain: booking, healthcare, marketplace
+- **CV needs to cover:** kubernetes, terraform, go
+
 ### 63 | Full Stack TypeScript Developer - Rocsys
 `arbeitnow` | Rijswijk, Zuid-Holland, Netherlands | salary n/a
 
@@ -43,6 +67,14 @@
 
 - **Why:** stack match: aws, docker, graphql, nestjs, node.js, postgresql, react, typescript; full-stack role; familiar domain: saas; posted in last 48h
 - **CV needs to cover:** terraform
+
+### 60 | Backend Engineer - Blockvora
+`arbeitnow` | Zug | salary n/a
+
+<https://www.arbeitnow.ch/jobs/companies/blockvora/backend-engineer-zug-145470>
+
+- **Why:** stack match: aws, docker, graphql, node.js, postgresql, redis, typescript; primarily a non-JS stack; core-stack role title; contract/part-time signal: contract, consulting
+- **CV needs to cover:** go, rust, java, gcp, microservices
 
 ### 59 | Interview Resources | 2 Full Stack AI Engineer, 1 GTM | REMOTE | Full-Time | $250k seed raised Interview Resources is building an AI-powered deep research platform for interview pr - Interview Resources
 `hn-hiring` | See post | salary n/a
@@ -58,22 +90,6 @@
 
 - **Why:** stack match: aws, docker, graphql, mongodb, node.js, postgresql, typescript; core-stack role title; remote
 - **CV needs to cover:** kafka, rabbitmq, azure, gcp, jest, microservices
-
-### 58 | Staff Backend Engineer, Hierarchy - ClickUp
-`jobicy` | USA | salary n/a - contact: `AskPeople@ClickUp.com`
-
-<https://jobicy.com/jobs/151239-staff-backend-engineer-hierarchy>
-
-- **Why:** stack match: angular, docker, express, nestjs, node.js, postgresql, react, typescript; core-stack role title; familiar domain: saas; direct contact email in posting
-- **CV needs to cover:** kubernetes, vue, kafka, microservices
-
-### 58 | Senior Full-Stack Engineer (Web + Infrastructure) - Searoutes
-`arbeitnow` | France | salary n/a
-
-<https://www.arbeitnow.fr/jobs/companies/searoutes/remote-senior-full-stack-engineer-web-infrastructure-france-458389>
-
-- **Why:** stack match: docker, playwright, react, tailwind, typescript; full-stack role; remote; familiar domain: billing, logistics
-- **CV needs to cover:** terraform, go, java, jest
 
 ### 56 | Fullstack Engineer - Dispatch
 `jobicy` | USA | salary n/a
@@ -97,14 +113,6 @@
 
 - **Why:** stack match: aws, mongodb, node.js, react, typescript; JS/TypeScript shop; full-stack role; remote
 
-### 55 | Senior Software Engineer - saas.group
-`jobicy` | Europe | salary n/a
-
-<https://jobicy.com/jobs/156308-senior-software-engineer-15>
-
-- **Why:** stack match: mongodb, node.js, redis, scraping, typescript; contract/part-time signal: b2b; EU/Austria friendly; familiar domain: real estate, saas
-- **CV needs to cover:** kubernetes, go
-
 ## Source health
 
 - `adzuna`: FAILED (0) - ADZUNA_APP_ID/KEY secrets not set - Austria/Germany coverage is reduced
@@ -113,5 +121,5 @@
 - `hn-hiring`: ok (984)
 - `jobicy`: ok (100)
 - `remoteok`: ok (99)
-- `remotive`: ok (18)
-- `weworkremotely`: ok (120)
+- `remotive`: ok (20)
+- `weworkremotely`: ok (124)
