@@ -1,6 +1,6 @@
-# Job digest - 2026-10-25 09:57 UTC
+# Job digest - 2026-10-26 11:20 UTC
 
-**2051 scanned - 775 relevant - 12 new shortlist - 135 with a direct contact email**
+**2059 scanned - 789 relevant - 9 new shortlist - 134 with a direct contact email**
 
 ## New shortlist
 
@@ -11,14 +11,6 @@
 
 - **Why:** stack match: angular, aws, flutter, next.js, node.js, react, react native, typescript; full-stack role; remote; familiar domain: marketplace
 - **CV needs to cover:** rust, java, swift, vue, svelte, laravel, azure, gcp
-
-### 72 | Senior Full Stack Engineer - Upflow
-`arbeitnow` | Paris or Remote | salary n/a
-
-<https://www.arbeitnow.fr/jobs/companies/upflow/senior-full-stack-engineer-paris-164464>
-
-- **Why:** stack match: express, graphql, node.js, react, redis, typescript; full-stack role; contract/part-time signal: b2b; remote
-- **CV needs to cover:** terraform, go, gcp
 
 ### 70 | Senior Vue Developer - Lemon.io
 `weworkremotely` | Anywhere in the World | salary n/a
@@ -36,14 +28,6 @@
 - **Why:** stack match: angular, aws, flutter, next.js, node.js, react, react native, typescript; contract/part-time signal: contract; remote
 - **CV needs to cover:** kubernetes, terraform, rust, java, swift, vue, svelte, laravel
 
-### 67 | PAGNOS | Cloud Engineer, AWS Serverless (TypeScript/Node.js) | REMOTE (Germany) | Full-time | €75k–80k | business-fluent German required We build serverless applications on AWS for - PAGNOS
-`hn-hiring` | See post | salary n/a - contact: `recruiting@pagnos.com`
-
-<https://news.ycombinator.com/item?id=49922616>
-
-- **Why:** stack match: aws, next.js, node.js, react, typescript; JS/TypeScript shop; core-stack role title; remote
-- **CV needs to cover:** german
-
 ### 66 | Senior Angular Full-stack Developer - Lemon.io
 `weworkremotely` | Anywhere in the World | salary n/a
 
@@ -52,21 +36,21 @@
 - **Why:** stack match: angular, aws, flutter, next.js, node.js, react, react native, typescript; full-stack role; remote; familiar domain: marketplace
 - **CV needs to cover:** rust, java, swift, vue, svelte, laravel, azure, gcp
 
-### 60 | Backend Engineer - Blockvora
-`arbeitnow` | Zug | salary n/a
+### 65 | Medior Full Stack Developer (PHP / TypeScript) - MediaLab Online BV
+`arbeitnow` | Amsterdam | salary n/a
 
-<https://www.arbeitnow.ch/jobs/companies/blockvora/backend-engineer-zug-145470>
+<https://www.arbeitnow.nl/jobs/companies/medialab-online-bv/medior-full-stack-developer-php-typescript-amsterdam-360493>
 
-- **Why:** stack match: aws, docker, graphql, node.js, postgresql, redis, typescript; primarily a non-JS stack; core-stack role title; contract/part-time signal: contract, consulting
-- **CV needs to cover:** go, rust, java, gcp, microservices
+- **Why:** stack match: aws, docker, react, react native, redis, typescript; full-stack role; contract/part-time signal: b2b; familiar domain: saas
+- **CV needs to cover:** azure
 
-### 60 | Junior Software Engineer – Early Career (Strong Problem solving & Coding Focus) – 100% Remote within Poland - Docplanner
-`jobicy` | Poland | salary n/a
+### 64 | Senior Software Engineer, Backend (Money Movement) - Phantom
+`jobicy` | Anywhere | salary n/a
 
-<https://jobicy.com/jobs/156547-junior-software-engineer-early-career-strong-problem-solving-coding-focus-100-remote-within-poland-2>
+<https://jobicy.com/jobs/154082-senior-software-engineer-backend-money-movement>
 
-- **Why:** stack match: aws, node.js, react, react native, typescript; contract/part-time signal: contract; remote; familiar domain: booking, healthcare, marketplace
-- **CV needs to cover:** kubernetes, terraform, go
+- **Why:** stack match: aws, nestjs, node.js, stripe; core-stack role title; contract/part-time signal: contract; remote
+- **CV needs to cover:** kubernetes, rails
 
 ### 59 | Interview Resources | 2 Full Stack AI Engineer, 1 GTM | REMOTE | Full-Time | $250k seed raised Interview Resources is building an AI-powered deep research platform for interview pr - Interview Resources
 `hn-hiring` | See post | salary n/a
@@ -75,7 +59,15 @@
 
 - **Why:** stack match: aws, docker, next.js, node.js, postgresql, react, typescript; JS/TypeScript shop; full-stack role; remote
 
-### 59 | Senior Backend Developer (Node.js / Nest.js) - Proxify AB
+### 56 | Backend Engineer - Blockvora
+`arbeitnow` | Zug | salary n/a
+
+<https://www.arbeitnow.ch/jobs/companies/blockvora/backend-engineer-zug-145470>
+
+- **Why:** stack match: aws, docker, graphql, node.js, postgresql, redis, typescript; primarily a non-JS stack; core-stack role title; contract/part-time signal: contract, consulting
+- **CV needs to cover:** go, rust, java, gcp, microservices
+
+### 55 | Senior Backend Developer (Node.js / Nest.js) - Proxify AB
 `weworkremotely` | Anywhere in the World | salary n/a
 
 <https://weworkremotely.com/remote-jobs/proxify-ab-senior-backend-developer-node-js-nest-js-4>
@@ -83,29 +75,13 @@
 - **Why:** stack match: aws, docker, graphql, mongodb, node.js, postgresql, typescript; core-stack role title; remote
 - **CV needs to cover:** kafka, rabbitmq, azure, gcp, jest, microservices
 
-### 56 | Senior Fullstack Developer (React.js / Node.js) - Proxify AB
-`weworkremotely` | Anywhere in the World | salary n/a
-
-<https://weworkremotely.com/remote-jobs/proxify-ab-senior-fullstack-developer-react-js-node-js-5>
-
-- **Why:** stack match: mongodb, node.js, react; JS/TypeScript shop; full-stack role; remote
-- **CV needs to cover:** microservices
-
-### 55 | Staff Software Engineer - Backend (CDI) - Matera
-`arbeitnow` | Paris, Île-de-France, France | salary n/a
-
-<https://www.arbeitnow.fr/jobs/companies/matera/staff-software-engineer-backend-cdi-paris-430263>
-
-- **Why:** stack match: playwright, postgresql, react, react native, redis, typescript; core-stack role title; contract/part-time signal: contract; posted in last 48h
-- **CV needs to cover:** kubernetes, terraform, rails, jest
-
 ## Source health
 
 - `adzuna`: FAILED (0) - ADZUNA_APP_ID/KEY secrets not set - Austria/Germany coverage is reduced
 - `arbeitnow`: ok (900)
 - `himalayas`: ok (20)
-- `hn-hiring`: ok (982)
+- `hn-hiring`: ok (979)
 - `jobicy`: ok (100)
 - `remoteok`: ok (99)
 - `remotive`: ok (20)
-- `weworkremotely`: ok (124)
+- `weworkremotely`: ok (125)
