@@ -1,6 +1,6 @@
-# Job digest - 2026-10-26 11:20 UTC
+# Job digest - 2026-10-27 10:44 UTC
 
-**2059 scanned - 789 relevant - 9 new shortlist - 134 with a direct contact email**
+**1985 scanned - 749 relevant - 11 new shortlist - 134 with a direct contact email**
 
 ## New shortlist
 
@@ -36,14 +36,6 @@
 - **Why:** stack match: angular, aws, flutter, next.js, node.js, react, react native, typescript; full-stack role; remote; familiar domain: marketplace
 - **CV needs to cover:** rust, java, swift, vue, svelte, laravel, azure, gcp
 
-### 65 | Medior Full Stack Developer (PHP / TypeScript) - MediaLab Online BV
-`arbeitnow` | Amsterdam | salary n/a
-
-<https://www.arbeitnow.nl/jobs/companies/medialab-online-bv/medior-full-stack-developer-php-typescript-amsterdam-360493>
-
-- **Why:** stack match: aws, docker, react, react native, redis, typescript; full-stack role; contract/part-time signal: b2b; familiar domain: saas
-- **CV needs to cover:** azure
-
 ### 64 | Senior Software Engineer, Backend (Money Movement) - Phantom
 `jobicy` | Anywhere | salary n/a
 
@@ -51,6 +43,21 @@
 
 - **Why:** stack match: aws, nestjs, node.js, stripe; core-stack role title; contract/part-time signal: contract; remote
 - **CV needs to cover:** kubernetes, rails
+
+### 61 | Full Stack Developer - Learned
+`arbeitnow` | Utrecht, Utrecht, Nederland | salary n/a
+
+<https://www.arbeitnow.nl/jobs/companies/learned/full-stack-developer-utrecht-236079>
+
+- **Why:** stack match: express, mongodb, node.js, react, react native, typescript; full-stack role; contract/part-time signal: b2b; familiar domain: saas
+
+### 61 | Medior Full Stack Developer (PHP / TypeScript) - MediaLab Online BV
+`arbeitnow` | Amsterdam | salary n/a
+
+<https://www.arbeitnow.nl/jobs/companies/medialab-online-bv/medior-full-stack-developer-php-typescript-amsterdam-360493>
+
+- **Why:** stack match: aws, docker, react, react native, redis, typescript; full-stack role; contract/part-time signal: b2b; familiar domain: saas
+- **CV needs to cover:** azure
 
 ### 59 | Interview Resources | 2 Full Stack AI Engineer, 1 GTM | REMOTE | Full-Time | $250k seed raised Interview Resources is building an AI-powered deep research platform for interview pr - Interview Resources
 `hn-hiring` | See post | salary n/a
@@ -67,6 +74,13 @@
 - **Why:** stack match: aws, docker, graphql, node.js, postgresql, redis, typescript; primarily a non-JS stack; core-stack role title; contract/part-time signal: contract, consulting
 - **CV needs to cover:** go, rust, java, gcp, microservices
 
+### 56 | Web & Mobile Full Stack Developer - Learned
+`arbeitnow` | Utrecht, Utrecht, Nederland | salary n/a
+
+<https://www.arbeitnow.nl/jobs/companies/learned/web-mobile-full-stack-developer-utrecht-168136>
+
+- **Why:** stack match: mongodb, node.js, react, react native, typescript; full-stack role; contract/part-time signal: b2b; familiar domain: saas
+
 ### 55 | Senior Backend Developer (Node.js / Nest.js) - Proxify AB
 `weworkremotely` | Anywhere in the World | salary n/a
 
@@ -80,8 +94,8 @@
 - `adzuna`: FAILED (0) - ADZUNA_APP_ID/KEY secrets not set - Austria/Germany coverage is reduced
 - `arbeitnow`: ok (900)
 - `himalayas`: ok (20)
-- `hn-hiring`: ok (979)
+- `hn-hiring`: ok (977)
 - `jobicy`: ok (100)
 - `remoteok`: ok (99)
 - `remotive`: ok (20)
-- `weworkremotely`: ok (125)
+- `weworkremotely`: ok (126)
