@@ -1,16 +1,8 @@
-# Job digest - 2026-10-28 11:28 UTC
+# Job digest - 2026-10-29 11:38 UTC
 
-**2018 scanned - 751 relevant - 15 new shortlist - 135 with a direct contact email**
+**2033 scanned - 761 relevant - 14 new shortlist - 129 with a direct contact email**
 
 ## New shortlist
-
-### 89 | Fullstack Entwickler TypeScript – Node.js / Angular, KI-Integration (m/w/d) - Rockstardevelopers GmbH
-`arbeitnow` | Berlin | salary n/a
-
-<https://www.arbeitnow.com/jobs/companies/rockstardevelopers-gmbh/fullstack-entwickler-typescript-nodejs-angular-ki-integration-berlin-298234>
-
-- **Why:** stack match: angular, aws, docker, express, nestjs, node.js, playwright, postgresql, react, typescript; JS/TypeScript shop; full-stack role; remote
-- **CV needs to cover:** kubernetes, vue, kafka, rabbitmq, azure, jest, cypress
 
 ### 83 | Senior Full Stack Product Engineer (TypeScript) - Maze
 `jobicy` | Canada,  Ireland,  Netherlands,  Portugal,  Spain,  UK | salary n/a
@@ -28,21 +20,21 @@
 - **Why:** stack match: angular, aws, flutter, next.js, node.js, react, react native, typescript; full-stack role; remote; familiar domain: marketplace
 - **CV needs to cover:** rust, java, swift, vue, svelte, laravel, azure, gcp
 
-### 73 | Freelancer Senior Mobile Engineer (React Native, Expo, TypeScript) m/w/d - easybill GmbH
+### 75 | Backend Engineer (Node.js / TypeScript) - Nexoya
 `arbeitnow` | Berlin | salary n/a
 
-<https://www.arbeitnow.com/jobs/companies/easybill-gmbh/freelancer-senior-mobile-engineer-react-native-expo-typescript-berlin-359332>
+<https://www.arbeitnow.com/jobs/companies/nexoya/backend-engineer-nodejs-typescript-berlin-291955>
 
-- **Why:** stack match: react, react native, typescript; JS/TypeScript shop; core-stack role title; contract/part-time signal: freelance, freelancer
-- **CV needs to cover:** kotlin, swift, jest
+- **Why:** stack match: docker, graphql, node.js, typescript; JS/TypeScript shop; core-stack role title; contract/part-time signal: contractor, freelance, freelancer
+- **CV needs to cover:** kubernetes, rabbitmq, azure, german
 
-### 70 | Senior Vue Developer - Lemon.io
-`weworkremotely` | Anywhere in the World | salary n/a
+### 71 | Senior software engineer (Node.js/TypeScript) - Seccl
+`arbeitnow` | London | salary n/a
 
-<https://weworkremotely.com/remote-jobs/lemon-io-senior-vue-developer-1>
+<https://www.arbeitnow.co.uk/jobs/companies/seccl/senior-software-engineer-nodejs-typescript-london-468247>
 
-- **Why:** stack match: angular, flutter, next.js, node.js, react, react native, typescript; JS/TypeScript shop; contract/part-time signal: contract; remote
-- **CV needs to cover:** rust, java, swift, vue, svelte, laravel
+- **Why:** stack match: aws, mongodb, node.js, typescript; JS/TypeScript shop; core-stack role title; contract/part-time signal: contract
+- **CV needs to cover:** terraform, go, azure, gcp
 
 ### 68 | Senior DevOps Engineer - Lemon.io
 `remoteok` | n/a | $50000 - $150000
@@ -52,6 +44,14 @@
 - **Why:** stack match: angular, aws, flutter, next.js, node.js, react, react native, typescript; contract/part-time signal: contract; remote
 - **CV needs to cover:** kubernetes, terraform, rust, java, swift, vue, svelte, laravel
 
+### 66 | Senior Vue Developer - Lemon.io
+`weworkremotely` | Anywhere in the World | salary n/a
+
+<https://weworkremotely.com/remote-jobs/lemon-io-senior-vue-developer-1>
+
+- **Why:** stack match: angular, flutter, next.js, node.js, react, react native, typescript; JS/TypeScript shop; contract/part-time signal: contract; remote
+- **CV needs to cover:** rust, java, swift, vue, svelte, laravel
+
 ### 64 | Senior Angular Full-stack Developer - Lemon.io
 `weworkremotely` | Anywhere in the World | salary n/a
 
@@ -60,36 +60,13 @@
 - **Why:** stack match: angular, aws, flutter, next.js, node.js, react, react native, typescript; full-stack role; remote; familiar domain: marketplace
 - **CV needs to cover:** rust, java, swift, vue, svelte, laravel, azure, gcp
 
-### 64 | Fullstack Entwickler Java / Angular (m/w/d) – Mid-Level - Rockstardevelopers GmbH
-`arbeitnow` | Berlin | salary n/a
+### 61 | Senior Fullstack Engineer, Commerce Mission - ŌURA
+`jobicy` | USA | salary n/a
 
-<https://www.arbeitnow.com/jobs/companies/rockstardevelopers-gmbh/fullstack-entwickler-java-angular-mid-level-stuttgart-350219>
+<https://jobicy.com/jobs/157484-senior-fullstack-engineer-commerce-mission>
 
-- **Why:** stack match: angular, aws, docker, playwright, postgresql, typescript; full-stack role; remote; posted in last 48h
-- **CV needs to cover:** kubernetes, java, kotlin, kafka, azure, jest, cypress
-
-### 61 | Full Stack Developer - Learned
-`arbeitnow` | Utrecht, Utrecht, Nederland | salary n/a
-
-<https://www.arbeitnow.nl/jobs/companies/learned/full-stack-developer-utrecht-236079>
-
-- **Why:** stack match: express, mongodb, node.js, react, react native, typescript; full-stack role; contract/part-time signal: b2b; familiar domain: saas
-
-### 61 | Senior Fullstack Entwickler Java / Angular (m/w/d) - Rockstardevelopers GmbH
-`arbeitnow` | Berlin | salary n/a
-
-<https://www.arbeitnow.com/jobs/companies/rockstardevelopers-gmbh/senior-fullstack-entwickler-java-angular-stuttgart-430479>
-
-- **Why:** stack match: angular, aws, docker, playwright, postgresql, typescript; full-stack role; remote; posted in last 48h
-- **CV needs to cover:** kubernetes, java, kotlin, kafka, azure, jest, cypress, microservices
-
-### 60 | Senior Software Engineer, Backend (Money Movement) - Phantom
-`jobicy` | Anywhere | salary n/a
-
-<https://jobicy.com/jobs/154082-senior-software-engineer-backend-money-movement>
-
-- **Why:** stack match: aws, nestjs, node.js, stripe; core-stack role title; contract/part-time signal: contract; remote
-- **CV needs to cover:** kubernetes, rails
+- **Why:** stack match: aws, next.js, offline, playwright, react, redis, tailwind, typescript; full-stack role; familiar domain: insurance; posted in last 48h
+- **CV needs to cover:** jest
 
 ### 59 | Interview Resources | 2 Full Stack AI Engineer, 1 GTM | REMOTE | Full-Time | $250k seed raised Interview Resources is building an AI-powered deep research platform for interview pr - Interview Resources
 `hn-hiring` | See post | salary n/a
@@ -98,6 +75,29 @@
 
 - **Why:** stack match: aws, docker, next.js, node.js, postgresql, react, typescript; JS/TypeScript shop; full-stack role; remote
 
+### 58 | Senior Back-end Developer - Lemon.io
+`remotive` | Europe, USA, Canada, Australia, Singapore, Mexico, Saudi Arabia | salary n/a
+
+<https://remotive.com/remote-jobs/software-development/senior-back-end-developer-2091135>
+
+- **Why:** stack match: angular, flutter, next.js, node.js, react, react native, typescript; core-stack role title; EU/Austria friendly; posted in last 48h
+- **CV needs to cover:** kubernetes, rust, java, swift, vue, svelte, laravel, rails
+
+### 57 | Full Stack Developer - Learned
+`arbeitnow` | Utrecht, Utrecht, Nederland | salary n/a
+
+<https://www.arbeitnow.nl/jobs/companies/learned/full-stack-developer-utrecht-236079>
+
+- **Why:** stack match: express, mongodb, node.js, react, react native, typescript; full-stack role; contract/part-time signal: b2b; familiar domain: saas
+
+### 57 | Senior Frontend Developer (Angular) - MEDvidi
+`himalayas` | Spain | salary n/a
+
+<https://himalayas.app/companies/medvidi/jobs/senior-frontend-developer-angular-1248146226?utm_source=api>
+
+- **Why:** stack match: angular, offline, rxjs, typescript; core-stack role title; contract/part-time signal: b2b; familiar domain: healthcare, insurance
+- **CV needs to cover:** jest
+
 ### 56 | Backend Engineer - Blockvora
 `arbeitnow` | Zug | salary n/a
 
@@ -105,13 +105,6 @@
 
 - **Why:** stack match: aws, docker, graphql, node.js, postgresql, redis, typescript; primarily a non-JS stack; core-stack role title; contract/part-time signal: contract, consulting
 - **CV needs to cover:** go, rust, java, gcp, microservices
-
-### 56 | Web & Mobile Full Stack Developer - Learned
-`arbeitnow` | Utrecht, Utrecht, Nederland | salary n/a
-
-<https://www.arbeitnow.nl/jobs/companies/learned/web-mobile-full-stack-developer-utrecht-168136>
-
-- **Why:** stack match: mongodb, node.js, react, react native, typescript; full-stack role; contract/part-time signal: b2b; familiar domain: saas
 
 ### 55 | Senior Backend Developer (Node.js / Nest.js) - Proxify AB
 `weworkremotely` | Anywhere in the World | salary n/a
@@ -126,8 +119,8 @@
 - `adzuna`: FAILED (0) - ADZUNA_APP_ID/KEY secrets not set - Austria/Germany coverage is reduced
 - `arbeitnow`: ok (900)
 - `himalayas`: ok (20)
-- `hn-hiring`: ok (977)
+- `hn-hiring`: ok (976)
 - `jobicy`: ok (100)
 - `remoteok`: ok (99)
-- `remotive`: ok (22)
-- `weworkremotely`: ok (125)
+- `remotive`: ok (24)
+- `weworkremotely`: ok (123)
