@@ -1,10 +1,10 @@
-# Job digest - 2026-10-29 11:38 UTC
+# Job digest - 2026-10-30 11:29 UTC
 
-**2033 scanned - 761 relevant - 14 new shortlist - 129 with a direct contact email**
+**2019 scanned - 667 relevant - 10 new shortlist - 116 with a direct contact email**
 
 ## New shortlist
 
-### 83 | Senior Full Stack Product Engineer (TypeScript) - Maze
+### 79 | Senior Full Stack Product Engineer (TypeScript) - Maze
 `jobicy` | Canada,  Ireland,  Netherlands,  Portugal,  Spain,  UK | salary n/a
 
 <https://jobicy.com/jobs/151824-senior-full-stack-product-engineer-typescript>
@@ -20,30 +20,6 @@
 - **Why:** stack match: angular, aws, flutter, next.js, node.js, react, react native, typescript; full-stack role; remote; familiar domain: marketplace
 - **CV needs to cover:** rust, java, swift, vue, svelte, laravel, azure, gcp
 
-### 75 | Backend Engineer (Node.js / TypeScript) - Nexoya
-`arbeitnow` | Berlin | salary n/a
-
-<https://www.arbeitnow.com/jobs/companies/nexoya/backend-engineer-nodejs-typescript-berlin-291955>
-
-- **Why:** stack match: docker, graphql, node.js, typescript; JS/TypeScript shop; core-stack role title; contract/part-time signal: contractor, freelance, freelancer
-- **CV needs to cover:** kubernetes, rabbitmq, azure, german
-
-### 71 | Senior software engineer (Node.js/TypeScript) - Seccl
-`arbeitnow` | London | salary n/a
-
-<https://www.arbeitnow.co.uk/jobs/companies/seccl/senior-software-engineer-nodejs-typescript-london-468247>
-
-- **Why:** stack match: aws, mongodb, node.js, typescript; JS/TypeScript shop; core-stack role title; contract/part-time signal: contract
-- **CV needs to cover:** terraform, go, azure, gcp
-
-### 68 | Senior DevOps Engineer - Lemon.io
-`remoteok` | n/a | $50000 - $150000
-
-<https://remoteOK.com/remote-jobs/remote-senior-devops-engineer-lemon-io-1137557>
-
-- **Why:** stack match: angular, aws, flutter, next.js, node.js, react, react native, typescript; contract/part-time signal: contract; remote
-- **CV needs to cover:** kubernetes, terraform, rust, java, swift, vue, svelte, laravel
-
 ### 66 | Senior Vue Developer - Lemon.io
 `weworkremotely` | Anywhere in the World | salary n/a
 
@@ -52,6 +28,14 @@
 - **Why:** stack match: angular, flutter, next.js, node.js, react, react native, typescript; JS/TypeScript shop; contract/part-time signal: contract; remote
 - **CV needs to cover:** rust, java, swift, vue, svelte, laravel
 
+### 64 | Senior DevOps Engineer - Lemon.io
+`remoteok` | n/a | $50000 - $150000
+
+<https://remoteOK.com/remote-jobs/remote-senior-devops-engineer-lemon-io-1137557>
+
+- **Why:** stack match: angular, aws, flutter, next.js, node.js, react, react native, typescript; contract/part-time signal: contract; remote
+- **CV needs to cover:** kubernetes, terraform, rust, java, swift, vue, svelte, laravel
+
 ### 64 | Senior Angular Full-stack Developer - Lemon.io
 `weworkremotely` | Anywhere in the World | salary n/a
 
@@ -59,6 +43,14 @@
 
 - **Why:** stack match: angular, aws, flutter, next.js, node.js, react, react native, typescript; full-stack role; remote; familiar domain: marketplace
 - **CV needs to cover:** rust, java, swift, vue, svelte, laravel, azure, gcp
+
+### 63 | Senior Full-Stack Engineer - Lokalise
+`arbeitnow` | Manchester, England, United Kingdom | salary n/a
+
+<https://www.arbeitnow.co.uk/jobs/companies/lokalise/senior-full-stack-engineer-manchester-284115>
+
+- **Why:** stack match: aws, node.js, playwright, postgresql, react, typescript; full-stack role; contract/part-time signal: contractor, b2b; familiar domain: insurance
+- **CV needs to cover:** rabbitmq
 
 ### 61 | Senior Fullstack Engineer, Commerce Mission - ŌURA
 `jobicy` | USA | salary n/a
@@ -75,36 +67,13 @@
 
 - **Why:** stack match: aws, docker, next.js, node.js, postgresql, react, typescript; JS/TypeScript shop; full-stack role; remote
 
-### 58 | Senior Back-end Developer - Lemon.io
-`remotive` | Europe, USA, Canada, Australia, Singapore, Mexico, Saudi Arabia | salary n/a
+### 59 | Senior Software Engineer (Fullstack) - Merchant EMEA - wolt
+`arbeitnow` | Berlin | salary n/a
 
-<https://remotive.com/remote-jobs/software-development/senior-back-end-developer-2091135>
+<https://www.arbeitnow.com/jobs/companies/wolt/senior-software-engineer-fullstack-merchant-emea-berlin-172080>
 
-- **Why:** stack match: angular, flutter, next.js, node.js, react, react native, typescript; core-stack role title; EU/Austria friendly; posted in last 48h
-- **CV needs to cover:** kubernetes, rust, java, swift, vue, svelte, laravel, rails
-
-### 57 | Full Stack Developer - Learned
-`arbeitnow` | Utrecht, Utrecht, Nederland | salary n/a
-
-<https://www.arbeitnow.nl/jobs/companies/learned/full-stack-developer-utrecht-236079>
-
-- **Why:** stack match: express, mongodb, node.js, react, react native, typescript; full-stack role; contract/part-time signal: b2b; familiar domain: saas
-
-### 57 | Senior Frontend Developer (Angular) - MEDvidi
-`himalayas` | Spain | salary n/a
-
-<https://himalayas.app/companies/medvidi/jobs/senior-frontend-developer-angular-1248146226?utm_source=api>
-
-- **Why:** stack match: angular, offline, rxjs, typescript; core-stack role title; contract/part-time signal: b2b; familiar domain: healthcare, insurance
-- **CV needs to cover:** jest
-
-### 56 | Backend Engineer - Blockvora
-`arbeitnow` | Zug | salary n/a
-
-<https://www.arbeitnow.ch/jobs/companies/blockvora/backend-engineer-zug-145470>
-
-- **Why:** stack match: aws, docker, graphql, node.js, postgresql, redis, typescript; primarily a non-JS stack; core-stack role title; contract/part-time signal: contract, consulting
-- **CV needs to cover:** go, rust, java, gcp, microservices
+- **Why:** stack match: aws, docker, mongodb, postgresql, react, redis, typescript; full-stack role; familiar domain: logistics, marketplace; posted in last 48h
+- **CV needs to cover:** kubernetes, go, java, kotlin, kafka
 
 ### 55 | Senior Backend Developer (Node.js / Nest.js) - Proxify AB
 `weworkremotely` | Anywhere in the World | salary n/a
@@ -123,4 +92,4 @@
 - `jobicy`: ok (100)
 - `remoteok`: ok (99)
 - `remotive`: ok (24)
-- `weworkremotely`: ok (123)
+- `weworkremotely`: ok (119)
