@@ -1,15 +1,23 @@
-# Job digest - 2026-10-31 11:01 UTC
+# Job digest - 2026-11-01 11:56 UTC
 
-**2046 scanned - 683 relevant - 9 new shortlist - 110 with a direct contact email**
+**2047 scanned - 688 relevant - 9 new shortlist - 112 with a direct contact email**
 
 ## New shortlist
 
-### 93 | Full-Stack Developer - Fluence International, Inc.
+### 89 | Full-Stack Developer - Fluence International, Inc.
 `remotive` | Worldwide | $3.5k–$5k/month - contact: `techjobs@fluencetraining.com`
 
 <https://remotive.com/remote-jobs/software-development/full-stack-developer-2091165>
 
 - **Why:** stack match: aws, docker, next.js, react, typescript; JS/TypeScript shop; full-stack role; contract/part-time signal: contract, b2b
+
+### 77 | Full Stack Developer - Java & React (f/m/d) - ecosio
+`arbeitnow` | Austria, Spain, UK, Italy, Hungary, Portugal, Croatia - Remote | salary n/a
+
+<https://www.arbeitnow.com/jobs/companies/ecosio/remote-full-stack-developer-java-react-120706>
+
+- **Why:** stack match: angular, aws, mongodb, react, redis, typescript; full-stack role; contract/part-time signal: b2b; remote
+- **CV needs to cover:** kubernetes, java, vue, elasticsearch
 
 ### 74 | Senior React Full stack Developer - Lemon.io
 `remoteok` | n/a | $80000 - $200000
@@ -19,13 +27,21 @@
 - **Why:** stack match: angular, aws, flutter, next.js, node.js, react, react native, typescript; full-stack role; remote; familiar domain: marketplace
 - **CV needs to cover:** rust, java, swift, vue, svelte, laravel, azure, gcp
 
-### 69 | Senior Mobile Quality Engineer - Lendable
-`arbeitnow` | UK Remote | salary n/a
+### 73 | Lead Mobile Engineer - React Native - DiliTrust
+`arbeitnow` | Paris - La Défense | salary n/a
 
-<https://www.arbeitnow.co.uk/jobs/companies/lendable/remote-senior-mobile-quality-engineer-206450>
+<https://www.arbeitnow.fr/jobs/companies/dilitrust/lead-mobile-engineer-react-native-paris-la-defense-226541>
 
-- **Why:** stack match: aws, docker, graphql, react, react native, typescript; core-stack role title; contract/part-time signal: contract; remote
-- **CV needs to cover:** kubernetes, kotlin, rabbitmq, jest
+- **Why:** stack match: docker, postgresql, react, react native, typescript; JS/TypeScript shop; core-stack role title; contract/part-time signal: contract
+- **CV needs to cover:** gcp
+
+### 66 | (Senior) React Native Engineer (m/f/x) - Based in Germany - Cara Care
+`arbeitnow` | Berlin, Germany | salary n/a
+
+<https://www.arbeitnow.com/jobs/companies/cara-care/remote-senior-react-native-engineer-based-in-germany-berlin-388773>
+
+- **Why:** stack match: react, react native, typescript; JS/TypeScript shop; core-stack role title; remote
+- **CV needs to cover:** kotlin, swift, jest, figma, german
 
 ### 66 | Senior Vue Developer - Lemon.io
 `weworkremotely` | Anywhere in the World | salary n/a
@@ -34,14 +50,6 @@
 
 - **Why:** stack match: angular, flutter, next.js, node.js, react, react native, typescript; JS/TypeScript shop; contract/part-time signal: contract; remote
 - **CV needs to cover:** rust, java, swift, vue, svelte, laravel
-
-### 64 | Senior Full-Stack Developer (m/w/d) – Schwerpunkt TypeScript & SaaS-Plattform - IT Studio Rech GmbH
-`arbeitnow` | Berlin | salary n/a
-
-<https://www.arbeitnow.com/jobs/companies/it-studio-rech-gmbh/senior-full-stack-developer-schwerpunkt-typescript-saas-plattform-berlin-229612>
-
-- **Why:** stack match: node.js, playwright, postgresql, react, redis, typescript; full-stack role; remote; familiar domain: saas
-- **CV needs to cover:** rabbitmq
 
 ### 64 | Senior DevOps Engineer - Lemon.io
 `remoteok` | n/a | $50000 - $150000
@@ -59,13 +67,6 @@
 - **Why:** stack match: angular, aws, flutter, next.js, node.js, react, react native, typescript; full-stack role; remote; familiar domain: marketplace
 - **CV needs to cover:** rust, java, swift, vue, svelte, laravel, azure, gcp
 
-### 59 | Interview Resources | 2 Full Stack AI Engineer, 1 GTM | REMOTE | Full-Time | $250k seed raised Interview Resources is building an AI-powered deep research platform for interview pr - Interview Resources
-`hn-hiring` | See post | salary n/a
-
-<https://news.ycombinator.com/item?id=49534032>
-
-- **Why:** stack match: aws, docker, next.js, node.js, postgresql, react, typescript; JS/TypeScript shop; full-stack role; remote
-
 ### 55 | Senior Backend Developer (Node.js / Nest.js) - Proxify AB
 `weworkremotely` | Anywhere in the World | salary n/a
 
@@ -82,5 +83,5 @@
 - `hn-hiring`: ok (975)
 - `jobicy`: ok (100)
 - `remoteok`: ok (99)
-- `remotive`: ok (26)
-- `weworkremotely`: ok (125)
+- `remotive`: ok (24)
+- `weworkremotely`: ok (132)
