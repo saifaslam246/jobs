@@ -1,6 +1,6 @@
-# Job digest - 2026-11-01 11:56 UTC
+# Job digest - 2026-11-02 13:41 UTC
 
-**2047 scanned - 688 relevant - 9 new shortlist - 112 with a direct contact email**
+**2009 scanned - 681 relevant - 11 new shortlist - 111 with a direct contact email**
 
 ## New shortlist
 
@@ -35,14 +35,6 @@
 - **Why:** stack match: docker, postgresql, react, react native, typescript; JS/TypeScript shop; core-stack role title; contract/part-time signal: contract
 - **CV needs to cover:** gcp
 
-### 66 | (Senior) React Native Engineer (m/f/x) - Based in Germany - Cara Care
-`arbeitnow` | Berlin, Germany | salary n/a
-
-<https://www.arbeitnow.com/jobs/companies/cara-care/remote-senior-react-native-engineer-based-in-germany-berlin-388773>
-
-- **Why:** stack match: react, react native, typescript; JS/TypeScript shop; core-stack role title; remote
-- **CV needs to cover:** kotlin, swift, jest, figma, german
-
 ### 66 | Senior Vue Developer - Lemon.io
 `weworkremotely` | Anywhere in the World | salary n/a
 
@@ -50,6 +42,14 @@
 
 - **Why:** stack match: angular, flutter, next.js, node.js, react, react native, typescript; JS/TypeScript shop; contract/part-time signal: contract; remote
 - **CV needs to cover:** rust, java, swift, vue, svelte, laravel
+
+### 64 | Senior Full Stack Developer - Deepdesk - AnywhereNow
+`arbeitnow` | Remote job | salary n/a
+
+<https://www.arbeitnow.nl/jobs/companies/anywherenow/remote-senior-full-stack-developer-deepdesk-rotterdam-346552>
+
+- **Why:** stack match: docker, postgresql, react, redis, typescript; full-stack role; contract/part-time signal: contract; remote
+- **CV needs to cover:** kubernetes, terraform, go, django, elasticsearch
 
 ### 64 | Senior DevOps Engineer - Lemon.io
 `remoteok` | n/a | $50000 - $150000
@@ -66,6 +66,22 @@
 
 - **Why:** stack match: angular, aws, flutter, next.js, node.js, react, react native, typescript; full-stack role; remote; familiar domain: marketplace
 - **CV needs to cover:** rust, java, swift, vue, svelte, laravel, azure, gcp
+
+### 64 | Senior Site Reliability Engineer | SRE (Remote, EU/CET) - Maze
+`arbeitnow` | United Kingdom | salary n/a
+
+<https://www.arbeitnow.co.uk/jobs/companies/maze/senior-site-reliability-engineer-sre-remote-eu-cet-united-kingdom-390076>
+
+- **Why:** stack match: aws, docker, node.js, postgresql, react, typescript; contract/part-time signal: b2b; remote; familiar domain: insurance, saas
+- **CV needs to cover:** kubernetes, terraform
+
+### 62 | (Senior) React Native Engineer (m/f/x) - Based in Germany - Cara Care
+`arbeitnow` | Berlin, Germany | salary n/a
+
+<https://www.arbeitnow.com/jobs/companies/cara-care/remote-senior-react-native-engineer-based-in-germany-berlin-388773>
+
+- **Why:** stack match: react, react native, typescript; JS/TypeScript shop; core-stack role title; remote
+- **CV needs to cover:** kotlin, swift, jest, figma, german
 
 ### 55 | Senior Backend Developer (Node.js / Nest.js) - Proxify AB
 `weworkremotely` | Anywhere in the World | salary n/a
@@ -84,4 +100,4 @@
 - `jobicy`: ok (100)
 - `remoteok`: ok (99)
 - `remotive`: ok (24)
-- `weworkremotely`: ok (132)
+- `weworkremotely`: ok (136)
