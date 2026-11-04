@@ -1,6 +1,6 @@
-# Job digest - 2026-11-03 12:54 UTC
+# Job digest - 2026-11-04 13:08 UTC
 
-**1949 scanned - 703 relevant - 13 new shortlist - 123 with a direct contact email**
+**1910 scanned - 693 relevant - 12 new shortlist - 123 with a direct contact email**
 
 ## New shortlist
 
@@ -19,22 +19,6 @@
 - **Why:** stack match: angular, aws, flutter, next.js, node.js, react, react native, typescript; full-stack role; remote; familiar domain: marketplace
 - **CV needs to cover:** rust, java, swift, vue, svelte, laravel, azure, gcp
 
-### 68 | Site Reliability Engineer (f/m/d) - ecosio
-`arbeitnow` | Austria, UK, Italy, Hungary, Croatia, Poland - Remote | salary n/a
-
-<https://www.arbeitnow.com/jobs/companies/ecosio/remote-site-reliability-engineer-428574>
-
-- **Why:** stack match: angular, aws, docker, mongodb, react, redis, typescript; contract/part-time signal: b2b; remote; EU/Austria friendly
-- **CV needs to cover:** kubernetes, terraform, java, vue, elasticsearch
-
-### 67 | 📱 Fullstack Developer (Paris or remote) - Staycation
-`arbeitnow` | Paris, France | salary n/a
-
-<https://www.arbeitnow.fr/jobs/companies/staycation/fullstack-developer-paris-or-remote-175212>
-
-- **Why:** stack match: aws, nestjs, next.js, node.js, postgresql, react, react native; full-stack role; remote; familiar domain: billing, booking, marketplace
-- **CV needs to cover:** terraform
-
 ### 66 | Senior Vue Developer - Lemon.io
 `weworkremotely` | Anywhere in the World | salary n/a
 
@@ -42,14 +26,6 @@
 
 - **Why:** stack match: angular, flutter, next.js, node.js, react, react native, typescript; JS/TypeScript shop; contract/part-time signal: contract; remote
 - **CV needs to cover:** rust, java, swift, vue, svelte, laravel
-
-### 64 | Senior Full Stack Developer - Deepdesk - AnywhereNow
-`arbeitnow` | Remote job | salary n/a
-
-<https://www.arbeitnow.nl/jobs/companies/anywherenow/remote-senior-full-stack-developer-deepdesk-rotterdam-346552>
-
-- **Why:** stack match: docker, postgresql, react, redis, typescript; full-stack role; contract/part-time signal: contract; remote
-- **CV needs to cover:** kubernetes, terraform, go, django, elasticsearch
 
 ### 64 | Senior DevOps Engineer - Lemon.io
 `remoteok` | n/a | $50000 - $150000
@@ -75,12 +51,28 @@
 - **Why:** stack match: docker, postgresql, react, redis; core-stack role title; contract/part-time signal: contract; remote
 - **CV needs to cover:** kubernetes, gcp
 
+### 61 | (Senior) Full Stack Engineer (m/f/x) - Based in Germany - Cara Care
+`arbeitnow` | Germany | salary n/a
+
+<https://www.arbeitnow.com/jobs/companies/cara-care/remote-senior-full-stack-engineer-based-in-germany-183253>
+
+- **Why:** stack match: aws, postgresql, react, react native, typescript; full-stack role; remote; EU/Austria friendly
+- **CV needs to cover:** kubernetes, java, django, azure, gcp, figma, german
+
 ### 61 | Juro | AI Engineer (Agentic team) | London, UK | REMOTE (UK) | Full-time | £115k + equity Juro is an AI contract automation platform used by in-house legal and business teams. Our - Juro
 `hn-hiring` | See post | salary n/a
 
 <https://news.ycombinator.com/item?id=50339551>
 
 - **Why:** stack match: aws, mongodb, node.js, react, typescript; JS/TypeScript shop; contract/part-time signal: contract; remote
+
+### 60 | Senior Full Stack Developer - Deepdesk - AnywhereNow
+`arbeitnow` | Remote job | salary n/a
+
+<https://www.arbeitnow.nl/jobs/companies/anywherenow/remote-senior-full-stack-developer-deepdesk-rotterdam-346552>
+
+- **Why:** stack match: docker, postgresql, react, redis, typescript; full-stack role; contract/part-time signal: contract; remote
+- **CV needs to cover:** kubernetes, terraform, go, django, elasticsearch
 
 ### 59 | Frontend Engineering Team Lead - MarTech - Sporty Group
 `jobicy` | Europe | salary n/a
@@ -110,8 +102,8 @@
 - `adzuna`: FAILED (0) - ADZUNA_APP_ID/KEY secrets not set - Austria/Germany coverage is reduced
 - `arbeitnow`: ok (900)
 - `himalayas`: ok (20)
-- `hn-hiring`: ok (863)
+- `hn-hiring`: ok (890)
 - `jobicy`: ok (100)
 - `remoteok`: ok (99)
-- `remotive`: ok (20)
-- `weworkremotely`: ok (138)
+- `remotive`: ok (22)
+- `weworkremotely`: ok (139)
