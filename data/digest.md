@@ -1,6 +1,6 @@
-# Job digest - 2026-11-07 11:50 UTC
+# Job digest - 2026-11-08 12:02 UTC
 
-**2002 scanned - 720 relevant - 8 new shortlist - 126 with a direct contact email**
+**2025 scanned - 730 relevant - 9 new shortlist - 134 with a direct contact email**
 
 ## New shortlist
 
@@ -11,7 +11,7 @@
 
 - **Why:** stack match: aws, docker, next.js, react, typescript; JS/TypeScript shop; full-stack role; contract/part-time signal: contract, b2b
 
-### 82 | I'm Sushant Gangurde, A Software Engineer focused on Full-Stack Development and AI-powered applications. I work with React, Next.js, TypeScript, Node.js, Python, PostgreSQL and Mon - I'm Sushant Gangurde, A Software Engineer focused on Full-Stack Development and
+### 78 | I'm Sushant Gangurde, A Software Engineer focused on Full-Stack Development and AI-powered applications. I work with React, Next.js, TypeScript, Node.js, Python, PostgreSQL and Mon - I'm Sushant Gangurde, A Software Engineer focused on Full-Stack Development and
 `hn-hiring` | See post | salary n/a - contact: `sushantcs2026@gmail.com`
 
 <https://news.ycombinator.com/item?id=50388471>
@@ -26,12 +26,12 @@
 - **Why:** stack match: angular, aws, flutter, next.js, node.js, react, react native, typescript; full-stack role; remote; familiar domain: marketplace
 - **CV needs to cover:** rust, java, swift, vue, svelte, laravel, azure, gcp
 
-### 72 | Senior Vue Developer - Lemon.io
+### 68 | Senior Vue Developer - Lemon.io
 `remoteok` | n/a | $50000 - $180000
 
 <https://remoteOK.com/remote-jobs/remote-senior-vue-developer-lemon-io-1137688>
 
-- **Why:** stack match: angular, flutter, next.js, node.js, react, react native, typescript; contract/part-time signal: contract; remote; posted in last 48h
+- **Why:** stack match: angular, flutter, next.js, node.js, react, react native, typescript; contract/part-time signal: contract; remote
 - **CV needs to cover:** rust, java, swift, vue, svelte, laravel
 
 ### 64 | Senior DevOps Engineer - Lemon.io
@@ -42,12 +42,20 @@
 - **Why:** stack match: angular, aws, flutter, next.js, node.js, react, react native, typescript; contract/part-time signal: contract; remote
 - **CV needs to cover:** kubernetes, terraform, rust, java, swift, vue, svelte, laravel
 
-### 61 | I'm Rajneesh Verma, a Full-Stack & AI Engineer currently working with a YC-backed startup. I have hands-on experience building and shipping production-ready applications, scalable - I'm Rajneesh Verma, a Full-Stack & AI Engineer currently working with a YC-backe
+### 61 | Senior Full Stack Software Engineer - Octopus Energy Group
+`arbeitnow` | London (GB) | salary n/a
+
+<https://www.arbeitnow.co.uk/jobs/companies/octopus-energy-group/senior-full-stack-software-engineer-london-gb-369052>
+
+- **Why:** stack match: aws, graphql, next.js, postgresql, react, typescript; JS/TypeScript shop; full-stack role; familiar domain: healthcare
+- **CV needs to cover:** go
+
+### 57 | I'm Rajneesh Verma, a Full-Stack & AI Engineer currently working with a YC-backed startup. I have hands-on experience building and shipping production-ready applications, scalable - I'm Rajneesh Verma, a Full-Stack & AI Engineer currently working with a YC-backe
 `hn-hiring` | See post | salary n/a
 
 <https://news.ycombinator.com/item?id=50382899>
 
-- **Why:** stack match: docker, mongodb, next.js, node.js, postgresql, react, typescript; JS/TypeScript shop; full-stack role; posted in last 48h
+- **Why:** stack match: docker, mongodb, next.js, node.js, postgresql, react, typescript; JS/TypeScript shop; full-stack role
 
 ### 57 | Juro | AI Engineer (Agentic team) | London, UK | REMOTE (UK) | Full-time | £115k + equity Juro is an AI contract automation platform used by in-house legal and business teams. Our - Juro
 `hn-hiring` | See post | salary n/a
@@ -72,5 +80,5 @@
 - `hn-hiring`: ok (911)
 - `jobicy`: ok (100)
 - `remoteok`: ok (99)
-- `remotive`: ok (24)
-- `weworkremotely`: ok (148)
+- `remotive`: ok (26)
+- `weworkremotely`: ok (150)
