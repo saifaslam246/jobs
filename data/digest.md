@@ -1,6 +1,6 @@
-# Job digest - 2026-11-08 12:02 UTC
+# Job digest - 2026-11-09 14:07 UTC
 
-**2025 scanned - 730 relevant - 9 new shortlist - 134 with a direct contact email**
+**2028 scanned - 718 relevant - 7 new shortlist - 132 with a direct contact email**
 
 ## New shortlist
 
@@ -18,14 +18,6 @@
 
 - **Why:** stack match: mongodb, next.js, node.js, postgresql, react, typescript; JS/TypeScript shop; full-stack role; direct contact email in posting
 
-### 74 | Senior React Full stack Developer - Lemon.io
-`remoteok` | n/a | $80000 - $200000
-
-<https://remoteOK.com/remote-jobs/remote-senior-react-full-stack-developer-lemon-io-1137475>
-
-- **Why:** stack match: angular, aws, flutter, next.js, node.js, react, react native, typescript; full-stack role; remote; familiar domain: marketplace
-- **CV needs to cover:** rust, java, swift, vue, svelte, laravel, azure, gcp
-
 ### 68 | Senior Vue Developer - Lemon.io
 `remoteok` | n/a | $50000 - $180000
 
@@ -42,14 +34,6 @@
 - **Why:** stack match: angular, aws, flutter, next.js, node.js, react, react native, typescript; contract/part-time signal: contract; remote
 - **CV needs to cover:** kubernetes, terraform, rust, java, swift, vue, svelte, laravel
 
-### 61 | Senior Full Stack Software Engineer - Octopus Energy Group
-`arbeitnow` | London (GB) | salary n/a
-
-<https://www.arbeitnow.co.uk/jobs/companies/octopus-energy-group/senior-full-stack-software-engineer-london-gb-369052>
-
-- **Why:** stack match: aws, graphql, next.js, postgresql, react, typescript; JS/TypeScript shop; full-stack role; familiar domain: healthcare
-- **CV needs to cover:** go
-
 ### 57 | I'm Rajneesh Verma, a Full-Stack & AI Engineer currently working with a YC-backed startup. I have hands-on experience building and shipping production-ready applications, scalable - I'm Rajneesh Verma, a Full-Stack & AI Engineer currently working with a YC-backe
 `hn-hiring` | See post | salary n/a
 
@@ -64,21 +48,21 @@
 
 - **Why:** stack match: aws, mongodb, node.js, react, typescript; JS/TypeScript shop; contract/part-time signal: contract; remote
 
-### 55 | Senior Backend Developer (Node.js / Nest.js) - Proxify AB
-`weworkremotely` | Anywhere in the World | salary n/a
+### 56 | Senior Fullstack Software Engineer (Ruby/React & TS) - Pennylane SAS
+`arbeitnow` | Remote | salary n/a
 
-<https://weworkremotely.com/remote-jobs/proxify-ab-senior-backend-developer-node-js-nest-js-4>
+<https://www.arbeitnow.fr/jobs/companies/pennylane-sas/remote-senior-fullstack-software-engineer-ruby-react-ts-388753>
 
-- **Why:** stack match: aws, docker, graphql, mongodb, node.js, postgresql, typescript; core-stack role title; remote
-- **CV needs to cover:** kafka, rabbitmq, azure, gcp, jest, microservices
+- **Why:** stack match: react, stripe; full-stack role; contract/part-time signal: contract; remote
+- **CV needs to cover:** rails
 
 ## Source health
 
 - `adzuna`: FAILED (0) - ADZUNA_APP_ID/KEY secrets not set - Austria/Germany coverage is reduced
 - `arbeitnow`: ok (900)
 - `himalayas`: ok (20)
-- `hn-hiring`: ok (911)
+- `hn-hiring`: ok (915)
 - `jobicy`: ok (100)
 - `remoteok`: ok (99)
-- `remotive`: ok (26)
-- `weworkremotely`: ok (150)
+- `remotive`: ok (24)
+- `weworkremotely`: ok (153)
