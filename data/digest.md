@@ -1,6 +1,6 @@
-# Job digest - 2026-11-09 14:07 UTC
+# Job digest - 2026-11-10 13:39 UTC
 
-**2028 scanned - 718 relevant - 7 new shortlist - 132 with a direct contact email**
+**1866 scanned - 691 relevant - 8 new shortlist - 135 with a direct contact email**
 
 ## New shortlist
 
@@ -18,6 +18,21 @@
 
 - **Why:** stack match: mongodb, next.js, node.js, postgresql, react, typescript; JS/TypeScript shop; full-stack role; direct contact email in posting
 
+### 76 | Collabify | Senior Full-Stack Engineer (backend-heavy) | REMOTE (worldwide) | Contract, 4–5 months | $3,000–4,000/month I'm looking to hire our first engineer to own architecture a - Collabify
+`hn-hiring` | See post | salary n/a
+
+<https://news.ycombinator.com/item?id=50428062>
+
+- **Why:** stack match: next.js, node.js, postgresql, react, typescript; JS/TypeScript shop; full-stack role; contract/part-time signal: contract
+
+### 74 | Senior Software Engineer - Node.js/TypeScript (x/f/m) - Doctolib
+`arbeitnow` | Berlin | salary n/a
+
+<https://www.arbeitnow.com/jobs/companies/doctolib/senior-software-engineer-nodejs-typescript-berlin-305319>
+
+- **Why:** stack match: aws, node.js, postgresql, react, react native, redis, typescript; JS/TypeScript shop; core-stack role title; familiar domain: healthcare, insurance
+- **CV needs to cover:** kubernetes, java, kotlin, swift, rails, kafka, rabbitmq, azure
+
 ### 68 | Senior Vue Developer - Lemon.io
 `remoteok` | n/a | $50000 - $180000
 
@@ -34,6 +49,14 @@
 - **Why:** stack match: angular, aws, flutter, next.js, node.js, react, react native, typescript; contract/part-time signal: contract; remote
 - **CV needs to cover:** kubernetes, terraform, rust, java, swift, vue, svelte, laravel
 
+### 59 | Senior Engineer - Caylent
+`jobicy` | Mexico | salary n/a - contact: `talent@caylent.com`
+
+<https://jobicy.com/jobs/160802-senior-engineer>
+
+- **Why:** stack match: aws, node.js, playwright, react, typescript; contract/part-time signal: consulting; familiar domain: healthcare, insurance, scheduling; direct contact email in posting
+- **CV needs to cover:** terraform, jest
+
 ### 57 | I'm Rajneesh Verma, a Full-Stack & AI Engineer currently working with a YC-backed startup. I have hands-on experience building and shipping production-ready applications, scalable - I'm Rajneesh Verma, a Full-Stack & AI Engineer currently working with a YC-backe
 `hn-hiring` | See post | salary n/a
 
@@ -41,28 +64,13 @@
 
 - **Why:** stack match: docker, mongodb, next.js, node.js, postgresql, react, typescript; JS/TypeScript shop; full-stack role
 
-### 57 | Juro | AI Engineer (Agentic team) | London, UK | REMOTE (UK) | Full-time | £115k + equity Juro is an AI contract automation platform used by in-house legal and business teams. Our - Juro
-`hn-hiring` | See post | salary n/a
-
-<https://news.ycombinator.com/item?id=50339551>
-
-- **Why:** stack match: aws, mongodb, node.js, react, typescript; JS/TypeScript shop; contract/part-time signal: contract; remote
-
-### 56 | Senior Fullstack Software Engineer (Ruby/React & TS) - Pennylane SAS
-`arbeitnow` | Remote | salary n/a
-
-<https://www.arbeitnow.fr/jobs/companies/pennylane-sas/remote-senior-fullstack-software-engineer-ruby-react-ts-388753>
-
-- **Why:** stack match: react, stripe; full-stack role; contract/part-time signal: contract; remote
-- **CV needs to cover:** rails
-
 ## Source health
 
 - `adzuna`: FAILED (0) - ADZUNA_APP_ID/KEY secrets not set - Austria/Germany coverage is reduced
 - `arbeitnow`: ok (900)
 - `himalayas`: ok (20)
-- `hn-hiring`: ok (915)
+- `hn-hiring`: ok (921)
 - `jobicy`: ok (100)
 - `remoteok`: ok (99)
-- `remotive`: ok (24)
-- `weworkremotely`: ok (153)
+- `remotive`: ok (26)
+- `weworkremotely`: ok (150)
