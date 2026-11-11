@@ -1,6 +1,6 @@
-# Job digest - 2026-11-10 13:39 UTC
+# Job digest - 2026-11-11 12:51 UTC
 
-**1866 scanned - 691 relevant - 8 new shortlist - 135 with a direct contact email**
+**2040 scanned - 758 relevant - 10 new shortlist - 136 with a direct contact email**
 
 ## New shortlist
 
@@ -25,14 +25,6 @@
 
 - **Why:** stack match: next.js, node.js, postgresql, react, typescript; JS/TypeScript shop; full-stack role; contract/part-time signal: contract
 
-### 74 | Senior Software Engineer - Node.js/TypeScript (x/f/m) - Doctolib
-`arbeitnow` | Berlin | salary n/a
-
-<https://www.arbeitnow.com/jobs/companies/doctolib/senior-software-engineer-nodejs-typescript-berlin-305319>
-
-- **Why:** stack match: aws, node.js, postgresql, react, react native, redis, typescript; JS/TypeScript shop; core-stack role title; familiar domain: healthcare, insurance
-- **CV needs to cover:** kubernetes, java, kotlin, swift, rails, kafka, rabbitmq, azure
-
 ### 68 | Senior Vue Developer - Lemon.io
 `remoteok` | n/a | $50000 - $180000
 
@@ -49,6 +41,14 @@
 - **Why:** stack match: angular, aws, flutter, next.js, node.js, react, react native, typescript; contract/part-time signal: contract; remote
 - **CV needs to cover:** kubernetes, terraform, rust, java, swift, vue, svelte, laravel
 
+### 60 | RAIDS AI | Senior Technical Project Manager (Full Stack) | REMOTE | Python, Django, FastAPI, React, TypeScript RAIDS AI is a Cyprus-based AI runtime monitoring and assurance compan - RAIDS AI
+`hn-hiring` | See post | salary n/a - contact: `rita@raidsai.ai`
+
+<https://news.ycombinator.com/item?id=50451710>
+
+- **Why:** stack match: react, typescript; JS/TypeScript shop; full-stack role; remote
+- **CV needs to cover:** django
+
 ### 59 | Senior Engineer - Caylent
 `jobicy` | Mexico | salary n/a - contact: `talent@caylent.com`
 
@@ -64,13 +64,29 @@
 
 - **Why:** stack match: docker, mongodb, next.js, node.js, postgresql, react, typescript; JS/TypeScript shop; full-stack role
 
+### 56 | Medior/Senior Full Stack Developer - Momo Medical
+`arbeitnow` | Delft, Zuid-Holland, Netherlands | salary n/a
+
+<https://www.arbeitnow.nl/jobs/companies/momo-medical/medior-senior-full-stack-developer-delft-484749>
+
+- **Why:** stack match: aws, docker, express, flutter, postgresql, react, typescript; full-stack role; familiar domain: healthcare; posted in last 48h
+- **CV needs to cover:** go, kotlin, swift
+
+### 56 | Senior Software Engineer, Full Stack - Osano
+`jobicy` | USA | salary n/a
+
+<https://jobicy.com/jobs/161168-senior-software-engineer-full-stack-2>
+
+- **Why:** stack match: aws, node.js, postgresql, react; full-stack role; contract/part-time signal: b2b; familiar domain: insurance, saas
+- **CV needs to cover:** cypress
+
 ## Source health
 
 - `adzuna`: FAILED (0) - ADZUNA_APP_ID/KEY secrets not set - Austria/Germany coverage is reduced
 - `arbeitnow`: ok (900)
 - `himalayas`: ok (20)
-- `hn-hiring`: ok (921)
+- `hn-hiring`: ok (926)
 - `jobicy`: ok (100)
 - `remoteok`: ok (99)
 - `remotive`: ok (26)
-- `weworkremotely`: ok (150)
+- `weworkremotely`: ok (151)
