@@ -1,6 +1,6 @@
-# Job digest - 2026-11-14 12:21 UTC
+# Job digest - 2026-11-15 12:52 UTC
 
-**2068 scanned - 780 relevant - 9 new shortlist - 137 with a direct contact email**
+**2078 scanned - 799 relevant - 12 new shortlist - 137 with a direct contact email**
 
 ## New shortlist
 
@@ -25,6 +25,14 @@
 
 - **Why:** stack match: mongodb, next.js, node.js, postgresql, react, typescript; JS/TypeScript shop; full-stack role; direct contact email in posting
 
+### 72 | Tech Lead (mobile apps) - Coda
+`arbeitnow` | Amsterdam, Netherlands | salary n/a
+
+<https://www.arbeitnow.nl/jobs/companies/coda/tech-lead-mobile-apps-amsterdam-netherlands-357056>
+
+- **Why:** stack match: aws, graphql, nestjs, next.js, node.js, playwright, react, react native, typescript; core-stack role title; contract/part-time signal: b2b; posted in last 48h
+- **CV needs to cover:** kubernetes, jest
+
 ### 72 | Collabify | Senior Full-Stack Engineer (backend-heavy) | REMOTE (worldwide) | Contract, 4–5 months | $3,000–4,000/month I'm looking to hire our first engineer to own architecture a - Collabify
 `hn-hiring` | See post | salary n/a
 
@@ -47,6 +55,14 @@
 
 - **Why:** stack match: angular, aws, flutter, next.js, node.js, react, react native, typescript; contract/part-time signal: contract; remote
 - **CV needs to cover:** kubernetes, terraform, rust, java, swift, vue, svelte, laravel
+
+### 56 | Staff Frontend Engineer - Coreweaveu
+`arbeitnow` | London | salary n/a
+
+<https://www.arbeitnow.co.uk/jobs/companies/coreweaveu/staff-frontend-engineer-london-434887>
+
+- **Why:** stack match: docker, graphql, postgresql, react, typescript; core-stack role title; contract/part-time signal: b2b; familiar domain: insurance, saas
+- **CV needs to cover:** kubernetes, django, flask, storybook
 
 ### 56 | RAIDS AI | Senior Technical Project Manager (Full Stack) | REMOTE | Python, Django, FastAPI, React, TypeScript RAIDS AI is a Cyprus-based AI runtime monitoring and assurance compan - RAIDS AI
 `hn-hiring` | See post | salary n/a - contact: `rita@raidsai.ai`
@@ -71,13 +87,21 @@
 - **Why:** stack match: nestjs, node.js, postgresql, typescript; JS/TypeScript shop; full-stack role; posted in last 48h
 - **CV needs to cover:** vue
 
+### 55 | Senior Backend Engineer (Data serving) - Pleo
+`jobicy` | Denmark,  Portugal,  Spain,  UK | salary n/a - contact: `belonging@pleo.io`
+
+<https://jobicy.com/jobs/162192-senior-backend-engineer-data-serving-2>
+
+- **Why:** stack match: aws, docker, postgresql; core-stack role title; contract/part-time signal: contract; familiar domain: fintech, healthcare
+- **CV needs to cover:** kubernetes, go, kotlin, kafka, gcp
+
 ## Source health
 
 - `adzuna`: FAILED (0) - ADZUNA_APP_ID/KEY secrets not set - Austria/Germany coverage is reduced
 - `arbeitnow`: ok (900)
 - `himalayas`: ok (20)
-- `hn-hiring`: ok (942)
+- `hn-hiring`: ok (943)
 - `jobicy`: ok (100)
 - `remoteok`: ok (97)
 - `remotive`: ok (32)
-- `weworkremotely`: ok (170)
+- `weworkremotely`: ok (178)
