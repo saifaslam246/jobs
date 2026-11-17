@@ -1,6 +1,6 @@
-# Job digest - 2026-11-16 13:51 UTC
+# Job digest - 2026-11-17 14:44 UTC
 
-**2056 scanned - 762 relevant - 8 new shortlist - 142 with a direct contact email**
+**1945 scanned - 738 relevant - 8 new shortlist - 143 with a direct contact email**
 
 ## New shortlist
 
@@ -25,15 +25,15 @@
 
 - **Why:** stack match: mongodb, next.js, node.js, postgresql, react, typescript; JS/TypeScript shop; full-stack role; direct contact email in posting
 
-### 72 | Tech Lead (mobile apps) - Coda
+### 68 | Tech Lead (mobile apps) - Coda
 `arbeitnow` | Amsterdam, Netherlands | salary n/a
 
 <https://www.arbeitnow.nl/jobs/companies/coda/tech-lead-mobile-apps-amsterdam-netherlands-357056>
 
-- **Why:** stack match: aws, graphql, nestjs, next.js, node.js, playwright, react, react native, typescript; core-stack role title; contract/part-time signal: b2b; posted in last 48h
+- **Why:** stack match: aws, graphql, nestjs, next.js, node.js, playwright, react, react native, typescript; core-stack role title; contract/part-time signal: b2b
 - **CV needs to cover:** kubernetes, jest
 
-### 72 | Collabify | Senior Full-Stack Engineer (backend-heavy) | REMOTE (worldwide) | Contract, 4–5 months | $3,000–4,000/month I'm looking to hire our first engineer to own architecture a - Collabify
+### 68 | Collabify | Senior Full-Stack Engineer (backend-heavy) | REMOTE (worldwide) | Contract, 4–5 months | $3,000–4,000/month I'm looking to hire our first engineer to own architecture a - Collabify
 `hn-hiring` | See post | salary n/a
 
 <https://news.ycombinator.com/item?id=50428062>
@@ -69,8 +69,8 @@
 - `adzuna`: FAILED (0) - ADZUNA_APP_ID/KEY secrets not set - Austria/Germany coverage is reduced
 - `arbeitnow`: ok (900)
 - `himalayas`: ok (20)
-- `hn-hiring`: ok (944)
+- `hn-hiring`: ok (943)
 - `jobicy`: ok (100)
 - `remoteok`: ok (97)
-- `remotive`: ok (32)
-- `weworkremotely`: ok (177)
+- `remotive`: ok (34)
+- `weworkremotely`: ok (165)
