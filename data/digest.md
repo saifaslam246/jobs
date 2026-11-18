@@ -1,6 +1,6 @@
-# Job digest - 2026-11-17 14:44 UTC
+# Job digest - 2026-11-18 14:22 UTC
 
-**1945 scanned - 738 relevant - 8 new shortlist - 143 with a direct contact email**
+**2067 scanned - 799 relevant - 10 new shortlist - 140 with a direct contact email**
 
 ## New shortlist
 
@@ -24,6 +24,13 @@
 <https://news.ycombinator.com/item?id=50388471>
 
 - **Why:** stack match: mongodb, next.js, node.js, postgresql, react, typescript; JS/TypeScript shop; full-stack role; direct contact email in posting
+
+### 70 | Senior Full-stack Engineer - Limbic
+`jobicy` | Canada | salary n/a
+
+<https://jobicy.com/jobs/153380-senior-full-stack-engineer-2>
+
+- **Why:** stack match: aws, graphql, mongodb, node.js, postgresql, react, react native, redis, typescript; full-stack role; familiar domain: fintech, healthcare; posted in last 48h
 
 ### 68 | Tech Lead (mobile apps) - Coda
 `arbeitnow` | Amsterdam, Netherlands | salary n/a
@@ -56,21 +63,29 @@
 - **Why:** stack match: angular, aws, flutter, next.js, node.js, react, react native, typescript; contract/part-time signal: contract; remote
 - **CV needs to cover:** kubernetes, terraform, rust, java, swift, vue, svelte, laravel
 
-### 56 | RAIDS AI | Senior Technical Project Manager (Full Stack) | REMOTE | Python, Django, FastAPI, React, TypeScript RAIDS AI is a Cyprus-based AI runtime monitoring and assurance compan - RAIDS AI
-`hn-hiring` | See post | salary n/a - contact: `rita@raidsai.ai`
+### 58 | Senior Software Engineer - WorkMotion
+`weworkremotely` | Europe Only | salary n/a - contact: `Jobs@WorkMotion.com`
 
-<https://news.ycombinator.com/item?id=50451710>
+<https://weworkremotely.com/remote-jobs/workmotion-senior-software-engineer>
 
-- **Why:** stack match: react, typescript; JS/TypeScript shop; full-stack role; remote
-- **CV needs to cover:** django
+- **Why:** stack match: aws, docker, mongodb, postgresql, react; contract/part-time signal: contract; EU/Austria friendly; familiar domain: saas
+- **CV needs to cover:** kubernetes, java, microservices
+
+### 56 | Fullstack DevOps Engineer (Trust and Identity) - Swisscom
+`arbeitnow` | Rotterdam, Zuid-Holland, Netherlands | salary n/a
+
+<https://www.arbeitnow.nl/jobs/companies/swisscom/fullstack-devops-engineer-trust-and-identity-rotterdam-10345>
+
+- **Why:** stack match: angular, aws, docker, react, typescript; full-stack role; contract/part-time signal: contract, b2b; familiar domain: insurance
+- **CV needs to cover:** kubernetes, terraform, java, kotlin, vue
 
 ## Source health
 
 - `adzuna`: FAILED (0) - ADZUNA_APP_ID/KEY secrets not set - Austria/Germany coverage is reduced
 - `arbeitnow`: ok (900)
 - `himalayas`: ok (20)
-- `hn-hiring`: ok (943)
+- `hn-hiring`: ok (940)
 - `jobicy`: ok (100)
 - `remoteok`: ok (97)
-- `remotive`: ok (34)
-- `weworkremotely`: ok (165)
+- `remotive`: ok (32)
+- `weworkremotely`: ok (177)
