@@ -1,10 +1,10 @@
-# Job digest - 2026-11-19 14:33 UTC
+# Job digest - 2026-11-20 14:12 UTC
 
-**2026 scanned - 760 relevant - 17 new shortlist - 133 with a direct contact email**
+**2044 scanned - 742 relevant - 13 new shortlist - 131 with a direct contact email**
 
 ## New shortlist
 
-### 85 | Full-Stack Developer - Fluence International, Inc.
+### 83 | Full-Stack Developer - Fluence International, Inc.
 `remotive` | Worldwide | $3.5k–$5k/month - contact: `techjobs@fluencetraining.com`
 
 <https://remotive.com/remote-jobs/software-development/full-stack-developer-2091165>
@@ -17,6 +17,14 @@
 <https://news.ycombinator.com/item?id=50495944>
 
 - **Why:** stack match: nestjs, next.js, typescript; JS/TypeScript shop; full-stack role; contract/part-time signal: freelance
+
+### 78 | Senior React Full-stack Developer - Lemon.io
+`weworkremotely` | Anywhere in the World | salary n/a
+
+<https://weworkremotely.com/remote-jobs/lemon-io-senior-react-full-stack-developer-8>
+
+- **Why:** stack match: angular, aws, next.js, node.js, react, react native, typescript; full-stack role; contract/part-time signal: contract; remote
+- **CV needs to cover:** rust, vue, svelte, rails, azure, gcp
 
 ### 77 | Mobile Engineer - React Native (Paris or Remote France) - Alma
 `jobicy` | France | salary n/a
@@ -32,21 +40,6 @@
 <https://news.ycombinator.com/item?id=50388471>
 
 - **Why:** stack match: mongodb, next.js, node.js, postgresql, react, typescript; JS/TypeScript shop; full-stack role; direct contact email in posting
-
-### 72 | Senior Product Engineer (TypeScript, Full-Stack) - Rematiq Gmbh
-`arbeitnow` | Berlin | salary n/a
-
-<https://www.arbeitnow.com/jobs/companies/rematiq-gmbh/senior-product-engineer-typescript-full-stack-berlin-287597>
-
-- **Why:** stack match: express, node.js, postgresql, prisma, react, tailwind, typescript; full-stack role; contract/part-time signal: b2b; familiar domain: medtech
-- **CV needs to cover:** azure
-
-### 70 | Senior Full-stack Engineer - Limbic
-`jobicy` | Canada | salary n/a
-
-<https://jobicy.com/jobs/153380-senior-full-stack-engineer-2>
-
-- **Why:** stack match: aws, graphql, mongodb, node.js, postgresql, react, react native, redis, typescript; full-stack role; familiar domain: fintech, healthcare; posted in last 48h
 
 ### 70 | Full-stack Developer (TypeScript / Python) - Squid Support
 `arbeitnow` | Nieuwegein | salary n/a
@@ -78,6 +71,13 @@
 - **Why:** stack match: angular, aws, flutter, next.js, node.js, react, react native, typescript; contract/part-time signal: contract; remote
 - **CV needs to cover:** kubernetes, terraform, rust, java, swift, vue, svelte, laravel
 
+### 61 | Senior Front-End Engineer (Next.js/React) - Real Estate - Truelogic
+`jobicy` | Mexico | salary n/a
+
+<https://jobicy.com/jobs/163397-senior-front-end-engineer-next-js-react-real-estate>
+
+- **Why:** stack match: next.js, node.js, postgresql, react, typescript; JS/TypeScript shop; core-stack role title; familiar domain: real estate
+
 ### 60 | Senior Fullstack Developer (React.js / Node.js) - Proxify AB
 `weworkremotely` | Anywhere in the World | salary n/a
 
@@ -86,36 +86,12 @@
 - **Why:** stack match: mongodb, node.js, react; JS/TypeScript shop; full-stack role; remote
 - **CV needs to cover:** microservices
 
-### 58 | Full Stack Developer - Sparta Commodities
-`arbeitnow` | London | salary n/a
-
-<https://www.arbeitnow.co.uk/jobs/companies/sparta-commodities/full-stack-developer-london-203650>
-
-- **Why:** stack match: aws, graphql, node.js, react, redis, typescript; full-stack role; contract/part-time signal: contract; posted in last 48h
-- **CV needs to cover:** go, kotlin, storybook
-
-### 58 | Senior Software Engineer - WorkMotion
-`weworkremotely` | Europe Only | salary n/a - contact: `Jobs@WorkMotion.com`
-
-<https://weworkremotely.com/remote-jobs/workmotion-senior-software-engineer>
-
-- **Why:** stack match: aws, docker, mongodb, postgresql, react; contract/part-time signal: contract; EU/Austria friendly; familiar domain: saas
-- **CV needs to cover:** kubernetes, java, microservices
-
 ### 56 | Technical Lead - Fullstack JS/TS - Lemlist
 `arbeitnow` | Paris | salary n/a
 
 <https://www.arbeitnow.fr/jobs/companies/lemlist/technical-lead-fullstack-js-ts-paris-34050>
 
 - **Why:** stack match: mongodb, node.js, react, typescript; full-stack role; contract/part-time signal: b2b; familiar domain: healthcare, saas
-
-### 56 | Fullstack DevOps Engineer (Trust and Identity) - Swisscom
-`arbeitnow` | Rotterdam, Zuid-Holland, Netherlands | salary n/a
-
-<https://www.arbeitnow.nl/jobs/companies/swisscom/fullstack-devops-engineer-trust-and-identity-rotterdam-10345>
-
-- **Why:** stack match: angular, aws, docker, react, typescript; full-stack role; contract/part-time signal: contract, b2b; familiar domain: insurance
-- **CV needs to cover:** kubernetes, terraform, java, kotlin, vue
 
 ### 55 | Staff Software Engineer - Next-Gen - NetDocuments
 `jobicy` | USA | salary n/a - contact: `hrgroup@netdocuments.com`
@@ -125,14 +101,6 @@
 - **Why:** stack match: aws, graphql, node.js, react, typescript; contract/part-time signal: b2b; familiar domain: healthcare, saas; direct contact email in posting
 - **CV needs to cover:** java, kafka, microservices
 
-### 55 | Senior Fullstack Developer Angular / Kotlin – Spring Boot, AWS (m/w/d) - Rockstardevelopers GmbH
-`arbeitnow` | Berlin | salary n/a
-
-<https://www.arbeitnow.com/jobs/companies/rockstardevelopers-gmbh/senior-fullstack-developer-angular-kotlin-spring-boot-aws-stuttgart-368767>
-
-- **Why:** stack match: angular, aws, playwright, typescript; full-stack role; remote; posted in last 48h
-- **CV needs to cover:** kotlin
-
 ## Source health
 
 - `adzuna`: FAILED (0) - ADZUNA_APP_ID/KEY secrets not set - Austria/Germany coverage is reduced
@@ -140,6 +108,6 @@
 - `himalayas`: ok (20)
 - `hn-hiring`: ok (939)
 - `jobicy`: ok (100)
-- `remoteok`: ok (97)
-- `remotive`: ok (32)
-- `weworkremotely`: ok (128)
+- `remoteok`: ok (98)
+- `remotive`: ok (30)
+- `weworkremotely`: ok (146)
