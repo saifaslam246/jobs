@@ -1,6 +1,6 @@
-# Job digest - 2026-11-20 14:12 UTC
+# Job digest - 2026-11-21 13:37 UTC
 
-**2044 scanned - 742 relevant - 13 new shortlist - 131 with a direct contact email**
+**2070 scanned - 739 relevant - 10 new shortlist - 134 with a direct contact email**
 
 ## New shortlist
 
@@ -11,13 +11,6 @@
 
 - **Why:** stack match: aws, docker, next.js, react, typescript; JS/TypeScript shop; full-stack role; contract/part-time signal: contract, b2b
 
-### 79 | SEEKING FREELANCE - Egypt (UTC+2, full EU/UK overlap) - Remote Senior Full-Stack & Creative Frontend Engineer (4+ yrs). I architect high-concurrency Next.js/TypeScript and Node/Nes - SEEKING FREELANCE - Egypt (UTC+2, full EU/UK overlap) - Remote Senior Full-Stack
-`hn-hiring` | See post | salary n/a - contact: `noordragon2004@gmail.com`
-
-<https://news.ycombinator.com/item?id=50495944>
-
-- **Why:** stack match: nestjs, next.js, typescript; JS/TypeScript shop; full-stack role; contract/part-time signal: freelance
-
 ### 78 | Senior React Full-stack Developer - Lemon.io
 `weworkremotely` | Anywhere in the World | salary n/a
 
@@ -26,13 +19,12 @@
 - **Why:** stack match: angular, aws, next.js, node.js, react, react native, typescript; full-stack role; contract/part-time signal: contract; remote
 - **CV needs to cover:** rust, vue, svelte, rails, azure, gcp
 
-### 77 | Mobile Engineer - React Native (Paris or Remote France) - Alma
-`jobicy` | France | salary n/a
+### 75 | SEEKING FREELANCE - Egypt (UTC+2, full EU/UK overlap) - Remote Senior Full-Stack & Creative Frontend Engineer (4+ yrs). I architect high-concurrency Next.js/TypeScript and Node/Nes - SEEKING FREELANCE - Egypt (UTC+2, full EU/UK overlap) - Remote Senior Full-Stack
+`hn-hiring` | See post | salary n/a - contact: `noordragon2004@gmail.com`
 
-<https://jobicy.com/jobs/155885-mobile-engineer-react-native-paris-or-remote-france>
+<https://news.ycombinator.com/item?id=50495944>
 
-- **Why:** stack match: react, react native, stripe, typescript; JS/TypeScript shop; core-stack role title; contract/part-time signal: contract
-- **CV needs to cover:** jest, figma
+- **Why:** stack match: nestjs, next.js, typescript; JS/TypeScript shop; full-stack role; contract/part-time signal: freelance
 
 ### 74 | I'm Sushant Gangurde, A Software Engineer focused on Full-Stack Development and AI-powered applications. I work with React, Next.js, TypeScript, Node.js, Python, PostgreSQL and Mon - I'm Sushant Gangurde, A Software Engineer focused on Full-Stack Development and
 `hn-hiring` | See post | salary n/a - contact: `sushantcs2026@gmail.com`
@@ -41,12 +33,13 @@
 
 - **Why:** stack match: mongodb, next.js, node.js, postgresql, react, typescript; JS/TypeScript shop; full-stack role; direct contact email in posting
 
-### 70 | Full-stack Developer (TypeScript / Python) - Squid Support
-`arbeitnow` | Nieuwegein | salary n/a
+### 73 | Mobile Engineer - React Native (Paris or Remote France) - Alma
+`jobicy` | France | salary n/a
 
-<https://www.arbeitnow.nl/jobs/companies/squid-support/full-stack-developer-typescript-python-nieuwegein-364125>
+<https://jobicy.com/jobs/155885-mobile-engineer-react-native-paris-or-remote-france>
 
-- **Why:** stack match: docker, next.js, postgresql, react, typescript; JS/TypeScript shop; full-stack role; contract/part-time signal: contract
+- **Why:** stack match: react, react native, stripe, typescript; JS/TypeScript shop; core-stack role title; contract/part-time signal: contract
+- **CV needs to cover:** jest, figma
 
 ### 68 | Collabify | Senior Full-Stack Engineer (backend-heavy) | REMOTE (worldwide) | Contract, 4–5 months | $3,000–4,000/month I'm looking to hire our first engineer to own architecture a - Collabify
 `hn-hiring` | See post | salary n/a
@@ -55,21 +48,12 @@
 
 - **Why:** stack match: next.js, node.js, postgresql, react, typescript; JS/TypeScript shop; full-stack role; contract/part-time signal: contract
 
-### 64 | Senior Vue Developer - Lemon.io
-`remoteok` | n/a | $50000 - $180000
+### 66 | Full-stack Developer (TypeScript / Python) - Squid Support
+`arbeitnow` | Nieuwegein | salary n/a
 
-<https://remoteOK.com/remote-jobs/remote-senior-vue-developer-lemon-io-1137688>
+<https://www.arbeitnow.nl/jobs/companies/squid-support/full-stack-developer-typescript-python-nieuwegein-364125>
 
-- **Why:** stack match: angular, flutter, next.js, node.js, react, react native, typescript; contract/part-time signal: contract; remote
-- **CV needs to cover:** rust, java, swift, vue, svelte, laravel
-
-### 62 | Senior DevOps Engineer - Lemon.io
-`remoteok` | n/a | $50000 - $150000
-
-<https://remoteOK.com/remote-jobs/remote-senior-devops-engineer-lemon-io-1137557>
-
-- **Why:** stack match: angular, aws, flutter, next.js, node.js, react, react native, typescript; contract/part-time signal: contract; remote
-- **CV needs to cover:** kubernetes, terraform, rust, java, swift, vue, svelte, laravel
+- **Why:** stack match: docker, next.js, postgresql, react, typescript; JS/TypeScript shop; full-stack role; contract/part-time signal: contract
 
 ### 61 | Senior Front-End Engineer (Next.js/React) - Real Estate - Truelogic
 `jobicy` | Mexico | salary n/a
@@ -78,28 +62,21 @@
 
 - **Why:** stack match: next.js, node.js, postgresql, react, typescript; JS/TypeScript shop; core-stack role title; familiar domain: real estate
 
-### 60 | Senior Fullstack Developer (React.js / Node.js) - Proxify AB
-`weworkremotely` | Anywhere in the World | salary n/a
+### 60 | Développeur fullstack confirmé H/F (C#, .Net, Angular) - N2JSoft
+`arbeitnow` | Poste à distance | salary n/a
 
-<https://weworkremotely.com/remote-jobs/proxify-ab-senior-fullstack-developer-react-js-node-js-6>
+<https://www.arbeitnow.fr/jobs/companies/n2jsoft/remote-developpeur-fullstack-confirme-h-f-c-net-angular-lyon-137469>
 
-- **Why:** stack match: mongodb, node.js, react; JS/TypeScript shop; full-stack role; remote
-- **CV needs to cover:** microservices
+- **Why:** stack match: angular, aws, docker, postgresql, typescript; primarily a non-JS stack; full-stack role; contract/part-time signal: b2b
+- **CV needs to cover:** azure, gcp
 
-### 56 | Technical Lead - Fullstack JS/TS - Lemlist
-`arbeitnow` | Paris | salary n/a
+### 55 | Senior Back End Engineer - Horizon3.ai
+`jobicy` | USA | salary n/a
 
-<https://www.arbeitnow.fr/jobs/companies/lemlist/technical-lead-fullstack-js-ts-paris-34050>
+<https://jobicy.com/jobs/163548-senior-back-end-engineer-2>
 
-- **Why:** stack match: mongodb, node.js, react, typescript; full-stack role; contract/part-time signal: b2b; familiar domain: healthcare, saas
-
-### 55 | Staff Software Engineer - Next-Gen - NetDocuments
-`jobicy` | USA | salary n/a - contact: `hrgroup@netdocuments.com`
-
-<https://jobicy.com/jobs/155863-staff-software-engineer-next-gen>
-
-- **Why:** stack match: aws, graphql, node.js, react, typescript; contract/part-time signal: b2b; familiar domain: healthcare, saas; direct contact email in posting
-- **CV needs to cover:** java, kafka, microservices
+- **Why:** stack match: aws, docker, graphql, postgresql, typescript; core-stack role title; contract/part-time signal: consulting; familiar domain: insurance
+- **CV needs to cover:** kubernetes, go, java, azure, gcp
 
 ## Source health
 
@@ -108,6 +85,6 @@
 - `himalayas`: ok (20)
 - `hn-hiring`: ok (939)
 - `jobicy`: ok (100)
-- `remoteok`: ok (98)
-- `remotive`: ok (30)
-- `weworkremotely`: ok (146)
+- `remoteok`: ok (100)
+- `remotive`: ok (32)
+- `weworkremotely`: ok (180)
