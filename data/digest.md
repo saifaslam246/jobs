@@ -1,6 +1,6 @@
-# Job digest - 2026-11-22 13:29 UTC
+# Job digest - 2026-11-23 16:16 UTC
 
-**2087 scanned - 738 relevant - 11 new shortlist - 136 with a direct contact email**
+**2131 scanned - 743 relevant - 13 new shortlist - 142 with a direct contact email**
 
 ## New shortlist
 
@@ -47,6 +47,30 @@
 
 - **Why:** stack match: docker, next.js, postgresql, react, typescript; JS/TypeScript shop; full-stack role; contract/part-time signal: contract
 
+### 64 | Junior Software Engineer – Early Career (Strong Problem solving & Coding Focus) – 100% Remote within Poland - Docplanner
+`jobicy` | Poland | salary n/a
+
+<https://jobicy.com/jobs/156547-junior-software-engineer-early-career-strong-problem-solving-coding-focus-100-remote-within-poland-2>
+
+- **Why:** stack match: aws, node.js, react, react native, typescript; contract/part-time signal: contract; remote; familiar domain: booking, healthcare, marketplace
+- **CV needs to cover:** kubernetes, terraform, go
+
+### 64 | Senior Full-Stack Developer (m/w/d) – Schwerpunkt TypeScript & SaaS-Plattform - IT Studio Rech GmbH
+`arbeitnow` | Berlin | salary n/a
+
+<https://www.arbeitnow.com/jobs/companies/it-studio-rech-gmbh/senior-full-stack-developer-schwerpunkt-typescript-saas-plattform-berlin-282775>
+
+- **Why:** stack match: node.js, playwright, postgresql, react, redis, typescript; full-stack role; remote; familiar domain: saas
+- **CV needs to cover:** rabbitmq
+
+### 63 | Senior Full Stack Developer (m/f/d) - MVST
+`arbeitnow` | Munich | salary n/a
+
+<https://www.arbeitnow.com/jobs/companies/mvst/senior-full-stack-developer-munich-240755>
+
+- **Why:** stack match: aws, docker, express, flutter, mongodb, node.js, postgresql, react, react native; full-stack role; posted in last 48h
+- **CV needs to cover:** kubernetes, vue, azure, gcp, german
+
 ### 62 | Staff Backend Engineer, Hierarchy - ClickUp
 `jobicy` | USA | salary n/a - contact: `AskPeople@ClickUp.com`
 
@@ -55,28 +79,20 @@
 - **Why:** stack match: angular, docker, express, nestjs, node.js, postgresql, react, typescript; core-stack role title; familiar domain: saas; direct contact email in posting
 - **CV needs to cover:** kubernetes, vue, kafka, microservices
 
-### 60 | Développeur fullstack confirmé H/F (C#, .Net, Angular) - N2JSoft
-`arbeitnow` | Poste à distance | salary n/a
+### 59 | Senior Software Engineer, Predictions (Mobile) - Gemini
+`weworkremotely` | Anywhere in the World | salary n/a
 
-<https://www.arbeitnow.fr/jobs/companies/n2jsoft/remote-developpeur-fullstack-confirme-h-f-c-net-angular-lyon-137469>
+<https://weworkremotely.com/remote-jobs/gemini-senior-software-engineer-predictions-mobile>
 
-- **Why:** stack match: angular, aws, docker, postgresql, typescript; primarily a non-JS stack; full-stack role; contract/part-time signal: b2b
-- **CV needs to cover:** azure, gcp
+- **Why:** stack match: react, react native, typescript, websocket; core-stack role title; contract/part-time signal: contract; remote
+- **CV needs to cover:** kotlin, swift
 
-### 57 | Senior Front-End Engineer (Next.js/React) - Real Estate - Truelogic
-`jobicy` | Mexico | salary n/a
+### 56 | Senior Frontend Engineer (gn) - Ingestro
+`arbeitnow` | Berlin, Berlin, Germany | salary n/a
 
-<https://jobicy.com/jobs/163397-senior-front-end-engineer-next-js-react-real-estate>
+<https://www.arbeitnow.com/jobs/companies/ingestro/senior-frontend-engineer-gn-berlin-129314>
 
-- **Why:** stack match: next.js, node.js, postgresql, react, typescript; JS/TypeScript shop; core-stack role title; familiar domain: real estate
-
-### 55 | Senior Back End Engineer - Horizon3.ai
-`jobicy` | USA | salary n/a
-
-<https://jobicy.com/jobs/163548-senior-back-end-engineer-2>
-
-- **Why:** stack match: aws, docker, graphql, postgresql, typescript; core-stack role title; contract/part-time signal: consulting; familiar domain: insurance
-- **CV needs to cover:** kubernetes, go, java, azure, gcp
+- **Why:** stack match: aws, react, typescript; JS/TypeScript shop; core-stack role title; contract/part-time signal: b2b
 
 ### 55 | Senior Software Engineer - saas.group
 `jobicy` | Europe | salary n/a
@@ -91,8 +107,8 @@
 - `adzuna`: FAILED (0) - ADZUNA_APP_ID/KEY secrets not set - Austria/Germany coverage is reduced
 - `arbeitnow`: ok (900)
 - `himalayas`: ok (20)
-- `hn-hiring`: ok (939)
+- `hn-hiring`: ok (937)
 - `jobicy`: ok (100)
 - `remoteok`: ok (100)
-- `remotive`: ok (32)
-- `weworkremotely`: ok (207)
+- `remotive`: ok (30)
+- `weworkremotely`: ok (230)
