@@ -1,6 +1,6 @@
-# Job digest - 2026-11-24 16:03 UTC
+# Job digest - 2026-11-25 15:52 UTC
 
-**2142 scanned - 774 relevant - 12 new shortlist - 143 with a direct contact email**
+**2169 scanned - 812 relevant - 13 new shortlist - 145 with a direct contact email**
 
 ## New shortlist
 
@@ -11,13 +11,13 @@
 
 - **Why:** stack match: aws, docker, next.js, react, typescript; JS/TypeScript shop; full-stack role; contract/part-time signal: contract, b2b
 
-### 81 | Full-Stack Developer (m/w/d) – Java/Spring Boot & TypeScript - P&T Software
-`arbeitnow` | Berlin | salary n/a
+### 77 | Full Stack Developer - Java & React (f/m/d) - ecosio
+`arbeitnow` | Austria, Germany, Spain, Italy, Hungary, Portugal, Croatia - Remote | salary n/a
 
-<https://www.arbeitnow.com/jobs/companies/pt-software/full-stack-developer-java-spring-boot-typescript-berlin-318262>
+<https://www.arbeitnow.co.uk/jobs/companies/ecosio/remote-full-stack-developer-java-react-12271>
 
-- **Why:** stack match: angular, aws, docker, graphql, node.js, react, typescript; full-stack role; contract/part-time signal: b2b; remote
-- **CV needs to cover:** terraform, java, vue, azure, gcp
+- **Why:** stack match: angular, aws, mongodb, react, redis, typescript; full-stack role; contract/part-time signal: b2b; remote
+- **CV needs to cover:** kubernetes, java, vue, elasticsearch
 
 ### 75 | SEEKING FREELANCE - Egypt (UTC+2, full EU/UK overlap) - Remote Senior Full-Stack & Creative Frontend Engineer (4+ yrs). I architect high-concurrency Next.js/TypeScript and Node/Nes - SEEKING FREELANCE - Egypt (UTC+2, full EU/UK overlap) - Remote Senior Full-Stack
 `hn-hiring` | See post | salary n/a - contact: `noordragon2004@gmail.com`
@@ -41,6 +41,21 @@
 - **Why:** stack match: angular, aws, next.js, node.js, react, react native, typescript; full-stack role; contract/part-time signal: contract; remote
 - **CV needs to cover:** rust, vue, svelte, rails, azure, gcp
 
+### 74 | Développeur Full-Stack (Node.js / React / Flutter) - OHana Entreprise
+`arbeitnow` | Paris | salary n/a
+
+<https://www.arbeitnow.fr/jobs/companies/ohana-entreprise/developpeur-full-stack-nodejs-react-flutter-paris-474619>
+
+- **Why:** stack match: flutter, node.js, react; JS/TypeScript shop; full-stack role; contract/part-time signal: freelance
+
+### 70 | Full-stack Developer - ADOMIK
+`arbeitnow` | Paris | salary n/a
+
+<https://www.arbeitnow.fr/jobs/companies/adomik/full-stack-developer-paris-311610>
+
+- **Why:** stack match: aws, mongodb, react, redis, tailwind, typescript; full-stack role; contract/part-time signal: freelance; remote
+- **CV needs to cover:** rails, jest, cypress
+
 ### 68 | Collabify | Senior Full-Stack Engineer (backend-heavy) | REMOTE (worldwide) | Contract, 4–5 months | $3,000–4,000/month I'm looking to hire our first engineer to own architecture a - Collabify
 `hn-hiring` | See post | salary n/a
 
@@ -48,29 +63,13 @@
 
 - **Why:** stack match: next.js, node.js, postgresql, react, typescript; JS/TypeScript shop; full-stack role; contract/part-time signal: contract
 
-### 64 | Junior Software Engineer – Early Career (Strong Problem solving & Coding Focus) – 100% Remote within Poland - Docplanner
-`jobicy` | Poland | salary n/a
+### 67 | Mobile Quality Engineer - Lendable
+`arbeitnow` | UK Remote | salary n/a
 
-<https://jobicy.com/jobs/156547-junior-software-engineer-early-career-strong-problem-solving-coding-focus-100-remote-within-poland-2>
+<https://www.arbeitnow.co.uk/jobs/companies/lendable/remote-mobile-quality-engineer-20289>
 
-- **Why:** stack match: aws, node.js, react, react native, typescript; contract/part-time signal: contract; remote; familiar domain: booking, healthcare, marketplace
-- **CV needs to cover:** kubernetes, terraform, go
-
-### 59 | Senior Software Engineer, Predictions (Mobile) - Gemini
-`weworkremotely` | Anywhere in the World | salary n/a
-
-<https://weworkremotely.com/remote-jobs/gemini-senior-software-engineer-predictions-mobile>
-
-- **Why:** stack match: react, react native, typescript, websocket; core-stack role title; contract/part-time signal: contract; remote
-- **CV needs to cover:** kotlin, swift
-
-### 57 | Frontend Architect Web Components mit GKV Erfahrung (m/w/d) - virtual7 GmbH
-`arbeitnow` | Homeoffice | salary n/a
-
-<https://www.arbeitnow.com/jobs/companies/virtual7-gmbh/remote-frontend-architect-web-components-mit-gkv-erfahrung-essen-141459>
-
-- **Why:** stack match: angular, playwright, react, typescript; core-stack role title; contract/part-time signal: freelance; remote
-- **CV needs to cover:** vue, kafka, storybook
+- **Why:** stack match: aws, docker, graphql, react, react native, typescript; core-stack role title; contract/part-time signal: contract; remote
+- **CV needs to cover:** kubernetes, kotlin, rabbitmq, jest
 
 ### 56 | Fullstack Engineer - Dispatch
 `jobicy` | USA | salary n/a
@@ -87,21 +86,29 @@
 - **Why:** stack match: mongodb, node.js, react; JS/TypeScript shop; full-stack role; remote
 - **CV needs to cover:** microservices
 
-### 55 | FullStack Engineer - Prospect Data Solutions - Constructor
-`arbeitnow` | Remote | salary n/a
+### 55 | Senior Software Engineer, Predictions (Mobile) - Gemini
+`weworkremotely` | Anywhere in the World | salary n/a
 
-<https://www.arbeitnow.com/jobs/companies/constructor/fullstack-engineer-prospect-data-solutions-munich-211449>
+<https://weworkremotely.com/remote-jobs/gemini-senior-software-engineer-predictions-mobile>
 
-- **Why:** stack match: angular, next.js, react, scraping, tailwind, typescript; full-stack role; remote; posted in last 48h
-- **CV needs to cover:** vue, jest, cypress, storybook
+- **Why:** stack match: react, react native, typescript, websocket; core-stack role title; contract/part-time signal: contract; remote
+- **CV needs to cover:** kotlin, swift
+
+### 55 | Senior Frontend Developer* - Haeger Consulting GmbH
+`arbeitnow` | Bonn | salary n/a
+
+<https://www.arbeitnow.com/jobs/companies/haeger-consulting-gmbh/senior-frontend-developer-bonn-368911>
+
+- **Why:** stack match: angular, graphql, ngrx, node.js, react, typescript; JS/TypeScript shop; core-stack role title; posted in last 48h
+- **CV needs to cover:** vue, jest, cypress
 
 ## Source health
 
 - `adzuna`: FAILED (0) - ADZUNA_APP_ID/KEY secrets not set - Austria/Germany coverage is reduced
 - `arbeitnow`: ok (900)
 - `himalayas`: ok (20)
-- `hn-hiring`: ok (934)
+- `hn-hiring`: ok (933)
 - `jobicy`: ok (100)
 - `remoteok`: ok (100)
 - `remotive`: ok (30)
-- `weworkremotely`: ok (241)
+- `weworkremotely`: ok (274)
