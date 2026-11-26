@@ -1,6 +1,6 @@
-# Job digest - 2026-11-25 15:52 UTC
+# Job digest - 2026-11-26 15:31 UTC
 
-**2169 scanned - 812 relevant - 13 new shortlist - 145 with a direct contact email**
+**2155 scanned - 769 relevant - 12 new shortlist - 144 with a direct contact email**
 
 ## New shortlist
 
@@ -11,13 +11,13 @@
 
 - **Why:** stack match: aws, docker, next.js, react, typescript; JS/TypeScript shop; full-stack role; contract/part-time signal: contract, b2b
 
-### 77 | Full Stack Developer - Java & React (f/m/d) - ecosio
-`arbeitnow` | Austria, Germany, Spain, Italy, Hungary, Portugal, Croatia - Remote | salary n/a
+### 76 | Senior Fullstack Engineer - Dotfile
+`arbeitnow` | Paris | salary n/a
 
-<https://www.arbeitnow.co.uk/jobs/companies/ecosio/remote-full-stack-developer-java-react-12271>
+<https://www.arbeitnow.fr/jobs/companies/dotfile/senior-fullstack-engineer-paris-460975>
 
-- **Why:** stack match: angular, aws, mongodb, react, redis, typescript; full-stack role; contract/part-time signal: b2b; remote
-- **CV needs to cover:** kubernetes, java, vue, elasticsearch
+- **Why:** stack match: aws, graphql, nestjs, node.js, playwright, postgresql, react, typescript; full-stack role; contract/part-time signal: b2b, consulting; familiar domain: fintech, saas
+- **CV needs to cover:** kubernetes, storybook
 
 ### 75 | SEEKING FREELANCE - Egypt (UTC+2, full EU/UK overlap) - Remote Senior Full-Stack & Creative Frontend Engineer (4+ yrs). I architect high-concurrency Next.js/TypeScript and Node/Nes - SEEKING FREELANCE - Egypt (UTC+2, full EU/UK overlap) - Remote Senior Full-Stack
 `hn-hiring` | See post | salary n/a - contact: `noordragon2004@gmail.com`
@@ -41,21 +41,6 @@
 - **Why:** stack match: angular, aws, next.js, node.js, react, react native, typescript; full-stack role; contract/part-time signal: contract; remote
 - **CV needs to cover:** rust, vue, svelte, rails, azure, gcp
 
-### 74 | Développeur Full-Stack (Node.js / React / Flutter) - OHana Entreprise
-`arbeitnow` | Paris | salary n/a
-
-<https://www.arbeitnow.fr/jobs/companies/ohana-entreprise/developpeur-full-stack-nodejs-react-flutter-paris-474619>
-
-- **Why:** stack match: flutter, node.js, react; JS/TypeScript shop; full-stack role; contract/part-time signal: freelance
-
-### 70 | Full-stack Developer - ADOMIK
-`arbeitnow` | Paris | salary n/a
-
-<https://www.arbeitnow.fr/jobs/companies/adomik/full-stack-developer-paris-311610>
-
-- **Why:** stack match: aws, mongodb, react, redis, tailwind, typescript; full-stack role; contract/part-time signal: freelance; remote
-- **CV needs to cover:** rails, jest, cypress
-
 ### 68 | Collabify | Senior Full-Stack Engineer (backend-heavy) | REMOTE (worldwide) | Contract, 4–5 months | $3,000–4,000/month I'm looking to hire our first engineer to own architecture a - Collabify
 `hn-hiring` | See post | salary n/a
 
@@ -63,28 +48,37 @@
 
 - **Why:** stack match: next.js, node.js, postgresql, react, typescript; JS/TypeScript shop; full-stack role; contract/part-time signal: contract
 
-### 67 | Mobile Quality Engineer - Lendable
-`arbeitnow` | UK Remote | salary n/a
+### 59 | Product Engineer, AI (Junior to Mid-Level) - PastaHR
+`arbeitnow` | Zürich | salary n/a
 
-<https://www.arbeitnow.co.uk/jobs/companies/lendable/remote-mobile-quality-engineer-20289>
+<https://www.arbeitnow.ch/jobs/companies/pastahr/product-engineer-ai-junior-to-mid-level-zurich-200831>
 
-- **Why:** stack match: aws, docker, graphql, react, react native, typescript; core-stack role title; contract/part-time signal: contract; remote
-- **CV needs to cover:** kubernetes, kotlin, rabbitmq, jest
+- **Why:** stack match: aws, node.js, postgresql, react, tailwind, typescript; contract/part-time signal: contract; familiar domain: logistics, scheduling; posted in last 48h
+- **CV needs to cover:** german
 
-### 56 | Fullstack Engineer - Dispatch
-`jobicy` | USA | salary n/a
+### 58 | Senior Fullstack Engineer - Payroll (front-end oriented) - Paris - F/M/X - Combo
+`himalayas` | France | 60000-70000
 
-<https://jobicy.com/jobs/151365-fullstack-engineer-2>
+<https://himalayas.app/companies/combo/jobs/senior-fullstack-engineer-payroll-front-end-oriented-paris-f-m-x?utm_source=api>
 
-- **Why:** stack match: node.js, postgresql, react, typescript; full-stack role; contract/part-time signal: b2b; familiar domain: fintech, insurance, saas
+- **Why:** stack match: node.js, react, redis, typescript; full-stack role; contract/part-time signal: b2b; familiar domain: insurance, saas
+- **CV needs to cover:** kubernetes, gcp
 
-### 56 | Senior Fullstack Developer (React.js / Node.js) - Proxify AB
-`weworkremotely` | Anywhere in the World | salary n/a
+### 58 | Senior Fullstack Engineer - Malt
+`arbeitnow` | Paris | salary n/a
 
-<https://weworkremotely.com/remote-jobs/proxify-ab-senior-fullstack-developer-react-js-node-js-6>
+<https://www.arbeitnow.fr/jobs/companies/malt/senior-fullstack-engineer-paris-38477>
 
-- **Why:** stack match: mongodb, node.js, react; JS/TypeScript shop; full-stack role; remote
-- **CV needs to cover:** microservices
+- **Why:** stack match: mongodb, postgresql, redis, typescript; full-stack role; contract/part-time signal: freelance; familiar domain: fintech, marketplace, saas
+- **CV needs to cover:** kubernetes, terraform, java, kotlin, vue, elasticsearch, rabbitmq
+
+### 58 | Fullstack Software Engineer - Core Engineering - dataiku
+`arbeitnow` | Remote | salary n/a
+
+<https://www.arbeitnow.fr/jobs/companies/dataiku/remote-fullstack-software-engineer-core-engineering-188174>
+
+- **Why:** stack match: angular, aws, docker, node.js, postgresql, react; full-stack role; remote; familiar domain: saas
+- **CV needs to cover:** kubernetes, java, azure, gcp
 
 ### 55 | Senior Software Engineer, Predictions (Mobile) - Gemini
 `weworkremotely` | Anywhere in the World | salary n/a
@@ -94,13 +88,13 @@
 - **Why:** stack match: react, react native, typescript, websocket; core-stack role title; contract/part-time signal: contract; remote
 - **CV needs to cover:** kotlin, swift
 
-### 55 | Senior Frontend Developer* - Haeger Consulting GmbH
-`arbeitnow` | Bonn | salary n/a
+### 55 | Senior Fullstack Engineer - Staffbase
+`arbeitnow` | Berlin; Chemnitz, Sachsen; Dresden, Sachsen | salary n/a
 
-<https://www.arbeitnow.com/jobs/companies/haeger-consulting-gmbh/senior-frontend-developer-bonn-368911>
+<https://www.arbeitnow.com/jobs/companies/staffbase/senior-fullstack-engineer-berlin-chemnitz-sachsen-dresden-sachsen-492815>
 
-- **Why:** stack match: angular, graphql, ngrx, node.js, react, typescript; JS/TypeScript shop; core-stack role title; posted in last 48h
-- **CV needs to cover:** vue, jest, cypress
+- **Why:** stack match: docker, mongodb, node.js, react, typescript; full-stack role; contract/part-time signal: consulting; posted in last 48h
+- **CV needs to cover:** kubernetes, terraform, go, java, kotlin, cypress, microservices, german
 
 ## Source health
 
@@ -110,5 +104,5 @@
 - `hn-hiring`: ok (933)
 - `jobicy`: ok (100)
 - `remoteok`: ok (100)
-- `remotive`: ok (30)
-- `weworkremotely`: ok (274)
+- `remotive`: ok (32)
+- `weworkremotely`: ok (293)
