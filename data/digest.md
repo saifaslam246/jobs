@@ -1,6 +1,6 @@
-# Job digest - 2026-11-27 15:24 UTC
+# Job digest - 2026-11-28 14:24 UTC
 
-**2176 scanned - 792 relevant - 10 new shortlist - 145 with a direct contact email**
+**2221 scanned - 799 relevant - 10 new shortlist - 146 with a direct contact email**
 
 ## New shortlist
 
@@ -47,7 +47,15 @@
 
 - **Why:** stack match: react, react native, typescript; JS/TypeScript shop; core-stack role title; remote
 
-### 63 | Senior Full-stack Engineer (React/Node) (Backend-Focused) - Real Estate - Mexico/Remote - Truelogic
+### 60 | Développeur fullstack confirmé H/F (C#, .Net, Angular) - N2JSoft
+`arbeitnow` | Poste à distance | salary n/a
+
+<https://www.arbeitnow.fr/jobs/companies/n2jsoft/remote-developpeur-fullstack-confirme-h-f-c-net-angular-lyon-15268>
+
+- **Why:** stack match: angular, aws, docker, postgresql, typescript; primarily a non-JS stack; full-stack role; contract/part-time signal: b2b
+- **CV needs to cover:** azure, gcp
+
+### 59 | Senior Full-stack Engineer (React/Node) (Backend-Focused) - Real Estate - Mexico/Remote - Truelogic
 `jobicy` | Mexico | salary n/a
 
 <https://jobicy.com/jobs/164382-senior-full-stack-engineer-react-node-backend-focused-real-estate-mexico-remote>
@@ -55,13 +63,13 @@
 - **Why:** stack match: next.js, node.js, postgresql, react, typescript; full-stack role; remote; familiar domain: billing, fintech, real estate
 - **CV needs to cover:** terraform
 
-### 59 | Product Engineer, AI (Junior to Mid-Level) - PastaHR
-`arbeitnow` | Zürich | salary n/a
+### 56 | Forward Deployed Engineer - Rematiq Gmbh
+`arbeitnow` | Berlin | salary n/a
 
-<https://www.arbeitnow.ch/jobs/companies/pastahr/product-engineer-ai-junior-to-mid-level-zurich-200831>
+<https://www.arbeitnow.com/jobs/companies/rematiq-gmbh/forward-deployed-engineer-berlin-424002>
 
-- **Why:** stack match: aws, node.js, postgresql, react, tailwind, typescript; contract/part-time signal: contract; familiar domain: logistics, scheduling; posted in last 48h
-- **CV needs to cover:** german
+- **Why:** stack match: express, node.js, postgresql, prisma, react, tailwind, typescript; contract/part-time signal: consulting; familiar domain: medtech; posted in last 48h
+- **CV needs to cover:** azure, german
 
 ### 55 | Senior Software Engineer, Predictions (Mobile) - Gemini
 `weworkremotely` | Anywhere in the World | salary n/a
@@ -71,14 +79,6 @@
 - **Why:** stack match: react, react native, typescript, websocket; core-stack role title; contract/part-time signal: contract; remote
 - **CV needs to cover:** kotlin, swift
 
-### 55 | Senior Fullstack Engineer - Staffbase
-`arbeitnow` | Berlin; Chemnitz, Sachsen; Dresden, Sachsen | salary n/a
-
-<https://www.arbeitnow.com/jobs/companies/staffbase/senior-fullstack-engineer-berlin-chemnitz-sachsen-dresden-sachsen-492815>
-
-- **Why:** stack match: docker, mongodb, node.js, react, typescript; full-stack role; contract/part-time signal: consulting; posted in last 48h
-- **CV needs to cover:** kubernetes, terraform, go, java, kotlin, cypress, microservices, german
-
 ## Source health
 
 - `adzuna`: FAILED (0) - ADZUNA_APP_ID/KEY secrets not set - Austria/Germany coverage is reduced
@@ -87,5 +87,5 @@
 - `hn-hiring`: ok (932)
 - `jobicy`: ok (100)
 - `remoteok`: ok (100)
-- `remotive`: ok (34)
-- `weworkremotely`: ok (312)
+- `remotive`: ok (32)
+- `weworkremotely`: ok (326)
